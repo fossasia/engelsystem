@@ -1,7 +1,8 @@
 <?php
 $locales = array(
     'de_DE.UTF-8' => "Deutsch",
-    'en_US.UTF-8' => "English" 
+    'en_US.UTF-8' => "English",
+    'fr_FR.UTF-8' => "French"
 );
 
 $default_locale = 'en_US.UTF-8';
