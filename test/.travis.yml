@@ -1,0 +1,14 @@
+language: php
+php:
+  - 5.6
+  - 5.5
+  - 5.4
+  - hhvm
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e "create database IF NOT EXISTS engelsystem;" -uroot; fi
+
+script: phpunit --configuration phpunit.xml
