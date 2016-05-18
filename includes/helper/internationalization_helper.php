@@ -2,7 +2,8 @@
 $locales = array(
     'de_DE.UTF-8' => "Deutsch",
     'en_US.UTF-8' => "English",
-    'fr_FR.UTF-8' => "French"
+    'fr_FR.UTF-8' => "French",
+    'pa_IN.UTF-8' => "Punjabi-IN"
 );
 
 $default_locale = 'en_US.UTF-8';
