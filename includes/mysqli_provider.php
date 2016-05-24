@@ -62,7 +62,7 @@ function sql_error($message) {
   sql_close();
 
   $message = trim($message) . "\n";
-  $message .= debug_string_backtrace() . "\n";
+  $message = debug_string_backtrace() . "\n";
 
   error_log('mysql_provider error: ' . $message);
 

@@ -1,0 +1,1176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem\n"
+"POT-Creation-Date: 2016-05-11 16:32+0530\n"
+"PO-Revision-Date: 2016-05-11 16:34+0530\n"
+"Last-Translator: \n"
+"Language-Team: fossasia <sreeja25kamishetty@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ~/Documents/fossasaia/engelsystem\n"
+"Language: Hindi\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"हमें देने के लिए अपनी सेटिंग्स पृष्ठ पर प्रस्थान की अपनी योजना बनाई तारीख दर्ज करें"
+"कटाव क्षमता के लिए एक महसूस कर रही है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"आप कम से कम% s पारियों Freeloader। शिफ्ट साइन अप कर बंद कर दिया है। कृपया करने के लिए जाना"
+"आकाश डेस्क फिर से खुला होना।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"तुम में चिह्नित नहीं कर रहे हैं के रूप में पहुंचे। कृपया, स्वर्ग की मेज पर जाने के अपने दूत मिल"
+"बिल्ला और / या उन्हें बताना है कि आप पहले से ही आ गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "आप अपनी सेटिंग्स में एक टी शर्ट आकार को निर्दिष्ट करने की जरूरत है!"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"आप अपनी सेटिंग्स में एक DECT फोन नंबर निर्दिष्ट करने के लिए की जरूरत है! आप नहीं है, तो"
+"एक DECT फोन, बस दर्ज करें \"-\" ।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "व्यवस्थापक"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "कोई डेटा नहीं मिला।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:821
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:56
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:73
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:214
+msgid "Angeltypes"
+msgstr "मत्स्य पालन युक्तियाँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:327
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:213
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "टीमों / नौकरी का विवरण"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "एन्जिल प्रकार% s नष्ट कर दिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "हटाएँ एंजेल प्रकार% s"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "कृपया नाम की जाँच करें। हो सकता है कि यह पहले से ही मौजूद है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "% S संपादित करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "टीम% s"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:171
+msgid "view"
+msgstr "राय"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:64
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:23
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:18
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:91
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Shifts_view.php:77
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:174
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:225
+msgid "edit"
+msgstr "संपादित करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:37
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:56
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:19
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_user.php:117
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:220
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:48
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:93
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:5
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:12
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Shifts_view.php:78
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "हटाएँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:87
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "छोड़ना"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:80
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "में शामिल होने"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "बदलाव नहीं पाया जा सका।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "शिफ्ट प्रकार% s नष्ट कर दिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "हटाएँ पारी प्रकार% s"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "बदलाव नहीं मिला टाइप करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:66
+msgid "Please enter a name."
+msgstr "एक नाम दर्ज करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "बदलाव प्रकार अद्यतन किया गया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "बदलाव प्रकार बनाएँ।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "शिफ्ट प्रकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "% D अपुष्ट angeltype नहीं है।"
+msgstr[1] "% D अपुष्ट एंजेल प्रकार के होते हैं।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "एन्जिल प्रकार जो मंजूरी की जरूरत है:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Angeltype मौजूद नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "आप इस angeltype के लिए सभी उपयोगकर्ताओं को नष्ट करने की अनुमति नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "परी प्रकार% s के लिए सभी उपयोगकर्ताओं निषेध।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "सभी उपयोगकर्ताओं इंकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "यूजर angeltype मौजूद नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr "आप इस angeltype के लिए सभी उपयोगकर्ताओं पुष्टि करने के लिए अनुमति नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "परी प्रकार% s के लिए सभी उपयोगकर्ताओं की पुष्टि की है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "सभी उपयोगकर्ताओं की पुष्टि करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "आप इस उपयोगकर्ता की angeltype पुष्टि करने के लिए अनुमति नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "यूजर मौजूद नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "% S एंजेल प्रकार% s के लिए की पुष्टि की।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "उपयोगकर्ता के लिए angeltype की पुष्टि करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "आप इस उपयोगकर्ता की angeltype को नष्ट करने की अनुमति नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "Benutzer %s von %s entfernt."
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "परी प्रकार निकालें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "आप समन्वयक अधिकार स्थापित करने के लिए अनुमति नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "नहीं समन्वयक अद्यतन दिए गए।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "% S% s के लिए जोड़ा गया समन्वयक अधिकार।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "% S से% s के लिए निकाला समन्वयक अधिकार।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:138
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "समन्वयक अधिकार जोड़े"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:130
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "समन्वयक अधिकार निकालें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "कृपया एक उपयोगकर्ता का चयन करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "उपयोगकर्ता% s के लिए कहा।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "Angeltype उपयोगकर्ता को जोड़ना"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "आप पहले से ही एक% s रहे हैं।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "आप% s में शामिल हो गए।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "एक% s बनें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"आप एक दूत के प्रकार है जो एक ड्राइविंग लाइसेंस की आवश्यकता में शामिल हो गए। संपादित करें अपने"
+"लाइसेंस यहाँ जानकारी ड्राइविंग:% s।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "ड्राइविंग लाइसेंस की जानकारी"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "कृपया कम से कम एक ड्राइविंग लाइसेंस का चयन करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "आपका चालक लाइसेंस जानकारी हटा दिया गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "आपका चालक लाइसेंस जानकारी को बचाया जा चुका है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "संपादित% s ड्राइविंग लाइसेंस की जानकारी"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:46
+msgid "You cannot delete yourself."
+msgstr "तुम अपने आप को नष्ट नहीं कर सकते।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:55
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "आपका पासवर्ड गलत है। कृपया इसे फिर से प्रयास करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:64
+msgid "User deleted."
+msgstr "उपयोगकर्ता नष्ट कर दिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:72
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "Delete %s"
+msgstr "% S हटाएँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:111
+msgid "Please enter a valid number of vouchers."
+msgstr "वाउचर का एक मान्य संख्या दर्ज करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:121
+msgid "Saved the number of vouchers."
+msgstr "वाउचर की संख्या बचा लिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:129
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:43
+#, php-format
+msgid "%s's vouchers"
+msgstr "% S के वाउचर"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:142
+msgid "User not found."
+msgstr "उपयोगकर्ता नहीं मिला।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:192
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:80
+msgid "All users"
+msgstr "सभी उपयोगकर्ताओं"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:207
+msgid "Token is not correct."
+msgstr "टोकन सही नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:217
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:93
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "आपका पासवर्ड मेल नहीं खाते।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:221
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr "आपका पासवर्ड बहुत छोटा है (कम से कम 6 अक्षर का उपयोग करें)।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:227
+msgid "Password could not be updated."
+msgstr "पासवर्ड अद्यतन नहीं किया जा सकता है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:229
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "पासवर्ड को बचा लिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:247
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:251
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:63
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "ईमेल पता सही नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:255
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:67
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "अपना ईमेल दर्ज करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:262
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:279
+msgid "Password recovery"
+msgstr "पासवर्ड की दोबारा प्राप्ति"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:262
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "कृपया अपने पासवर्ड को ठीक करने के लिए% s जाएँ।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/controller/home_controller.php:266
+msgid "We sent an email containing your password recovery link."
+msgstr ""
+"हम अपना पासवर्ड वसूली कड़ी युक्त एक ईमेल भेजा है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "उनके,"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "यहाँ engelsystem से आप के लिए एक संदेश है:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"यह ईमेल ऑटो उत्पन्न होता है और हस्ताक्षर किए जाने के लिए नहीं किया गया है। आप इस ईमेल मिला है"
+"क्योंकि आप Engel प्रणाली में पंजीकृत हैं।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "एक बदलाव आप पर पंजीकृत हैं बदल गया है:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* शिफ्ट प्रकार% s% s से बदल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "* शिफ्ट शीर्षक% s% s से बदल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "* पारी शुरू करने के लिए% s% s से बदल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "*% S से% s पर शिफ्ट समाप्ति परिवर्तन"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "* शिफ्ट स्थान% s% s से बदल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "अद्यतन शिफ्ट:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "अपनी पारी बदल गया है"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "एक बदलाव आप पर पंजीकृत हैं नष्ट कर दिया गया था:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "अपनी पारी को नष्ट कर दिया गया था"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "आप एक शिफ्ट करने के लिए आवंटित किया गया है:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "शिफ्ट करने के लिए निरुपित"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "आप एक पारी से हटा दिया गया है:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "बदलाव से हटाया"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/home_mailer.php:7
+msgid "Your account has been deleted"
+msgstr "आपका खाता हटा दिया गया है"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/mailer/home_mailer.php:7
+msgid ""
+"Your angelsystem account has been deleted. If you have any questions "
+"regarding your account deletion, please contact heaven."
+msgstr ""
+"अपने दूत सिस्टम खाते हटा दिया गया है। आप किसी भी प्रश्न हैं, तो"
+"अपने खाते विलोपन के बारे में, स्वर्ग से संपर्क करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "सक्रिय स्वर्गदूतों"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr ""
+"कम से कम% s स्वर्गदूतों सक्रिय होने के लिए मजबूर कर रहे हैं। अधिक से अधिक संख्या में हो गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr ""
+"कृपया दर्ज स्वर्गदूतों के एक नंबर सक्रिय रूप में चिह्नित किया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "चिह्नित स्वर्गदूतों।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:59
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:129
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:164
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:251
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:29
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:46
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "वापस"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "लागू करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "एन्जिल सक्रिय रूप में चिह्नित किया गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:71
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:80
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:98
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:22
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "एन्जिल नहीं मिला।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "एन्जिल सक्रिय नहीं के रूप में चिह्नित किया गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "एन्जिल एक टी शर्ट मिली है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "एन्जिल कोई टी-शर्ट मिल गया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:135
+msgid "set active"
+msgstr "सक्रिय नियत करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:137
+msgid "remove active"
+msgstr "सक्रिय हटाने"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:138
+msgid "got t-shirt"
+msgstr "मिल गया टी शर्ट"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:141
+msgid "remove t-shirt"
+msgstr "टी-शर्ट को हटाने"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:159
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:156
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:171
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:186
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:172
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:179
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:70
+msgid "Sum"
+msgstr "राशि"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:166
+msgid "Search angel:"
+msgstr "खोज दूत:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:167
+msgid "Show all shifts"
+msgstr "सभी पारियों दिखाएँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:168
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:132
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:133
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:71
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:80
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_log.php:25
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "खोज"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:171
+msgid "How much angels should be active?"
+msgstr "कितना स्वर्गदूतों सक्रिय होना चाहिए?"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:172
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:239
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "पूर्वावलोकन"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:176
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "उपनाम"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:177
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:187
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:96
+msgid "Size"
+msgstr "आकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:178
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:4
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:236
+msgid "Shifts"
+msgstr "परिवर्तन"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:179
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "लंबाई"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:180
+msgid "Active?"
+msgstr "Aktiv?"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:181
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:94
+msgid "Forced"
+msgstr "मजबूर"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:182
+msgid "T-shirt?"
+msgstr "टी-शर्ट?"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:185
+msgid "Shirt statistics"
+msgstr "शर्ट आँकड़े"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:188
+msgid "Needed shirts"
+msgstr "की जरूरत शर्ट"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_active.php:189
+msgid "Given shirts"
+msgstr "यह देखते हुए शर्ट"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "आ स्वर्गदूतों"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "किया रीसेट। एंजेल नहीं आया है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "एन्जिल के रूप में पहुंचे अंकित की गई है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:65
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "हाँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "रीसेट"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:66
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:147
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:162
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:177
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:227
+msgid "arrived"
+msgstr "पहुंच गए"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "योजना बनाई आगमन"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "पहुंच गए?"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "पहुँचने की तारीख"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "योजना बनाई प्रस्थान"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "योजना बनाई आगमन सांख्यिकी"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:148
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:163
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "आ राशि"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:154
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:169
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:184
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:27
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_messages.php:76
+msgid "Date"
+msgstr "तारीख"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:155
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:170
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "गणना"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "आगमन सांख्यिकी"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "योजना बनाई प्रस्थान आँकड़े"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "नि: शुल्क स्वर्गदूतों"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:74
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "एन्जिल प्रकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "केवल इस बात की पुष्टि"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:85
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:181
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:312
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:168
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:146
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:153
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:86
+msgid "Nick"
+msgstr "निक"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:87
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:210
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:175
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:147
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:154
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:89
+msgid "DECT"
+msgstr "DECT"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:88
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:219
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "अस्पष्ट"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_free.php:89
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/guest_login.php:184
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:177
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:258
+msgid "E-Mail"
+msgstr "ईमेल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "समूह अधिकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:29
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:141
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:145
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:135
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:180
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:60
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:216
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:88
+msgid "Name"
+msgstr "नाम"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "विशेषाधिकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:53
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:32
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:35
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:149
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:257
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_messages.php:42
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:106
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:160
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:183
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:192
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:197
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_settings.php:202
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:191
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/AngelTypes_view.php:66
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:32
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftEntry_view.php:33
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:51
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:274
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "बचाना"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "समूह संपादित करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:4
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:136
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:181
+msgid "Frab import"
+msgstr "Frab आयात"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr "वेब सर्वर निर्देशिका का उपयोग लिखने आयात की जरूरत नहीं है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:50
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:114
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:191
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:48
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "कृपया एक पारी प्रकार का चयन करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:57
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:121
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr ""
+"जोड़ने के लिए करने के लिए एक बातचीत शुरू मिनट की एक राशि में प्रवेश करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:64
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:128
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr ""
+"एक बात के अंत में जोड़ने के लिए मिनट की एक राशि में प्रवेश करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "अवैध एक्सएमएल / फ़ाइल प्रदान की उत्कृष्टता।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "फाइल अपलोड गलत हो गया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "कुछ डेटा प्रदान करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:89
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:136
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "फाइल अपलोड"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:89
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:136
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "मान्यकरण"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:89
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:98
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:136
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:175
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "आयात"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+यह आयात / अद्यतन बनाने / दिया FRAB निर्यात से कमरे और बदलाव को हटाना होगा"
+"फ़ाइल। जरूरत फ़ाइल प्रारूप xcal है।
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:94
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:301
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "शिफ्ट प्रकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "मिनट शुरू करने के लिए जोड़े"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "मिनट अंत में जोड़ने"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "राजनैतिक-फ़ाइल (.xcal)"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:107
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "आयात फ़ाइल गुम।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "कमरे बनाने के लिए"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "कमरे हटाने के लिए"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "बनाने के लिए पाली"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:150
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:159
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:168
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:238
+msgid "Day"
+msgstr "दिवस"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:151
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:160
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:169
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:306
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "Start"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:152
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:161
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:170
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:307
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "समाप्त"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:153
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:162
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "शिफ्ट प्रकार"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:154
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:163
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:172
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:302
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:185
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "शीर्षक"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:155
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:164
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:173
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_shifts.php:303
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "कमरे"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "अद्यतन करने के लिए पाली"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "नष्ट करने के लिए पाली"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "हॊ गया!"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "हॊ गया!"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "समाचार प्रविष्टि संपादित करें"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr "लेखक"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:29
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "विषय"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:30
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_messages.php:79
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:105
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "संदेश"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:31
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "मुलाकात"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:35
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:168
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/User_view.php:34
+msgid "Delete"
+msgstr "हटाएँ"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "समाचार प्रविष्टि अद्यतन किया गया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "समाचार प्रविष्टि को नष्ट कर दिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "सवालों के जवाब देने"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "अनुत्तरित सवाल कर रहे हैं!"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "अनुत्तरित प्रश्न"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:63
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "से"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:64
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:71
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:19
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "सवाल"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:65
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:73
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "उत्तर"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:68
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "उत्तरित प्रश्न"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_questions.php:72
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "ने उत्तर दिया"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:4
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "कमरे"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:62
+msgid "This name is already in use."
+msgstr "यह नाम पहले से उपयोग में है।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:89
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "% S प्रकार के लिए आवश्यक स्वर्गदूतों दर्ज करें।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:117
+msgid "Room saved."
+msgstr "कमरे बचा लिया।"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:137
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:182
+msgid "Public"
+msgstr "जनता"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Room number"
+msgstr "कमरा संख्या"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:143
+msgid "Needed angels:"
+msgstr "की जरूरत एन्जिल्स:"
+
+#: /home/sreeja/Documents/fossasia/engelsystem/includes/pages/admin_rooms.php:158
+#, php-format
+msgid "Room %s deleted."
+msgstr "कमरे नष्ट कर दिया।"
+
+
+
