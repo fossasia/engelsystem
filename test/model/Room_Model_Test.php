@@ -1,6 +1,6 @@
 <?php
 
-class Room_model_test extends PHPUnit_Framework_TestCase {
+class Room_Model_Test extends PHPUnit_Framework_TestCase {
 
   private $room_id = null;
 
@@ -10,13 +10,13 @@ class Room_model_test extends PHPUnit_Framework_TestCase {
 
   public function test_Room() {
     $this->create_Room();
-    
+
     $room = Room($this->room_id);
-    
+
     $this->assertNotFalse($room);
     $this->assertNotNull($room);
     $this->assertEquals($room['Name'], 'test');
-    
+
     $this->assertNull(Room(- 1));
   }
 
