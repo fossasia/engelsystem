@@ -3,8 +3,9 @@ $locales = array(
     'de_DE.UTF-8' => "Deutsch",
     'hi_IN.UTF-8' => "Hindi", 
     'sp_EU.UTF-8' => "Spanish",
-    'en_US.UTF-8' => "English" 
-);
+    'en_US.UTF-8' => "English",
+    'bn_IN.UTF-8' => "Bengali"
+); 
 
 $default_locale = 'en_US.UTF-8';
 
