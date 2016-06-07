@@ -7,7 +7,8 @@ $themes = array(
     '3' => "Engelsystem 32c3",
     "2" => "Engelsystem cccamp15",
     "0" => "Engelsystem light",
-    "1" => "Engelsystem dark"
+    "1" => "Engelsystem dark",
+    "4" => "Engelsystem color scheme-1"
 );
 
 /**

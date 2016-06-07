@@ -62,19 +62,21 @@ function guest_register() {
       $msg .= error(sprintf(_("Your nick &quot;%s&quot; is too short (min. 2 characters)."), User_validate_Nick($_REQUEST['nick'])), true);
     }
 
-    if (isset($_REQUEST['mail']) && strlen(strip_request_item('mail')) > 0) {
+    if (isset($_REQUEST['mail']) && strlen(strip_request_item('mail')) && preg_match("/^[a-z0-9._+-]{1,64}@(?:[a-z0-9-]{1,63}\.){1,125}[a-z]{2,63}$/", $_REQUEST['mail']) > 0) {
       $mail = strip_request_item('mail');
       if (! check_email($mail)) {
         $ok = false;
         $msg .= error(_("E-mail address is not correct."), true);
       }
-      if (sql_num_query("SELECT * FROM `User` WHERE `email`='" . sql_escape($mail) . "' LIMIT 1") > 0) {
+      if (sql_num_query("SELECT * FROM `User` WHERE `email`='" . sql_escape($mail) . "' LIMIT 1")  > 0) {
+       
+
         $ok = false;
         $msg .= error(sprintf(_("Your E-mail &quot;%s&quot; already exists."), $mail), true);
       }
     } else {
       $ok = false;
-      $msg .= error(_("Please enter your e-mail."), true);
+      $msg .= error(_("Please enter your correct e-mail (in lowercase)."), true);
     }
 
     if (isset($_REQUEST['email_shiftinfo']))
