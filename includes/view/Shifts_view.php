@@ -89,7 +89,7 @@ function Shift_view($shift, $shifttype, $room, $shift_admin, $angeltypes_source,
               '<p class="lead' . (time() >= $shift['start'] ? ' text-success' : '') . '">',
               glyph('calendar') . date('Y-m-d', $shift['start']),
               '<br />',
-              glyph('time') . date('H:i', $shift['start']),
+              glyph('time') . date('H:i', $shift['start_time']),
               '</p>' 
           ]),
           div('col-sm-3 col-xs-6', [
@@ -97,7 +97,7 @@ function Shift_view($shift, $shifttype, $room, $shift_admin, $angeltypes_source,
               '<p class="lead' . (time() >= $shift['end'] ? ' text-success' : '') . '">',
               glyph('calendar') . date('Y-m-d', $shift['end']),
               '<br />',
-              glyph('time') . date('H:i', $shift['end']),
+              glyph('time') . date('H:i', $shift['end_time']),
               '</p>' 
           ]),
           div('col-sm-3 col-xs-6', [
