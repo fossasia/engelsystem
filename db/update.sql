@@ -64,3 +64,7 @@ CREATE TABLE IF NOT EXISTS `User` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 ALTER TABLE `User` ADD UNIQUE (email) ;
+
+ALTER TABLE `Shifts` 
+ADD `start_time` int(11) NOT NULL,
+ADD `end_time` int(11) NOT NULL;
