@@ -339,8 +339,6 @@ CREATE TABLE IF NOT EXISTS `Shifts` (
   `title` text,
   `shifttype_id` int(11) NOT NULL,
   `start` int(11) NOT NULL,
-  `start_time` int(11) NOT NULL,
-  `end_time` int(11) NOT NULL,
   `end` int(11) NOT NULL,
   `RID` int(11) NOT NULL DEFAULT '0',
   `URL` text,
