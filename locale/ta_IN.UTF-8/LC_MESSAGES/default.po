@@ -1,0 +1,2533 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem\n"
+"POT-Creation-Date: 2016-05-13 12:45+0100\n"
+"PO-Revision-Date: 2016-06-07 11:27+0530\n"
+"Last-Translator: \n"
+"Language-Team: FOSSASIA <dishant.khanna1807@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: ta_IN\n"
+"X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"தயவு செய்து teardown கொள்ளவுக்கானவை எங்களுக்கு ஒரு உணர்வு கொடுக்க உங்கள் அமைப்புகள் "
+"பக்கத்தில் புறப்படும் உங்கள் திட்டமிட்ட தேதியில் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"நீங்கள் குறைந்தது%s ஷிப்டுகளில் freeloaded. ஷிப்ட் இணைந்ததற்கு பூட்டப்பட்டுள்ளது. மீண்டும் "
+"திறக்கப்பட்ட நிலையில் இருக்க வானங்கள் மேசை செல்க."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"வந்திறங்கியதும் நீங்கள் குறித்தது. , பரலோகத்தில் மேசை செல்க உங்கள் தூதன் பேட்ஜ் பெற "
+"மற்றும் / அல்லது நீங்கள் ஏற்கனவே வந்து என்று அவர்கள் சொல்ல."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "உங்கள் அமைப்புகளை ஒரு டீ அளவு குறிப்பிட வேண்டும்!"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"உங்கள் அமைப்புகளை ஒரு டெக்ட் தொலைபேசி எண் குறிப்பிட வேண்டும்! நீங்கள் ஒரு டெக்ட் "
+"தொலைபேசி இல்லை என்றால், வெறும் நுழைய \"-\"."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "நிர்வாகம்"
+
+#: /var/www/html/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "தரவு எதுவும் இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
+msgid "Angeltypes"
+msgstr "Angeltypes"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:327
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "அணிகள் / வேலை விளக்கம்"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "Angeltype%s நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "நீக்கு angeltype% கள்"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "பெயரைச் சரிபார்த்து. ஒருவேளை அது ஏற்கனவே உள்ளது."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "%s ஐ மாற்று"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "குழு% கள்"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
+msgid "view"
+msgstr "பார்வை"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:23
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:18
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:91
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
+msgid "edit"
+msgstr "தொகு"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:5
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:12
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:78
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "அழி"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "விட்டு"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "சேர"
+
+#: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "ஷிப்ட் கண்டறிய முடியவில்லை."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "Shifttype%s நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "நீக்கு shifttype%s ள்"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "Shifttype இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
+msgid "Please enter a name."
+msgstr "ஒரு பெயரை உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "shifttype மேம்படுத்தப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "உருவாக்கப்பட்டது shifttype."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "Shifttypes"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "%d உறுதிப்படுத்தப்படாத angeltype உள்ளது."
+msgstr[1] "%d உறுதிப்படுத்தப்படாத angeltypes உள்ளன."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "ஒப்புதல்கள் வேண்டும், இது ஏஞ்சல் வகையான:"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Angeltype இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "நீங்கள் இந்த angeltype அனைத்து பயனர்கள் நீக்க அனுமதி இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "angeltype%s அனைத்து பயனர் மறுக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "அனைத்து பயனர் மறு"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "பயனர் angeltype இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr "நீங்கள் இந்த angeltype அனைத்து பயனர்கள் உறுதிப்படுத்த அனுமதி இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "angeltype%s அனைத்து பயனர்கள் உறுதி."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "அனைத்து பயனர்கள் உறுதிப்படுத்தவும்"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "நீங்கள் இந்த பயனர் angeltype உறுதிப்படுத்த அனுமதி இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "பயனர் இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "%s ள் angeltype %s உறுதி."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "பயனர் angeltype உறுதிப்படுத்தவும்"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "நீங்கள் இந்த பயனர் angeltype நீக்க அனுமதி இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "பயனர் %s %s இருந்து நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "angeltype நீக்க"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "நீங்கள் ஒருங்கிணைப்பாளர் உரிமைகள் அமைக்க அனுமதி இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "இல்லை ஒருங்கிணைப்பாளர் மேம்படுத்தல் கொடுக்கப்பட்ட."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "%s ள் %s சேர்க்கப்பட்டது ஒருங்கிணைப்பாளர் உரிமைகள்."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "%s %s நீக்கப்பட்ட ஒருங்கிணைப்பாளர் உரிமைகள்."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "ஒருங்கிணைப்பாளர் உரிமைகள் சேர்"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "ஒருங்கிணைப்பாளர் உரிமைகள் நீக்க"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "ஒரு பயனர் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "பயனர் %s %s சேர்க்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "angeltype பயனர் சேர்"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "நீங்கள் ஏற்கனவே ஒரு %s ள் உள்ளன."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "%s சேர்ந்தார்."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "ஒரு%s ள் ஆக"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"நீங்கள் ஒரு ஓட்டுநர் உரிமம் தேவை ஒரு angeltype சேர்ந்தார். இங்கே உங்கள் ஓட்டுநர் உரிமம் "
+"விவரத்தைத் திருத்தவும்%s:."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "உரிமம் தகவல் ஓட்டுநர்"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "குறைந்தது ஒரு ஓட்டுநர் உரிமம் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "உங்கள் இயக்கி உரிமம் தகவல் நீக்கப்பட்டுள்ளது."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "உங்கள் இயக்கி உரிமம் தகவல் சேமிக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "திருத்த%s ள் ஓட்டுநர் உரிமம் தகவல்"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "தயவு செய்து வவுச்சர்கள் சரியான எண்ணை உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "வவுச்சர்கள் எண் சேமிக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "%s's vouchers"
+msgstr "%s இன் உறுதி சீட்டு"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
+msgid "User not found."
+msgstr "பயனர் காணப்படவில்லை."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
+msgid "All users"
+msgstr "அனைத்து பயனாளர்கள்"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
+msgid "Token is not correct."
+msgstr "டோக்கன் தவறானது."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:93
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "உங்கள் கடவுச்சொல் பொருத்தமாக இல்லை."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr ""
+"உங்கள் கடவுச்சொல் (குறைந்தது 6 எழுத்துக்கள் பயன்படுத்த தயவு செய்து) குறுகிய உள்ளது."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
+msgid "Password could not be updated."
+msgstr "கடவுச்சொல் ஏற்ற முடியவில்லை."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "கடவுச்சொல் சேமிக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:63
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "E-mail முகவரி சரியானது அல்ல."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:67
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "தயவு செய்து உங்கள் மின்னஞ்சல் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
+msgid "Password recovery"
+msgstr "கடவுச்சொல் மீட்பு"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "உங்கள் கடவுச்சொல்லை மீட்க% கள் பார்வையிடவும்."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
+msgid "We sent an email containing your password recovery link."
+msgstr "நாம் உங்கள் கடவுச்சொல்லை மீட்பு இணைப்பை கொண்ட ஒரு மின்னஞ்சல் அனுப்பினார்."
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "அதிக% கள்,"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "இங்கே engelsystem உங்களுக்கு ஒரு செய்தி:"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"இந்த மின்னஞ்சல் autogenerated மற்றும் ஒப்பந்தம் வேண்டும் இல்லை. நீங்கள் engelsystem பதிவு "
+"என்பதால் இந்த மின்னஞ்சல் வந்தது."
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "நீங்கள் பதியப்பட்டுள்ளதோடு மாற்றம் மாறிவிட்டது:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* ஷிப்ட் வகை%s%s மாற்றம்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "* ஷிப்ட் தலைப்பு%s%s மாற்றம்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "* ஷிப்ட் தொடக்க%s%s மாற்றம்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "* ஷிப்ட் முடிவு%s%s மாற்றம்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "* ஷிப்ட் இடம்%s%s மாற்றம்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "மேம்படுத்தப்பட்டது ஷிப்ட்:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "உங்கள் மாற்றத்தை மாறிவிட்டது"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "நீங்கள் நீக்கப்பட்டது பதியப்பட்டுள்ளதோடு மாற்றம்:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "உங்கள் மாற்றத்தை நீக்கப்பட்டது"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "நீங்கள் ஒரு ஷிப்ட் ஒதுக்கப்படும்:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "Shift ஒதுக்கப்படும்"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "நீங்கள் ஒரு ஷிப்ட் இருந்து அகற்றப்பட்டன:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "ஷிப்ட் இருந்து நீக்கப்பட்ட"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "செயலில் தேவதைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr ""
+"குறைந்தது %sள் தேவதூதர்கள் சுறுசுறுப்பாக இருக்க வேண்டிய கட்டாயத்தில் உள்ளனர். பெரிய "
+"எண்ணாக இருக்க வேண்டும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr "எண்ணற்ற தேவதூதர்கள் செயலில் குறிக்கப்படும் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "அடையாளமிட்ட தேவதைகள்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
+#: /var/www/html/engelsystem/includes/view/User_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "பின்செல்﻿"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "யாகூ!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "ஏஞ்சல் செயலில் குறிக்கப்பட்டுள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "ஏஞ்சல் இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "ஏஞ்சல் செயலில் இல்லை என்று குறிக்கப்பட்டுள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "ஏஞ்சல் ஒரு சட்டை கிடைத்தது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "ஏஞ்சல் எந்த சட்டை கிடைத்தது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
+msgid "set active"
+msgstr "செயலில் அமைக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "செயலில் நீக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
+msgid "got t-shirt"
+msgstr "கிடைத்தது சட்டை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
+msgid "remove t-shirt"
+msgstr "சட்டை நீக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
+msgid "Sum"
+msgstr "தொகை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:167
+msgid "Search angel:"
+msgstr "தேடல் தேவதை:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "அனைத்து ஷிப்டுகளில் காட்டு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:25
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "தேடு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "எவ்வளவு தேவதூதர்கள் செயலில் இருக்க வேண்டும்?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "முன்னோட்ட"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:177
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "புனைப்பெயர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:178
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "அளவு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:179
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "ஷிப்டுகளில்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "நீளம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:181
+msgid "Active?"
+msgstr "செயலில்?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "கட்டாய"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
+msgid "T-shirt?"
+msgstr "சட்டை?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
+msgid "Shirt statistics"
+msgstr "சட்டை புள்ளி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "தேவைப்படும் சட்டைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
+msgid "Given shirts"
+msgstr "கொடுக்கப்பட்ட சட்டைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "வந்துசேர்ந்தார் தேவதைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "மீட்டமைப்பு முடிந்தது. ஏஞ்சல் வரவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "வந்திறங்கியதும் ஏஞ்சல் என்று குறிக்கப்பட்டுள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "ஆம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "மீட்டமைக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
+msgid "arrived"
+msgstr "வந்து"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "திட்டமிட்ட வருகையை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "வந்துவிட்டனர்?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "வந்தடையும் தேதி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "திட்டமிட்டபடி புறப்படுவதற்கு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "திட்டமிட்ட வருகையை புள்ளி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "வந்து தொகை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:27
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
+msgid "Date"
+msgstr "தேதி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "எண்ண"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "வருகை புள்ளிவிவரங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "திட்டமிட்டபடி புறப்படுவதற்கு புள்ளி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "இலவச தேவதைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:74
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "Angeltype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "மட்டுமே உறுதி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:85
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:181
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:312
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:168
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
+msgid "Nick"
+msgstr "நிக்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:87
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:210
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
+msgid "DECT"
+msgstr "டெக்ட்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:88
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:219
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "ஜாபர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:89
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:184
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
+msgid "E-Mail"
+msgstr "மின்னஞ்சல்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "Grouprights"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:145
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
+msgid "Name"
+msgstr "பெயர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "சிறப்புரிமைகளும்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:32
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:106
+#: /var/www/html/engelsystem/includes/pages/user_news.php:160
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:183
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:192
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:197
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:202
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "சேமி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "குழுவைத் திருத்து"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:4
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+msgid "Frab import"
+msgstr "Frab இறக்குமதி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr "வெப்சர்வர் இறக்குமதி அடைவு எந்த எழுத அனுமதி உள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:50
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:114
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:191
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "தயவு செய்து ஒரு மாற்றத்தை வகையை தேர்வு செய்யவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:57
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:121
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr "தயவு செய்து ஒரு பேச்சு தொடங்க சேர்க்க நிமிடங்கள் ஒரு அளவு உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:128
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr "தயவு செய்து ஒரு பேச்சு இறுதியில் சேர்க்க நிமிடங்கள் ஒரு அளவு உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "இல்லை சரியான XML / xcal கோப்பை வழங்கப்படுகிறது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "கோப்பு பதிவேற்ற தவறு நடந்துவிட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "சில தரவு வழங்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "கோப்பு பதிவேற்றம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "சரிபார்த்தல்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:175
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "இறக்குமதி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"இந்த இறக்குமதி உருவாக்க / புதுப்பிக்க / கொடுக்கப்பட்ட FRAB-ஏற்றுமதி கோப்பு அறைகளில் "
+"மற்றும் மாற்றங்கள் நீக்கும். தேவை கோப்பு வடிவம் xcal உள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:94
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "Shifttype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "தொடங்க நிமிடங்கள் சேர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "முடிவுக்கு நிமிடங்கள் சேர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "xcal-கோப்பு (.xcal)"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:107
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "இறக்குமதி கோப்பு காணவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "மனை உருவாக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "மனை நீக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "உருவாக்க மாற்றங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:150
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:168
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
+msgid "Day"
+msgstr "நாள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:151
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "தொடக்கம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:152
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:161
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "முடிவு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:153
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "ஷிப்ட் வகை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:172
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:302
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "அறை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "புதுப்பிக்க மாற்றங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "நீக்க வேண்டிய மாற்றங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "அது முடிந்துவிட்டது!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "புகுபதிகை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "செய்தி நுழைவு திருத்து"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr ""
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:29
+#: /var/www/html/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "பொருள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:30
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
+#: /var/www/html/engelsystem/includes/pages/user_news.php:105
+#: /var/www/html/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "செய்தி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:31
+#: /var/www/html/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "சந்தித்தல்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
+msgid "Delete"
+msgstr "அழி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "செய்திகள் நுழைவு மேம்படுத்தப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "செய்தி உள்ளீடு நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "பதில் கேள்விகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "பதிலளிக்கப்படாத கேள்விகள் உள்ளன!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "பதிலளிக்கப்படாத கேள்விகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "தமிழ் புகார் கடிதம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:19
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "கேள்வி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "பதில்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "பதிலளிக்கப்பட்ட கேள்விகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "பதில் அளித்தவர்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "மனை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "தயவு செய்து வகை%s தேவை தேவதைகள் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
+msgid "Room saved."
+msgstr "அறை சேமிக்கப்படும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
+msgid "Public"
+msgstr "பொது"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "அறை எண்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Needed angels:"
+msgstr "தேவைப்படும் தேவதூதர்கள்:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
+#, php-format
+msgid "Room %s deleted."
+msgstr "அறை%s நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
+#, php-format
+msgid "Do you want to delete room %s?"
+msgstr "நீங்கள் அறையில்%s ஐ நீக்க வேண்டும் என்று விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
+msgid "add"
+msgstr "AcademicYearCode உள்ளிடவும்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
+msgid "Create shifts"
+msgstr "பணிநேரங்களை உருவாக்க"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
+msgid "Please select a location."
+msgstr "ஒரு இடம் தேர்வு செய்க."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
+msgid "Please select a start time."
+msgstr "ஒரு தொடக்க நேரம் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
+msgid "Please select an end time."
+msgstr "ஒரு இறுதி நேரம் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
+msgid "The shifts end has to be after its start."
+msgstr "ஷிப்டுகளில் இறுதியில் அதன் தொடக்கத்தில் பின்னர் இருக்க வேண்டும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
+msgid "Please enter a shift duration in minutes."
+msgstr "தயவு செய்து நிமிடங்கள் ஒரு மாற்றத்தை கால உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
+msgid "Please split the shift-change hours by colons."
+msgstr "குடியை மாற்றம்-மாற்றம் மணி பிரிக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
+msgid "Please select a mode."
+msgstr "ஒரு முறை தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
+#, php-format
+msgid "Please check the needed angels for team %s."
+msgstr "அணி%s தேவை தேவதைகள் சரிபார்க்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
+msgid "There are 0 angels needed. Please enter the amounts of needed angels."
+msgstr "தேவை 0 தேவதைகள் உள்ளன. தயவு செய்து தேவை தேவதூதர்கள் அளவு நுழைய."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
+msgid "Please select a mode for needed angels."
+msgstr "தேவை தேவதைகள் ஒரு முறை தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
+msgid "Please select needed angels."
+msgstr "தேவை தேவதைகள் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
+msgid "Time and location"
+msgstr "நேரம் மற்றும் இடம்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
+msgid "Type and title"
+msgstr "வகை மற்றும் தலைப்பு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
+msgid "Needed angels"
+msgstr "தேவைப்படும் தேவதைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
+msgid "Mode"
+msgstr "முறை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
+msgid "Create one shift"
+msgstr "ஒரு ஷிப்ட் உருவாக்கு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
+msgid "Create multiple shifts"
+msgstr "பல ஷிப்டுகளில் உருவாக்கு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
+msgid "Create multiple shifts with variable length"
+msgstr "மாறி நீளம் பல ஷிப்டுகளில் உருவாக்கு"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
+msgid "Shift change hours"
+msgstr "ஷிப்ட் மாற்றம் மணி"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
+msgid "Take needed angels from room settings"
+msgstr "அறையில் அமைப்புகள் இருந்து தேவையான தேவதைகள் எடுத்து"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
+msgid "The following angels are needed"
+msgstr "பின்வரும் தேவதைகள் தேவை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:4
+msgid "All Angels"
+msgstr "அனைத்து ஏஞ்சல்ஸ்"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
+msgid "This user does not exist."
+msgstr "இந்த பயனர் இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:41
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:185
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:178
+msgid "Please send me an email if my shifts change"
+msgstr "என் ஷிப்டுகளில் மாற்ற என்றால் எனக்கு ஒரு மின்னஞ்சல் அனுப்ப தயவு செய்து"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:60
+msgid "Force active"
+msgstr "செயலில் படை"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:79
+msgid ""
+"Please visit the angeltypes page or the users profile to manage users "
+"angeltypes."
+msgstr ""
+"angeltypes பக்கம் பார்க்க அல்லது பயனர்கள் angeltypes நிர்வகிக்க சுயவிவர கொள்ளவும்."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
+msgid "Edit user"
+msgstr "பயனர் திருத்து"
+
+#: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
+msgid "Credits"
+msgstr "கடன்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:4
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:314
+msgid "Login"
+msgstr "உள் நுழை"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:8
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:240
+msgid "Register"
+msgstr "பதிவு"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:12
+msgid "Logout"
+msgstr "வெளியேறு"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:52
+#, php-format
+msgid "Your nick &quot;%s&quot; already exists."
+msgstr "உங்கள் நிக் \"%s\" ஏற்கனவே உள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:56
+#, php-format
+msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
+msgstr "உங்கள் நிக் \"%s\" பதில் மிகவும் குறுகியதாக உள்ளது (நிமிடம். 2 எழுத்துக்கள்)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:77
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:50
+msgid "Please check your jabber account information."
+msgstr "உங்கள் உளறு கணக்கு தகவல் சரிபார்க்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:86
+msgid "Please select your shirt size."
+msgstr "உங்கள் சட்டை அளவு தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:97
+#, php-format
+msgid "Your password is too short (please use at least %s characters)."
+msgstr ""
+"உங்கள் கடவுச்சொல் மிகவும் சிறியதாக உள்ளது (குறைந்தபட்சம்%s எழுத்துக்கள் பயன்படுத்த தயவு "
+"செய்து)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:104
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:64
+msgid "Please enter your planned date of arrival."
+msgstr "தயவு செய்து வருகையை உங்கள் திட்டமிட்ட தேதியில் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:166
+msgid "Angel registration successful!"
+msgstr "ஏஞ்சல் பதிவு வெற்றிகரமான!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:173
+msgid ""
+"By completing this form you're registering as a Chaos-Angel. This script "
+"will create you an account in the angel task sheduler."
+msgstr ""
+"இந்த படிவத்தை பூர்த்தி மூலம் நீங்கள் ஒரு கேயாஸ்-ஏஞ்சல் போன்ற பதிவு வருகிறோம். இந்த "
+"ஸ்கிரிப்டை நீங்கள் தேவதை பணி sheduler ஒரு கணக்கை உருவாக்க வேண்டும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:190
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:171
+msgid "Planned date of arrival"
+msgstr "வருகையை, திட்டமிடப்பட்டுள்ள"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:193
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:181
+msgid "Shirt size"
+msgstr "சட்டை அளவு"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:198
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:313
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:201
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
+msgid "Confirm password"
+msgstr "பாஸ்வேர்டை உறுதி"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "What do you want to do?"
+msgstr "நீங்கள் என்ன செய்ய வேண்டும் என்று விரும்புகிறீர்கள்?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "Description of job types"
+msgstr "வேலை வகையான விளக்கம்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:205
+msgid ""
+"Restricted angel types need will be confirmed later by an archangel. You can "
+"change your selection in the options section."
+msgstr ""
+"வரம்பிட்டுள்ளனர் தேவதை வகையான ஒரு தேவதூதர் மூலம் பின்னர் உறுதி வேண்டும் துள்ளனர். நீங்கள் "
+"விருப்பங்கள் பிரிவில் உங்கள் தேர்வை மாற்ற முடியும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:213
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:176
+msgid "Mobile"
+msgstr "மொபைல்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:216
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:174
+msgid "Phone"
+msgstr "தொலைபேசி"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:222
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:170
+msgid "First name"
+msgstr "முதல் பெயர்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:225
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:169
+msgid "Last name"
+msgstr "கடைசி பெயர்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:230
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:173
+msgid "Age"
+msgstr "வயது"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:233
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:180
+msgid "Hometown"
+msgstr "சொந்த ஊர்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:236
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:167
+msgid "Entry required!"
+msgstr "பதிவுத் தேவை!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "உங்கள் கடவுச்சொல் தவறானது. அது மீண்டும் முயற்சிக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:276
+msgid "Please enter a password."
+msgstr "கடவுச்சொல்லை உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:280
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr ""
+"இல்லை பயனர் என்று புனைப்பெயர் கண்டெடுக்கப்பட்டார். தயவு செய்து மீண்டும் முயற்சிக்கவும். நீங்கள் "
+"இன்னும் சிக்கல் இருந்தால், ஒரு அனுப்புனர் கேட்க."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:284
+msgid "Please enter a nickname."
+msgstr "உள்ளிடுக."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:297
+msgid "Please sign up, if you want to help us!"
+msgstr "நீங்கள் எங்களுக்கு உதவ வேண்டும் என்றால், பதிவு செய்க!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:304
+msgid "Registration is disabled."
+msgstr "பதிவு முடக்கப்பட்டுள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:316
+msgid "I forgot my password"
+msgstr "என் கடவு சொல்லை மறந்து விட்டேன்"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:318
+msgid "Please note: You have to activate cookies!"
+msgstr "தயவு செய்து கவனிக்க: நீங்கள் குக்கீகளை செயல்படுத்த வேண்டும்!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:324
+msgid "What can I do?"
+msgstr "நான் என்ன செய்ய முடியும்?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:325
+msgid "Please read about the jobs you can do to help us."
+msgstr "நீங்கள் எங்களுக்கு உதவி செய்ய முடியும் வேலைகள் பற்றி படிக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
+msgid "Messages"
+msgstr "செய்திகள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
+msgid "Select recipient..."
+msgstr "பெறுநர் தேர்வு ..."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
+#: /var/www/html/engelsystem/includes/pages/user_news.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:92
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:16
+msgid "Unable to load user."
+msgstr "பயனர் ஏற்ற முடியவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
+msgid "mark as read"
+msgstr "படித்ததாக குறியிடு"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
+msgid "delete message"
+msgstr "செய்தியை நீக்க"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
+#, php-format
+msgid "Hello %s, here can you leave messages for other angels"
+msgstr "வணக்கம்%s, இங்கே நீங்கள் மற்ற வானவர்கள் செய்திகளிட"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
+msgid "New"
+msgstr "புதிய"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+msgid "Transmitted"
+msgstr "கடத்தப்படும்"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
+msgid "Recipient"
+msgstr "பெறுநரின்"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
+msgid "Incomplete call, missing Message ID."
+msgstr "முழுமையற்ற அழைப்பு, காணாமல் செய்தி ஐடி."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
+msgid "No Message found."
+msgstr "இல்லை செய்தி காணப்படவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "கடத்தும் ஒரு பிழை நீக்கம் செய்யப்பட்டார்."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:118
+msgid "Wrong action."
+msgstr "தவறான நடவடிக்கை."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "My shifts"
+msgstr "என் ஷிப்டுகளில்"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
+msgid "Key changed."
+msgstr "விசை மாற்றப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
+msgid "Reset API key"
+msgstr "மீட்டமை API விசை"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"நீங்கள் உங்கள் iCal- மற்றும் JSON-ஏற்றுமதி மற்றும் உங்கள் ஃபீட் மாற்றங்கள் முக்கிய, URL "
+"மீட்டமைத்தால்! நீங்கள் இந்த ஏற்றுமதிகளை ஒன்றை பயன்படுத்தி ஒவ்வொரு பயன்பாட்டில் அதை மேம்படுத்த "
+"வேண்டும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
+msgid "Continue"
+msgstr "தொடர்ந்து"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
+msgid "Shift saved."
+msgstr "ஷிப்ட் சேமிக்கப்படும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
+msgid "Shift canceled."
+msgstr "ஷிப்ட் ரத்து."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr ""
+"அதை மாற்ற உங்களை கையெழுத்திட நேரமாகிவிட்டது. neccessary என்றால், அவ்வாறு செய்ய "
+"அனுப்புனர் கேட்க."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:3
+msgid "News comments"
+msgstr "செய்தி கருத்துகள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:7
+msgid "News"
+msgstr "செய்தி"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:11
+msgid "Meetings"
+msgstr "கூட்டங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:66
+msgid "Comments"
+msgstr "கருத்துரைகள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:83
+#: /var/www/html/engelsystem/includes/pages/user_news.php:126
+msgid "Entry saved."
+msgstr "நுழைவு சேமிக்கப்படும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:103
+msgid "New Comment:"
+msgstr "புதிய கருத்து:"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:110
+msgid "Invalid request."
+msgstr "தவறான கோரிக்கை."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:154
+msgid "Create news:"
+msgstr "செய்தி உருவாக்க:"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:3
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:29
+msgid "Ask an archangel"
+msgstr "ஒரு தேவதூதர் கேளுங்கள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:28
+msgid "Unable to save question."
+msgstr "கேள்வி சேமிக்க முடியவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:29
+msgid "You question was saved."
+msgstr "நீங்கள் காப்பாற்றப்பட்டது கேள்வி."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:33
+msgid "Please enter a question!"
+msgstr "தயவுசெய்து ஒரு கேள்வியை உள்ளிடவும்!"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:40
+msgid "Incomplete call, missing Question ID."
+msgstr "முழுமையற்ற அழைப்பு, காணாமல் கேள்வி ஐடி."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:48
+msgid "No question found."
+msgstr "எந்த கேள்வி காணப்படும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
+msgid "Settings"
+msgstr "அமைப்புகள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:72
+msgid "Please enter your planned date of departure."
+msgstr "தயவு செய்து புறப்படும் உங்கள் திட்டமிட்ட தேதியில் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:112
+msgid "Settings saved."
+msgstr "அமைப்புகள் சேமிக்கப்படும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:119
+msgid "-> not OK. Please try again."
+msgstr "-> சரி இல்லை. தயவு செய்து மீண்டும் முயற்சிக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:127
+msgid "Failed setting password."
+msgstr "கடவுச்சொல்லை அமைக்க முடியவில்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:140
+msgid "Theme changed."
+msgstr "தீம் மாற்றப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:166
+msgid "Here you can change your user details."
+msgstr "இங்கே நீங்கள் உங்கள் பயனர் விவரங்களை மாற்ற முடியும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:172
+msgid "Planned date of departure"
+msgstr "புறப்படும் திட்டமிட்ட தேதியில்"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:182
+msgid "Please visit the angeltypes page to manage your angeltypes."
+msgstr "உங்கள் angeltypes நிர்வகிக்க angeltypes பக்கத்தைப் பார்வையிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:188
+msgid "Here you can change your password."
+msgstr "இங்கே நீங்கள் உங்கள் கடவுச்சொல்லை மாற்ற முடியும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:189
+msgid "Old password:"
+msgstr "பழைய கடவுச்சொல்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:190
+msgid "New password:"
+msgstr "புதிய கடவுச்சொல்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:191
+msgid "Password confirmation:"
+msgstr "கடவுச்சொல் உறுதிப்படுத்தல்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:195
+msgid "Here you can choose your color settings:"
+msgstr "இங்கே நீங்கள் உங்கள் வண்ண அமைப்புகள் தேர்வு செய்யலாம்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:196
+msgid "Color settings:"
+msgstr "வண்ண அமைப்புகள்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:200
+msgid "Here you can choose your language:"
+msgstr "இங்கே நீங்கள் உங்கள் மொழி தேர்வு செய்யலாம்:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:201
+msgid "Language:"
+msgstr "மொழி:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
+msgid "Shift entry deleted."
+msgstr "ஷிப்ட் உள்ளீடு நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
+msgid "Entry not found."
+msgstr "நுழைவு இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
+msgid "Please select a room."
+msgstr "ஒரு அறையில் தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
+msgid "Please select a shifttype."
+msgstr "ஒரு shifttype தேர்ந்தெடுக்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
+msgid "Please enter a valid starting time for the shifts."
+msgstr "தயவு செய்து மாற்றங்கள் சரியான தொடக்க நேரத்தைக் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
+msgid "Please enter a valid ending time for the shifts."
+msgstr "தயவு செய்து மாற்றங்கள் சரியான முடிவு நேரம் உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
+msgid "The ending time has to be after the starting time."
+msgstr "முடிவுக்கு நேரம் தொடங்கி நேரம் கழித்து இருக்க வேண்டும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
+#, php-format
+msgid "Please check your input for needed angels of type %s."
+msgstr "வகை% கள் தேவை தூதர்களுக்காகவும் சரிபார்க்கவும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
+msgid "Shift updated."
+msgstr "ஷிப்ட் மேம்படுத்தப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
+msgid "This page is much more comfortable with javascript."
+msgstr "இப்பக்கம் மிகவும் வசதியாக JavaScript கொண்டு உள்ளது."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
+msgid "Room:"
+msgstr "அறை:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
+msgid "Start:"
+msgstr "தொடக்கம்"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
+msgid "End:"
+msgstr "முடிவு:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
+msgid "Shift deleted."
+msgstr "ஷிப்ட் நீக்கப்பட்டது."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
+#, php-format
+msgid "Do you want to delete the shift %s from %s to %s?"
+msgstr "நீங்கள் மாற்றத்தை%%s s இல்%s நீக்க விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr ""
+"இந்த மாற்றத்தை பதிவு செய்ய அனுமதி இல்லை. ஒருவேளை மாற்றம் முழு அல்லது ஏற்கனவே இயங்கும்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "You are subscribed. Thank you!"
+msgstr "குழு சேர்ந்துள்ளீர்கள். நன்றி!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
+msgid "Freeloader"
+msgstr "மற்றவரின் விருந்தாளியாக"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
+msgid "The administration has not configured any shifts yet."
+msgstr "நிர்வாகம் இதுவரை எந்த ஷிப்டுகளில் கட்டமைக்கப்பட்ட இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
+msgid "The administration has not configured any rooms yet."
+msgstr "நிர்வாகம் இதுவரை எந்த அறைகள் கட்டமைக்கப்பட்ட இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
+msgid "occupied"
+msgstr "ஆக்கிரமிக்கப்பட்ட"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
+msgid "free"
+msgstr "இலவச"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
+msgid ""
+"The administration has not configured any angeltypes yet - or you are not "
+"subscribed to any angeltype."
+msgstr ""
+"நிர்வாகம் இதுவரை எந்த angeltypes கட்டமைக்கப்பட்ட இல்லை - அல்லது நீங்கள் எந்த angeltype "
+"சந்தாதாரர் இல்லை."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
+#, php-format
+msgid "%d helper needed"
+msgid_plural "%d helpers needed"
+msgstr[0] "%d உதவி செய்பவனும் தேவை"
+msgstr[1] "%d உதவி செய்பவனும் தேவை"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
+msgid "Sign up"
+msgstr "பதிவு"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
+msgid "ended"
+msgstr "முடிந்தது"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
+#, php-format
+msgid "Become %s"
+msgstr "%s ள் ஆக"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
+msgid "Add more angels"
+msgstr "மேலும் தேவதூதர்கள் சேர்"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
+msgid "Time"
+msgstr "பத்தி"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
+msgid "Entries"
+msgstr "பதிவுகள்"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
+msgid "Occupancy"
+msgstr "ஆக்யுபெந்ஸீ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr ""
+"இங்கு காட்டப்பட்டுள்ள பணிகளை நீங்கள் உங்கள் அமைப்புகளை வரையறுக்கப்பட்ட விருப்பங்களை "
+"பாதிக்கின்றன என்று!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid "Description of the jobs."
+msgstr "வேலைகள் விளக்கம்."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
+msgid "Use new style if possible"
+msgstr "முடிந்தால் புதிய பாணி பயன்படுத்தவும்"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+msgid "iCal export"
+msgstr "அடுத்த மாதம் ஏற்றுமதி"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+#, php-format
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"காட்டப்பட்டுள்ளது ஷிப்டுகளில். ஏற்றுமதி <a href=\"%s\">iCal வடிவத்தில்</a> அல்லது <a "
+"href=\"%s\">JSON வடிவம்</a> கிடைக்கும் (இல்லையெனில், இரகசிய வைத்து, தயவு செய்து <a "
+"href=\"%s\">API விசை மீட்டமைக்க</a> )."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
+msgid "Filter"
+msgstr "வடிகட்டி"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
+msgid "All"
+msgstr "விக்கிப்பீடியா:தமிழ்த் தட்டச்சு"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
+msgid "None"
+msgstr "யாரும்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
+msgid "Unconfirmed"
+msgstr "உறுதிப்படுத்தப்படாத"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
+msgid "Coordinator"
+msgstr "ஒருங்கிணைப்பாளர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
+msgid "Member"
+msgstr "உறுப்பினர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
+#, php-format
+msgid "Do you want to delete angeltype %s?"
+msgstr "நீங்கள் angeltype%s ஐ நீக்க விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:7
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:18
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:40
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
+msgid "cancel"
+msgstr "ரத்து"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
+msgid "Restricted"
+msgstr "வரம்பிட்டுள்ளனர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Yes"
+msgstr "ஆம்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "No"
+msgstr "எண்."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Requires driver license"
+msgstr "இயக்கி உரிமம் தேவைப்படுகிறது"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
+msgid ""
+"Restricted angel types can only be used by an angel if enabled by an "
+"archangel (double opt-in)."
+msgstr ""
+"ஒரு தேவதூதர் (இரட்டை விலகல்) மூலம் செயல்படுத்தப்படும் என்றால் வரம்பிட்டுள்ளனர் தேவதை "
+"வகையான ஒரு வானவர் மட்டும் பயன்படுத்த முடியும்."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
+msgid "Please use markdown for the description."
+msgstr "விளக்கம் Markdown பயன்படுத்தவும்."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
+msgid "my driving license"
+msgstr "என் ஓட்டுநர் உரிமம்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
+msgid ""
+"This angeltype requires a driver license. Please enter your driver license "
+"information!"
+msgstr ""
+"இந்த angeltype ஒரு இயக்கி உரிமம் தேவைப்படுகிறது. தயவு செய்து உங்கள் இயக்கி உரிமம் "
+"தகவல் நுழைய!"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
+#, php-format
+msgid ""
+"You are unconfirmed for this angeltype. Please go to the introduction for %s "
+"to get confirmed."
+msgstr ""
+"நீங்கள் இந்த angeltype க்கான இன்னும் உறுதி செய்யப்படவில்லை. ஐந்து% கள் உறுதி செய்துகொள்ள "
+"அறிமுகம் செல்க."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
+msgid "confirm"
+msgstr "உறுதி"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
+msgid "deny"
+msgstr "மறுக்க"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
+msgid "remove"
+msgstr "நீக்க"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
+msgid "Driver"
+msgstr "டிரைவர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
+msgid "Has car"
+msgstr "கார் உள்ளது"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
+msgid "Car"
+msgstr "தானுந்து"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
+msgid "3,5t Transporter"
+msgstr "3,5t இடமாற்றி"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
+msgid "7,5t Truck"
+msgstr "7,5t டிரக்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
+msgid "12,5t Truck"
+msgstr "12,5t டிரக்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
+msgid "Forklift"
+msgstr "ஃபோர்க்லிஃப்ட்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
+msgid "Coordinators"
+msgstr "ஒருங்கிணைப்பாளர்கள்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
+msgid "Members"
+msgstr "உறுப்பினர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
+msgid "Add"
+msgstr "கூட்டு"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
+msgid "confirm all"
+msgstr "அனைத்து உறுதி"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
+msgid "deny all"
+msgstr "அனைத்து மறுக்க"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
+msgid "New angeltype"
+msgstr "புதிய angeltype"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
+msgid "Membership"
+msgstr "உறுப்பினர்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
+msgid "FAQ"
+msgstr "கேள்விகள்"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr ""
+"இங்கே அணிகள் தங்கள் பணிகளை பட்டியலில் உள்ளது. நீங்கள் கேள்விகள் இருந்தால், கேள்விகள் வாசிக்க."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
+msgid ""
+"This angeltype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr ""
+"இந்த angeltype இரட்டை விருப்பத்துக்குறியவை மூலம் கட்டுப்படுத்தலாம் ஒரு குழு "
+"ஒருங்கிணைப்பாளர் உள்ளது. படி அறிமுகம் கூட்டங்களில் வரை தயவு செய்து காட்டுங்கள்."
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:17
+msgid "Open questions"
+msgstr "திறந்த கேள்விகள்"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:31
+msgid "Your Question:"
+msgstr "உங்கள் கேள்வி:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
+msgid "Freeloaded"
+msgstr "Freeloaded"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
+msgid "Freeload comment (Only for shift coordination):"
+msgstr "(மட்டும் மாற்றம் ஒருங்கிணைப்பு) கருத்து தடையற்ற:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
+msgid "Edit shift entry"
+msgstr "திருத்த மாற்றம் நுழைவு"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "தேவதூதர்"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
+msgid "Date, Duration:"
+msgstr "தேதி, நேரம்:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
+msgid "Location:"
+msgstr "இடம்:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
+msgid "Title:"
+msgstr "தலைப்பு:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
+msgid "Type:"
+msgstr "வகை:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
+msgid "Comment (for your eyes only):"
+msgstr "(உங்கள் கண்களுக்கு மட்டுமே) கருத்து:"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "%s ள் மூலம் %s இல் உருவாக்கப்பட்ட"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
+#, php-format
+msgid "edited at %s by %s"
+msgstr "%s ள் மூலம்%s இல் திருத்தப்பட்ட"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
+msgid "This shift collides with one of your shifts."
+msgstr "இந்த மாற்றம் உங்கள் மாற்றங்களில் ஒன்றின் மீது மோதுகிறது."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
+msgid "You are signed up for this shift."
+msgstr "நீங்கள் இந்த மாற்றத்திற்கான பதிவு செய்துள்ளீர்கள்."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
+msgid "Location"
+msgstr "இடம்"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
+#, php-format
+msgid "Do you want to delete shifttype %s?"
+msgstr "நீங்கள் shifttype%s ஐ நீக்க வேண்டும் என்று விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Edit shifttype"
+msgstr "shifttype திருத்து"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Create shifttype"
+msgstr "shifttype உருவாக்கு"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
+#, php-format
+msgid "for team %s"
+msgstr "அணி%s"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
+msgid "New shifttype"
+msgstr "புதிய shifttype"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:7
+msgid "Please select..."
+msgstr "தயவு செய்து தேர்வு செய்யவும்..."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "வவுச்சர்கள் எண்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
+msgid "m/d/Y h:i a"
+msgstr "d / M / ஒய் H: IA"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
+msgid "New user"
+msgstr "புதிய பயனர்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
+msgid "Prename"
+msgstr "Prename"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Arrived"
+msgstr "வந்துசேர்ந்தது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
+msgid "Voucher"
+msgstr "வவுச்சர்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
+msgid "Freeloads"
+msgstr "Freeloads"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
+msgid "Active"
+msgstr "இயக்கத்தில் ulladhaa"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "டி-சர்ட்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "கடைசி உள்நுழைவு"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:95
+msgid "Free"
+msgstr "இலவச"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
+#, php-format
+msgid "Next shift %c"
+msgstr "அடுத்த மாற்றம்% கேட்ச்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
+#, php-format
+msgid "Shift starts %c"
+msgstr "ஷிப்ட்%c  தொடங்குகிறது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
+#, php-format
+msgid "Shift ends %c"
+msgstr "ஷிப்ட்%c முடிவடைகிறது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
+msgid "sign off"
+msgstr "கையெழுத்திட"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "தொகை:"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:187
+msgid "User state"
+msgstr "பயனர் மாநில"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Arrived at %s"
+msgstr "%s வந்துசேர்ந்தது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Not arrived (Planned: %s)"
+msgstr "வரவில்லை (திட்டமிட்ட:%s)"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Not arrived"
+msgstr "வரவில்லை"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+#, php-format
+msgid "Got %s voucher"
+msgid_plural "Got %s vouchers"
+msgstr[0] "%s ரசீது கிடைத்ததுੀ"
+msgstr[1] "%s ரசீது கிடைத்தது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+msgid "Got no vouchers"
+msgstr "எந்த உறுதி சீட்டு கிடைத்தது"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
+msgid "Rights"
+msgstr "உரிமை"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
+msgid "driving license"
+msgstr "ஓட்டுனர் உரிமம்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "உறுதி சீட்டு திருத்து"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "அடுத்த மாதம் ஏற்றுமதி"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "எஞ்சினியரிங் ஏற்றுமதி"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "பெயர் மற்றும் சக ஊழியர்கள்"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "கருத்து"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "அதிரடி"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "2 மற்றும் 8 இடையே உங்கள் இரவு மாற்றம் இருமுறை எண்ண."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:228
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr ""
+"சென்று <a href=\"%s\">ஷிப்டுகளில் அட்டவணை</a> சில மாற்றங்கள் உங்களை பதிவு செய்ய."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"நாம் ஒரு கடவுச்சொல்லை மீட்பு இணைப்பை உங்களுக்கு ஒரு மின்னஞ்சல் அனுப்ப வேண்டும். நீங்கள் "
+"பதிவு பயன்படுத்தப்படும் மின்னஞ்சல் முகவரியைப் பயன்படுத்தவும்."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
+msgid "Recover"
+msgstr "மீட்டெடு"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
+msgid "Please enter a new password."
+msgstr "ஒரு புதிய கடவுச்சொல்லை உள்ளிடவும்."
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to add coordinator rights for %s to %s?"
+msgstr ""
+"நீங்கள் உண்மையில்% கள்%s ஒருங்கிணைப்பாளர் உரிமைகள் சேர்க்க வேண்டும் என்று விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to remove coordinator rights for %s from %s?"
+msgstr "நீங்கள் உண்மையில் %s %s ஒருங்கிணைப்பாளர் உரிமைகள் நீக்க வேண்டுமா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
+#, php-format
+msgid "Do you really want to deny all users for %s?"
+msgstr "நீங்கள் உண்மையில்%s அனைத்து பயனர்கள் மறுக்க வேண்டும்?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
+#, php-format
+msgid "Do you really want to confirm all users for %s?"
+msgstr "நீங்கள் உண்மையில்%s அனைத்து பயனர் உறுதி செய்ய விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
+#, php-format
+msgid "Do you really want to confirm %s for %s?"
+msgstr "நீங்கள் உண்மையில்%s% கள் உறுதி செய்ய விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
+#, php-format
+msgid "Do you really want to delete %s from %s?"
+msgstr "நீங்கள் உண்மையில்%s%s ஐ நீக்க வேண்டும் என்று விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
+msgid "User"
+msgstr "பயனர்"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
+#, php-format
+msgid "Do you really want to add %s to %s?"
+msgstr "நீங்கள் உண்மையில்%s %s சேர்க்க வேண்டும் என்று விரும்புகிறீர்களா?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
+msgid "save"
+msgstr "சேமிக்க"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
+msgid "Back to profile"
+msgstr "எனது புகைப்படம்"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid "Privacy"
+msgstr "தனியுரிமை"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr "உங்கள் ஓட்டுநர் உரிமம் தகவல் ஒருங்கிணைப்பாளர்கள் மற்றும் நிர்வாகிகள் மட்டுமே தெரியும்."
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
+msgid "I am willing to operate cars for the PL"
+msgstr "நான் பிஎல் கார்கள் செயல்பட தயாராக இருக்கிறேன்"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr ""
+"நான் என் சொந்த கார் மற்றும் பிஎல் அதை பயன்படுத்த (நீங்கள் எரிபொருள் திரும்ப பெற வேண்டும்) "
+"தயாராக இருக்கிறேன்"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
+msgid "Driver license"
+msgstr "வாகன ஒட்டி உரிமம்"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
+msgid "Transporter 3,5t"
+msgstr "இடமாற்றி 3,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
+msgid "Truck 7,5t"
+msgstr "டிரக் 7,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
+msgid "Truck 12,5t"
+msgstr "டிரக் 12,5t"
+
+#: /var/www/html/engelsystem/public/index.php:147
+msgid "No Access"
+msgstr "அணுகா நிலை"
+
+#: /var/www/html/engelsystem/public/index.php:148
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr ""
+"இந்த பக்கத்தை பார்க்க அனுமதி இல்லை. ஒருவேளை நீங்கள் உள்நுழைய அல்லது அணுக வேண்டும், பதிவு "
+"செய்ய வேண்டும்!"
+
+msgid "You have been signed off from the shift."
+msgstr "நீங்கள் மாற்றத்தை ஆஃப் ஒப்பந்தம் செய்யப்பட்டுள்ளனர்."
+
+msgid "planned departure"
+msgstr "திட்டமிட்டபடி புறப்படுவதற்கு"
+
+msgid "Tasks"
+msgstr "பணிகள்"
+
+msgid "User didnt got vouchers."
+msgstr "பயனர் முடியவில்லை உறுதி சீட்டு கிடைத்தது."
+
+msgid "Remove vouchers"
+msgstr "உறுதி சீட்டு நீக்க"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr ""
+"இந்த மாற்றம் இப்போது இயங்கும் அல்லது முன்பே முடிவுக்கு உள்ளது. மாற்றம் சேர ஒரு அனுப்புனர் "
+"தொடர்பு கொள்ளவும்."
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr ""
+"நீங்கள் ஏற்கனவே ஒரே நேரத் மாற்ற சந்தா. மாற்றம் சேர ஒரு அனுப்புனர் தொடர்பு கொள்ளவும்."
+
+msgid "The shift is already full."
+msgstr "மாற்றத்தை ஏற்கனவே நிரம்பியுள்ளது."
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr ""
+"வணக்கம்%s, இங்கே நீங்கள் உங்கள் தனிப்பட்ட அமைப்புகளை அதாவது கடவுச்சொல், வண்ண அமைப்புகள் பல "
+"மாற்ற முடியும்"
+
+msgid "Name/Description:"
+msgstr "பெயர் / விளக்கம்:"
+
+msgid "Timeslot"
+msgstr "ஒதுக்கப்பட்ட நேரம்"
+
+msgid "The first wants to join %s."
+msgstr "முதல்%s சேர வேண்டும் என்று விரும்புகிறார்."
+
+msgid "Groups"
+msgstr "குழுக்கள்"
+
+msgid "ICQ"
+msgstr "ஒரு ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "நீங்கள் இந்த தேவதை வகை உறுதிசெய்யவில்லை."
+
+msgid "Exports"
+msgstr "ஏற்றுமதி"
+
+msgid "Current ends in %s min"
+msgstr "%s நிமிடங்கள் தற்போதைய முனைகளிலும்"
+
+msgid "Add new angeltype"
+msgstr "புதிய angeltype சேர்"
+
+msgid "Language"
+msgstr "மொழி"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "%s புதிய செய்தி வந்துள்ளது."
+msgstr[1] "%s புதிய செய்தி வந்துள்ளது."
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"இந்த உங்கள் மாற்றங்கள் உள்ளன. <br/> உங்கள் மாற்றத்தை தொடங்கும் முன் <b>15 நிமிடங்கள்</b> "
+"தோன்றும் முயற்சி செய்க! <br/> தொடங்கும் முன் நீங்கள்% d மணிநேரம் ஒரு மாற்றத்தை வரை "
+"உங்களை நீக்க முடியும்."
+
+msgid "Page:"
+msgstr "பக்கம்:"
+
+msgid "Message:"
+msgstr "செய்தி:"
+
+msgid "Wakeup"
+msgstr "எழுப்பும் சே"
+
+msgid "Broken date!"
+msgstr "உடைந்த தேதி!"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "முழுமையற்ற அழைப்பு, காணாமல் விழித்துக்கொள்ள ஐடி."
+
+msgid "Wake-up call deleted."
+msgstr "விழித்துக்கொள்ள நீக்கப்பட்டது."
+
+msgid "No wake-up found."
+msgstr "இல்லை விழித்துக்கொள்ள காணப்படும்."
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"வணக்கம்%s, இங்கே நீங்கள் ஒரு விழித்துக்கொள்ள பதிவு செய்யலாம். தேவதை நீ எழுப்ப வர வேண்டும், "
+"அங்கு வெறுமனே சொல்லும் போது மற்றும்."
+
+msgid "All ordered wake-up calls, next first."
+msgstr "அனைத்து உத்தரவிட்டார் எழுப்பும் அழைப்பு அடுத்த முதல்,."
+
+msgid "Place"
+msgstr "இடம்"
+
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+msgid "Schedule a new wake-up here:"
+msgstr "இங்கே ஒரு புதிய விழித்துக்கொள்ள அட்டவணை:"
+
+msgid "User %s confirmed as %s."
+msgstr "பயனர்%s%s என உறுதி."
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr ""
+"எதிர்ப்பும் பயனற்றது! உங்கள் உயிரியல் மற்றும் உடல் அளவுருக்கள் எங்கள் collectiv சேர்க்க "
+"வேண்டும்! தேவதை உள்வாங்கிய:"
+
+msgid "Confirmed all."
+msgstr "அனைத்து உறுதி."
+
+msgid "asdf"
+msgstr "asdf"

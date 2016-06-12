@@ -1,0 +1,2482 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem\n"
+"POT-Creation-Date: 2016-05-13 12:45+0100\n"
+"PO-Revision-Date: 2016-05-16 14:01+0530\n"
+"Last-Translator: \n"
+"Language-Team: FOSSASIA <dishant.khanna1807@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr "请给我们一种感觉拆解能力为您设置页上输入您计划离港日期。"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr "你掏钱至少 %s 转移。转变注册处于锁定状态。请到天上台再次被解锁。"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"你不标记为到达。请走到天堂的办公桌上，让你的天使徽章和 （或） 告诉他们你已经"
+"到达。"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "您需要在您的设置中指定 t 恤大小 ！"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"你需要在你的设置来指定一个DECT电话号码！如果你没有一个DECT电话，只需输入“ - "
+"”。"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "联系"
+
+#: /var/www/html/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "没有数据"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
+msgid "Angeltypes"
+msgstr "Angeltypes"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:327
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "团队/职位描述"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "Angeltype％S删除。"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "删除angeltype％S"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "请检查该名称。也许它已经存在。"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "团队％S"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
+msgid "view"
+msgstr "查看更多"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:23
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:18
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:91
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
+msgid "edit"
+msgstr "编辑"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:5
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:12
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:78
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "删除"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "离开"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "加入"
+
+#: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "变化可能不会被发现。"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "Shifttype％S删除。"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "删除shifttype％S"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "Shifttype没有找到。"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
+msgid "Please enter a name."
+msgstr "请输入一个名称."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "更新shifttype。"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "创建shifttype。"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "Shifttypes"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "有％d个未经证实的angeltype。"
+msgstr[1] "有％d个未经证实的angeltypes."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "这就需要审批天使类型："
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Angeltype不存在。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "你不允许删除所有的用户此angeltype。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "拒绝所有用户angeltype％S。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "拒绝所有用户"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "用户angeltype不存在。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr "你不允许确认所有用户这个angeltype。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "证实angeltype ％s的所有用户。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "确认所有用户"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "你不允许确认此用户angeltype。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "没有这个用户"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "％S证实angeltype％S。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "确认用户angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "您无权删除该用户angeltype。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "％s用户来自％s删除。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "删除angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "你不允许设置协调员权利。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "没有协调更新给出。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "％s的新增协调员权利到％s。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "来自％s％s的去除协调员权利。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "添加协调的权利"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "删除协调员权利"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "请选择一个用户。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "％s用户添加到％s。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "将用户添加到angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "你已经是％S。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "您加盟％S。"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "成为％S"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr "你加入这需要驾驶执照的angeltype。请在这里编辑你的驾驶执照信息：％S。"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "驾驶执照信息"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "请选择至少一个驾驶执照。"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "你的驾驶证信息已被删除。"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "你的驾驶证信息已保存。"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "编辑 ％s 驾驶执照信息"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "请输入优惠券的有效号码。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "保存凭证的数量。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "%s's vouchers"
+msgstr "％s的代金券"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
+msgid "User not found."
+msgstr "未找到用户。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
+msgid "All users"
+msgstr "所有用户"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
+msgid "Token is not correct."
+msgstr "令牌是不正确的。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:93
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "您两次输入的密码不符。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr "您的密码是短（请使用至少6个字符）。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
+msgid "Password could not be updated."
+msgstr "密码无法进行更新。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "密码已保存"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:63
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "E-mail地址不正确。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:67
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "填写你的电子邮件"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
+msgid "Password recovery"
+msgstr "找回密码"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "请访问％s到恢复您的密码。"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
+msgid "We sent an email containing your password recovery link."
+msgstr "我们发送包含您的密码恢复链接的电子邮件。"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "您好 %s,"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "这里距离engelsystem为你一个消息："
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"此电子邮件自动生成的，并没有签署。因为你是在engelsystem注册你有此电子邮件。"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "您已注册上的转变已经改变："
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* Shift键式从％s到％s变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "*转移所有权从％s到％s变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "*偏移开始从％s到％s变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "*转换停止从％s到％s变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "*移位置从％s到％s变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "更新后的转变："
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "你的转变已经改变"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "您注册上被删除班次："
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "您的转移已被删除"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "你被分配到一个转变："
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "分配给移"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "你已经从一个转变中删除："
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "从去除转移"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "活跃​​的天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr "至少％娇娃被迫活跃。数具有更大。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr "请输入要标记为活动的一些天使。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "明显的天使。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
+#: /var/www/html/engelsystem/includes/view/User_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "返回"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "应用"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "天使已被标记为活动。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "天使没有找到。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "天使已被标记为未激活。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "天使得到了一件T恤。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "天使一直没有得到T恤。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
+msgid "set active"
+msgstr "设置活动"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "主动删除"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
+msgid "got t-shirt"
+msgstr "拿到T恤"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
+msgid "remove t-shirt"
+msgstr "除去T恤"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
+msgid "Sum"
+msgstr "总和"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:167
+msgid "Search angel:"
+msgstr "搜索天使："
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "显示所有班次"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:25
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "搜索"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "有多少天使应该是积极的？"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "预览"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:177
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "昵称"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:178
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "尺寸"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:179
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "转变"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "长度"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:181
+msgid "Active?"
+msgstr "活跃的？"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "强制"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
+msgid "T-shirt?"
+msgstr "汗衫"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
+msgid "Shirt statistics"
+msgstr "衬衫统计"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "需要的衬衫"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
+msgid "Given shirts"
+msgstr "鉴于衬衫"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "到了天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "复位完成。天使还没有到来。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "天使已被标记为抵达。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "是"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "重置"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
+msgid "arrived"
+msgstr "到达"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "计划到货"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "来了吗？"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "抵达日期"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "计划出发"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "预计抵达统计"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "到达总和"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:27
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
+msgid "Date"
+msgstr "日期"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "总计"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "到达统计"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "计划出发统计"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "免费天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:74
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "Angeltype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "只有确认"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:85
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:181
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:312
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:168
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
+msgid "Nick"
+msgstr "缺口"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:87
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:210
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
+msgid "DECT"
+msgstr "DECT"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:88
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:219
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "叽里咕噜"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:89
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:184
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
+msgid "E-Mail"
+msgstr "电子邮件"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "Grouprights"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:145
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
+msgid "Name"
+msgstr "名称"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "权限"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:32
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:106
+#: /var/www/html/engelsystem/includes/pages/user_news.php:160
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:183
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:192
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:197
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:202
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "储存"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "编辑组"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:4
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+msgid "Frab import"
+msgstr "FRAB进口"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr "Web服务器对进口目录中没有写权限。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:50
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:114
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:191
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "请选择一个转变的类型。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:57
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:121
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr "请输入分钟的量添加到一个谈话的开始。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:128
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr "请输入分钟的量添加到一个谈话的结束。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "没有有效的XML / xcal文件中提供。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "文件上传出了问题。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "请提供一些数据。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "文件上传"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "验证"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:175
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "进口"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"这导入将创建/更新/由下式给出FRAB出口文件中删除房和变化。所需的文件格式是"
+"xcal。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:94
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "Shifttype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "添加分钟开始"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "添加分钟结束"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "xcal-文件（.xcal）"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:107
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "缺少导入文件。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "客房创造"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "房间删除"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "转移到创造"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:150
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:168
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
+msgid "Day"
+msgstr "天"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:151
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "开始"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:152
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:161
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "结束"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:153
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "移位型"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:172
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:302
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "标题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "房间"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "转移到更新"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "转移到删除"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "完成！"
+
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "日志"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "编辑新闻条目"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr "作者"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:29
+#: /var/www/html/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "主题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:30
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
+#: /var/www/html/engelsystem/includes/pages/user_news.php:105
+#: /var/www/html/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "留言"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:31
+#: /var/www/html/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "会议"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
+msgid "Delete"
+msgstr "删除文档"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "条目已更新。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "条目已删除。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "回答提问"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "没有未回答的问题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "还没有回答的问题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "来自"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:19
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "试题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "答案"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "已回答的问题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "回答者："
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "房间"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "请输入类型％s所需的天使。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
+msgid "Room saved."
+msgstr "室保存。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
+msgid "Public"
+msgstr "公开"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "房间号码"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Needed angels:"
+msgstr "需要的天使："
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
+#, php-format
+msgid "Room %s deleted."
+msgstr "房间％S删除。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
+#, php-format
+msgid "Do you want to delete room %s?"
+msgstr "你要删除的房间％s吗？"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
+msgid "add"
+msgstr "添加"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
+msgid "Create shifts"
+msgstr "创建转变"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
+msgid "Please select a location."
+msgstr "请选择地区"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
+msgid "Please select a start time."
+msgstr "请选择开始时间。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
+msgid "Please select an end time."
+msgstr "请选择一个结束时间。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
+msgid "The shifts end has to be after its start."
+msgstr "轮班端具有成为其开始之后。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
+msgid "Please enter a shift duration in minutes."
+msgstr "请输入分钟的转变时间。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
+msgid "Please split the shift-change hours by colons."
+msgstr "用冒号请拆分移变化小时。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
+msgid "Please select a mode."
+msgstr "请选择一个模式。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
+#, php-format
+msgid "Please check the needed angels for team %s."
+msgstr "请检查队伍％S所需的天使。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
+msgid "There are 0 angels needed. Please enter the amounts of needed angels."
+msgstr "有0天使需要的。请输入所需天使的金额。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
+msgid "Please select a mode for needed angels."
+msgstr "请选择所需的天使模式。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
+msgid "Please select needed angels."
+msgstr "请选择所需的天使。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
+msgid "Time and location"
+msgstr "时间和地点"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
+msgid "Type and title"
+msgstr "类型和标题"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
+msgid "Needed angels"
+msgstr "需要的天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
+msgid "Mode"
+msgstr "模式"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
+msgid "Create one shift"
+msgstr "创建一个班次"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
+msgid "Create multiple shifts"
+msgstr ""
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
+msgid "Create multiple shifts with variable length"
+msgstr "创建具有可变长度的多个班次"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
+msgid "Shift change hours"
+msgstr "交接班小时"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
+msgid "Take needed angels from room settings"
+msgstr "就拿从房间的设置需要的天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
+msgid "The following angels are needed"
+msgstr "需要以下天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:4
+msgid "All Angels"
+msgstr "所有天使"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
+msgid "This user does not exist."
+msgstr "该用户不存在。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:41
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:185
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:178
+msgid "Please send me an email if my shifts change"
+msgstr "请发邮件给我，如果我的变化改变"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:60
+msgid "Force active"
+msgstr "主动力"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:79
+msgid ""
+"Please visit the angeltypes page or the users profile to manage users "
+"angeltypes."
+msgstr "请访问angeltypes页面或用户配置文件来管理用户angeltypes。"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
+msgid "Edit user"
+msgstr "编辑用户"
+
+#: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
+msgid "Credits"
+msgstr "积分"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:4
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:314
+msgid "Login"
+msgstr "登录"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:8
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:240
+msgid "Register"
+msgstr "注册"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:12
+msgid "Logout"
+msgstr "注销"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:52
+#, php-format
+msgid "Your nick &quot;%s&quot; already exists."
+msgstr "你的昵称“％S”已经存在。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:56
+#, php-format
+msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
+msgstr "你的昵称“％s”是太短了（至少2个字符）。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:77
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:50
+msgid "Please check your jabber account information."
+msgstr "请检查您的Jabber帐户信息。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:86
+msgid "Please select your shirt size."
+msgstr "请选择你的衬衫尺寸。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:97
+#, php-format
+msgid "Your password is too short (please use at least %s characters)."
+msgstr "您的密码太短（请使用至少％的人物）。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:104
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:64
+msgid "Please enter your planned date of arrival."
+msgstr "请输入您计划的抵达日期。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:166
+msgid "Angel registration successful!"
+msgstr "天使注册成功！"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:173
+msgid ""
+"By completing this form you're registering as a Chaos-Angel. This script "
+"will create you an account in the angel task sheduler."
+msgstr ""
+"通过填写此表格你注册成为混沌的天使。此脚本将创建你在天使任务sheduler帐户。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:190
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:171
+msgid "Planned date of arrival"
+msgstr "抵达计划日期"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:193
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:181
+msgid "Shirt size"
+msgstr "衬衫尺码"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:198
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:313
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
+msgid "Password"
+msgstr "密码"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:201
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
+msgid "Confirm password"
+msgstr "请再次确认新密码"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "What do you want to do?"
+msgstr "您要做什么？"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "Description of job types"
+msgstr "作业类型的说明"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:205
+msgid ""
+"Restricted angel types need will be confirmed later by an archangel. You can "
+"change your selection in the options section."
+msgstr "受限天使类型的需要会得到由天使后来证实。您可以在选项部分更改您的选择。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:213
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:176
+msgid "Mobile"
+msgstr "手机"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:216
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:174
+msgid "Phone"
+msgstr "电话"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:222
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:170
+msgid "First name"
+msgstr "帳號(英文)"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:225
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:169
+msgid "Last name"
+msgstr "生日(西元)"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:230
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:173
+msgid "Age"
+msgstr "年龄"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:233
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:180
+msgid "Hometown"
+msgstr "家乡"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:236
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:167
+msgid "Entry required!"
+msgstr "必須輸入資料"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "您的密码不正确。请再试一次。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:276
+msgid "Please enter a password."
+msgstr "請輸入密碼。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:280
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr "没有用户与昵称找到。请再试一次。如果您仍然有问题，问一个调度员。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:284
+msgid "Please enter a nickname."
+msgstr "请输入昵称。"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:297
+msgid "Please sign up, if you want to help us!"
+msgstr "请注册，如果你想帮助我们！"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:304
+msgid "Registration is disabled."
+msgstr "已关闭用户注册！"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:316
+msgid "I forgot my password"
+msgstr "我忘记了我的密码"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:318
+msgid "Please note: You have to activate cookies!"
+msgstr "请注意：你必须激活饼干！"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:324
+msgid "What can I do?"
+msgstr "我能做什么？"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:325
+msgid "Please read about the jobs you can do to help us."
+msgstr "请阅读可以做，以帮助我们的作业。"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
+msgid "Messages"
+msgstr "消息"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
+msgid "Select recipient..."
+msgstr "选择收件人..."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
+#: /var/www/html/engelsystem/includes/pages/user_news.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:92
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:16
+msgid "Unable to load user."
+msgstr "无法加载用户。"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
+msgid "mark as read"
+msgstr "标记已读"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
+msgid "delete message"
+msgstr "删除消息？"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
+#, php-format
+msgid "Hello %s, here can you leave messages for other angels"
+msgstr "％s您好，这里你能离开其他天使的消息"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
+msgid "New"
+msgstr "新内容"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+msgid "Transmitted"
+msgstr "传输"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
+msgid "Recipient"
+msgstr "接受者"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
+msgid "Incomplete call, missing Message ID."
+msgstr "不完整的呼叫，丢失邮件ID。"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
+msgid "No Message found."
+msgstr "沒有找到邮件"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "发射终止与错误。"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:118
+msgid "Wrong action."
+msgstr "错误的行动。"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "My shifts"
+msgstr "我的转变"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
+msgid "Key changed."
+msgstr "关键的变化。"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
+msgid "Reset API key"
+msgstr "重置API密钥"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"如果重置键，网址为你iCal-和JSON出口和您的Atom的变化！您可以使用这些出口之一，"
+"每一个应用程序来更新它。"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
+msgid "Continue"
+msgstr "继续"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
+msgid "Shift saved."
+msgstr "转变保存。"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
+msgid "Shift canceled."
+msgstr "转变取消。"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr "这是为时已晚签了自己的转变。如果neccessary，要求调度员这样做。"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:3
+msgid "News comments"
+msgstr "新闻评论"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:7
+msgid "News"
+msgstr "新闻"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:11
+msgid "Meetings"
+msgstr "会议"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:66
+msgid "Comments"
+msgstr "评论"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:83
+#: /var/www/html/engelsystem/includes/pages/user_news.php:126
+msgid "Entry saved."
+msgstr "进入保存。"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:103
+msgid "New Comment:"
+msgstr "新评论"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:110
+msgid "Invalid request."
+msgstr "无效的请求"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:154
+msgid "Create news:"
+msgstr "创建消息："
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:3
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:29
+msgid "Ask an archangel"
+msgstr "问一个天使"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:28
+msgid "Unable to save question."
+msgstr "无法保存的问题。"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:29
+msgid "You question was saved."
+msgstr "你的问题是保存。"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:33
+msgid "Please enter a question!"
+msgstr "请输入一个问题！"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:40
+msgid "Incomplete call, missing Question ID."
+msgstr "不完整的呼叫，丢失的问题ID。"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:48
+msgid "No question found."
+msgstr "未找到试题"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
+msgid "Settings"
+msgstr "设置"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:72
+msgid "Please enter your planned date of departure."
+msgstr "请输入您的计划出发时间。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:112
+msgid "Settings saved."
+msgstr "设置已保存"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:119
+msgid "-> not OK. Please try again."
+msgstr "- >也不行。请再试一次。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:127
+msgid "Failed setting password."
+msgstr "失败设置密码。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:140
+msgid "Theme changed."
+msgstr "主题改变。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:166
+msgid "Here you can change your user details."
+msgstr "在这里，你可以改变你的用户详细信息。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:172
+msgid "Planned date of departure"
+msgstr "出发的计划日期"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:182
+msgid "Please visit the angeltypes page to manage your angeltypes."
+msgstr "请访问angeltypes页面来管理您的angeltypes。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:188
+msgid "Here you can change your password."
+msgstr "在这里，您可以更改您的密码。"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:189
+msgid "Old password:"
+msgstr "旧密码"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:190
+msgid "New password:"
+msgstr "新密码"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:191
+msgid "Password confirmation:"
+msgstr "确认密码"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:195
+msgid "Here you can choose your color settings:"
+msgstr "在这里，你可以选择你的颜色设置："
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:196
+msgid "Color settings:"
+msgstr "颜色设置："
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:200
+msgid "Here you can choose your language:"
+msgstr "在这里，你可以选择你的语言："
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:201
+msgid "Language:"
+msgstr "语言："
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
+msgid "Shift entry deleted."
+msgstr "移项中删除。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
+msgid "Entry not found."
+msgstr "没有找到条目"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
+msgid "Please select a room."
+msgstr "请选择一个房间。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
+msgid "Please select a shifttype."
+msgstr "请选择一个shifttype。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
+msgid "Please enter a valid starting time for the shifts."
+msgstr "请输入一个有效的起始时间偏移。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
+msgid "Please enter a valid ending time for the shifts."
+msgstr "请输入有效的结束时间的变化。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
+msgid "The ending time has to be after the starting time."
+msgstr "结束时间必须在开始时间之后。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
+#, php-format
+msgid "Please check your input for needed angels of type %s."
+msgstr "请检查您输入类型％s所需的天使。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
+msgid "Shift updated."
+msgstr "转变更新。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
+msgid "This page is much more comfortable with javascript."
+msgstr "这页是更加舒适的JavaScript。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
+msgid "Room:"
+msgstr "房间："
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
+msgid "Start:"
+msgstr "开始时间："
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
+msgid "End:"
+msgstr "结束时间："
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
+msgid "Shift deleted."
+msgstr "转变删除。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
+#, php-format
+msgid "Do you want to delete the shift %s from %s to %s?"
+msgstr "你想删除的转变％S从％s到％s？"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr "您不得报名参加这种转变。也许移已满或已在运行。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "You are subscribed. Thank you!"
+msgstr "您认购。谢谢！"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
+msgid "Freeloader"
+msgstr "吃白食"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
+msgid "The administration has not configured any shifts yet."
+msgstr "当局并没有配置的任何变化呢。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
+msgid "The administration has not configured any rooms yet."
+msgstr "当局并没有任何配置尚未客房。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
+msgid "occupied"
+msgstr "占据"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
+msgid "free"
+msgstr "免费"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
+msgid ""
+"The administration has not configured any angeltypes yet - or you are not "
+"subscribed to any angeltype."
+msgstr "当局并没有任何配置还angeltypes  - 或者你没有订阅任何angeltype。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
+#, php-format
+msgid "%d helper needed"
+msgid_plural "%d helpers needed"
+msgstr[0] "％d个帮手需要"
+msgstr[1] "%d helpers needed"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
+msgid "Sign up"
+msgstr "注册"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
+msgid "ended"
+msgstr "结束"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
+#, php-format
+msgid "Become %s"
+msgstr "成为％S"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
+msgid "Add more angels"
+msgstr "添加更多的天使"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
+msgid "Time"
+msgstr "时间"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
+msgid "Entries"
+msgstr "条目"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
+msgid "Occupancy"
+msgstr "占用"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr "这里展示的任务由您在设置中定义的喜好的影响！"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid "Description of the jobs."
+msgstr "作业的说明。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
+msgid "Use new style if possible"
+msgstr "使用新的风格，如果可能的"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+msgid "iCal export"
+msgstr "出口的iCal"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+#, php-format
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"所示的变化。出口<a href=\"%s\">iCal格式</a>或<a href=\"%s\">JSON格式</a>提供"
+"（请保守秘密，否则<a href=\"%s\">重置API密钥</a> ）。"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
+msgid "Filter"
+msgstr "过滤"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
+msgid "All"
+msgstr "所有"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
+msgid "None"
+msgstr "没有"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
+msgid "Unconfirmed"
+msgstr "未确认"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
+msgid "Coordinator"
+msgstr "协调员"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
+msgid "Member"
+msgstr "会员"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
+#, php-format
+msgid "Do you want to delete angeltype %s?"
+msgstr "你想删除angeltype％s吗？"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:7
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:18
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:40
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
+msgid "cancel"
+msgstr "取消"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
+msgid "Restricted"
+msgstr "受限"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Yes"
+msgstr "是"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "No"
+msgstr "No"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Requires driver license"
+msgstr "需要驾驶执照"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
+msgid ""
+"Restricted angel types can only be used by an angel if enabled by an "
+"archangel (double opt-in)."
+msgstr "受限天使类型只能通过一个天使如果由大天使（双重选择）功能的使用。"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
+msgid "Description"
+msgstr "描述"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
+msgid "Please use markdown for the description."
+msgstr "请使用降价的描述。"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
+msgid "my driving license"
+msgstr "我的驾驶执照"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
+msgid ""
+"This angeltype requires a driver license. Please enter your driver license "
+"information!"
+msgstr "这angeltype需要驾驶执照。请输入您的驾驶证信息！"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
+#, php-format
+msgid ""
+"You are unconfirmed for this angeltype. Please go to the introduction for %s "
+"to get confirmed."
+msgstr "你是未经证实此angeltype。请到介绍为得到证实％S。"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
+msgid "confirm"
+msgstr ""
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
+msgid "deny"
+msgstr "拒絶"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
+msgid "remove"
+msgstr "移除"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
+msgid "Driver"
+msgstr "司机"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
+msgid "Has car"
+msgstr "有车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
+msgid "Car"
+msgstr "汽车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
+msgid "3,5t Transporter"
+msgstr "3,5t运输车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
+msgid "7,5t Truck"
+msgstr "7,5t卡车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
+msgid "12,5t Truck"
+msgstr "12,5t卡车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
+msgid "Forklift"
+msgstr "叉车"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
+msgid "Coordinators"
+msgstr "协调员"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
+msgid "Members"
+msgstr "会员管理"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
+msgid "Add"
+msgstr "添加"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
+msgid "confirm all"
+msgstr "确认所有"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
+msgid "deny all"
+msgstr "拒绝所有"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
+msgid "New angeltype"
+msgstr "新angeltype"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
+msgid "Membership"
+msgstr "会员"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
+msgid "FAQ"
+msgstr "FAQ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr "这里是团队和他们的任务列表。如果您有任何疑问，请阅读常见问题解答。"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
+msgid ""
+"This angeltype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr "这angeltype由双选入一队协调员限制。请在根据推介会露面。"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:17
+msgid "Open questions"
+msgstr "开放式问题"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:31
+msgid "Your Question:"
+msgstr "您的问题："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
+msgid "Freeloaded"
+msgstr "Freeloaded"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
+msgid "Freeload comment (Only for shift coordination):"
+msgstr "白吃白喝（仅适用于轮班协调）的评论："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
+msgid "Edit shift entry"
+msgstr "编辑转移进入"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "天使"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
+msgid "Date, Duration:"
+msgstr "日期，持续时间："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
+msgid "Location:"
+msgstr "目的地："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
+msgid "Title:"
+msgstr "标题："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
+msgid "Type:"
+msgstr "类型："
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
+msgid "Comment (for your eyes only):"
+msgstr "（你的眼睛只）评论："
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "位于％s％s所创建"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
+#, php-format
+msgid "edited at %s by %s"
+msgstr "被％s％s的编辑"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
+msgid "This shift collides with one of your shifts."
+msgstr "这种转变与转变的一个碰撞。"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
+msgid "You are signed up for this shift."
+msgstr "要为这种转变签订了协议。"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
+msgid "Location"
+msgstr "施工地点"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
+#, php-format
+msgid "Do you want to delete shifttype %s?"
+msgstr "你想删除shifttype％s吗？"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Edit shifttype"
+msgstr "编辑shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Create shifttype"
+msgstr "创建shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
+#, php-format
+msgid "for team %s"
+msgstr "团队％S"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
+msgid "New shifttype"
+msgstr "新shifttype"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:7
+msgid "Please select..."
+msgstr "请选择..."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "券数"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
+msgid "m/d/Y h:i a"
+msgstr "M / D /年小时：IA"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
+msgid "New user"
+msgstr "新用户"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
+msgid "Prename"
+msgstr "女士prename"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Arrived"
+msgstr "到达"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
+msgid "Voucher"
+msgstr "凭单"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
+msgid "Freeloads"
+msgstr "Freeloads"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
+msgid "Active"
+msgstr "动态"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "T恤"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "上次登录时间"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:95
+msgid "Free"
+msgstr "免费"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
+#, php-format
+msgid "Next shift %c"
+msgstr "下一班％C"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
+#, php-format
+msgid "Shift starts %c"
+msgstr "启动转变％C"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
+#, php-format
+msgid "Shift ends %c"
+msgstr "移位结束％C"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
+msgid "sign off"
+msgstr "簽名"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "求和"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:187
+msgid "User state"
+msgstr "用户状态"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Arrived at %s"
+msgstr "％s的到来"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Not arrived (Planned: %s)"
+msgstr "不抵（计划：％S）"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Not arrived"
+msgstr "没有到货"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+#, php-format
+msgid "Got %s voucher"
+msgid_plural "Got %s vouchers"
+msgstr[0] "得了％s 券"
+msgstr[1] "得了 ％s 券n"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+msgid "Got no vouchers"
+msgstr "有没有优惠券"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
+msgid "Rights"
+msgstr "权利"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
+msgid "driving license"
+msgstr "驾驶执照"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "编辑券"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "出口的iCal"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "JSON出口"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "名称和同事"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "评论"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "执行"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "2上午8时之间的夜班数的两倍。"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:228
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr "转至<a href=\"%s\">变化表</a>签署和自己的一些变化。"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"我们将向您发送一封电子邮件与密码恢复链接。请使用您注册时使用的电子邮件地址。"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
+msgid "Recover"
+msgstr "恢复"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
+msgid "Please enter a new password."
+msgstr "請輸入一組新的密碼"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to add coordinator rights for %s to %s?"
+msgstr "难道你真的想％s的增加协调员权利％s吗？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to remove coordinator rights for %s from %s?"
+msgstr "你真的想从％S删除％s的协调人的权利？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
+#, php-format
+msgid "Do you really want to deny all users for %s?"
+msgstr "你真的要拒绝％s的所有用户？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
+#, php-format
+msgid "Do you really want to confirm all users for %s?"
+msgstr "你真的想确认％s的所有用户？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
+#, php-format
+msgid "Do you really want to confirm %s for %s?"
+msgstr "你真的想确认％S％s的？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
+#, php-format
+msgid "Do you really want to delete %s from %s?"
+msgstr "你真的想从％S删除％s吗？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
+msgid "User"
+msgstr "用户"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
+#, php-format
+msgid "Do you really want to add %s to %s?"
+msgstr "你真的想要添加％s到％s？"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
+msgid "save"
+msgstr "储存"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
+msgid "Back to profile"
+msgstr "回到配置文件"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid "Privacy"
+msgstr "隐私"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr "你的驾驶执照信息仅用于协调和管理员可见。"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
+msgid "I am willing to operate cars for the PL"
+msgstr "我愿意为PL小轿车经营"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr "我有我自己的车和我一起，我愿意使用它的PL（你会得到报销燃料）"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
+msgid "Driver license"
+msgstr "駕駛執照"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
+msgid "Transporter 3,5t"
+msgstr "转运3,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
+msgid "Truck 7,5t"
+msgstr "卡车7,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
+msgid "Truck 12,5t"
+msgstr "卡车12,5t"
+
+#: /var/www/html/engelsystem/public/index.php:147
+msgid "No Access"
+msgstr "没有访问"
+
+#: /var/www/html/engelsystem/public/index.php:148
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr "您没有权限浏览这个页面。你可能有登录或为了获得注册！"
+
+msgid "You have been signed off from the shift."
+msgstr "你已经从移位签署。"
+
+msgid "planned departure"
+msgstr "计划出发"
+
+msgid "Tasks"
+msgstr "任务"
+
+msgid "User didnt got vouchers."
+msgstr "用户剪掉了凭证。"
+
+msgid "Remove vouchers"
+msgstr "删除券"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr "这种转变现在正在运行或已结束。请联系调度员加入的转变。"
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr "你已经订阅在相同的时隙偏移。请联系调度员加入的转变。"
+
+msgid "The shift is already full."
+msgstr "这种转变已经满了。"
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr "％s您好，在这里你可以改变你的个人设置IE密码，颜色设置等。"
+
+msgid "Name/Description:"
+msgstr "名称/描述："
+
+msgid "Timeslot"
+msgstr "时隙"
+
+msgid "The first wants to join %s."
+msgstr "首先要加入％S。"
+
+msgid "Groups"
+msgstr "组"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "您还没有证实这个天使类型。"
+
+msgid "Exports"
+msgstr "出口"
+
+msgid "Current ends in %s min"
+msgstr "在％s分钟两端电流"
+
+msgid "Add new angeltype"
+msgstr "添加新angeltype"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "你有％s 新信息。"
+msgstr[1] "你有％s 新讯息"
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"这些都是你的变化。 <br/>那么请开始转变之前出现<b>15分钟</b> ！ <br/>它开始之"
+"前，你可以从一个转变到％d小时删除自己。"
+
+msgid "Page:"
+msgstr "页面："
+
+msgid "Message:"
+msgstr "信息:"
+
+msgid "Wakeup"
+msgstr "醒来"
+
+msgid "Broken date!"
+msgstr "残破的约会！"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "电话不完整，缺唤醒ID。"
+
+msgid "Wake-up call deleted."
+msgstr "叫醒服务中删除。"
+
+msgid "No wake-up found."
+msgstr "没有唤醒找到。"
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"％s您好，在这里你可以为一个敲响了警钟注册。简单的说何时何地，天使应该来叫醒"
+"你。"
+
+msgid "All ordered wake-up calls, next first."
+msgstr "所有订购的叫醒服务，未来的第一。"
+
+msgid "Place"
+msgstr "安置"
+
+msgid "Notes"
+msgstr "笔记"
+
+msgid "Schedule a new wake-up here:"
+msgstr "这里安排一个新的唤醒："
+
+msgid "User %s confirmed as %s."
+msgstr "％s用户确认为％S。"
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr "抵抗是徒劳的！你的生物和物理参数将被添加到我们的collectiv！同化天使："
+
+msgid "Confirmed all."
+msgstr "确认所有。"
+
+msgid "asdf"
+msgstr "ASDF"

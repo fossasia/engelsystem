@@ -1,0 +1,2555 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem\n"
+"POT-Creation-Date: 2016-05-15 12:45+0100\n"
+"PO-Revision-Date: 2016-06-07 12:19+0530\n"
+"Last-Translator: \n"
+"Language-Team: Dishant Khanna <dishant.khanna1807@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: fr\n"
+"X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"Veuillez entrer votre date prévue de départ sur votre page de paramètres "
+"pour nous donner un sentiment pour les capacités de destruction."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"Vous freeloaded au moins %s se déplace. Maj signup est verrouillé. Rendez-"
+"vous au comptoir de cieux à redevenir déverrouillé."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"Vous ne sont pas marqués comme sont arrivés. Veuillez vous rendre au Bureau "
+"du ciel, obtenir votre badge d’ange et/ou de leur dire que vous est déjà "
+"arrivé."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "Vous devez spécifier une taille de tshirt dans vos paramètres !"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"Vous devez spécifier un numéro de téléphone DECT dans vos paramètres ! Si "
+"vous n’avez pas un téléphone DECT, il suffit d’entrer \"-\"."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "Administrateur"
+
+#: /var/www/html/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "Aucune donnée n'a été trouvée."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
+msgid "Angeltypes"
+msgstr "Angeltypes"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:327
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "Équipes/Description de l'emploi"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "Angeltype %s supprimé."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "Supprimer angeltype %s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "S'il vous plaît vérifier le nom. Peut-être qu'il existe déjà."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier%s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "Équipe de %s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
+msgid "view"
+msgstr "vue"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:23
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:18
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:91
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
+msgid "edit"
+msgstr "éditer"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:5
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:12
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:78
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "supprimer"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "congé"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "lier contestation"
+
+#: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "Maj est introuvable."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "Shifttype %s supprimé."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "Supprimer shifttype %s"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "Shifttype introuvable."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
+msgid "Please enter a name."
+msgstr "Veuillez saisir un nom."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "Mise à jour shifttype."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "Créé shifttype."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "Shifttypes"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "Il y a %d angeltype non confirmée."
+msgstr[1] "Il y a %d angeltypes non confirmées ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "Types d’Angel qui nécessitent des approbations :"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Angeltype n’existe pas."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "Il est interdit de supprimer tous les utilisateurs de cette angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "Refuser tous les utilisateurs d’angeltype %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "Refuser tous les utilisateurs"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "Angeltype d’utilisateur n’existe pas."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr ""
+"Vous n’êtes pas autorisé à confirmer tous les utilisateurs de cette "
+"angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "A confirmé tous les utilisateurs d’angeltype %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "Confirmer tous les utilisateurs"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "Vous n’êtes pas autorisé à confirmer cette angeltype utilisateurs."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "L’utilisateur ”%s” n’ existe pas"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "%s a confirmé pour angeltype %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "Angeltype pour l’utilisateur de confirmer"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "Vous n'êtes pas autorisé à supprimer cette angeltype utilisateurs."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "L’utilisateur %s supprimé de %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "Supprimer angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "Vous n’êtes pas autorisé à définir des droits du coordinateur."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "Aucune mise à jour coordonnateur donné."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "Coordinateur ajouté droits pour %s α %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "Droits coordonnateur supprimé %s de %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "Ajouter le coordinateur droits"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "Supprimer les droits de coordonnateur"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "Veuillez sélectionner un utilisateur."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "Utilisateur %s ajouté par %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "Ajouter l’utilisateur à angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "Vous êtes déjà un %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "Vous avez rejoint %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "Créer ma %s"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"Vous avez rejoint une angeltype qui nécessite un permis de conduire. S’il "
+"vous plaît modifier votre information de licence conduite ici: %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "informations sur la licence de conduite"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "Veuillez sélectionner au moins un permis de conduire."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "Vos informations de licence de pilote a été supprimées."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "Vos informations de licence de pilote a été enregistrées."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "Modifier %s informations de licence de conduite"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "Veuillez entrer un numéro valide de bons."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "Enregistré le nombre de chèques."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "%s's vouchers"
+msgstr "pièces justificatives de %s"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
+msgid "User not found."
+msgstr "Utilisateur non trouvé."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
+msgid "All users"
+msgstr "Tous les utilisateurs"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
+msgid "Token is not correct."
+msgstr "Jeton n’est pas correct."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:93
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "Vos mots de passe ne correspondent pas."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr ""
+"Votre mot de passe est trop court (veuillez utiliser au moins 6 caractères)."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
+msgid "Password could not be updated."
+msgstr "Mot de passe n’a pas pu être mis à jour."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "Mot de passe enregistré"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:63
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "Adresse de messagerie n’est pas correct."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:67
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "Veuillez saisir votre adresse E-Mail."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
+msgid "Password recovery"
+msgstr "Récupération du mot de passe"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "S’il vous plaît visitez %s pour récupérer votre mot de passe."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
+msgid "We sent an email containing your password recovery link."
+msgstr ""
+"Nous avons envoyé un email contenant votre lien de récupération de mot de "
+"passe."
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "Coucou %s,"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "Voici un message pour vous de l’engelsystem :"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"Cet e-mail est généré automatiquement et ne doivent ne pas être signés. Vous "
+"avez obtenu cet email parce que vous êtes inscrit dans l’engelsystem."
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "Un changement que vous êtes inscrit sur a changé :"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* Maj type modifié de %s à %s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "* Shift titre changé de %s à %s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "* Maj début changé de %s à %s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "* Maj fin changé de %s à %s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "* Shift emplacement modifié de %s à %s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "Le Maj mise à jour :"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "Votre quart de travail a changé"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "Un changement que vous êtes inscrit sur a été supprimé :"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "Votre quart de travail a été supprimé"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "Vous avez été affecté à un déplacement :"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "Assignés à Shift"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "Vous avez été retirés d’un déplacement :"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "Retiré de la Maj"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "Anges actives"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr ""
+"Au moins %s anges sont obligés d’être actif. Le nombre doit être supérieur."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr "Veuillez entrer un numéro d’anges pour être marquée comme active."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "Anges marqués."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
+#: /var/www/html/engelsystem/includes/view/User_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "arrière"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "postuler"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "Angel a été marquée comme active."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "Angel est introuvable."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "Angel a été marquée comme non actif."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "Angel a reçu un t-shirt."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "Angel n’a reçu aucun t-shirt."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
+msgid "set active"
+msgstr "Paramétrer comme Actif"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "Supprime la vue active."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
+msgid "got t-shirt"
+msgstr "reçu t-shirt"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
+msgid "remove t-shirt"
+msgstr "enlever le t-shirt"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
+msgid "Sum"
+msgstr "Somme"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:167
+msgid "Search angel:"
+msgstr "Ange de recherche :"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "Montrer tous les quarts"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:25
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "Rechercher…"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "Combien les anges doivent être actifs ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "Prévisualiser"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:177
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "Identifiant"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:178
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "Taille"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:179
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "Périodes de travail"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "Longueur"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:181
+msgid "Active?"
+msgstr "Actif ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "Obligés"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
+msgid "T-shirt?"
+msgstr "Tee-shirt"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
+msgid "Shirt statistics"
+msgstr "Statistiques de chemise"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "Besoin de chemises"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
+msgid "Given shirts"
+msgstr "Chemises de donnée"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "Anges sont arrivés"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "Réinitialisation de fait. Angel n’est pas arrivé."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "Angel a été marquée comme est arrivé."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "oui"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "Réinitialiser"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
+msgid "arrived"
+msgstr "Arrivé"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "Arrivée prévue"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "Arrivé"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "Date d'arrivée"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "Départ prévu"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "Statistiques de l’arrivée prévue"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "arrivée de somme"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:27
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
+msgid "Date"
+msgstr "Dattes"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "Compteur"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "Statistiques d’arrivée"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "Statistiques de départ prévu"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "Anges gratuits"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:74
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "Angeltype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "A seulement confirmé"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:85
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:181
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:312
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:168
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
+msgid "Nick"
+msgstr "Nick"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:87
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:210
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
+msgid "DECT"
+msgstr "Télécommunications numériques sans fil européennes"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:88
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:219
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "Extensible Messaging and Presence Protocol"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:89
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:184
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "Grouprights"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:145
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
+msgid "Name"
+msgstr "Nom"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "Privilèges"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:32
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:106
+#: /var/www/html/engelsystem/includes/pages/user_news.php:160
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:183
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:192
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:197
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:202
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "Enregistrer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "Modifier le groupe"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:4
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+msgid "Frab import"
+msgstr "Importation de FRAB"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr ""
+"Serveur Web n’a aucune autorisation en écriture sur le répertoire "
+"d’importation."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:50
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:114
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:191
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "Veuillez sélectionner un type de déplacement."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:57
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:121
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr ""
+"Veuillez entrer un nombre de minutes à ajouter à une présentation de "
+"commencer."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:128
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr "Veuillez entrer un nombre de minutes à ajouter à fin d’un discours."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "Aucun fichier xml/xcal valide fourni."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "Téléchargement de fichiers s’est mal passé."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "S’il vous plaît fournir certaines données."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "Upload Fichier"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "Validation"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:175
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "Importer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"Cette volonté importation créer/modifier/supprimer chambres et décale donné "
+"FRAB-exportation fichier. Le format de fichier requis est xcal."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:94
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "Shifttype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "Ajouter des minutes pour commencer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "Ajouter des minutes à la fin"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "xcal-File (.xcal)"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:107
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "Importer un fichier manquant."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "Chambres pour créer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "Chambres à supprimer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "Déplacements pour créer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:150
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:168
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
+msgid "Day"
+msgstr "Jour"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:151
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "Début"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:152
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:161
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "Fin"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:153
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "Type de déplacement"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:172
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:302
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "Titre"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "Chambre"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "Quarts de travail à jour"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "Déplacements à supprimer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "Et voilà!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "Journal"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "Modifiez l’entrée de nouvelles"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr "Auteur"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:29
+#: /var/www/html/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "Sujet"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:30
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
+#: /var/www/html/engelsystem/includes/pages/user_news.php:105
+#: /var/www/html/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "Message"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:31
+#: /var/www/html/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "Réunion"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
+msgid "Delete"
+msgstr "Supprimer"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "Entrée de nouvelles mises à jour."
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "Entrée supprimée."
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "Répondre à des questions"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "il n’y a pas de réponses"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "Questions non répondues."
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "De"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:19
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "Question"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "Réponse"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "Questions traitées"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "Répondu par"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "Chambre(s)"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "Veuillez entrer les anges nécessaires pour type %s."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
+msgid "Room saved."
+msgstr "Chambre sauvé."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
+msgid "Public"
+msgstr "Public"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "Numéro chambre"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Needed angels:"
+msgstr "Anges nécessaires :"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
+#, php-format
+msgid "Room %s deleted."
+msgstr "Chambre %s supprimé."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
+#, php-format
+msgid "Do you want to delete room %s?"
+msgstr "Vous voulez supprimer espace %s ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
+msgid "add"
+msgstr "ajouter"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
+msgid "Create shifts"
+msgstr "Créer des déplacements"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
+msgid "Please select a location."
+msgstr "Veuillez sélectionner un type de lieu."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
+msgid "Please select a start time."
+msgstr "S’il vous plaît sélectionnez une heure de début."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
+msgid "Please select an end time."
+msgstr "Choisissez une heure de fin."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
+msgid "The shifts end has to be after its start."
+msgstr "La fin des quarts de travail doit être après son départ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
+msgid "Please enter a shift duration in minutes."
+msgstr "S’il vous plaît entrez une durée en minutes."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
+msgid "Please split the shift-change hours by colons."
+msgstr ""
+"S’il vous plaît, diviser les heures de changement de quart par le signe deux-"
+"points."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
+msgid "Please select a mode."
+msgstr "Veuillez sélectionner un mode."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
+#, php-format
+msgid "Please check the needed angels for team %s."
+msgstr "S’il vous plaît vérifier les anges nécessaires pour l’équipe de %s."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
+msgid "There are 0 angels needed. Please enter the amounts of needed angels."
+msgstr ""
+"Il y a 0 anges nécessaires. Veuillez saisir les montants des anges "
+"nécessaires."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
+msgid "Please select a mode for needed angels."
+msgstr "Veuillez sélectionner le mode anges nécessaires."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
+msgid "Please select needed angels."
+msgstr "Veuillez sélectionner les anges nécessaires."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
+msgid "Time and location"
+msgstr "Horaire et lieu"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
+msgid "Type and title"
+msgstr "Type et titre"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
+msgid "Needed angels"
+msgstr "Anges nécessaires"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
+msgid "Mode"
+msgstr "Mode"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
+msgid "Create one shift"
+msgstr "Créer un poste de travail"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
+msgid "Create multiple shifts"
+msgstr "Créer plusieurs quarts de travail"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
+msgid "Create multiple shifts with variable length"
+msgstr "Créer de multiples déplacements à longueur variable"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
+msgid "Shift change hours"
+msgstr "Décaler les heures de changement"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
+msgid "Take needed angels from room settings"
+msgstr "Prendre les anges nécessaires des paramètres de la salle"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
+msgid "The following angels are needed"
+msgstr "Les anges suivants sont nécessaires"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:4
+msgid "All Angels"
+msgstr "Tous les anges"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
+msgid "This user does not exist."
+msgstr "Cet utilisateur n'existe pas"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:41
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:185
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:178
+msgid "Please send me an email if my shifts change"
+msgstr "S’il vous plaît envoyez-moi un email si changent mes déplacements"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:60
+msgid "Force active"
+msgstr "La force active"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:79
+msgid ""
+"Please visit the angeltypes page or the users profile to manage users "
+"angeltypes."
+msgstr ""
+"Veuillez consulter la page angeltypes ou le profil des utilisateurs pour "
+"gérer les utilisateurs angeltypes."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
+msgid "Edit user"
+msgstr "Modifier l’utilisateur"
+
+#: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
+msgid "Credits"
+msgstr "Crédits"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:4
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:314
+msgid "Login"
+msgstr "S'identifier"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:8
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:240
+msgid "Register"
+msgstr "Valider"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:12
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:52
+#, php-format
+msgid "Your nick &quot;%s&quot; already exists."
+msgstr "Votre Pseudo « %s » existe déjà."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:56
+#, php-format
+msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
+msgstr "Votre Pseudo « %s » est trop court (minimum 2 caractères)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:77
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:50
+msgid "Please check your jabber account information."
+msgstr "Veuillez vérifier vos informations de compte jabber."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:86
+msgid "Please select your shirt size."
+msgstr "Veuillez sélectionner votre taille de chemise."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:97
+#, php-format
+msgid "Your password is too short (please use at least %s characters)."
+msgstr ""
+"Votre mot de passe est trop court (veuillez utiliser au moins %s caractères)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:104
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:64
+msgid "Please enter your planned date of arrival."
+msgstr "Veuillez entrer votre date prévue d’arrivée."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:166
+msgid "Angel registration successful!"
+msgstr "Enregistrement de Angel réussi !"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:173
+msgid ""
+"By completing this form you're registering as a Chaos-Angel. This script "
+"will create you an account in the angel task sheduler."
+msgstr ""
+"En remplissant ce formulaire, vous vous inscrivez comme un Chaos-ange. Ce "
+"script va vous créer un compte dans l’ange task sheduler."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:190
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:171
+msgid "Planned date of arrival"
+msgstr "Date prévue d’arrivée"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:193
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:181
+msgid "Shirt size"
+msgstr "Taille de chemise :"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:198
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:313
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
+msgid "Password"
+msgstr "Mot de passe"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:201
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
+msgid "Confirm password"
+msgstr "Confirmez le mot de passe"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "What do you want to do?"
+msgstr "Que voulez-vous faire ?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "Description of job types"
+msgstr "Description des types d’emploi"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:205
+msgid ""
+"Restricted angel types need will be confirmed later by an archangel. You can "
+"change your selection in the options section."
+msgstr ""
+"Ange restreint types besoin sera confirmées plus tard par un archange. Vous "
+"pouvez modifier votre choix dans la section options."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:213
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:176
+msgid "Mobile"
+msgstr "Portable"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:216
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:174
+msgid "Phone"
+msgstr "Téléphone"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:222
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:170
+msgid "First name"
+msgstr "Prénom"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:225
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:169
+msgid "Last name"
+msgstr "Nom"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:230
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:173
+msgid "Age"
+msgstr "Age"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:233
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:180
+msgid "Hometown"
+msgstr "Ville d'origine"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:236
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:167
+msgid "Entry required!"
+msgstr "Saisie requise"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "Le mot de passe est incorrect. Veuillez réessayer."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:276
+msgid "Please enter a password."
+msgstr "Veuillez entrer un mot de passe"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:280
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr ""
+"Aucun utilisateur n’a été trouvé avec ce surnom. S’il vous plaît essayer de "
+"nouveau. Si vous rencontrez toujours des problèmes, demandez à un "
+"répartiteur."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:284
+msgid "Please enter a nickname."
+msgstr "Veuillez entrer un Pseudo."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:297
+msgid "Please sign up, if you want to help us!"
+msgstr "S’il vous plaît Inscrivez-vous, si vous voulez nous aider !"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:304
+msgid "Registration is disabled."
+msgstr "Les inscriptions sont désactivées !"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:316
+msgid "I forgot my password"
+msgstr "J’ai oublié mon mot de passe"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:318
+msgid "Please note: You have to activate cookies!"
+msgstr "Veuillez noter : vous devez activer les cookies !"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:324
+msgid "What can I do?"
+msgstr "Que puis-je faire?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:325
+msgid "Please read about the jobs you can do to help us."
+msgstr ""
+"S’il vous plaît lire sur les tâches que vous pouvez faire pour nous aider."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
+msgid "Messages"
+msgstr "Messages"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
+msgid "Select recipient..."
+msgstr "Sélectionnez le destinataire"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
+#: /var/www/html/engelsystem/includes/pages/user_news.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:92
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:16
+msgid "Unable to load user."
+msgstr "Il est impossible de charger le fichier."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
+msgid "mark as read"
+msgstr "Marquer comme lu"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
+msgid "delete message"
+msgstr "supprimer le message"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
+#, php-format
+msgid "Hello %s, here can you leave messages for other angels"
+msgstr "Bonjour %s, ici peuvent vous laissez des messages d’autres anges"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
+msgid "New"
+msgstr "Nouveau"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+msgid "Transmitted"
+msgstr "Émetteur d'ondes radioélectriques"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
+msgid "Recipient"
+msgstr "Bénéficiaire"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
+msgid "Incomplete call, missing Message ID."
+msgstr "Appel incomplet, manquant d’ID de Message."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
+msgid "No Message found."
+msgstr "Aucun message trouvé"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "Transmission a pris fin avec une erreur."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:118
+msgid "Wrong action."
+msgstr "Mauvaise action."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "My shifts"
+msgstr "Mes déplacements"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
+msgid "Key changed."
+msgstr "Modification de la clé."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
+msgid "Reset API key"
+msgstr "reset Clé API"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"Si vous réinitialisez la clé, l’adresse url de votre iCal-JSON-exportation "
+"et atome de votre flux des changements ! Vous devez mettre à jour dans "
+"toutes les applications en utilisant l’un de ces exportations."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
+msgid "Continue"
+msgstr "Continuer"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
+msgid "Shift saved."
+msgstr "Maj Sauvé."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
+msgid "Shift canceled."
+msgstr "Maj annulée."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr ""
+"Il est trop tard pour signer vous-même le changement. Si nécessaire, "
+"demander le répartiteur pour le faire."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:3
+msgid "News comments"
+msgstr "Nouvelles commentaires"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:7
+msgid "News"
+msgstr "Actualités"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:11
+msgid "Meetings"
+msgstr "Séminaire"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:66
+msgid "Comments"
+msgstr "Commentaires"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:83
+#: /var/www/html/engelsystem/includes/pages/user_news.php:126
+msgid "Entry saved."
+msgstr "Entrée sauvé."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:103
+msgid "New Comment:"
+msgstr "Nouveau commentaire"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:110
+msgid "Invalid request."
+msgstr "Requête invalide."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:154
+msgid "Create news:"
+msgstr "Créer de nouvelles :"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:3
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:29
+msgid "Ask an archangel"
+msgstr "Demander un archange"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:28
+msgid "Unable to save question."
+msgstr "Impossible d’enregistrer la question."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:29
+msgid "You question was saved."
+msgstr "Votre question a été enregistrée."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:33
+msgid "Please enter a question!"
+msgstr "Veuillez saisir une question !"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:40
+msgid "Incomplete call, missing Question ID."
+msgstr "Appel incomplet, manque de Question ID."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:48
+msgid "No question found."
+msgstr "Aucune question trouvée"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
+msgid "Settings"
+msgstr "Paramètres"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:72
+msgid "Please enter your planned date of departure."
+msgstr "Veuillez entrer votre date prévue de départ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:112
+msgid "Settings saved."
+msgstr "Réglages enregistrés."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:119
+msgid "-> not OK. Please try again."
+msgstr "-> pas OK. S’il vous plaît essayer de nouveau."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:127
+msgid "Failed setting password."
+msgstr "Mot de passe mise en échec."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:140
+msgid "Theme changed."
+msgstr "Thème modifié."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:166
+msgid "Here you can change your user details."
+msgstr "Ici, vous pouvez modifier vos coordonnées de l’utilisateur."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:172
+msgid "Planned date of departure"
+msgstr "Date prévue de départ"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:182
+msgid "Please visit the angeltypes page to manage your angeltypes."
+msgstr ""
+"S’il vous plaît visitez la page angeltypes pour gérer votre angeltypes."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:188
+msgid "Here you can change your password."
+msgstr "Ici, vous pouvez changer votre mot de passe"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:189
+msgid "Old password:"
+msgstr "Ancien mot de passe :"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:190
+msgid "New password:"
+msgstr "Nouveau mot de passe :"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:191
+msgid "Password confirmation:"
+msgstr "confirmation de mot de passe."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:195
+msgid "Here you can choose your color settings:"
+msgstr "Ici, vous pouvez choisir vos paramètres de couleur :"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:196
+msgid "Color settings:"
+msgstr "Réglages des couleurs"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:200
+msgid "Here you can choose your language:"
+msgstr "Ici, vous pouvez choisir votre langue :"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:201
+msgid "Language:"
+msgstr "Langue :"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
+msgid "Shift entry deleted."
+msgstr "Décalage entrée supprimée."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
+msgid "Entry not found."
+msgstr "Entrée introuvable."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
+msgid "Please select a room."
+msgstr "Merci de sélectionnez une chambre"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
+msgid "Please select a shifttype."
+msgstr "Veuillez sélectionner un shifttype."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
+msgid "Please enter a valid starting time for the shifts."
+msgstr "Veuillez saisir une heure de départ valide pour les déplacements."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
+msgid "Please enter a valid ending time for the shifts."
+msgstr "Veuillez entrer une heure finale valide pour les déplacements."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
+msgid "The ending time has to be after the starting time."
+msgstr "La fin de la période doit être après l’heure du départ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
+#, php-format
+msgid "Please check your input for needed angels of type %s."
+msgstr ""
+"S’il vous plaît vérifier votre entrée pour anges nécessaires du type %s."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
+msgid "Shift updated."
+msgstr "Maj mise à jour."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
+msgid "This page is much more comfortable with javascript."
+msgstr "Cette page est beaucoup plus à l’aise avec javascript."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
+msgid "Room:"
+msgstr "Chambre :"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
+msgid "Start:"
+msgstr "Début :"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
+msgid "End:"
+msgstr "Fin:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
+msgid "Shift deleted."
+msgstr "Maj supprimé."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
+#, php-format
+msgid "Do you want to delete the shift %s from %s to %s?"
+msgstr "Vous voulez supprimer la Maj %s de %s à %s ?"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr ""
+"Vous n'êtes pas autorisé à s’inscrire pour ce changement. Maj est peut-être "
+"plein ou déjà en cours d’exécution."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "You are subscribed. Thank you!"
+msgstr "Vous êtes abonné. Merci!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
+msgid "Freeloader"
+msgstr "FreeLoader"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
+msgid "The administration has not configured any shifts yet."
+msgstr "L’administration n’a pas encore configuré de tout changement."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
+msgid "The administration has not configured any rooms yet."
+msgstr "L’administration n’a pas encore configuré de toutes les pièces."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
+msgid "occupied"
+msgstr "Occupé"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
+msgid "free"
+msgstr "gratuit"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
+msgid ""
+"The administration has not configured any angeltypes yet - or you are not "
+"subscribed to any angeltype."
+msgstr ""
+"L’administration n’a pas encore - configuré de n’importe quel angeltypes ou "
+"vous n’êtes pas abonné à n’importe quel angeltype."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
+#, php-format
+msgid "%d helper needed"
+msgid_plural "%d helpers needed"
+msgstr[0] "%d aide nécessaire"
+msgstr[1] "%d aides nécessaires"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
+msgid "Sign up"
+msgstr "Je m’inscrit"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
+msgid "ended"
+msgstr "terminé"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
+#, php-format
+msgid "Become %s"
+msgstr "Devenir %s"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
+msgid "Add more angels"
+msgstr "Ajouter plus d’anges"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
+msgid "Time"
+msgstr "Heure"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
+msgid "Entries"
+msgstr "Entrées"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
+msgid "Occupancy"
+msgstr "Nombre maximal de personnes"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr ""
+"Les tâches ci-dessous sont influencés par les préférences que vous avez "
+"défini dans vos paramètres !"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid "Description of the jobs."
+msgstr "Description de l’emploi."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
+msgid "Use new style if possible"
+msgstr "Utiliser le nouveau style si possible"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+msgid "iCal export"
+msgstr "Exportation iCal"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+#, php-format
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"Exportation de quarts de travail indiqués. <a href=\"%s\">format iCal</a> ou "
+"<a href=\"%s\">format JSON</a> disponible (s’il vous plaît garder le secret, "
+"sinon <a href=\"%s\">Réinitialiser la clé api</a>)."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
+msgid "Filter"
+msgstr "Filtre"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
+msgid "All"
+msgstr "Tout"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
+msgid "None"
+msgstr "Non"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
+msgid "Unconfirmed"
+msgstr "Non confirmé"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
+msgid "Coordinator"
+msgstr "Coordonnateur"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
+msgid "Member"
+msgstr "Membre"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
+#, php-format
+msgid "Do you want to delete angeltype %s?"
+msgstr "Voulez-vous vraiment supprimer angeltype %s ?"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:7
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:18
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:40
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
+msgid "cancel"
+msgstr "annuler"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
+msgid "Restricted"
+msgstr "Limité"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Yes"
+msgstr "Oui"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "No"
+msgstr "Non"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Requires driver license"
+msgstr "Demande de permis de conduire"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
+msgid ""
+"Restricted angel types can only be used by an angel if enabled by an "
+"archangel (double opt-in)."
+msgstr ""
+"Ange restreint types utilisable uniquement par un ange si activée par un "
+"archange (double opt-in)."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
+msgid "Description"
+msgstr "Description"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
+msgid "Please use markdown for the description."
+msgstr "S’il vous plaît utiliser markdown pour la description."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
+msgid "my driving license"
+msgstr "Permis de conduire"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
+msgid ""
+"This angeltype requires a driver license. Please enter your driver license "
+"information!"
+msgstr ""
+"Cette angeltype requiert un permis de conduire. Veuillez entrer vos "
+"informations de licence de pilote !"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
+#, php-format
+msgid ""
+"You are unconfirmed for this angeltype. Please go to the introduction for %s "
+"to get confirmed."
+msgstr ""
+"Vous êtes non confirmés pour cette angeltype. Veuillez consulter "
+"l’introduction pour %s obtenir confirmé."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
+msgid "confirm"
+msgstr "confirmer"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
+msgid "deny"
+msgstr "nier"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
+msgid "remove"
+msgstr "supprimer"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
+msgid "Driver"
+msgstr "Conducteur"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
+msgid "Has car"
+msgstr "A voiture"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
+msgid "Car"
+msgstr "Véhicule"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
+msgid "3,5t Transporter"
+msgstr "3, 5 t transporteur"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
+msgid "7,5t Truck"
+msgstr "7, 5 t camion"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
+msgid "12,5t Truck"
+msgstr "12, 5 t camion"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
+msgid "Forklift"
+msgstr "Chariot élévateur"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
+msgid "Coordinators"
+msgstr "Coordonnateurs"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
+msgid "Members"
+msgstr "Membres"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
+msgid "Add"
+msgstr "Ajouter"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
+msgid "confirm all"
+msgstr "Tout confirmer"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
+msgid "deny all"
+msgstr "tout refuser"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
+msgid "New angeltype"
+msgstr "Nouveau angeltype"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
+msgid "Membership"
+msgstr "Adhérents"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
+msgid "FAQ"
+msgstr "FAQ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr ""
+"Voici la liste des équipes et de leurs tâches. Si vous avez des questions, "
+"lisez la FAQ."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
+msgid ""
+"This angeltype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr ""
+"Cette angeltype est restreinte par double-opt-in par un coordonnateur de "
+"l’équipe. S’il vous plaît apparaissent lors des réunions de présentation "
+"selon."
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:17
+msgid "Open questions"
+msgstr "Questions ouvertes"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:31
+msgid "Your Question:"
+msgstr "Votre question :"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
+msgid "Freeloaded"
+msgstr "Freeloaded"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
+msgid "Freeload comment (Only for shift coordination):"
+msgstr "Commentaire de Freeload (uniquement pour la coordination de Maj) :"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
+msgid "Edit shift entry"
+msgstr "Modifier le décalage entrée"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "ange"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
+msgid "Date, Duration:"
+msgstr "Date, durée :"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
+msgid "Location:"
+msgstr "Localisation:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
+msgid "Title:"
+msgstr "Titre:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
+msgid "Type:"
+msgstr "Type :"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
+msgid "Comment (for your eyes only):"
+msgstr "Commentaire général (pour vos yeux seulement) :"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "créé à %s de %s"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
+#, php-format
+msgid "edited at %s by %s"
+msgstr "édité à %s de %s"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
+msgid "This shift collides with one of your shifts."
+msgstr "Ce changement entre en collision avec l’un de vos déplacements."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
+msgid "You are signed up for this shift."
+msgstr "Vous êtes inscrit pour ce changement."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
+msgid "Location"
+msgstr "Votre localisation"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
+#, php-format
+msgid "Do you want to delete shifttype %s?"
+msgstr "Voulez-vous vraiment supprimer shifttype %s ?"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Edit shifttype"
+msgstr "Modifier shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Create shifttype"
+msgstr "Créer shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
+#, php-format
+msgid "for team %s"
+msgstr "pour l’équipe %s"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
+msgid "New shifttype"
+msgstr "Nouveau shifttype"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:7
+msgid "Please select..."
+msgstr "Veuillez sélectionner"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "Nombre de chèques"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
+msgid "m/d/Y h:i a"
+msgstr "m/Y h: i un"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
+msgid "New user"
+msgstr "Nouvel utilisateur"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
+msgid "Prename"
+msgstr "Prénom"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Arrived"
+msgstr "Arrivé"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
+msgid "Voucher"
+msgstr "Coupon"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
+msgid "Freeloads"
+msgstr "Freeloads"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
+msgid "Active"
+msgstr "Actif"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "T-shirt."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "Dernière connexion"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:95
+msgid "Free"
+msgstr "Gratuitement"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
+#, php-format
+msgid "Next shift %c"
+msgstr "Prochaine Maj %c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
+#, php-format
+msgid "Shift starts %c"
+msgstr "Maj commence %c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
+#, php-format
+msgid "Shift ends %c"
+msgstr "Maj termine %c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
+msgid "sign off"
+msgstr "sortie du système"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "Somme"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:187
+msgid "User state"
+msgstr "État utilisateur"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Arrived at %s"
+msgstr "Arrivé à : %s"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Not arrived (Planned: %s)"
+msgstr "N’est ne pas arrivé (prévues: %s))"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Not arrived"
+msgstr "Pas arrivé"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+#, php-format
+msgid "Got %s voucher"
+msgid_plural "Got %s vouchers"
+msgstr[0] "Eu bon %s"
+msgstr[1] "%s Voucher bekommen"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+msgid "Got no vouchers"
+msgstr "N’obtenu aucun bons"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
+msgid "Rights"
+msgstr "Droits"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
+msgid "driving license"
+msgstr "permis de conduire"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "Modifier les pièces justificatives"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "Exportation iCal"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "Exportation JSON"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "Nom &amp; compagnons de travail"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "Commenter"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "Action"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "Vos déplacements de nuit entre 2 et 08:00 compter deux fois."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:228
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr ""
+"Aller à la <a href=\"%s\">déplace la table</a> pour vous inscrire quelques "
+"décalages."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"Nous vous enverrons un e-mail avec un lien de récupération de mot de passe. "
+"Veuillez utiliser l’adresse e-mail utilisée pour l’enregistrement."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
+msgid "Recover"
+msgstr "Récupérer"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
+msgid "Please enter a new password."
+msgstr "Veuillez entrer un mot de passe"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to add coordinator rights for %s to %s?"
+msgstr "Voulez-vous vraiment ajouter coordinateur droits pour %s à %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to remove coordinator rights for %s from %s?"
+msgstr "Voulez-vous vraiment supprimer le coordinateur droits pour %s de %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
+#, php-format
+msgid "Do you really want to deny all users for %s?"
+msgstr "Voulez-vous vraiment de refuser tous les utilisateurs pour %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
+#, php-format
+msgid "Do you really want to confirm all users for %s?"
+msgstr "Voulez-vous vraiment de confirmer tous les utilisateurs pour %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
+#, php-format
+msgid "Do you really want to confirm %s for %s?"
+msgstr "Voulez-vous vraiment confirmer %s %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
+#, php-format
+msgid "Do you really want to delete %s from %s?"
+msgstr "Voulez-vous vraiment supprimer %s de %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
+msgid "User"
+msgstr "Utilisateur"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
+#, php-format
+msgid "Do you really want to add %s to %s?"
+msgstr "Voulez-vous vraiment ajouter %s à %s ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
+msgid "save"
+msgstr "enregistrer"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
+msgid "Back to profile"
+msgstr "Retourner au profil"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid "Privacy"
+msgstr "Confidentialité"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr ""
+"Votre information de licence conduite n’est visible pour les coordinateurs "
+"et les admins."
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
+msgid "I am willing to operate cars for the PL"
+msgstr "Je suis prêt à exploiter les voitures pour le PL"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr ""
+"J’ai ma propre voiture avec moi et suis prêt à utiliser pour le PL (vous "
+"allez être remboursé pour le carburant)"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
+msgid "Driver license"
+msgstr "Permis de conduire"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
+msgid "Transporter 3,5t"
+msgstr "Transporter 3, 5 t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
+msgid "Truck 7,5t"
+msgstr "Camion 7, 5 t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
+msgid "Truck 12,5t"
+msgstr "Camion 12, 5 t"
+
+#: /var/www/html/engelsystem/public/index.php:147
+msgid "No Access"
+msgstr "Aucun accès"
+
+#: /var/www/html/engelsystem/public/index.php:148
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr ""
+"Vous n’avez pas l’autorisation d’afficher cette page. Vous avez probablement "
+"de vous connecter ou vous enregistrer pour accéder !"
+
+msgid "You have been signed off from the shift."
+msgstr "Vous avez été clôturés depuis le changement."
+
+msgid "planned departure"
+msgstr "départ prévu"
+
+msgid "Tasks"
+msgstr "Tâches"
+
+msgid "User didnt got vouchers."
+msgstr "Utilisateur n’a pas obtenu de bons."
+
+msgid "Remove vouchers"
+msgstr "Retirer les pièces justificatives"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr ""
+"Ce changement s’exécute maintenant ou terminé déjà. Veuillez communiquer "
+"avec le répartiteur pour rejoindre le passage."
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr ""
+"Vous est déjà abonné à passer dans le même intervalle de temps. Veuillez "
+"communiquer avec le répartiteur pour rejoindre le passage."
+
+msgid "The shift is already full."
+msgstr "Le changement est déjà complet."
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr ""
+"Bonjour à %s, ici vous pouvez modifier vos paramètres personnels soit mot de "
+"passe, paramètres de couleur, etc."
+
+msgid "Name/Description:"
+msgstr "Nom et description@item:inlistbox Format:"
+
+msgid "Timeslot"
+msgstr "Multiplexage temporel"
+
+msgid "The first wants to join %s."
+msgstr "Le premier veut rejoindre %s."
+
+msgid "Groups"
+msgstr "Groupes"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "Vous ne sont pas confirmées pour ce type d’ange."
+
+msgid "Exports"
+msgstr "Exportations"
+
+msgid "Current ends in %s min"
+msgstr "Actuel se termine en %s min"
+
+msgid "Add new angeltype"
+msgstr "Ajouter Nouvelle angeltype"
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "Vous avez reçu un nouveau message"
+msgstr[1] "Du hast %s neue Nachrichten."
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"Ce sont vos déplacements.<br>S’il vous plaît essayez d’apparaître <b>15 "
+"minutes</b> avant le début de votre quart de travail !<br>Vous pouvez vous "
+"retirer d’un déplacement jusqu'à %d heures avant de démarrer."
+
+msgid "Page:"
+msgstr "Page :"
+
+msgid "Message:"
+msgstr "Message:"
+
+msgid "Wakeup"
+msgstr "Réveillez-vous"
+
+msgid "Broken date!"
+msgstr "Date de cassé !"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "Appel incomplet, manquant de réveil ID."
+
+msgid "Wake-up call deleted."
+msgstr "Appel de réveil supprimé."
+
+msgid "No wake-up found."
+msgstr "Aucun réveil trouvé."
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"Bonjour %s, ici vous pouvez vous inscrire pour un appel de réveil. "
+"Simplement dire quand et où l’ange devrait venir à vous réveiller."
+
+msgid "All ordered wake-up calls, next first."
+msgstr "Tous classés en appels de réveil, prochain premier."
+
+msgid "Place"
+msgstr "Lieu"
+
+msgid "Notes"
+msgstr "Notes"
+
+msgid "Schedule a new wake-up here:"
+msgstr "Programmer un réveil nouveau ici :"
+
+msgid "User %s confirmed as %s."
+msgstr "Utilisateur %s a confirmé comme %s."
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr ""
+"Toute résistance est inutile ! Vos paramètres biologiques et physiques "
+"seront ajoutera à notre collectiv ! Assimiler l’ange :"
+
+msgid "Confirmed all."
+msgstr "Confirmé à tous."
+
+msgid "asdf"
+msgstr "asdf"

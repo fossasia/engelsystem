@@ -1,9 +1,16 @@
 <?php
 $locales = array(
     'de_DE.UTF-8' => "Deutsch",
-    'hi_IN.UTF-8' => "Hindi", 
+    'hi_IN.UTF-8' => "Hindi-IN", 
     'sp_EU.UTF-8' => "Spanish",
-    'en_US.UTF-8' => "English" 
+    'en_US.UTF-8' => "English-US",
+    'bg_BG.UTF-8' => "Bulgarian",
+    'en_GB.UTF-8' => "English-UK",
+    'pa_IN.UTF-8' => "Punjabi-IN",
+    'fr_FR.UTF-8' => "French",
+    'ta_IN.UTF-8' => "Tamil-IN",
+    'zn_CH.UTF-8' => "Chinese",
+    'hu_HU.UTF-8' => "Hungarian"
 );
 
 $default_locale = 'en_US.UTF-8';

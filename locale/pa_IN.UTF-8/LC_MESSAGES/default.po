@@ -1,0 +1,2518 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem \n"
+"POT-Creation-Date: 2016-05-13 12:45+0100\n"
+"PO-Revision-Date: 2016-06-06 15:30+0530\n"
+"Last-Translator: \n"
+"Language-Team: FOSSASIA <dishant.khanna1807@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: pa\n"
+"X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"ਸਾਡੇ ਨਾਲ ਟੀਅਰਡਾਊਨ ਦਾ ਆਇਤਨ ਲਈ ਇੱਕ ਭਾਵਨਾ ਨੂੰ ਦੇਣ ਲਈ ਆਪਣੇ ਸੈਟਿੰਗ ਸਫ਼ੇ 'ਤੇ ਜਾਣ ਦੇ ਆਪਣੇ ਦੀ "
+"ਯੋਜਨਾ ਦੀ ਮਿਤੀ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਘੱਟੋ-ਘੱਟ%s ਨੂੰ ਵਾਰੀ freeloaded. Shift ਸਾਇਨਅਪ ਤਾਲਾਬੰਦ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੇ ਅਨਲੌਕ "
+"ਹੋਣ ਲਈ ਅਕਾਸ਼ ਡੈਸਕ ਤੇ ਜਾਓ."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਦੇ ਤੌਰ ਤੇ ਪਹੁੰਚੇ ਮਾਰਕ ਨਹੀ ਕਰ ਰਹੇ ਹਨ. ਕਿਰਪਾ ਕਰਕੇ, ਸਵਰਗ ਦੇ ਡੈਸਕ ਨੂੰ ਜਾਣ ਲਈ ਆਪਣੇ ਦੂਤ ਨੂੰ "
+"ਬੈਜ ਵਿੱਚ ਪ੍ਰਾਪਤ ਕਰੋ ਅਤੇ / ਜ ਨੂੰ ਦੱਸੋ ਕਿ ਤੁਹਾਨੂੰ ਹੀ ਪਹੁੰਚ ਗਏ."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "ਤੁਹਾਨੂੰ ਆਪਣੇ ਸੈਟਿੰਗ ਵਿੱਚ ਇੱਕ ਟੀ -ਸ਼ਰਟ ਦਾ ਆਕਾਰ ਨਿਰਧਾਰਿਤ ਕਰਨ ਦੀ ਲੋੜ ਹੈ!"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਆਪਣੇ ਸੈਟਿੰਗ ਵਿੱਚ ਇੱਕ DECT ਫੋਨ ਨੰਬਰ ਨਿਰਧਾਰਿਤ ਕਰਨ ਦੀ ਲੋੜ ਹੈ! ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ DECT "
+"ਦਾ ਫੋਨ ਹੈ, ਨਾ ਹੈ, ਜੇ, ਹੁਣੇ ਹੀ ਦਿਓ, \"-\"."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "ਪਰਬੰਧਕ"
+
+#: /var/www/html/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "ਕੋਈ ਡਾਟਾ ਮਿਲਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
+msgid "Angeltypes"
+msgstr "ਦੂਤ ਕਿਸਮ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:327
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "ਟੀਮ / ਅੱਯੂਬ ਵੇਰਵਾ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "ਦੂਤ ਕਿਸਮ %s ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "ਹਟਾਓ ਦੂਤ ਕਿਸਮ %s ਨੂੰ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "ਨਾਮ ਚੈੱਕ ਕਰੋ ਜੀ. ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਇਸ ਨੂੰ ਹੀ ਮੌਜੂਦ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "%s ਨੂੰ ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "ਟੀਮ ਨੂੰ%s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
+msgid "view"
+msgstr "ਝਲਕ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:23
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:18
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:91
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
+msgid "edit"
+msgstr "ਸੰਪਾਦਨ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:5
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:12
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:78
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "ਨੂੰ ਹਟਾਉਣ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "ਛੱਡ"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "ਆਉਣ"
+
+#: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "ਸ਼ਿਫਟ ਲੱਭਿਆ ਜਾ ਸਕਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ %s ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "ਹਟਾਓ ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ %s ਨੂੰ"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ ਨਾ ਲੱਭੀ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
+msgid "Please enter a name."
+msgstr "ਇੱਕ ਨਾਮ ਦਰਜ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ ਅੱਪਡੇਟ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "ਬਣਾਇਆ ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "ਇੱਥ %d ਅਸਪਸ਼ਟ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਹੈ."
+msgstr[1] "ਇੱਥੇ %d ਅਸਪਸ਼ਟ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "ਦੂਤ ਕਿਸਮ ਹੈ, ਜੋ ਕਿ ਮਨਜ਼ੂਰੀ ਦੀ ਲੋੜ ਹੈ:"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Angeltype ਮੌਜੂਦ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ angeltype ਲਈ ਸਭ ਉਪਭੋਗੀ ਨੂੰ ਹਟਾਉਣ ਲਈ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "ਅੰਗਰੇਜ਼ ਕਿਸਮ %s ਲਈ ਸਭ ਉਪਭੋਗੀ ਇਨਕਾਰ ਕੀਤਾ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "ਸਭ ਉਪਭੋਗੀ ਪਾਬੰਦੀ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "ਯੂਜ਼ਰ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਮੌਜੂਦ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਲਈ ਸਭ ਉਪਭੋਗੀ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "ਅੰਗਰੇਜ਼ ਕਿਸਮ %s ਲਈ ਸਭ ਉਪਭੋਗੀ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੀ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "ਸਭ ਉਪਭੋਗੀ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਯੂਜ਼ਰ ਨੂੰ angeltype ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "ਉਪਭੋਗੀ ਮੌਜੂਦ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "ਅੰਗਰੇਜ਼ ਕਿਸਮ %s ਲਈ%s ਨੂੰ ਪੁਸ਼ਟੀ ਕੀਤੀ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "ਉਪਭੋਗੀ ਲਈ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਦੀ ਪੁਸ਼ਟੀ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਯੂਜ਼ਰ ਨੂੰ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਨੂੰ ਹਟਾਉਣ ਲਈ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "ਯੂਜ਼ਰ%s%s ਨੂੰ ਹਟਾ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "angeltype ਹਟਾਓ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "ਤੁਹਾਨੂੰ ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ ਸੈੱਟ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "ਕੋਈ ਕੋਆਰਡੀਨੇਟਰ ਅੱਪਡੇਟ ਦਿੱਤਾ ਗਿਆ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "%s %s ਲਈ ਜੋੜੇ ਗਏ ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "%s %s ਲਈ ਹਟਾ ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ ਹਟਾਓ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਯੂਜ਼ਰ ਚੁਣੋ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "ਯੂਜ਼ਰ %s %s ਨੂੰ ਸ਼ਾਮਿਲ ਕੀਤਾ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "ਉਪਭੋਗੀ ਨੂੰ ਅੰਗਰੇਜ਼ ਕਿਸਮ ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "ਤੁਹਾਨੂੰ ਹੀ %s ਹਨ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "ਤੁਹਾਨੂੰ %s ਨੂੰ ਸ਼ਾਮਲ ਹੋ ਗਏ."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "ਇੱਕ %s ਬਣੋ"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਇੱਕ ਅੰਗਰੇਜ਼ ਕਿਸਮ, ਜੋ ਕਿ ਇੱਕ ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ ਦੀ ਲੋੜ ਹੈ ਸ਼ਾਮਲ ਹੋ ਗਏ. ਇੱਥੇ ਆਪਣੇ ਡਰਾਈਵਿੰਗ "
+"ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ ਸੋਧ ਜੀ: %s."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "ਤੁਹਾਡਾ ਡਰਾਈਵਰ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ ਨੂੰ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "ਤੁਹਾਡਾ ਡਰਾਈਵਰ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ ਨੂੰ ਬਚਾਇਆ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "ਸੋਧ %s ਨੂੰ ਗੱਡੀ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "ਵਾਊਚਰ ਦੇ ਇੱਕ ਯੋਗ ਨੰਬਰ ਦਾਖਲ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "ਵਾਊਚਰ ਦੀ ਗਿਣਤੀ ਸੰਭਾਲੀ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "%s's vouchers"
+msgstr "ਨੂੰ %s ਦੇ ਵਾਊਚਰ"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
+msgid "User not found."
+msgstr "ਉਪਭੋਗੀ ਨਾ ਲੱਭੀ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
+msgid "All users"
+msgstr "ਸਾਰੇ ਉਪਭੋਗਤਾ"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
+msgid "Token is not correct."
+msgstr "ਟੋਕਨ ਠੀਕ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:93
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਮੇਲ ਨਾ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr "ਤੁਹਾਡਾ ਪਾਸਵਰਡ (ਘੱਟੋ-ਘੱਟ 6 ਅੱਖਰ ਨੂੰ ਵਰਤਣ, ਕਿਰਪਾ ਕਰਕੇ) ਛੋਟਾ ਹੁੰਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
+msgid "Password could not be updated."
+msgstr "ਪਾਸਵਰਡ ਅੱਪਡੇਟ ਕੀਤਾ ਨਹੀ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "ਪਾਸਵਰਡ ਨੂੰ ਬਚਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:63
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "ਈ-ਮੇਲ ਪਤਾ ਠੀਕ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:67
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "ਆਪਣੇ ਈ-ਮੇਲ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
+msgid "Password recovery"
+msgstr "ਪਾਸਵਰਡ ਰਿਕਵਰੀ"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਪਾਸਵਰਡ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ%s ਨੂੰ ਜਾਓ."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
+msgid "We sent an email containing your password recovery link."
+msgstr "ਸਾਨੂੰ ਆਪਣੇ ਪਾਸਵਰਡ ਰਿਕਵਰੀ ਲਿੰਕ ਨੂੰ ਰੱਖਣ ਵਾਲੀ ਇੱਕ ਈਮੇਲ ਭੇਜ ਦਿੱਤਾ."
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "ਅਧਿਕਤਮ %s ਨੂੰ,"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "ਇੱਥੇ engelsystem ਤੱਕ ਤੁਹਾਡੇ ਲਈ ਇੱਕ ਸੁਨੇਹਾ ਹੈ:"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"ਇਹ ਈ-ਮੇਲ ਆਟੋ ਤਿਆਰ ਗਿਆ ਹੈ ਅਤੇ ਦਸਤਖਤ ਕੀਤੇ ਜਾਣ ਦੀ ਹੈ, ਨਾ ਗਿਆ ਹੈ. ਕਿਉਕਿ ਤੁਹਾਨੂੰ "
+"engelsystem ਵਿੱਚ ਦਰਜ ਹਨ, ਤੁਹਾਨੂੰ ਇਸ ਈ-ਮੇਲ ਮਿਲੀ."
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "ਇੱਕ ਸ਼ਿਫਟ ਤੁਹਾਡੇ 'ਤੇ ਦਰਜ ਕੀਤੇ ਗਏ ਹਨ ਤਬਦੀਲ ਹੋ ਗਿਆ ਹੈ:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* ਸ਼ਿਫਟ ਕਿਸਮ %s ਨ %s ਨੂੰ ਤਬਦੀਲ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "* ਸ਼ਿਫਟ ਦਾ ਸਿਰਲੇਖ %s %s ਨੂੰ ਤਬਦੀਲ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "* ਸ਼ਿਫਟ ਸ਼ੁਰੂ %s %s ਨੂੰ ਤਬਦੀਲ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "* ਸ਼ਿਫਟ ਅੰਤ %s %s ਨੂੰ ਤਬਦੀਲ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "* Shift ਸਥਿਤੀ %s %s ਨੂੰ ਤਬਦੀਲ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "ਅੱਪਡੇਟ ਕੀਤਾ ਸ਼ਿਫਟ:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "ਤੁਹਾਡਾ ਸ਼ਿਫਟ ਬਦਲ ਗਿਆ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "ਇੱਕ ਸ਼ਿਫਟ ਤੁਹਾਡੇ 'ਤੇ ਹਟਾਇਆ ਗਿਆ ਸੀ ਤੇ ਰਜਿਸਟਰ ਕਰ ਰਹੇ ਹਨ:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "ਤੁਹਾਡਾ ਸ਼ਿਫਟ ਹਟਾਇਆ ਗਿਆ ਸੀ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "ਤੁਹਾਨੂੰ ਇੱਕ ਸ਼ਿਫਟ ਕਰਨ ਲਈ ਜਾਰੀ ਕੀਤਾ ਗਿਆ ਹੈ:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "ਸ਼ਿਫਟ ਨੂੰ ਦਿੱਤਾ"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "ਤੁਹਾਨੂੰ ਇੱਕ ਸ਼ਿਫਟ ਤੱਕ ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "Shift ਨੂੰ ਹਟਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "ਸਰਗਰਮ ਦੂਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr "ਘੱਟੋ-ਘੱਟ%s ਨੂੰ ਦੂਤ ਸਰਗਰਮ ਹੋਣ ਲਈ ਮਜਬੂਰ ਕਰ ਰਹੇ ਹਨ. ਦਾ ਨੰਬਰ ਵੱਡਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਦਿਓ, ਦੂਤ ਦੇ ਇੱਕ ਨੰਬਰ ਦੇ ਸਰਗਰਮ ਤੌਰ 'ਤੇ ਮਾਰਕ ਜਾਵੇ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "ਚਿੰਨ੍ਹਿਤ ਦੂਤ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
+#: /var/www/html/engelsystem/includes/view/User_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "ਪਿੱਛੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "ਨੂੰ ਲਾਗੂ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "ਦੂਤ ਸਰਗਰਮ ਤੌਰ 'ਤੇ ਮਾਰਕ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "ਦੂਤ ਨਾ ਲੱਭੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "ਦੂਤ ਸਰਗਰਮ ਹੈ, ਨਾ ਦੇ ਤੌਰ ਤੇ ਮਾਰਕ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "ਦੂਤ ਨੇ ਇੱਕ ਟੀ-ਸ਼ਰਟ ਮਿਲ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "ਦੂਤ ਕੋਈ ਟੀ-ਸ਼ਰਟ ਮਿਲ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
+msgid "set active"
+msgstr "ਸਰਗਰਮ ਸੈੱਟ ਕੀਤਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "ਸਰਗਰਮ ਨੂੰ ਹਟਾਉਣ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
+msgid "got t-shirt"
+msgstr "ਮਿਲੀ ਟੀ-ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
+msgid "remove t-shirt"
+msgstr "ਨੂੰ ਹਟਾਉਣ ਟੀ-ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
+msgid "Sum"
+msgstr "ਬੀਮੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:167
+msgid "Search angel:"
+msgstr "ਖੋਜ ਦੂਤ ਨੂੰ:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "ਸਾਰੇ ਵਾਰੀ ਦਿਖਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:25
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "ਖੋਜ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "ਕਿੰਨਾ ਕੁ ਦੂਤ ਸਰਗਰਮ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "ਜਾਣਕਾਰੀ ਦੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:177
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "ਉਪਨਾਮ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:178
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "ਆਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:179
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "ਵਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "ਲੰਬਾਈ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:181
+msgid "Active?"
+msgstr "ਸਰਗਰਮ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "ਜਬਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
+msgid "T-shirt?"
+msgstr "ਟੀ-ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
+msgid "Shirt statistics"
+msgstr "ਕਮੀਜ਼ ਅੰਕੜੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "ਦੀ ਲੋੜ ਹੈ ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
+msgid "Given shirts"
+msgstr "ਦਿੱਤੇ ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "ਪਹੁੰਚੇ ਦੂਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "ਰੀਸੈਟ ਕੀਤਾ ਹੈ. ਦੂਤ ਪਹੁੰਚੇ, ਨਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "ਦੂਤ ਦੇ ਰੂਪ ਵਿੱਚ ਪਹੁੰਚੇ ਮਾਰਕ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "ਜੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "ਰੀਸੈਟ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
+msgid "arrived"
+msgstr "ਪਹੁੰਚੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "ਯੋਜਨਾਬੱਧ ਪਹੁੰਚਣ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "ਪਹੁੰਚੇ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "ਆਗਮਨ ਦੀ ਤਾਰੀਖ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "ਯੋਜਨਾਬੱਧ ਜਾਣ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "ਯੋਜਨਾਬੱਧ ਪਹੁੰਚਣ ਅੰਕੜੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "ਪਹੁੰਚੇ ਰਕਮ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:27
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
+msgid "Date"
+msgstr "ਮਿਤੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "ਗਿਣਤੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "ਆਗਮਨ ਅੰਕੜੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "ਯੋਜਨਾਬੱਧ ਜਾਣ ਅੰਕੜੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "ਮੁਫ਼ਤ ਦੂਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:74
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "Angeltype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "ਕੇਵਲ ਪੁਸ਼ਟੀ ਕੀਤੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:85
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:181
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:312
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:168
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
+msgid "Nick"
+msgstr "ਨਿਕ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:87
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:210
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
+msgid "DECT"
+msgstr "DECT"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:88
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:219
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "ਜੱਬਰ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:89
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:184
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
+msgid "E-Mail"
+msgstr "ਈ-ਮੇਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "Grouprights"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:145
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
+msgid "Name"
+msgstr "ਪੰਜਾਬੀ ਅਨੁਵਾਦ ਨੂੰ ਅੰਗਰੇਜ਼ੀ ਲਈ ਮੁਫ਼ਤ ਸਾਫਟਵੇਅਰ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "ਅਧਿਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:32
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:106
+#: /var/www/html/engelsystem/includes/pages/user_news.php:160
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:183
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:192
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:197
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:202
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "ਬਚਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "ਗਰੁੱਪ ਨੂੰ ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:4
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+msgid "Frab import"
+msgstr "Frab ਆਯਾਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr "ਵੈਬਸਰਵਰ ਦਰਾਮਦ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ 'ਤੇ ਕੋਈ ਲਿਖਣ-ਦੀ ਇਜਾਜ਼ਤ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:50
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:114
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:191
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਸ਼ਿਫਟ ਦੀ ਕਿਸਮ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:57
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:121
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr "ਭਾਸ਼ਣ ਦੇ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਮਿੰਟ ਦੀ ਇੱਕ ਮਾਤਰਾ ਨੂੰ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:128
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr "ਭਾਸ਼ਣ ਦੇ ਅੰਤ ਨੂੰ ਸ਼ਾਮਿਲ ਕਰਨ ਲਈ ਮਿੰਟ ਦੀ ਇੱਕ ਮਾਤਰਾ ਨੂੰ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "ਕੋਈ ਠੀਕ XML / xcal ਫਾਇਲ ਦਿੱਤਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "ਫਾਇਲ ਅੱਪਲੋਡ ਗਲਤ ਹੋ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "ਕੁਝ ਡਾਟਾ ਪ੍ਰਦਾਨ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "ਫਾਇਲ ਅੱਪਲੋਡ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "ਪ੍ਰਮਾਣਿਕਤਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:175
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "ਆਯਾਤ ਕਰੋ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"ਇਹ ਆਯਾਤ / ਅੱਪਡੇਟ ਬਣਾਉਣ / ਦਿੱਤੀ ਗਈ FRAB-ਨਿਰਯਾਤ ਫਾਇਲ ਨੂੰ ਦੇ ਕੇ ਕਮਰੇ ਅਤੇ ਵਾਰੀ ਨੂੰ ਹਟਾ "
+"ਦੇਵੇਗਾ. ਦੀ ਲੋੜ ਹੈ ਫਾਇਲ ਫਾਰਮੈਟ xcal ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:94
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "Shifttype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "ਮਿੰਟ ਸ਼ੁਰੂ ਵਿਚ ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "ਮਿੰਟ ਨੂੰ ਖਤਮ ਕਰਨ ਲਈ ਸ਼ਾਮਲ ਕਰੋ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "xcal-ਫਾਇਲ (.xcal)"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:107
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "ਆਯਾਤ ਫਾਇਲ ਗੁੰਮ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "ਕਮਰੇ ਬਣਾਉਣ ਲਈ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "ਕਮਰੇ ਨੂੰ ਹਟਾਉਣ ਲਈ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "ਬਣਾਉਣ ਲਈ ਵਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:150
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:168
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
+msgid "Day"
+msgstr "ਦਿਨ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:151
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "ਸ਼ੁਰੂ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:152
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:161
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "ਅੰਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:153
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "Shift ਦੀ ਕਿਸਮ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:172
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:302
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "ਟਾਈਟਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "ਕਮਰਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "ਨੂੰ ਅਪਡੇਟ ਕਰਨ ਲਈ ਵਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "ਨੂੰ ਹਟਾਉਣ ਲਈ ਵਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "ਇਹ ਹੋ ਗਿਆ!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "ਲਾਗ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "ਖ਼ਬਰੀ ਇੰਦਰਾਜ਼ ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr "ਲੇਖਕ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:29
+#: /var/www/html/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "ਵਿਸ਼ਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:30
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
+#: /var/www/html/engelsystem/includes/pages/user_news.php:105
+#: /var/www/html/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "ਸੁਨੇਹਾ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:31
+#: /var/www/html/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "ਬੈਠਕ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
+msgid "Delete"
+msgstr "ਹਟਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "ਨਿਊਜ਼ ਇੰਦਰਾਜ਼ ਅੱਪਡੇਟ ਕੀਤਾ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "ਨਿਊਜ਼ ਇੰਦਰਾਜ਼ ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "ਜਵਾਬ ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "ਉੱਥੇ ਜਵਾਬ ਸਵਾਲ ਹਨ!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "ਜਵਾਬ ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "ਤੱਕ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:19
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "ਜਵਾਬ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "ਜਵਾਬ ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "ਕੇ ਜਵਾਬ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "ਕਮਰੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "ਕਿਸਮ%s ਲਈ ਲੋੜ ਦੂਤ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
+msgid "Room saved."
+msgstr "ਰੂਮ ਨੂੰ ਬਚਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
+msgid "Public"
+msgstr "ਪਬਲਿਕ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "ਕਮਰਾ ਨੰਬਰ '"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Needed angels:"
+msgstr "ਦੀ ਲੋੜ ਦੂਤ:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
+#, php-format
+msgid "Room %s deleted."
+msgstr "ਕਮਰੇ%s ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
+#, php-format
+msgid "Do you want to delete room %s?"
+msgstr "ਤੁਹਾਨੂੰ ਕਮਰੇ%s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
+msgid "add"
+msgstr "ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
+msgid "Create shifts"
+msgstr "ਵਾਰੀ ਬਣਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
+msgid "Please select a location."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਟਿਕਾਣਾ ਚੁਣੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
+msgid "Please select a start time."
+msgstr "ਇੱਕ ਸ਼ੁਰੂ ਵਾਰ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
+msgid "Please select an end time."
+msgstr "ਅੰਤ ਵੇਲੇ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
+msgid "The shifts end has to be after its start."
+msgstr "ਵਾਰੀ ਅੰਤ ਨੂੰ ਇਸ ਦੀ ਸ਼ੁਰੂਆਤ ਦੇ ਬਾਅਦ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
+msgid "Please enter a shift duration in minutes."
+msgstr "ਮਿੰਟ ਵਿੱਚ ਇੱਕ ਸ਼ਿਫਟ ਅੰਤਰਾਲ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
+msgid "Please split the shift-change hours by colons."
+msgstr "ਕਾਲਨ ਨਾਲ ਸ਼ਿਫਟ-ਤਬਦੀਲੀ ਘੰਟੇ ਵੰਡਿਆ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
+msgid "Please select a mode."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਮੋਡ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
+#, php-format
+msgid "Please check the needed angels for team %s."
+msgstr "ਟੀਮ ਨੂੰ%s ਲਈ ਲੋੜ ਹੈ ਦੂਤ ਚੈੱਕ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
+msgid "There are 0 angels needed. Please enter the amounts of needed angels."
+msgstr "ਉੱਥੇ 0 ਦੂਤ ਦੀ ਲੋੜ ਹਨ. ਦੀ ਲੋੜ ਦੂਤ ਦੇ ਮਾਤਰਾ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
+msgid "Please select a mode for needed angels."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਲੋੜ ਹੈ ਦੂਤ ਦੇ ਲਈ ਇੱਕ ਮੋਡ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
+msgid "Please select needed angels."
+msgstr "ਦੀ ਲੋੜ ਦੂਤ ਦੀ ਚੋਣ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
+msgid "Time and location"
+msgstr "ਟਾਈਮ ਅਤੇ ਸਥਾਨ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
+msgid "Type and title"
+msgstr "ਕਿਸਮ ਅਤੇ ਦਾ ਸਿਰਲੇਖ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
+msgid "Needed angels"
+msgstr "ਦੀ ਲੋੜ ਦੂਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
+msgid "Mode"
+msgstr "ਮੋਡ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
+msgid "Create one shift"
+msgstr "ਇੱਕ ਸ਼ਿਫਟ ਬਣਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
+msgid "Create multiple shifts"
+msgstr "ਮਲਟੀਪਲ ਵਾਰੀ ਬਣਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
+msgid "Create multiple shifts with variable length"
+msgstr "ਵੇਰੀਏਬਲ ਲੰਬਾਈ ਨਾਲ ਕਈ ਵਾਰੀ ਬਣਾਓ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
+msgid "Shift change hours"
+msgstr "Shift ਤਬਦੀਲੀ ਘੰਟੇ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
+msgid "Take needed angels from room settings"
+msgstr "ਕਮਰੇ ਸੈਟਿੰਗ ਤੱਕ ਦੀ ਲੋੜ ਦੂਤ ਲਵੋ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
+msgid "The following angels are needed"
+msgstr "ਹੇਠ ਦੂਤ ਦੀ ਲੋੜ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:4
+msgid "All Angels"
+msgstr "ਸਾਰੇ ਦੂਤ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
+msgid "This user does not exist."
+msgstr "ਇਹ ਉਪਭੋਗੀ ਮੌਜੂਦ ਨਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:41
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:185
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:178
+msgid "Please send me an email if my shifts change"
+msgstr "ਜੇ ਮੇਰੇ ਵਾਰੀ ਨੂੰ ਤਬਦੀਲ ਕਰੋ ਜੀ ਨੇ ਮੈਨੂੰ ਇੱਕ ਈਮੇਲ ਨੂੰ ਭੇਜਣ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:60
+msgid "Force active"
+msgstr "ਫੋਰਸ ਸਰਗਰਮ"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:79
+msgid ""
+"Please visit the angeltypes page or the users profile to manage users "
+"angeltypes."
+msgstr ""
+"ਕਿਰਪਾ ਕਰਕੇ angeltypes ਸਫ਼ੇ 'ਤੇ ਜਾਓ ਜ ਉਪਭੋਗੀ ਨੂੰ ਉਪਭੋਗੀ angeltypes ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ "
+"ਪਰੋਫਾਇਲ."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
+msgid "Edit user"
+msgstr "ਉਪਭੋਗੀ ਨੂੰ ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
+msgid "Credits"
+msgstr "ਕ੍ਰੈਡਿਟ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:4
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:314
+msgid "Login"
+msgstr "ਲਾਗਿਨ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:8
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:240
+msgid "Register"
+msgstr "ਰਜਿਸਟਰ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:12
+msgid "Logout"
+msgstr "ਲਾੱਗ ਆਊਟ, ਬਾਹਰ ਆਉਣਾ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:52
+#, php-format
+msgid "Your nick &quot;%s&quot; already exists."
+msgstr "ਤੁਹਾਡਾ Nick \"%s\" ਨੂੰ ਹੀ ਮੌਜੂਦ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:56
+#, php-format
+msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
+msgstr "ਤੁਹਾਡਾ Nick (ਮਿੰਟ. 2 ਅੱਖਰ) \"%s\" ਬਹੁਤ ਛੋਟਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:77
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:50
+msgid "Please check your jabber account information."
+msgstr "ਆਪਣੇ ਜੱਬਰ ਖਾਤੇ ਦੀ ਜਾਣਕਾਰੀ ਨੂੰ ਚੈੱਕ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:86
+msgid "Please select your shirt size."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਕਮੀਜ਼ ਦਾ ਆਕਾਰ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:97
+#, php-format
+msgid "Your password is too short (please use at least %s characters)."
+msgstr "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਬਹੁਤ ਛੋਟਾ ਹੈ (ਘੱਟੋ-ਘੱਟ%s ਨੂੰ ਅੱਖਰ ਨੂੰ ਵਰਤਣ, ਕਿਰਪਾ ਕਰਕੇ)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:104
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:64
+msgid "Please enter your planned date of arrival."
+msgstr "ਪਹੁੰਚਣ ਦੇ ਆਪਣੇ ਦੀ ਯੋਜਨਾ ਦੀ ਮਿਤੀ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:166
+msgid "Angel registration successful!"
+msgstr "ਦੂਤ ਰਜਿਸਟਰੇਸ਼ਨ ਸਫਲ!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:173
+msgid ""
+"By completing this form you're registering as a Chaos-Angel. This script "
+"will create you an account in the angel task sheduler."
+msgstr ""
+"ਇਸ ਫਾਰਮ ਨੂੰ ਪੂਰਾ ਕਰ ਕੇ ਤੁਹਾਨੂੰ ਇੱਕ ਗੜਬੜੀ-ਦੂਤ ਦੇ ਤੌਰ ਤੇ ਰਜਿਸਟਰ ਕਰ ਰਹੇ ਹੋ. ਇਹ ਸਕਰਿਪਟ ਤੁਹਾਡੇ ਦੂਤ "
+"ਨੂੰ ਕੰਮ sheduler ਵਿਚ ਇੱਕ ਖਾਤਾ ਬਣਾਉਣ ਲਈ ਕਰੇਗਾ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:190
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:171
+msgid "Planned date of arrival"
+msgstr "ਪਹੁੰਚਣ ਦੀ ਯੋਜਨਾ ਬਣਾਈ ਮਿਤੀ ਨੂੰ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:193
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:181
+msgid "Shirt size"
+msgstr "ਕਮੀਜ਼ ਦਾ ਆਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:198
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:313
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
+msgid "Password"
+msgstr "ਪਛਾਣ-ਸ਼ਬਦ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:201
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
+msgid "Confirm password"
+msgstr "ਪਾਸਵਰਡ ਪੱਕਾ ਕਰੋ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "What do you want to do?"
+msgstr "ਤੁਸੀਂ ਕੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "Description of job types"
+msgstr "ਨੌਕਰੀ ਕਿਸਮ ਦਾ ਵੇਰਵਾ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:205
+msgid ""
+"Restricted angel types need will be confirmed later by an archangel. You can "
+"change your selection in the options section."
+msgstr ""
+"ਪ੍ਰਤਿਬੰਧਿਤ ਦੂਤ ਨੇ ਕਿਸਮ ਇੱਕ ਮੀਕਾਏਲ ਨੇ ਬਾਅਦ ਵਿਚ ਪੁਸ਼ਟੀ ਕੀਤੀ ਜਾ ਦੀ ਲੋੜ ਹੈ. ਤੁਹਾਨੂੰ ਚੋਣ ਭਾਗ "
+"ਵਿੱਚ ਤੁਹਾਡੀ ਚੋਣ ਨੂੰ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹੋ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:213
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:176
+msgid "Mobile"
+msgstr "ਮੋਬਾਈਲ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:216
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:174
+msgid "Phone"
+msgstr "ਫੋਨ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:222
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:170
+msgid "First name"
+msgstr "ਪਹਿਲਾ ਨਾਂ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:225
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:169
+msgid "Last name"
+msgstr "ਆਖਰੀ ਨਾਂਮ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:230
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:173
+msgid "Age"
+msgstr "ਉੁਮਰ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:233
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:180
+msgid "Hometown"
+msgstr "ਨਗਰ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:236
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:167
+msgid "Entry required!"
+msgstr "ਇੰਦਰਾਜ਼ ਦੀ ਲੋੜ!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਗਲਤ ਹੈ. ਇਸ ਨੂੰ ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:276
+msgid "Please enter a password."
+msgstr "ਇੱਕ ਪਾਸਵਰਡ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:280
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr ""
+"ਕੋਈ ਉਪਭੋਗੀ, ਜੋ ਕਿ ਉਪਨਾਮ ਨਾਲ ਪਾਇਆ ਗਿਆ ਸੀ. ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ ਜੀ. ਜੇਕਰ ਤੁਹਾਨੂੰ ਅਜੇ ਵੀ ਸਮੱਸਿਆ ਹੈ, "
+"ਜੇ, ਇੱਕ Dispatcher ਪੁੱਛੋ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:284
+msgid "Please enter a nickname."
+msgstr "ਨੂੰ ਇੱਕ ਉਪਨਾਮ ਦਾਖਲ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:297
+msgid "Please sign up, if you want to help us!"
+msgstr "ਤੁਹਾਨੂੰ ਸਾਡੀ ਮੱਦਦ ਕਰਨੀ ਚਾਹੁੰਦੇ ਹੋ, ਜੇਕਰ, ਸਾਈਨ ਅੱਪ ਕਰੋ ਜੀ!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:304
+msgid "Registration is disabled."
+msgstr "ਰਜਿਸਟਰੇਸ਼ਨ ਅਯੋਗ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:316
+msgid "I forgot my password"
+msgstr "ਮੈਨੂੰ ਮੇਰੇ ਪਾਸਵਰਡ ਭੁੱਲ"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:318
+msgid "Please note: You have to activate cookies!"
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨੋਟ ਕਰੋ: ਤੁਹਾਨੂੰ ਕੂਕੀਜ਼ ਨੂੰ ਸਰਗਰਮ ਕਰਨ ਦੀ ਹੈ!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:324
+msgid "What can I do?"
+msgstr "ਮੈਂ ਕੀ ਕਰ ਸੱਕਦਾਹਾਂ?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:325
+msgid "Please read about the jobs you can do to help us."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਨੌਕਰੀ ਤੁਹਾਨੂੰ ਸਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਕੀ ਕਰ ਸਕਦੇ ਹੋ, ਬਾਰੇ ਪੜ੍ਹਿਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
+msgid "Messages"
+msgstr "ਸੁਨੇਹੇ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
+msgid "Select recipient..."
+msgstr "ਕਰਤਾ ਚੁਣੋ ..."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
+#: /var/www/html/engelsystem/includes/pages/user_news.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:92
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:16
+msgid "Unable to load user."
+msgstr "ਉਪਭੋਗੀ ਨੂੰ ਲੋਡ ਕਰਨ ਲਈ ਅਸਫ਼ਲ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
+msgid "mark as read"
+msgstr "ਨਿਸ਼ਾਨ ਨੂੰ ਪੜ੍ਹਨ ਦੇ ਤੌਰ ਤੇ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
+msgid "delete message"
+msgstr "ਸੁਨੇਹੇ ਨੂੰ ਹਟਾਉਣਾ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
+#, php-format
+msgid "Hello %s, here can you leave messages for other angels"
+msgstr "ਹੈਲੋ%s ਨੂੰ, ਇੱਥੇ ਤੁਹਾਨੂੰ ਹੋਰ ਦੂਤ ਦੇ ਲਈ ਸੁਨੇਹੇ ਨੂੰ ਛੱਡ ਸਕਦੇ ਹਨ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
+msgid "New"
+msgstr "ਨਿਊ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+msgid "Transmitted"
+msgstr "ਪ੍ਰਸਾਰਿਤ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
+msgid "Recipient"
+msgstr "ਪ੍ਰਾਪਤਕਰਤਾ"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
+msgid "Incomplete call, missing Message ID."
+msgstr "ਅਧੂਰਾ ਕਾਲ, ਗੁੰਮ ਸੁਨੇਹਾ ID ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
+msgid "No Message found."
+msgstr "ਕੋਈ ਸੁਨੇਹਾ ਮਿਲਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "ਭੇਜਿਆ ਇੱਕ ਗਲਤੀ ਨਾਲ ਬੰਦ ਹੋ ਗਿਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:118
+msgid "Wrong action."
+msgstr "ਗਲਤ ਕਾਰਵਾਈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "My shifts"
+msgstr "ਮੇਰੀ ਵਾਰੀ"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
+msgid "Key changed."
+msgstr "ਕੁੰਜੀ ਬਦਲ ਗਿਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
+msgid "Reset API key"
+msgstr "ਰੀਸੈਟ API ਕੁੰਜੀ"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਕੁੰਜੀ, ਆਪਣੇ iCal- ਅਤੇ JSON-ਨਿਰਯਾਤ ਅਤੇ ਆਪਣੇ ਐਟਮ ਫੀਡ ਤਬਦੀਲੀ ਕਰਨ ਲਈ URL ਨੂੰ ਰੀਸੈਟ "
+"ਹੋ! ਤੁਹਾਨੂੰ ਇਹ ਬਰਾਮਦ ਦੇ ਇੱਕ ਵਰਤ ਹਰ ਕਾਰਜ ਵਿੱਚ ਇਸ ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
+msgid "Continue"
+msgstr "ਜਾਰੀ ਰੱਖੋ"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
+msgid "Shift saved."
+msgstr "Shift ਨੂੰ ਬਚਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
+msgid "Shift canceled."
+msgstr "Shift ਰੱਦ."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr ""
+"ਇਹ ਆਪਣੇ ਆਪ ਨੂੰ ਸ਼ਿਫਟ ਬੰਦ ਦਸਤਖਤ ਕਰਨ ਲਈ ਬਹੁਤ ਦੇਰ ਹੈ. neccessary ਜੇ, ਇਸ ਨੂੰ ਕੀ ਕਰਨ ਦੀ "
+"dispatcher ਪੁੱਛੋ."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:3
+msgid "News comments"
+msgstr "ਨਿਊਜ਼ ਟਿੱਪਣੀ"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:7
+msgid "News"
+msgstr "ਨਿਊਜ਼"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:11
+msgid "Meetings"
+msgstr "ਮੀਟਿੰਗ"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:66
+msgid "Comments"
+msgstr "ਟਿੱਪਣੀਆਂ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:83
+#: /var/www/html/engelsystem/includes/pages/user_news.php:126
+msgid "Entry saved."
+msgstr "ਇੰਦਰਾਜ਼ ਨੂੰ ਬਚਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:103
+msgid "New Comment:"
+msgstr "ਨਿਊ ਟਿੱਪਣੀ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:110
+msgid "Invalid request."
+msgstr "ਗਲਤ ਬੇਨਤੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:154
+msgid "Create news:"
+msgstr "ਖ਼ਬਰੀ ਬਣਾਓ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:3
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:29
+msgid "Ask an archangel"
+msgstr "ਇੱਕ ਮੀਕਾਏਲ ਪੁੱਛੋ"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:28
+msgid "Unable to save question."
+msgstr "ਸਵਾਲ ਦਾ ਸੰਭਾਲਣ ਲਈ ਅਸਮਰੱਥ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:29
+msgid "You question was saved."
+msgstr "ਤੁਹਾਨੂੰ ਬਚਾਇਆ ਗਿਆ ਸੀ ਸਵਾਲ."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:33
+msgid "Please enter a question!"
+msgstr "ਇੱਕ ਸਵਾਲ ਦਿਓ ਜੀ!"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:40
+msgid "Incomplete call, missing Question ID."
+msgstr "ਅਧੂਰਾ ਕਾਲ, ਗੁੰਮ ਸਵਾਲ ID ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:48
+msgid "No question found."
+msgstr "ਕੋਈ ਸਵਾਲ ਦਾ ਮਿਲਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
+msgid "Settings"
+msgstr "ਸੈਟਿੰਗ"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:72
+msgid "Please enter your planned date of departure."
+msgstr "ਨੂੰ ਛੱਡਣ ਦਾ ਆਪਣੇ ਯੋਜਨਾਬੱਧ ਦੀ ਮਿਤੀ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:112
+msgid "Settings saved."
+msgstr "ਸੈਟਿੰਗ ਨੂੰ ਸੰਭਾਲਿਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:119
+msgid "-> not OK. Please try again."
+msgstr "-> ਠੀਕ ਹੈ ਨਾ. ਮੁੜ ਕੋਸ਼ਿਸ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:127
+msgid "Failed setting password."
+msgstr "ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:140
+msgid "Theme changed."
+msgstr "ਥੀਮ ਬਦਲ ਗਿਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:166
+msgid "Here you can change your user details."
+msgstr "ਇੱਥੇ ਤੁਹਾਨੂੰ ਆਪਣੇ ਉਪਭੋਗੀ ਵੇਰਵਾ ਤਬਦੀਲ ਕਰ ਸਕਦੇ ਹੋ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:172
+msgid "Planned date of departure"
+msgstr "ਨੂੰ ਛੱਡਣ ਦਾ ਯੋਜਨਾਬੱਧ ਦੀ ਮਿਤੀ"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:182
+msgid "Please visit the angeltypes page to manage your angeltypes."
+msgstr "ਆਪਣੇ angeltypes ਦਾ ਪਰਬੰਧ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ angeltypes ਪੰਨੇ 'ਤੇ ਜਾਓ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:188
+msgid "Here you can change your password."
+msgstr "ਇੱਥੇ ਤੁਹਾਨੂੰ ਆਪਣਾ ਪਾਸਵਰਡ ਬਦਲ ਸਕਦੇ ਹੋ."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:189
+msgid "Old password:"
+msgstr "ਪੁਰਾਣਾ ਪਾਸਵਰਡ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:190
+msgid "New password:"
+msgstr "ਨਵਾਂ ਪਾਸਵਰਡ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:191
+msgid "Password confirmation:"
+msgstr "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:195
+msgid "Here you can choose your color settings:"
+msgstr "ਇੱਥੇ ਤੁਹਾਨੂੰ ਆਪਣੇ ਰੰਗ ਨੂੰ ਸੈਟਿੰਗ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:196
+msgid "Color settings:"
+msgstr "ਰੰਗ ਸੈਟਿੰਗ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:200
+msgid "Here you can choose your language:"
+msgstr "ਇੱਥੇ ਤੁਹਾਨੂੰ ਤੁਹਾਡੀ ਭਾਸ਼ਾ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:201
+msgid "Language:"
+msgstr "ਭਾਸ਼ਾ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
+msgid "Shift entry deleted."
+msgstr "Shift ਇੰਦਰਾਜ਼ ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
+msgid "Entry not found."
+msgstr "ਇੰਦਰਾਜ਼ ਨਾ ਲੱਭੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
+msgid "Please select a room."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਕਮਰੇ ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
+msgid "Please select a shifttype."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ shifttype ਦੀ ਚੋਣ ਕਰੋ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
+msgid "Please enter a valid starting time for the shifts."
+msgstr "ਵਾਰੀ ਲਈ ਇੱਕ ਠੀਕ ਸ਼ੁਰੂਆਤੀ ਵਾਰ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
+msgid "Please enter a valid ending time for the shifts."
+msgstr "ਵਾਰੀ ਲਈ ਇੱਕ ਠੀਕ ਅੰਤ ਵਾਰ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
+msgid "The ending time has to be after the starting time."
+msgstr "ਨੂੰ ਖਤਮ ਵਾਰ ਸ਼ੁਰੂ ਕਰਨ ਵੇਲੇ ਦੇ ਬਾਅਦ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
+#, php-format
+msgid "Please check your input for needed angels of type %s."
+msgstr "ਕਿਸਮ%s ਦੀ ਲੋੜ ਹੈ ਦੂਤ ਦੇ ਲਈ ਆਪਣੇ ਇੰਪੁੱਟ ਚੈੱਕ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
+msgid "Shift updated."
+msgstr "Shift ਨੂੰ ਅੱਪਡੇਟ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
+msgid "This page is much more comfortable with javascript."
+msgstr "ਇਹ ਸਫ਼ਾ ਹੋਰ ਬਹੁਤ ਕੁਝ JavaScript ਨਾਲ ਆਰਾਮਦਾਇਕ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
+msgid "Room:"
+msgstr "ਕਮਰਾ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
+msgid "Start:"
+msgstr "ਸ਼ੁਰੂ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
+msgid "End:"
+msgstr "ਅੰਤ:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
+msgid "Shift deleted."
+msgstr "Shift ਨੂੰ ਹਟਾਇਆ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
+#, php-format
+msgid "Do you want to delete the shift %s from %s to %s?"
+msgstr "ਤੁਹਾਨੂੰ%s ਸ਼ਿਫਟ%s%s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਇਸ ਤਬਦੀਲੀ ਲਈ ਸਾਈਨ ਅੱਪ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਹੀ ਕਰ ਰਹੇ ਹਨ. ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਸ਼ਿਫਟ ਪੂਰਾ ਜ "
+"ਹੀ ਚੱਲ ਰਹੀ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "You are subscribed. Thank you!"
+msgstr "ਤੁਹਾਨੂੰ ਲਗਵਾ ਰਹੇ ਹਨ. ਤੁਹਾਡਾ ਧੰਨਵਾਦ!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
+msgid "Freeloader"
+msgstr "Freeloader"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
+msgid "The administration has not configured any shifts yet."
+msgstr "ਪ੍ਰਸ਼ਾਸਨ ਅਜੇ ਤੱਕ ਕਿਸੇ ਵੀ ਵਾਰੀ ਸੰਰਚਿਤ ਨਾ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
+msgid "The administration has not configured any rooms yet."
+msgstr "ਪ੍ਰਸ਼ਾਸਨ ਅਜੇ ਤੱਕ ਕਿਸੇ ਵੀ ਕਮਰੇ ਸੰਰਚਿਤ ਨਾ ਕੀਤਾ ਗਿਆ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
+msgid "occupied"
+msgstr "ਕਬਜ਼ਾ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
+msgid "free"
+msgstr "ਮੁਫ਼ਤ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
+msgid ""
+"The administration has not configured any angeltypes yet - or you are not "
+"subscribed to any angeltype."
+msgstr ""
+"ਪ੍ਰਸ਼ਾਸਨ ਅਜੇ ਤੱਕ ਕਿਸੇ ਵੀ angeltypes ਸੰਰਚਿਤ ਨਾ ਕੀਤਾ ਹੈ - ਜ ਤੁਹਾਨੂੰ ਕਿਸੇ ਵੀ angeltype ਦੀ "
+"ਗਾਹਕੀ ਲਈ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
+#, php-format
+msgid "%d helper needed"
+msgid_plural "%d helpers needed"
+msgstr[0] "%d helper needed"
+msgstr[1] "%d helpers needed"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
+msgid "Sign up"
+msgstr "ਸਾਇਨ ਅਪ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
+msgid "ended"
+msgstr "ਬੰਦ ਹੋ ਗਿਆ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
+#, php-format
+msgid "Become %s"
+msgstr "ਬਣੋ%s ਨੂੰ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
+msgid "Add more angels"
+msgstr "ਹੋਰ ਦੂਤ ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
+msgid "Time"
+msgstr "ਸਮਾਂ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
+msgid "Entries"
+msgstr "ਇੰਦਰਾਜ਼"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
+msgid "Occupancy"
+msgstr "ਵੱਸੇ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr "ਇੱਥੇ ਦਿਖਾਇਆ ਕੰਮ ਪਸੰਦ ਤੁਹਾਨੂੰ ਆਪਣੀ ਸੈਟਿੰਗ ਵਿੱਚ ਪਰਿਭਾਸ਼ਤ ਦੁਆਰਾ ਪ੍ਰਭਾਵਿਤ ਕਰ ਰਹੇ ਹਨ!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid "Description of the jobs."
+msgstr "ਨੌਕਰੀ ਦਾ ਵੇਰਵਾ."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
+msgid "Use new style if possible"
+msgstr "ਨਵ ਸ਼ੈਲੀ ਸੰਭਵ ਹੈ ਜੇ ਵਰਤੋ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+msgid "iCal export"
+msgstr "iCal ਬਰਾਮਦ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+#, php-format
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"ਦਿਖਾਇਆ ਵਾਰੀ. ਦੇ ਨਿਰਯਾਤ <a href=\"%s\">iCal ਫਾਰਮੈਟ ਹੈ</a> ਜ <a href=\"%s\">JSON "
+"ਫਾਰਮੈਟ ਨੂੰ</a> ਉਪਲੱਬਧ (ਕਿਰਪਾ ਕਰਕੇ ਗੁਪਤ ਰੱਖਣ, ਹੋਰ <a href=\"%s\">API ਕੁੰਜੀ ਨੂੰ ਰੀਸੈੱਟ</a> )."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
+msgid "Filter"
+msgstr "ਫਿਲਟਰ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
+msgid "All"
+msgstr "ਸਾਰੇ"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
+msgid "None"
+msgstr "ਕੋਈ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
+msgid "Unconfirmed"
+msgstr "ਅਸਪਸ਼ਟ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
+msgid "Coordinator"
+msgstr "ਕੋਆਰਡੀਨੇਟਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
+msgid "Member"
+msgstr "ਸਦੱਸ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
+#, php-format
+msgid "Do you want to delete angeltype %s?"
+msgstr "ਤੁਹਾਨੂੰ angeltype%s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:7
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:18
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:40
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
+msgid "cancel"
+msgstr "ਰੱਦ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
+msgid "Restricted"
+msgstr "ਪ੍ਰਤਿਬੰਧਿਤ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Yes"
+msgstr "ਜੀ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "No"
+msgstr "Ny"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Requires driver license"
+msgstr "ਡਰਾਈਵਰ ਲਾਇਸੰਸ ਦੀ ਲੋੜ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
+msgid ""
+"Restricted angel types can only be used by an angel if enabled by an "
+"archangel (double opt-in)."
+msgstr ""
+"ਪ੍ਰਤਿਬੰਧਿਤ ਦੂਤ ਨੇ ਕਿਸਮ ਸਿਰਫ ਇਕ ਦੂਤ ਦੁਆਰਾ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ, ਜੇਕਰ ਇੱਕ ਮੀਕਾਏਲ (ਡਬਲ ਚੋਣ-"
+"ਵਿੱਚ) ਵਿੱਚ ਯੋਗ."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
+msgid "Description"
+msgstr "ਵੇਰਵਾ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
+msgid "Please use markdown for the description."
+msgstr "ਵੇਰਵੇ ਲਈ ਮਾਰਕਡਾਊਨ ਵਰਤ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
+msgid "my driving license"
+msgstr "ਮੇਰੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
+msgid ""
+"This angeltype requires a driver license. Please enter your driver license "
+"information!"
+msgstr "ਇਹ angeltype ਇੱਕ ਡਰਾਈਵਰ ਲਾਇਸੰਸ ਦੀ ਲੋੜ ਹੈ. ਆਪਣੇ ਡਰਾਈਵਰ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ ਦਿਓ ਜੀ!"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
+#, php-format
+msgid ""
+"You are unconfirmed for this angeltype. Please go to the introduction for %s "
+"to get confirmed."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਇਸ angeltype ਲਈ ਅਸਪਸ਼ਟ ਹਨ. ਨੂੰ%s ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਪਛਾਣ ਕਰਨ ਲਈ ਜਾਣ."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
+msgid "confirm"
+msgstr "ਪੁਸ਼ਟੀ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
+msgid "deny"
+msgstr "ਇਨਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
+msgid "remove"
+msgstr "ਨੂੰ ਹਟਾਉਣ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
+msgid "Driver"
+msgstr "ਡਰਾਈਵਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
+msgid "Has car"
+msgstr "ਕਾਰ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
+msgid "Car"
+msgstr "ਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
+msgid "3,5t Transporter"
+msgstr "3,5t ਪਰਿਵਾਹਕ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
+msgid "7,5t Truck"
+msgstr "7,5t ਟਰੱਕ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
+msgid "12,5t Truck"
+msgstr "12,5t ਟਰੱਕ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
+msgid "Forklift"
+msgstr "ਫੋਰਕਲਿਫਟ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
+msgid "Coordinators"
+msgstr "ਕੋਆਰਡੀਨੇਟਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
+msgid "Members"
+msgstr "ਸਦੱਸ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
+msgid "Add"
+msgstr "ਜੋੜੋ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
+msgid "confirm all"
+msgstr "ਸਭ ਦੀ ਪੁਸ਼ਟੀ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
+msgid "deny all"
+msgstr "ਸਾਰੇ ਦਾ ਇਨਕਾਰ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
+msgid "New angeltype"
+msgstr "ਨ੍ਯੂ angeltype"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
+msgid "Membership"
+msgstr "ਮੈਬਰਸ਼ਿੱਪ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
+msgid "FAQ"
+msgstr "ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr "ਇੱਥੇ ਟੀਮ ਅਤੇ ਆਪਣੇ ਕੰਮ ਦੀ ਸੂਚੀ ਹੈ. ਜੇ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ, ਜੇਕਰ, ਸਵਾਲ ਪੜ੍ਹੋ."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
+msgid ""
+"This angeltype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr ""
+"ਇਹ angeltype ਇੱਕ ਟੀਮ ਕੋਆਰਡੀਨੇਟਰ ਦੁਆਰਾ ਡਬਲ-ਚੋਣ-ਵਿਚ ਹੀ ਸੀਮਿਤ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਅਨੁਸਾਰ "
+"ਪਛਾਣ ਮੀਟਿੰਗ 'ਤੇ ਨੂੰ ਦਿਖਾਉਣ."
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:17
+msgid "Open questions"
+msgstr "ਓਪਨ ਸਵਾਲ"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:31
+msgid "Your Question:"
+msgstr "ਤੁਹਾਡਾ ਸਵਾਲ:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
+msgid "Freeloaded"
+msgstr "Freeloaded"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
+msgid "Freeload comment (Only for shift coordination):"
+msgstr "ਟਿੱਪਣੀ (ਕੇਵਲ ਸ਼ਿਫਟ ਤਾਲਮੇਲ ਲਈ) Freeload:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
+msgid "Edit shift entry"
+msgstr "ਸ਼ਿਫਟ ਸੋਧ ਇੰਦਰਾਜ਼"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "Angel:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
+msgid "Date, Duration:"
+msgstr "ਮਿਤੀ, ਅੰਤਰਾਲ:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
+msgid "Location:"
+msgstr "ਲੋਕੈਸ਼ਨ:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
+msgid "Title:"
+msgstr "ਸਿਰਲੇਖ:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
+msgid "Type:"
+msgstr "ਕਿਸਮ:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
+msgid "Comment (for your eyes only):"
+msgstr "ਟਿੱਪਣੀ (ਆਪਣੇ ਨਿਗਾਹ ਲਈ ਸਿਰਫ):"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "%s ਦੀ%s ਤੇ ਬਣਾਇਆ"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
+#, php-format
+msgid "edited at %s by %s"
+msgstr "%s ਦੀ%s ਤੇ ਸੋਧਿਆ"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
+msgid "This shift collides with one of your shifts."
+msgstr "ਇਹ ਤਬਦੀਲੀ ਤੁਹਾਡੇ ਵਾਰੀ ਦੇ ਇੱਕ ਨਾਲ ਜਾ ਟਕਰਾਈ."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
+msgid "You are signed up for this shift."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਤਬਦੀਲੀ ਲਈ ਦਸਤਖਤ ਕੀਤੇ ਹਨ."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
+msgid "Location"
+msgstr "ਲੋਕੈਸ਼ਨ"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
+#, php-format
+msgid "Do you want to delete shifttype %s?"
+msgstr "ਤੁਹਾਨੂੰ shifttype%s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Edit shifttype"
+msgstr "shifttype ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Create shifttype"
+msgstr "shifttype ਬਣਾਓ"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
+#, php-format
+msgid "for team %s"
+msgstr "ਟੀਮ ਨੂੰ%s ਲਈ"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
+msgid "New shifttype"
+msgstr "ਨ੍ਯੂ shifttype"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:7
+msgid "Please select..."
+msgstr "ਦੀ ਚੋਣ ਕਰੋ ਜੀ ..."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "ਵਾਊਚਰ ਦੀ ਗਿਣਤੀ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
+msgid "m/d/Y h:i a"
+msgstr "ਮੀਟਰ / d / Y H: IA"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
+msgid "New user"
+msgstr "ਨਿਊ ਉਪਭੋਗੀ ਨੂੰ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
+msgid "Prename"
+msgstr "Prename"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Arrived"
+msgstr "ਪਹੁੰਚੇ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
+msgid "Voucher"
+msgstr "ਵਾਊਚਰ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
+msgid "Freeloads"
+msgstr "Freeloads"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
+msgid "Active"
+msgstr "ਸਰਗਰਮ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "ਟੀ-ਸ਼ਰਟ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "ਪਿਛਲੇ ਲਾਗਇਨ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:95
+msgid "Free"
+msgstr "ਮੁਫਤ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
+#, php-format
+msgid "Next shift %c"
+msgstr "ਅੱਗੇ ਸ਼ਿਫਟ% c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
+#, php-format
+msgid "Shift starts %c"
+msgstr "Shift% c ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
+#, php-format
+msgid "Shift ends %c"
+msgstr "ਸ਼ਿਫਟ ਖਤਮ ਹੁੰਦਾ% c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
+msgid "sign off"
+msgstr "ਬਾਹਰ ਜਾਣਾ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "ਬੀਮੇ:"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:187
+msgid "User state"
+msgstr "ਯੂਜ਼ਰ ਨੂੰ ਰਾਜ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Arrived at %s"
+msgstr "%s ਤੇ ਪਹੁੰਚੇ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Not arrived (Planned: %s)"
+msgstr "ਪਹੁੰਚੇ ਨਾ (ਯੋਜਨਾ ਹੈ:%s)"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Not arrived"
+msgstr "ਪਹੁੰਚੇ ਨਾ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+#, php-format
+msgid "Got %s voucher"
+msgid_plural "Got %s vouchers"
+msgstr[0] "%s ਨੂੰ ਵਾਊਚਰ ਮਿਲੀ"
+msgstr[1] "%s Voucher bekommen"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+msgid "Got no vouchers"
+msgstr "ਕੋਈ ਵਾਊਚਰ ਮਿਲੀ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
+msgid "Rights"
+msgstr "ਹੱਕ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
+msgid "driving license"
+msgstr "ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "ਵਾਊਚਰ ਸੋਧ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "iCal ਐਕਸਪੋਰਟ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "JSON ਐਕਸਪੋਰਟ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "ਦਾ ਨਾਮ ਅਤੇ ਕੰਮ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "ਟਿੱਪਣੀ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "ਐਕਸ਼ਨ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "ਵਿਚਕਾਰ 2 ਅਤੇ 8 ਵਜੇ ਤੁਹਾਡਾ ਰਾਤ ਵਾਰੀ ਦੋ ਵਾਰ ਦੀ ਗਿਣਤੀ."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:228
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr ""
+"ਨੂੰ ਜਾਓ <a href=\"%s\">ਵਾਰੀ ਸਾਰਣੀ ਵਿੱਚ</a> ਕੁਝ ਵਾਰੀ ਲਈ ਆਪਣੇ ਆਪ ਨੂੰ ਸਾਈਨ ਅੱਪ ਕਰਨ ਲਈ."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"ਅਸ ਤੁਹਾਨੂੰ ਇੱਕ ਪਾਸਵਰਡ ਰਿਕਵਰੀ ਲਿੰਕ ਦੇ ਨਾਲ ਇੱਕ ਈ-ਮੇਲ ਭੇਜ ਦੇਵੇਗਾ. ਈਮੇਲ ਪਤਾ ਤੁਹਾਡੇ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਲਈ "
+"ਵਰਤਿਆ ਵਰਤ ਕਰੋ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
+msgid "Recover"
+msgstr "ਮੁੜ"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
+msgid "Please enter a new password."
+msgstr "ਇੱਕ ਨਵ ਪਾਸਵਰਡ ਦਿਓ ਜੀ."
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to add coordinator rights for %s to %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s%s ਲਈ ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ ਨੂੰ ਸ਼ਾਮਿਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to remove coordinator rights for %s from %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s%s ਲਈ ਕੋਆਰਡੀਨੇਟਰ ਅਧਿਕਾਰ ਨੂੰ ਹਟਾਉਣ ਲਈ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
+#, php-format
+msgid "Do you really want to deny all users for %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s ਲਈ ਸਭ ਉਪਭੋਗੀ ਨੂੰ ਰੱਦ ਕਰਨ ਲਈ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
+#, php-format
+msgid "Do you really want to confirm all users for %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s ਲਈ ਸਭ ਉਪਭੋਗੀ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
+#, php-format
+msgid "Do you really want to confirm %s for %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s ਲਈ%s ਨੂੰ ਦੀ ਪੁਸ਼ਟੀ ਕਰਨ ਲਈ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
+#, php-format
+msgid "Do you really want to delete %s from %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s%s ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
+msgid "User"
+msgstr "ਯੂਜ਼ਰ"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
+#, php-format
+msgid "Do you really want to add %s to %s?"
+msgstr "ਤੁਹਾਨੂੰ ਅਸਲ ਵਿੱਚ%s%s ਨੂੰ ਸ਼ਾਮਿਲ ਕਰਨ ਲਈ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
+msgid "save"
+msgstr "ਬਚਾਓ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
+msgid "Back to profile"
+msgstr "ਵਾਪਸ ਪਰੋਫਾਈਲ ਕਰਨ ਲਈ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid "Privacy"
+msgstr "ਗੋਪਨੀਅਤਾ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr "ਤੁਹਾਡਾ ਡਰਾਈਵਿੰਗ ਲਾਇਸੰਸ ਜਾਣਕਾਰੀ ਤਾਲਮੇਲ ਅਤੇ ਪਰਬੰਧਕ ਲਈ ਹੀ ਉਪਲੱਬਧ ਹੈ."
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
+msgid "I am willing to operate cars for the PL"
+msgstr "ਮੈਨੂੰ PL ਲਈ ਕਾਰ ਨੂੰ ਚਲਾਉਣ ਲਈ ਤਿਆਰ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr ""
+"ਮੈਨੂੰ ਮੇਰੇ ਨਾਲ ਮੇਰੇ ਆਪਣੇ ਹੀ ਕਾਰ ਹੈ ਅਤੇ (ਤੁਹਾਨੂੰ ਬਾਲਣ ਲਈ ਅਦਾਇਗੀ ਪ੍ਰਾਪਤ ਹੋਵੋਗੇ) PL ਲਈ ਇਸ ਨੂੰ ਵਰਤਣ "
+"ਲਈ ਤਿਆਰ ਹੈ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
+msgid "Driver license"
+msgstr "ਡਰਾਈਵਰ ਲਾਇਸੰਸ"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
+msgid "Transporter 3,5t"
+msgstr "ਪਰਿਵਾਹਕ 3,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
+msgid "Truck 7,5t"
+msgstr "ਟਰੱਕ 7,5t"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
+msgid "Truck 12,5t"
+msgstr "ਟਰੱਕ 12,5t"
+
+#: /var/www/html/engelsystem/public/index.php:147
+msgid "No Access"
+msgstr "ਕੋਈ ਪਹੁੰਚ"
+
+#: /var/www/html/engelsystem/public/index.php:148
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr ""
+"ਤੁਹਾਨੂੰ ਇਸ ਸਫ਼ੇ ਨੂੰ ਵੇਖਣ ਲਈ ਅਧਿਕਾਰ ਨਹੀ ਹਨ. ਸੰਭਵ ਹੈ ਕਿ ਤੁਹਾਨੂੰ ਸਾਈਨ ਕਰਨ ਲਈ ਜ ਕ੍ਰਮ ਪਹੁੰਚ ਹਾਸਲ "
+"ਕਰਨ ਵਿਚ ਰਜਿਸਟਰ ਹੈ!"
+
+msgid "You have been signed off from the shift."
+msgstr "ਤੁਹਾਨੂੰ ਸ਼ਿਫਟ ਤੱਕ ਬੰਦ ਦਸਤਖਤ ਕੀਤੇ ਗਏ ਹਨ."
+
+msgid "planned departure"
+msgstr "ਯੋਜਨਾਬੱਧ ਜਾਣ"
+
+msgid "Tasks"
+msgstr "ਕੰਮ"
+
+msgid "User didnt got vouchers."
+msgstr "ਯੂਜ਼ਰ ਲੱਗ ਵਾਊਚਰ ਮਿਲੀ."
+
+msgid "Remove vouchers"
+msgstr "ਵਾਊਚਰ ਹਟਾਓ"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr ""
+"ਇਹ ਤਬਦੀਲੀ ਹੁਣ ਚੱਲ ਜ ਹੀ ਬੰਦ ਹੋ ਗਿਆ ਹੈ ਹੈ. ਸ਼ਿਫਟ ਆਉਣ ਲਈ ਇੱਕ dispatcher ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜੀ."
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr ""
+"ਤੁਹਾਨੂੰ ਹੀ ਉਸੇ ਹੀ timeslot ਵਿਚ ਸ਼ਿਫਟ ਕਰਨ ਲਈ ਦੇ ਗਾਹਕ. ਸ਼ਿਫਟ ਆਉਣ ਲਈ ਇੱਕ dispatcher ਨਾਲ "
+"ਸੰਪਰਕ ਕਰੋ ਜੀ."
+
+msgid "The shift is already full."
+msgstr "ਸ਼ਿਫਟ ਹੀ ਪੂਰਾ ਹੁੰਦਾ ਹੈ."
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr "ਹੈਲੋ%s ਨੂੰ, ਇੱਥੇ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਨਿੱਜੀ ਸੈਟਿੰਗ ਭਾਵ ਪਾਸਵਰਡ, ਰੰਗ ਸੈਟਿੰਗ ਆਦਿ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ"
+
+msgid "Name/Description:"
+msgstr "ਨਾਮ / ਵੇਰਵਾ:"
+
+msgid "Timeslot"
+msgstr "Timeslot"
+
+msgid "The first wants to join %s."
+msgstr "ਪਹਿਲੀ%s ਨੂੰ ਆਉਣ ਲਈ ਚਾਹੁੰਦਾ ਹੈ."
+
+msgid "Groups"
+msgstr "ਗਰੁੱਪ"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "ਤੁਹਾਨੂੰ ਇਸ ਦੂਤ ਨੇ ਕਿਸਮ ਲਈ ਦੀ ਪੁਸ਼ਟੀ ਨਹੀ ਕਰ ਰਹੇ ਹਨ."
+
+msgid "Exports"
+msgstr "ਬਰਾਮਦ"
+
+msgid "Current ends in %s min"
+msgstr "ਨੂੰ%s ਮਿੰਟ ਵਿੱਚ ਮੌਜੂਦਾ ਅੰਤ"
+
+msgid "Add new angeltype"
+msgstr "ਨਵ angeltype ਜੋੜੋ"
+
+msgid "Language"
+msgstr "ਭਾਸ਼ਾ"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "ਤੁਹਾਨੂੰ %s ਨੂੰ ਨਵ ਸੰਦੇਸ਼ ਹੈ."
+msgstr[1] "ਤੁਹਾਨੂੰ %s ਨੂੰ ਨਵ ਸੁਨੇਹੇ ਹਨ."
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"ਇਹ ਆਪਣੇ ਵਾਰੀ ਹਨ. <br/> ਅੱਗੇ ਆਪਣੇ ਸ਼ਿਫਟ ਸ਼ੁਰੂ <b>15 ਮਿੰਟ</b> ਪੇਸ਼ ਹੋਣ ਲਈ ਕੋਸ਼ਿਸ਼ ਕਰੋ! <br/> "
+"ਅੱਗੇ ਇਸ ਨੂੰ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ ਤੁਹਾਨੂੰ% d ਘੰਟੇ ਲਈ ਇੱਕ ਸ਼ਿਫਟ ਅੱਪ ਤੱਕ ਆਪਣੇ ਆਪ ਨੂੰ ਹਟਾ ਸਕਦੇ ਹੋ."
+
+msgid "Page:"
+msgstr "ਪੰਨਾ:"
+
+msgid "Message:"
+msgstr "ਸੁਨੇਹਾ:"
+
+msgid "Wakeup"
+msgstr "ਜਾਗੋ"
+
+msgid "Broken date!"
+msgstr "ਬ੍ਰੋਕਨ ਦੀ ਮਿਤੀ!"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "ਅਧੂਰਾ ਕਾਲ, ਗੁੰਮ ਵੇਕ-ਅਪ ID."
+
+msgid "Wake-up call deleted."
+msgstr "ਵੇਕ-ਅਪ ਕਾਲ ਨੂੰ ਹਟਾਇਆ."
+
+msgid "No wake-up found."
+msgstr "ਕੋਈ ਵੇਕ-ਅਪ ਪਾਇਆ."
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"ਹੈਲੋ%s ਨੂੰ, ਇੱਥੇ ਤੁਹਾਨੂੰ ਇੱਕ ਵੇਕ-ਅਪ ਕਾਲ ਲਈ ਰਜਿਸਟਰ ਕਰ ਸਕਦੇ ਹੋ. ਬਸ ਦਾ ਕਹਿਣਾ ਹੈ ਜਦ ਅਤੇ, ਜਿੱਥੇ ਦੂਤ "
+"ਨੇ ਤੁਹਾਨੂੰ ਜਾਗ ਕਰਨ ਲਈ ਆ ਚਾਹੀਦਾ ਹੈ."
+
+msgid "All ordered wake-up calls, next first."
+msgstr "ਸਾਰੇ ਦੇ ਹੁਕਮ ਦਿੱਤੇ ਵੇਕ-ਅਪ ਕਾਲ, ਅਗਲੇ ਪਹਿਲੇ ਨੇ."
+
+msgid "Place"
+msgstr "ਸਥਾਨ"
+
+msgid "Notes"
+msgstr "ਸੂਚਨਾ"
+
+msgid "Schedule a new wake-up here:"
+msgstr "ਇੱਥੇ ਇੱਕ ਨਵ ਵੇਕ-ਅਪ ਤਹਿ:"
+
+msgid "User %s confirmed as %s."
+msgstr "ਯੂਜ਼ਰ%s ਨੂੰ%s ਦੇ ਤੌਰ ਤੇ ਪੁਸ਼ਟੀ ਕੀਤੀ ਹੈ."
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr ""
+"ਵਿਰੋਧ ਵਿਅਰਥ ਹੈ! ਤੁਹਾਡਾ ਜੀਵ ਅਤੇ ਸਰੀਰਕ ਪੈਰਾਮੀਟਰ ਸਾਡੇ collectiv ਨੂੰ ਸ਼ਾਮਿਲ ਕੀਤਾ ਜਾਵੇਗਾ! "
+"Assimilating ਦੂਤ ਨੂੰ:"
+
+msgid "Confirmed all."
+msgstr "ਸਭ ਦੀ ਪੁਸ਼ਟੀ ਕੀਤੀ."
+
+msgid "asdf"
+msgstr "asdf"

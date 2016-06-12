@@ -1,0 +1,2541 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Engelsystem\n"
+"POT-Creation-Date: 2016-05-13 12:45+0100\n"
+"PO-Revision-Date: 2016-06-10 12:57+0530\n"
+"Last-Translator: \n"
+"Language-Team: FOSSASIA <dishant.khanna1807@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: ga_IE\n"
+"X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:49
+msgid ""
+"Please enter your planned date of departure on your settings page to give us "
+"a feeling for teardown capacities."
+msgstr ""
+"Cuir isteach do dháta beartaithe imeachta ar do leathanach socruithe a "
+"thabhairt dúinn le mothú ar thoilleadh teardown."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:56
+#, php-format
+msgid ""
+"You freeloaded at least %s shifts. Shift signup is locked. Please go to "
+"heavens desk to be unlocked again."
+msgstr ""
+"freeloaded tú ar a laghad%s shifts. Tá Shift signup ghlas. Téigh go deasc "
+"flaithis a bheith unlocked arís."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:63
+msgid ""
+"You are not marked as arrived. Please go to heaven's desk, get your angel "
+"badge and/or tell them that you arrived already."
+msgstr ""
+"Níl tú marcáilte mar tháinig. Téigh go neamh ar deasc, a fháil do "
+"suaitheantas aingeal agus / nó a insint dóibh go tháinig tú cheana féin."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:69
+msgid "You need to specify a tshirt size in your settings!"
+msgstr "Ní mór duit a shonrú méid tshirt i do suímh!"
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:75
+msgid ""
+"You need to specify a DECT phone number in your settings! If you don't have "
+"a DECT phone, just enter \"-\"."
+msgstr ""
+"Ní mór duit a shonrú uimhir theileafóin DECT i do suímh! Mura bhfuil tú ag "
+"fón DECT, iontráil \"-\"."
+
+#: /var/www/html/engelsystem/includes/sys_menu.php:136
+msgid "Admin"
+msgstr "Riarachán"
+
+#: /var/www/html/engelsystem/includes/sys_template.php:363
+msgid "No data found."
+msgstr "Aon sonraí aimsíodh aon rud."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
+msgid "Angeltypes"
+msgstr "Angeltypes"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:55
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:327
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
+msgid "Teams/Job description"
+msgstr "Foirne / Cur síos ar phost"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
+#, php-format
+msgid "Angeltype %s deleted."
+msgstr "Angeltype%s scriosadh."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
+#, php-format
+msgid "Delete angeltype %s"
+msgstr "Scrios angeltype%s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
+msgid "Please check the name. Maybe it already exists."
+msgstr "Seiceáil le do thoil an t-ainm. B'fhéidir tásc ar thionscnamh cheana."
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
+#, php-format
+msgid "Edit %s"
+msgstr "Cuir%s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
+#, php-format
+msgid "Team %s"
+msgstr "Foireann%s"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
+msgid "view"
+msgstr "View"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:23
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:18
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:91
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
+msgid "edit"
+msgstr "in eagar"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:5
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:12
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:78
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:15
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
+msgid "delete"
+msgstr "scriosadh"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
+msgid "leave"
+msgstr "saoire"
+
+#: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
+msgid "join"
+msgstr "páirteach"
+
+#: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
+msgid "Shift could not be found."
+msgstr "Níorbh fhéidir Shift a fháil."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
+#, php-format
+msgid "Shifttype %s deleted."
+msgstr "Shifttype%s scriosadh."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
+#, php-format
+msgid "Delete shifttype %s"
+msgstr "Scrios shifttype%s"
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
+msgid "Shifttype not found."
+msgstr "Shifttype gan aimsiú."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
+msgid "Please enter a name."
+msgstr "Tabhair ainm."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
+msgid "Updated shifttype."
+msgstr "Nuashonraithe shifttype."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
+msgid "Created shifttype."
+msgstr "Cruthaithe shifttype."
+
+#: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
+msgid "Shifttypes"
+msgstr "Shifttypes"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+#, php-format
+msgid "There is %d unconfirmed angeltype."
+msgid_plural "There are %d unconfirmed angeltypes."
+msgstr[0] "%d angeltype nár daingníodh d."
+msgstr[1] "%d angeltypes nár daingníodh d."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
+msgid "Angel types which need approvals:"
+msgstr "Cineálacha Angel ar gá faomhadh:"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:69
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:77
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:133
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:189
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:259
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
+msgid "Angeltype doesn't exist."
+msgstr "Níl Angeltype ann."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
+msgid "You are not allowed to delete all users for this angeltype."
+msgstr "Níl cead agat a scriosadh gach úsáideoir ar an angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
+#, php-format
+msgid "Denied all users for angeltype %s."
+msgstr "Shéan na húsáideoirí go léir le haghaidh angeltype%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
+msgid "Deny all users"
+msgstr "Diúltaigh gach úsáideoir"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:125
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:173
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:181
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
+msgid "User angeltype doesn't exist."
+msgstr "Níl Úsáideora angeltype ann."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
+msgid "You are not allowed to confirm all users for this angeltype."
+msgstr "Níl cead agat a dhearbhú gach úsáideoir ar an angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
+#, php-format
+msgid "Confirmed all users for angeltype %s."
+msgstr "Confirmed gach úsáideoir do angeltype%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
+msgid "Confirm all users"
+msgstr "Deimhnigh gach úsáideoir"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
+msgid "You are not allowed to confirm this users angeltype."
+msgstr "Níl cead agat a dheimhniú d'úsáideoirí angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
+msgid "User doesn't exist."
+msgstr "Níl Úsáideora ann."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
+#, php-format
+msgid "%s confirmed for angeltype %s."
+msgstr "%s deimhnithe do angeltype%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
+msgid "Confirm angeltype for user"
+msgstr "Deimhnigh angeltype don úsáideoir"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
+msgid "You are not allowed to delete this users angeltype."
+msgstr "Níl cead agat a scriosadh úsáideoirí angeltype."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
+#, php-format
+msgid "User %s removed from %s."
+msgstr "Úsáideoir%s as%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
+msgid "Remove angeltype"
+msgstr "bain angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
+msgid "You are not allowed to set coordinator rights."
+msgstr "Níl cead agat shocrú cearta gcomhordaitheoir."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
+msgid "No coordinator update given."
+msgstr "Níl nuashonrú comhordaitheoir ar leith."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Added coordinator rights for %s to %s."
+msgstr "cearta comhordaitheoir Added le%s go%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
+#, php-format
+msgid "Removed coordinator rights for %s from %s."
+msgstr "cearta comhordaitheoir bhaint as%s ó%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Add coordinator rights"
+msgstr "Cuir cearta comhordaitheoir"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
+msgid "Remove coordinator rights"
+msgstr "Bain cearta comhordaitheoir"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
+msgid "Please select a user."
+msgstr "Roghnaigh úsáideoir."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
+#, php-format
+msgid "User %s added to %s."
+msgstr "Úsáideoir%s leanas le%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
+msgid "Add user to angeltype"
+msgstr "Tags: a angeltype"
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
+#, php-format
+msgid "You are already a %s."
+msgstr "Tá tú cheana féin%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
+#, php-format
+msgid "You joined %s."
+msgstr "Chuaigh tú%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
+#, php-format
+msgid "Become a %s"
+msgstr "Bí i do%s"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+#, php-format
+msgid ""
+"You joined an angeltype which requires a driving license. Please edit your "
+"driving license information here: %s."
+msgstr ""
+"Chuaigh tú ar angeltype a éilíonn ceadúnas tiomána. Cuir in eagar do chuid "
+"faisnéise cheadúnas tiomána anseo:%s."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
+msgid "driving license information"
+msgstr "eolas faoin cheadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
+msgid "Please select at least one driving license."
+msgstr "roghnaigh cheadúnas tiomána ar a laghad do thoil."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
+msgid "Your driver license information has been removed."
+msgstr "Tá do eolas faoin cheadúnas tiomána a bheith bainte."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
+msgid "Your driver license information has been saved."
+msgstr "Tá do eolas faoin cheadúnas tiomána sábháilte."
+
+#: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
+#, php-format
+msgid "Edit %s driving license information"
+msgstr "Cuir%s eolas faoin cheadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "Iontráil uimhir bhailí de dearbháin."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "Sábháilte líon na dearbháin."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:26
+#, php-format
+msgid "%s's vouchers"
+msgstr "%s ar dearbháin"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
+msgid "User not found."
+msgstr "Úsáideoir gan aimsiú."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
+msgid "All users"
+msgstr "gach úsáideoir"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
+msgid "Token is not correct."
+msgstr "Níl Chomhartha ceart."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:93
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:123
+msgid "Your passwords don't match."
+msgstr "Ní gá d'fhocal faire difriúla."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:121
+msgid "Your password is to short (please use at least 6 characters)."
+msgstr "Tá d 'fhocal faire a ghearr (bain úsáid as ar a laghad 6 litreacha)."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
+msgid "Password could not be updated."
+msgstr "Níorbh fhéidir Pasfhocal a nuashonrú."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:125
+msgid "Password saved."
+msgstr "Pasfhocal shábháil."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:63
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:37
+msgid "E-mail address is not correct."
+msgstr "Níl an seoladh ríomhphoist ceart."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:67
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:41
+msgid "Please enter your e-mail."
+msgstr "Cuir isteach do sheoladh r-phoist."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
+msgid "Password recovery"
+msgstr "phasfhocal a ghnóthú"
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#, php-format
+msgid "Please visit %s to recover your password."
+msgstr "Tabhair cuairt ar %s a ghnóthú do phasfhocal."
+
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
+msgid "We sent an email containing your password recovery link."
+msgstr "chuireamar ríomhphost ina bhfuil do nasc a ghnóthú do phasfhocal."
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+#, php-format
+msgid "Hi %s,"
+msgstr "Dia duit %s,"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid "here is a message for you from the engelsystem:"
+msgstr "anseo tá teachtaireacht ar do shon as an engelsystem:"
+
+#: /var/www/html/engelsystem/includes/helper/email_helper.php:11
+msgid ""
+"This email is autogenerated and has not to be signed. You got this email "
+"because you are registered in the engelsystem."
+msgstr ""
+"Tá an r-phost autogenerated agus gan a bheith sínithe. Fuair ​​tú an "
+"ríomhphost seo toisc go bhfuil tú cláraithe sa engelsystem."
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
+msgid "A Shift you are registered on has changed:"
+msgstr "Tá Shift tú cláraithe ar athraíodh:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
+#, php-format
+msgid "* Shift type changed from %s to %s"
+msgstr "* Cineál Shift athraithe ó%s go%s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
+#, php-format
+msgid "* Shift title changed from %s to %s"
+msgstr "* Teideal Shift athraithe ó%s go%s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
+#, php-format
+msgid "* Shift Start changed from %s to %s"
+msgstr "* Shift Tosaigh athraithe ó%s go%s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
+#, php-format
+msgid "* Shift End changed from %s to %s"
+msgstr "* Shift Deireadh athraithe ó%s go%s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
+#, php-format
+msgid "* Shift Location changed from %s to %s"
+msgstr "* Shift Suíomh athraithe ó%s go%s"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
+msgid "The updated Shift:"
+msgstr "An Shift updated:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
+msgid "Your Shift has changed"
+msgstr "Tá do Shift athrú"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
+msgid "A Shift you are registered on was deleted:"
+msgstr "A Shift tú cláraithe ar scriosadh:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
+msgid "Your Shift was deleted"
+msgstr "Scriosadh do Shift"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
+msgid "You have been assigned to a Shift:"
+msgstr "Bhí tú ag sannta a Shift:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
+msgid "Assigned to Shift"
+msgstr "Sannta chuig Shift"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
+msgid "You have been removed from a Shift:"
+msgstr "Tá tú a bheith bainte as Shift:"
+
+#: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
+msgid "Removed from Shift"
+msgstr "Bainte ó Shift"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:4
+msgid "Active angels"
+msgstr "aingeal gníomhacha"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:28
+#, php-format
+msgid ""
+"At least %s angels are forced to be active. The number has to be greater."
+msgstr ""
+"Ar a laghad%s angels tá iallach a bheith gníomhach. Tá an líon a bheith níos "
+"mó."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:33
+msgid "Please enter a number of angels to be marked as active."
+msgstr "Iontráil uimhir aingeal a bheith marcáilte mar gníomhach."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:57
+msgid "Marked angels."
+msgstr "aingeal Mharcáilte."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
+#: /var/www/html/engelsystem/includes/view/User_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
+msgid "back"
+msgstr "droim"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:59
+msgid "apply"
+msgstr "iarratas a dhéanamh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:69
+msgid "Angel has been marked as active."
+msgstr "Angel Tá Marcáladh gníomhach."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
+msgid "Angel not found."
+msgstr "Angel gan aimsiú."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:78
+msgid "Angel has been marked as not active."
+msgstr "Tá Angel marcáilte mar cheann nach gníomhach."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:87
+msgid "Angel has got a t-shirt."
+msgstr "Angel fuair t-léine."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:96
+msgid "Angel has got no t-shirt."
+msgstr "Angel tá fuair aon tléine."
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
+msgid "set active"
+msgstr "leagan gníomhach"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "bain gníomhach"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
+msgid "got t-shirt"
+msgstr "Fuair ​​tléine"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
+msgid "remove t-shirt"
+msgstr "bain tléine"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
+msgid "Sum"
+msgstr "suim"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:167
+msgid "Search angel:"
+msgstr "Search aingeal:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "Taispeáin gach shifts"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:71
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:80
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:25
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:26
+msgid "Search"
+msgstr "Cuardaigh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "Ba chóir Cé mhéad haingil a bheith gníomhach?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
+msgid "Preview"
+msgstr "réamhamharc"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:177
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "leasainm"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:178
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "Méid"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:179
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "shifts"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "Fad"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:181
+msgid "Active?"
+msgstr "Gníomhach?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "Fórsa"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
+msgid "T-shirt?"
+msgstr "t-léine"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
+msgid "Shirt statistics"
+msgstr "staitisticí Shirt"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "léinte ag teastáil"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
+msgid "Given shirts"
+msgstr "léinte Ós"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
+msgid "Arrived angels"
+msgstr "aingeal tháinig"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
+msgid "Reset done. Angel has not arrived."
+msgstr "Athshocraigh dhéanamh. Nach bhfuil Angel tháinig."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
+msgid "Angel has been marked as arrived."
+msgstr "Tá Angel Marcáladh tháinig."
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:19
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
+msgid "yes"
+msgstr "tá"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+msgid "reset"
+msgstr "athshocrú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
+msgid "arrived"
+msgstr "tháinig"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
+msgid "Planned arrival"
+msgstr "teacht pleanáilte"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
+msgid "Arrived?"
+msgstr "Tháinig?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
+msgid "Arrival date"
+msgstr "dáta Teacht"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
+msgid "Planned departure"
+msgstr "imeachta pleanáilte"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
+msgid "Planned arrival statistics"
+msgstr "Staitisticí teacht Pleanáilte"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
+msgid "arrived sum"
+msgstr "suim arna háireamh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:27
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
+msgid "Date"
+msgstr "Dáta"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
+msgid "Count"
+msgstr "count"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
+msgid "Arrival statistics"
+msgstr "staitisticí Teacht"
+
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
+msgid "Planned departure statistics"
+msgstr "Staitisticí imeachta Pleanáilte"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:3
+msgid "Free angels"
+msgstr "aingeal Saor"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:74
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:68
+msgid "Angeltype"
+msgstr "Angeltype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:77
+msgid "Only confirmed"
+msgstr "ach dhearbhaigh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:85
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:181
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:312
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:168
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
+msgid "Nick"
+msgstr "Nick"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:87
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:210
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
+msgid "DECT"
+msgstr "DECT"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:88
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:219
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:179
+msgid "Jabber"
+msgstr "Jabber"
+
+#: /var/www/html/engelsystem/includes/pages/admin_free.php:89
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:184
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:177
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
+msgid "E-Mail"
+msgstr "Ríomhphost"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
+msgid "Grouprights"
+msgstr "Grouprights"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:145
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
+msgid "Name"
+msgstr "Ainm"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
+msgid "Privileges"
+msgstr "Pribhléidí"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:32
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:106
+#: /var/www/html/engelsystem/includes/pages/user_news.php:160
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:183
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:192
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:197
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:202
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
+msgid "Save"
+msgstr "sábháil"
+
+#: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
+msgid "Edit group"
+msgstr "grúpa Edit"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:4
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+msgid "Frab import"
+msgstr "allmhairiú Frab"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:24
+msgid "Webserver has no write-permission on import directory."
+msgstr "Níl aon scríobh-chead ar eolaire allmhairí Webserver."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:50
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:114
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:191
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
+msgid "Please select a shift type."
+msgstr "Roghnaigh cineál athrú."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:57
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:121
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:198
+msgid "Please enter an amount of minutes to add to a talk's begin."
+msgstr "Cuir isteach méid nóiméad a chur le caint ar tús."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:128
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:205
+msgid "Please enter an amount of minutes to add to a talk's end."
+msgstr "Cuir isteach méid nóiméad a chur le deireadh caint ar."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:72
+msgid "No valid xml/xcal file provided."
+msgstr "Uimh xml / comhad xcal bailí."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:77
+msgid "File upload went wrong."
+msgstr "Chuaigh Comhad uaslódáil mícheart."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:81
+msgid "Please provide some data."
+msgstr "Tabhair cuid de na sonraí."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "File Upload"
+msgstr "file Upload"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Validation"
+msgstr "bailíochtú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:98
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:136
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:175
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:243
+msgid "Import"
+msgstr "allmhaire"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:93
+msgid ""
+"This import will create/update/delete rooms and shifts by given FRAB-export "
+"file. The needed file format is xcal."
+msgstr ""
+"Beidh an allmhairiú a chruthú / nuashonrú / seomraí agus shifts scriosadh ag "
+"a tugadh comhad FRAB-onnmhairithe. Is é an fhormáid comhaid is gá xcal."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:94
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:184
+msgid "Shifttype"
+msgstr "Shifttype"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:95
+msgid "Add minutes to start"
+msgstr "Cuir nóiméad a thosú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:96
+msgid "Add minutes to end"
+msgstr "Cuir nóiméad chun deireadh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:97
+msgid "xcal-File (.xcal)"
+msgstr "xcal-File (.xcal)"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:107
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:181
+msgid "Missing import file."
+msgstr "Iarraidh comhad a allmhairiú."
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:140
+msgid "Rooms to create"
+msgstr "Seomraí a chruthú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:144
+msgid "Rooms to delete"
+msgstr "Seomraí a scriosadh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:148
+msgid "Shifts to create"
+msgstr "Shifts a chruthú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:150
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:168
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
+msgid "Day"
+msgstr "Lá"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:151
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:160
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:169
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
+msgid "Start"
+msgstr "Tosaigh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:152
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:161
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:170
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
+msgid "End"
+msgstr "deireadh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:153
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:162
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:171
+msgid "Shift type"
+msgstr "cineál Shift"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:154
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:163
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:172
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:302
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
+msgid "Title"
+msgstr "teideal"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:155
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:173
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+msgid "Room"
+msgstr "Seomra"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:157
+msgid "Shifts to update"
+msgstr "Shifts a thabhairt cothrom le dáta"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:166
+msgid "Shifts to delete"
+msgstr "Shifts a scriosadh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_import.php:244
+msgid "It's done!"
+msgstr "Tá sé déanta!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_log.php:3
+msgid "Log"
+msgstr "Logáil"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:8
+msgid "Edit news entry"
+msgstr "iontráil nuachta Edit"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:28
+msgid "Author"
+msgstr "Údar"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:29
+#: /var/www/html/engelsystem/includes/pages/user_news.php:157
+msgid "Subject"
+msgstr "Ábhar"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:30
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
+#: /var/www/html/engelsystem/includes/pages/user_news.php:105
+#: /var/www/html/engelsystem/includes/pages/user_news.php:158
+msgid "Message"
+msgstr "Teachtaireacht"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:31
+#: /var/www/html/engelsystem/includes/pages/user_news.php:159
+msgid "Meeting"
+msgstr "Cruinniú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:35
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
+msgid "Delete"
+msgstr "Scrios"
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:49
+msgid "News entry updated."
+msgstr "iontráil Nuacht nuashonraithe."
+
+#: /var/www/html/engelsystem/includes/pages/admin_news.php:58
+msgid "News entry deleted."
+msgstr "iontráil Nuacht scriosadh."
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
+msgid "Answer questions"
+msgstr "Freagair ceisteanna"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
+msgid "There are unanswered questions!"
+msgstr "Tá ceisteanna unanswered!"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
+msgid "Unanswered questions"
+msgstr "ceisteanna unanswered"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
+msgid "From"
+msgstr "Ó"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:19
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:24
+msgid "Question"
+msgstr "Ceist"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:26
+msgid "Answer"
+msgstr "freagra"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:22
+msgid "Answered questions"
+msgstr "ceisteanna a fhreagairt"
+
+#: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:25
+msgid "Answered by"
+msgstr "Freagraí ag"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
+msgid "Rooms"
+msgstr "seomraí"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
+#, php-format
+msgid "Please enter needed angels for type %s."
+msgstr "Iontráil aingeal ag teastáil le haghaidh cineál%s."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
+msgid "Room saved."
+msgstr "Seomra shábháil."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
+msgid "Public"
+msgstr "Public"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "uimhir seomra"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
+msgid "Needed angels:"
+msgstr "aingeal ag teastáil:"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
+#, php-format
+msgid "Room %s deleted."
+msgstr "Seomra %s scriosadh."
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
+#, php-format
+msgid "Do you want to delete room %s?"
+msgstr "Ar mhaith leat seomra %s a scriosadh?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
+msgid "add"
+msgstr "suimigh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
+msgid "Create shifts"
+msgstr "Cruthaigh shifts"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
+msgid "Please select a location."
+msgstr "Roghnaigh suíomh."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
+msgid "Please select a start time."
+msgstr "Roghnaigh am tús."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
+msgid "Please select an end time."
+msgstr "Roghnaigh an am deireadh."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
+msgid "The shifts end has to be after its start."
+msgstr "Tá an deireadh shifts a bheith tar éis a thosú."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
+msgid "Please enter a shift duration in minutes."
+msgstr "Iontráil ré athrú i nóiméid."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
+msgid "Please split the shift-change hours by colons."
+msgstr "Tabhair scoilt na huaireanta athrú-athrú ag colons."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
+msgid "Please select a mode."
+msgstr "Roghnaigh mód."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
+#, php-format
+msgid "Please check the needed angels for team %s."
+msgstr "Seiceáil le do thoil an aingeal ag teastáil le haghaidh foirne%s."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
+msgid "There are 0 angels needed. Please enter the amounts of needed angels."
+msgstr ""
+"Tá 0 aingeal ag teastáil. Cuir isteach méideanna de aingeal ag teastáil."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
+msgid "Please select a mode for needed angels."
+msgstr "Roghnaigh modh do aingeal ag teastáil."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
+msgid "Please select needed angels."
+msgstr "Roghnaigh aingeal ag teastáil."
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
+msgid "Time and location"
+msgstr "Am agus suíomh"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
+msgid "Type and title"
+msgstr "Cineál agus teideal"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
+msgid "Needed angels"
+msgstr "aingeal ag teastáil"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
+msgid "Mode"
+msgstr "cóir iompair"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
+msgid "Create one shift"
+msgstr "Cruthaigh aon athrú"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
+msgid "Create multiple shifts"
+msgstr "Cruthaigh shifts iolrach"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
+msgid "Create multiple shifts with variable length"
+msgstr "Cruthaigh shifts il le ilfhaid"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
+msgid "Shift change hours"
+msgstr "uaireanta athrú Shift"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
+msgid "Take needed angels from room settings"
+msgstr "Tóg aingeal ag teastáil ó shuíomhanna seomra"
+
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
+msgid "The following angels are needed"
+msgstr "Aingeal leanas ag teastáil"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:4
+msgid "All Angels"
+msgstr "All Angels"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
+msgid "This user does not exist."
+msgstr "Níl an úsáideoir seo ann."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:41
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:185
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:178
+msgid "Please send me an email if my shifts change"
+msgstr "Seol ríomhphost chugam má athraíonn mo shifts"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:60
+msgid "Force active"
+msgstr "fórsa gníomhach"
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:79
+msgid ""
+"Please visit the angeltypes page or the users profile to manage users "
+"angeltypes."
+msgstr ""
+"Tabhair cuairt ar an leathanach angeltypes nó na n-úsáideoirí próifíl "
+"d'úsáideoirí angeltypes bhainistiú."
+
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
+msgid "Edit user"
+msgstr "faoi ​​úsáideoir Edit"
+
+#: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
+msgid "Credits"
+msgstr "creidmheasanna"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:4
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:314
+msgid "Login"
+msgstr "Logáil isteach"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:8
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:240
+msgid "Register"
+msgstr "Cláraigh"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:12
+msgid "Logout"
+msgstr "Logáil Amach"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:52
+#, php-format
+msgid "Your nick &quot;%s&quot; already exists."
+msgstr "Do leasainm \"%s\" ann cheana."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:56
+#, php-format
+msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
+msgstr "Do leasainm \"%s\" Is ró-ghearr (min. 2 carachtar)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:77
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:50
+msgid "Please check your jabber account information."
+msgstr "Déan seiceáil ar do chuid faisnéise chuntas Jabber."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:86
+msgid "Please select your shirt size."
+msgstr "Roghnaigh do mhéid léine."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:97
+#, php-format
+msgid "Your password is too short (please use at least %s characters)."
+msgstr "Tá do phasfhocal ró-ghearr (bain úsáid as ar a laghad%s carachtair)."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:104
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:64
+msgid "Please enter your planned date of arrival."
+msgstr "Cuir isteach do dháta pleanáilte teachta."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:166
+msgid "Angel registration successful!"
+msgstr "clárú Angel rathúil!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:173
+msgid ""
+"By completing this form you're registering as a Chaos-Angel. This script "
+"will create you an account in the angel task sheduler."
+msgstr ""
+"Tríd an fhoirm seo a bhíonn tú ag clárú mar Chaos-Angel. Beidh an script a "
+"chruthú duit cuntas sa sheduler tasc aingeal."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:190
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:171
+msgid "Planned date of arrival"
+msgstr "dáta a phleanáiltear teachta"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:193
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:181
+msgid "Shirt size"
+msgstr "méid Shirt"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:198
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:313
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
+msgid "Password"
+msgstr "Focal Faire"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:201
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
+msgid "Confirm password"
+msgstr "Deimhnigh Pasfhocal"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "What do you want to do?"
+msgstr "Cad ba mhaith leat a dhéanamh?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:204
+msgid "Description of job types"
+msgstr "Tuairisc ar chineálacha poist"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:205
+msgid ""
+"Restricted angel types need will be confirmed later by an archangel. You can "
+"change your selection in the options section."
+msgstr ""
+"gá go cineálacha aingeal Srianta a bheith deimhnithe ina dhiaidh sin ag "
+"archangel. Is féidir leat athrú ar do rogha sa rannóg roghanna."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:213
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:176
+msgid "Mobile"
+msgstr "fón póca"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:216
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:174
+msgid "Phone"
+msgstr "Fón"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:222
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:170
+msgid "First name"
+msgstr "Ainm"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:225
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:169
+msgid "Last name"
+msgstr "sloinne"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:230
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:173
+msgid "Age"
+msgstr "Aois"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:233
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:180
+msgid "Hometown"
+msgstr "Baile Dúchais"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:236
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:167
+msgid "Entry required!"
+msgstr "Iontráil teastáil!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "Tá d 'fhocal faire mícheart. Déan iarracht arís."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:276
+msgid "Please enter a password."
+msgstr "Iontráil focal faire."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:280
+msgid ""
+"No user was found with that Nickname. Please try again. If you are still "
+"having problems, ask an Dispatcher."
+msgstr ""
+"Níor aimsíodh aon úsáideoir le sin Leasainm. Bain triail eile as. Má tá tú "
+"fós ag fadhbanna, a iarraidh ar Dispatcher."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:284
+msgid "Please enter a nickname."
+msgstr "Iontráil leasainm."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:297
+msgid "Please sign up, if you want to help us!"
+msgstr "Le do thoil clárú, más mian leat chun cabhrú linn!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:304
+msgid "Registration is disabled."
+msgstr "Clárú mhíchumas."
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:316
+msgid "I forgot my password"
+msgstr "Rinne mé dearmad ar mo phasfhocal"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:318
+msgid "Please note: You have to activate cookies!"
+msgstr "Tabhair faoi deara: Tá tú a fianáin a ghníomhachtú!"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:324
+msgid "What can I do?"
+msgstr "Cad is féidir liom a dhéanamh?"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:325
+msgid "Please read about the jobs you can do to help us."
+msgstr ""
+"Léigh le do thoil faoi na poist is féidir leat a dhéanamh chun cabhrú linn."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
+msgid "Messages"
+msgstr "teachtaireachtaí"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
+msgid "Select recipient..."
+msgstr "Roghnaigh faighteoir ..."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
+#: /var/www/html/engelsystem/includes/pages/user_news.php:62
+#: /var/www/html/engelsystem/includes/pages/user_news.php:92
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:16
+msgid "Unable to load user."
+msgstr "Ní féidir úsáideoir a luchtú."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
+msgid "mark as read"
+msgstr "marc mar léite"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
+msgid "delete message"
+msgstr "scriosadh teachtaireacht"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
+#, php-format
+msgid "Hello %s, here can you leave messages for other angels"
+msgstr ""
+"Dia duit%s, anseo is féidir leat teachtaireachtaí a d'aingeal eile saoire"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
+msgid "New"
+msgstr "Nua"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+msgid "Transmitted"
+msgstr "-Tarchurtha"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
+msgid "Recipient"
+msgstr "faighteoir"
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
+msgid "Incomplete call, missing Message ID."
+msgstr "glaoch neamhiomlán, ar iarraidh Teachtaireacht ID."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
+msgid "No Message found."
+msgstr "Gan Teachtaireacht aimsíodh."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "Cuireadh deireadh tarchuir le Earráid."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:118
+msgid "Wrong action."
+msgstr "gníomh Mícheart."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "My shifts"
+msgstr "Mo shifts"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
+msgid "Key changed."
+msgstr "Key athrú."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
+msgid "Reset API key"
+msgstr "eochair API Athshocraigh"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
+msgid ""
+"If you reset the key, the url to your iCal- and JSON-export and your atom "
+"feed changes! You have to update it in every application using one of these "
+"exports."
+msgstr ""
+"Má tá tú ag athshocrú an eochair, an url do iCal- agus JSON-onnmhairiú agus "
+"do chuid athruithe a bheatha adamh! Tá tú chun cothrom le dáta é i ngach "
+"iarratas baint úsáide as ceann de na honnmhairithe."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
+msgid "Continue"
+msgstr "Leanúint ar aghaidh"
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
+msgid "Shift saved."
+msgstr "Shift shábháil."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
+msgid "Shift canceled."
+msgstr "Shift ceal."
+
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
+msgid ""
+"It's too late to sign yourself off the shift. If neccessary, ask the "
+"dispatcher to do so."
+msgstr ""
+"Tá sé ró-dhéanach a shíniú féin as an t-athrú. Más neccessary, a iarraidh ar "
+"an dispatcher é sin a dhéanamh."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:3
+msgid "News comments"
+msgstr "tuairimí Nuacht"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:7
+msgid "News"
+msgstr "Nuacht"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:11
+msgid "Meetings"
+msgstr "cruinnithe"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:66
+msgid "Comments"
+msgstr "Tuairimí"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:83
+#: /var/www/html/engelsystem/includes/pages/user_news.php:126
+msgid "Entry saved."
+msgstr "Iontráil shábháil."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:103
+msgid "New Comment:"
+msgstr "Comment nua:"
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:110
+msgid "Invalid request."
+msgstr "iarratas neamhbhailí."
+
+#: /var/www/html/engelsystem/includes/pages/user_news.php:154
+msgid "Create news:"
+msgstr "Cruthaigh nuacht:"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:3
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:29
+msgid "Ask an archangel"
+msgstr "Iarr ar archangel"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:28
+msgid "Unable to save question."
+msgstr "Níféidir cheist a shábháil."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:29
+msgid "You question was saved."
+msgstr "Sábháladh tú a cheistiú."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:33
+msgid "Please enter a question!"
+msgstr "Iontráil ceist!"
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:40
+msgid "Incomplete call, missing Question ID."
+msgstr "glaoch neamhiomlán, ar iarraidh Ceist ID."
+
+#: /var/www/html/engelsystem/includes/pages/user_questions.php:48
+msgid "No question found."
+msgstr "Aon cheist aimsíodh."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
+msgid "Settings"
+msgstr "Socruithe"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:72
+msgid "Please enter your planned date of departure."
+msgstr "Cuir isteach do dháta beartaithe imeachta."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:112
+msgid "Settings saved."
+msgstr "Roghanna sábháilte."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:119
+msgid "-> not OK. Please try again."
+msgstr "-> Ní ceart go leor. Bain triail eile as."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:127
+msgid "Failed setting password."
+msgstr "Theip leagan síos focal faire."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:140
+msgid "Theme changed."
+msgstr "athraigh Téama."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:166
+msgid "Here you can change your user details."
+msgstr "Anseo, is féidir leat athrú ar do shonraí úsáideora."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:172
+msgid "Planned date of departure"
+msgstr "Dáta Beartaithe imeachta"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:182
+msgid "Please visit the angeltypes page to manage your angeltypes."
+msgstr "Tabhair cuairt ar an leathanach angeltypes a bhainistiú do angeltypes."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:188
+msgid "Here you can change your password."
+msgstr "Anseo, is féidir leat athrú ar do phasfhocal."
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:189
+msgid "Old password:"
+msgstr "Sean Pasfhocal:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:190
+msgid "New password:"
+msgstr "Focal Faire Nua:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:191
+msgid "Password confirmation:"
+msgstr "Pasfhocal deimhniú:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:195
+msgid "Here you can choose your color settings:"
+msgstr "Anseo, is féidir leat a roghnú do chuid socruithe datha:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:196
+msgid "Color settings:"
+msgstr "Suímh Dath:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:200
+msgid "Here you can choose your language:"
+msgstr "Anseo, is féidir leat a roghnú do theanga:"
+
+#: /var/www/html/engelsystem/includes/pages/user_settings.php:201
+msgid "Language:"
+msgstr "teanga"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
+msgid "Shift entry deleted."
+msgstr "iontráil Shift scriosadh."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
+msgid "Entry not found."
+msgstr "Teacht gan aimsiú."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
+msgid "Please select a room."
+msgstr "Roghnaigh seomra."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
+msgid "Please select a shifttype."
+msgstr "Roghnaigh shifttype."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
+msgid "Please enter a valid starting time for the shifts."
+msgstr "Iontráil tosaithe bailí na shifts."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
+msgid "Please enter a valid ending time for the shifts."
+msgstr "Iontráil am dar críoch bailí na shifts."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
+msgid "The ending time has to be after the starting time."
+msgstr "Tá an t-am ag críochnú a bheith tar éis an t-am tosaithe."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
+#, php-format
+msgid "Please check your input for needed angels of type %s."
+msgstr "Deimhnigh na ionchur do aingeal ag teastáil de chineál%s."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
+msgid "Shift updated."
+msgstr "Shift nuashonraithe."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
+msgid "This page is much more comfortable with javascript."
+msgstr "Tá an leathanach seo i bhfad níos compordaí leis javascript."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
+msgid "Room:"
+msgstr "seomra"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
+msgid "Start:"
+msgstr "Tosaigh:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
+msgid "End:"
+msgstr "deireadh:"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
+msgid "Shift deleted."
+msgstr "Shift scriosadh."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
+#, php-format
+msgid "Do you want to delete the shift %s from %s to %s?"
+msgstr "Ar mhaith leat a scriosadh an t-athrú%s ó%s go%s?"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
+msgid ""
+"You are not allowed to sign up for this shift. Maybe shift is full or "
+"already running."
+msgstr ""
+"Níl cead agat clárú le haghaidh an athrú. B'fhéidir go bhfuil athrú iomlán "
+"nó ag rith cheana."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
+msgid "You are subscribed. Thank you!"
+msgstr "Tá tú suibscríofa. Go raibh maith agat!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
+msgid "Freeloader"
+msgstr "Freeloader"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
+msgid "The administration has not configured any shifts yet."
+msgstr "Níor chuir an riarachán cumraithe aon athruithe fóill."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
+msgid "The administration has not configured any rooms yet."
+msgstr "Níor chuir an riarachán cumraithe aon seomraí fóill."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
+msgid "occupied"
+msgstr "áitiú"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
+msgid "free"
+msgstr "saor in aisce"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
+msgid ""
+"The administration has not configured any angeltypes yet - or you are not "
+"subscribed to any angeltype."
+msgstr ""
+"Níor chuir an riarachán cumraithe aon angeltypes fós - nó nach bhfuil tú ag "
+"suibscríofa haon angeltype."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
+#, php-format
+msgid "%d helper needed"
+msgid_plural "%d helpers needed"
+msgstr[0] "% D cúntóir teastáil"
+msgstr[1] "%d helpers needed"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
+msgid "Sign up"
+msgstr "Clarú"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
+msgid "ended"
+msgstr "dar críoch"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
+#, php-format
+msgid "Become %s"
+msgstr "Bí%s"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
+msgid "Add more angels"
+msgstr "Cuir níos mó aingeal"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
+msgid "Time"
+msgstr "Am"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
+msgid "Entries"
+msgstr "Iontrálacha"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
+msgid "Occupancy"
+msgstr "áitíochta"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid ""
+"The tasks shown here are influenced by the preferences you defined in your "
+"settings!"
+msgstr ""
+"Na cúraimí a thaispeántar anseo go bhfuil tionchar ag na roghanna atá "
+"sainithe tú i do chuid socruithe!"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
+msgid "Description of the jobs."
+msgstr "Tuairisc ar na poist."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
+msgid "Use new style if possible"
+msgstr "Úsáid stíl nua más féidir"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+msgid "iCal export"
+msgstr "Tuinnını onnmhairithe"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
+#, php-format
+msgid ""
+"Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s"
+"\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
+"\">reset the api key</a>)."
+msgstr ""
+"Onnmhairiú shifts thaispeántar. <a href=\"%s\">ICal formáid</a> nó <a href="
+"\"%s\">formáid JSON</a> fáil (do thoil a choinneáil faoi rún, ar shlí eile "
+"<a href=\"%s\">ar an eochair API athshocrú</a> )."
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
+msgid "Filter"
+msgstr "scagaire"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
+msgid "All"
+msgstr "Gach"
+
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
+msgid "None"
+msgstr "Ar bith"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
+msgid "Unconfirmed"
+msgstr "nár daingníodh"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
+msgid "Coordinator"
+msgstr "Comhordaitheoir"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
+msgid "Member"
+msgstr "Ball"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
+#, php-format
+msgid "Do you want to delete angeltype %s?"
+msgstr "Ar mhaith leat a scriosadh angeltype%s?"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:7
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:18
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:29
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:40
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
+msgid "cancel"
+msgstr "ceal"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
+msgid "Restricted"
+msgstr "srianta"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Yes"
+msgstr "Is ea"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "No"
+msgstr "Uimh"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
+msgid "Requires driver license"
+msgstr "Éilíonn ceadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
+msgid ""
+"Restricted angel types can only be used by an angel if enabled by an "
+"archangel (double opt-in)."
+msgstr ""
+"Is féidir le cineálacha aingeal Srianta a úsáid ach amháin ag aingeal más "
+"féidir ag archangel (double rogha an diúltaithe i)."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
+msgid "Description"
+msgstr "Cur síos"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
+msgid "Please use markdown for the description."
+msgstr "Bain úsáid as markdown úsáid chun cur síos."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
+msgid "my driving license"
+msgstr "mo cheadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
+msgid ""
+"This angeltype requires a driver license. Please enter your driver license "
+"information!"
+msgstr ""
+"Éilíonn an angeltype ceadúnas tiomána. Cuir isteach do chuid faisnéise "
+"ceadúnas tiomána!"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
+#, php-format
+msgid ""
+"You are unconfirmed for this angeltype. Please go to the introduction for %s "
+"to get confirmed."
+msgstr ""
+"Tá tú nár daingníodh don angeltype. Do thoil, téigh go dtí a thabhairt "
+"isteach le haghaidh%s a fháil deimhnithe."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
+msgid "confirm"
+msgstr "dhaingniú"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
+msgid "deny"
+msgstr "dhiúltú"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
+msgid "remove"
+msgstr "bain"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
+msgid "Driver"
+msgstr "tiománaí"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
+msgid "Has car"
+msgstr "An bhfuil carr"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
+msgid "Car"
+msgstr "Gluaisteán"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
+msgid "3,5t Transporter"
+msgstr "3,5t Transporter"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
+msgid "7,5t Truck"
+msgstr "7,5t Truck"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
+msgid "12,5t Truck"
+msgstr "12,5t Truck"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
+msgid "Forklift"
+msgstr "forklift"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
+msgid "Coordinators"
+msgstr "Comhordaitheoirí"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
+msgid "Members"
+msgstr "Baill"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
+msgid "Add"
+msgstr "suimigh"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
+msgid "confirm all"
+msgstr "Deimhníonn"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
+msgid "deny all"
+msgstr "shéanadh go léir"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
+msgid "New angeltype"
+msgstr "angeltype nua"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
+msgid "Membership"
+msgstr "Ballraíocht"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
+msgid "FAQ"
+msgstr "CC"
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
+msgid ""
+"Here is the list of teams and their tasks. If you have questions, read the "
+"FAQ."
+msgstr ""
+"Seo liosta de na bhfoirne agus a gcúraimí. Má tá ceisteanna agat, léigh an "
+"Ceisteanna Coitianta."
+
+#: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
+msgid ""
+"This angeltype is restricted by double-opt-in by a team coordinator. Please "
+"show up at the according introduction meetings."
+msgstr ""
+"Tá an angeltype srianta ag dúbailte-rogha an diúltaithe i ag comhordaitheoir "
+"foirne. Léirigh suas ag na cruinnithe a thabhairt isteach de réir."
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:17
+msgid "Open questions"
+msgstr "ceisteanna oscailte"
+
+#: /var/www/html/engelsystem/includes/view/Questions_view.php:31
+msgid "Your Question:"
+msgstr "Do Ceist:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
+msgid "Freeloaded"
+msgstr "Freeloaded"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
+msgid "Freeload comment (Only for shift coordination):"
+msgstr "Freeload comment (Do comhordú athrú):"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
+msgid "Edit shift entry"
+msgstr "iontráil athrú Edit"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "Angel:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
+msgid "Date, Duration:"
+msgstr "Dáta, Fad:"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
+msgid "Location:"
+msgstr "suíomh"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
+msgid "Title:"
+msgstr "teideal"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
+msgid "Type:"
+msgstr "cineál"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
+msgid "Comment (for your eyes only):"
+msgstr "Comment (do do chuid súl amháin):"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
+#, php-format
+msgid "created at %s by %s"
+msgstr "cruthaíodh ag %s ag %s"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
+#, php-format
+msgid "edited at %s by %s"
+msgstr "in eagar ag%s ag%s"
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
+msgid "This shift collides with one of your shifts."
+msgstr "imbhuaileann sé seo athrú le ceann amháin de do chuid athruithe."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
+msgid "You are signed up for this shift."
+msgstr "Tá tú ag sínithe suas don athrú."
+
+#: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
+msgid "Location"
+msgstr "suíomh"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
+#, php-format
+msgid "Do you want to delete shifttype %s?"
+msgstr "Ar mhaith leat shifttype%s a scriosadh?"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Edit shifttype"
+msgstr "Cuir shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
+msgid "Create shifttype"
+msgstr "Cruthaigh shifttype"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
+#, php-format
+msgid "for team %s"
+msgstr "do fhoireann%s"
+
+#: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
+msgid "New shifttype"
+msgstr "shifttype nua"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:7
+msgid "Please select..."
+msgstr "Roghnaigh ..."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "Líon dearbháin"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
+msgid "m/d/Y h:i a"
+msgstr "m / d / Y h: ia"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
+msgid "New user"
+msgstr "Nua Úsáideoir"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
+msgid "Prename"
+msgstr "Prename"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Arrived"
+msgstr "Tháinig"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
+msgid "Voucher"
+msgstr "dearbhán"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
+msgid "Freeloads"
+msgstr "Freeloads"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
+msgid "Active"
+msgstr "Gníomhach"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "t-léine"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "Logáil isteach Last"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:95
+msgid "Free"
+msgstr "saor in aisce"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
+#, php-format
+msgid "Next shift %c"
+msgstr "athrú Next% c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
+#, php-format
+msgid "Shift starts %c"
+msgstr "Tosaíonn Shift% c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
+#, php-format
+msgid "Shift ends %c"
+msgstr "Críochnaíonn Shift% c"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
+msgid "sign off"
+msgstr "síniú"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "suim"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:187
+msgid "User state"
+msgstr "Úsáideoir stáit"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Arrived at %s"
+msgstr "Tháinig ar%s"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+#, php-format
+msgid "Not arrived (Planned: %s)"
+msgstr "Gan tháinig (Phleanáilte:%s)"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
+msgid "Not arrived"
+msgstr "Gan tháinig"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+#, php-format
+msgid "Got %s voucher"
+msgid_plural "Got %s vouchers"
+msgstr[0] "Got%s dearbhán"
+msgstr[1] "Got%s dearbháns"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
+msgid "Got no vouchers"
+msgstr "Bhfuair aon dearbháin"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
+msgid "Rights"
+msgstr "Chearta"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
+msgid "driving license"
+msgstr "Ceadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "dearbháin eagar"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "Tuinnını Easpórtáil"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "JSON Easpórtáil"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "Ainm &amp; workmates"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "RÁITEAS"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "caingean"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "Do sealanna oíche idir 2 agus 8 rn chomhaireamh faoi dhó."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:228
+#, php-format
+msgid ""
+"Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
+"shifts."
+msgstr ""
+"Téigh go dtí an <a href=\"%s\">tábla shifts</a> a shíniú duit féin ar bun do "
+"roinnt shifts."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
+msgid ""
+"We will send you an e-mail with a password recovery link. Please use the "
+"email address you used for registration."
+msgstr ""
+"Seolfaimid ríomhphost le nasc phasfhocal a ghnóthú. Úsáid an seoladh "
+"ríomhphoist a d'úsáid tú le haghaidh clárúcháin."
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
+msgid "Recover"
+msgstr "ghnóthú"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
+msgid "Please enter a new password."
+msgstr "Iontráil focal faire nua."
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to add coordinator rights for %s to %s?"
+msgstr "An mian leat a chur leis cearta comhordaitheoir don%s le%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
+#, php-format
+msgid "Do you really want to remove coordinator rights for %s from %s?"
+msgstr "An mian leat a bhaint cearta comhordaitheoir don%s ó%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
+#, php-format
+msgid "Do you really want to deny all users for %s?"
+msgstr "An mian leat a dhiúltú gach úsáideoir do%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
+#, php-format
+msgid "Do you really want to confirm all users for %s?"
+msgstr "An mian leat a dhaingniú do gach úsáideoir le%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
+#, php-format
+msgid "Do you really want to confirm %s for %s?"
+msgstr "An mian leat a dheimhniú%s le%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
+#, php-format
+msgid "Do you really want to delete %s from %s?"
+msgstr "An mian leat a scriosadh%s ó%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
+msgid "User"
+msgstr "Úsáideoir"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
+#, php-format
+msgid "Do you really want to add %s to %s?"
+msgstr "An mian leat a chur%s go%s?"
+
+#: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
+msgid "save"
+msgstr "sábháil"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
+msgid "Back to profile"
+msgstr "Ar ais go próifíl"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid "Privacy"
+msgstr "príobháideacht"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
+msgid ""
+"Your driving license information is only visible for coordinators and admins."
+msgstr ""
+"Tá do faisnéis a cheadúnas tiomána sofheicthe i gcás comhordaitheoirí amháin "
+"agus admins."
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
+msgid "I am willing to operate cars for the PL"
+msgstr "Tá mé sásta a gluaisteáin a oibriú don PL"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
+msgid ""
+"I have my own car with me and am willing to use it for the PL (You'll get "
+"reimbursed for fuel)"
+msgstr ""
+"Tá mé mo charr féin liom agus táim sásta a úsáid le haghaidh an PL (Feicfidh "
+"tú a fháil aisíoc le haghaidh breosla)"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
+msgid "Driver license"
+msgstr "ceadúnas tiomána"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
+msgid "Transporter 3,5t"
+msgstr "3,5t Transporter"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
+msgid "Truck 7,5t"
+msgstr "7,5t Truck"
+
+#: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
+msgid "Truck 12,5t"
+msgstr "12,5t Truck"
+
+#: /var/www/html/engelsystem/public/index.php:147
+msgid "No Access"
+msgstr "Gan Rochtain"
+
+#: /var/www/html/engelsystem/public/index.php:148
+msgid ""
+"You don't have permission to view this page. You probably have to sign in or "
+"register in order to gain access!"
+msgstr ""
+"Ní gá duit cead chun amharc ar an leathanach seo. Tá tú dócha a shíniú nó "
+"clárú chun rochtain a fháil!"
+
+msgid "You have been signed off from the shift."
+msgstr "Tá tú a bheith sínithe amach as an t-athrú."
+
+msgid "planned departure"
+msgstr "imeachta beartaithe"
+
+msgid "Tasks"
+msgstr "tascanna"
+
+msgid "User didnt got vouchers."
+msgstr "Úsáideoir did not fuair dearbháin."
+
+msgid "Remove vouchers"
+msgstr "bain dearbháin"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr ""
+"Tá an t-athrú ag rith anois nó dar críoch cheana féin. Téigh i dteagmháil le "
+"dispatcher a bheith ar an t-athrú."
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr ""
+"suibscríofa tú cheana a aistriú sa timeslot céanna. Téigh i dteagmháil le "
+"dispatcher a bheith ar an t-athrú."
+
+msgid "The shift is already full."
+msgstr "Is é an t-athrú go hiomlán cheana féin."
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr ""
+"Dia duit%s, anseo is féidir leat athrú ar do socruithe phearsanta .i "
+"phasfhocal, socruithe datha srl"
+
+msgid "Name/Description:"
+msgstr "Ainm / Cur síos:"
+
+msgid "Timeslot"
+msgstr "timeslot"
+
+msgid "The first wants to join %s."
+msgstr "An chéad iarraidh a bheith páirteach%s."
+
+msgid "Groups"
+msgstr "grúpaí"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "Níl tú deimhnithe don chineál aingeal."
+
+msgid "Exports"
+msgstr "Onnmhairí"
+
+msgid "Current ends in %s min"
+msgstr "foircinn reatha in%s min"
+
+msgid "Add new angeltype"
+msgstr "Cuir angeltype nua"
+
+msgid "Language"
+msgstr "Teanga"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "Tá tú%s teachtaireacht nua."
+msgstr[1] "Tá tú%s teachtaireacht nua."
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"Seo iad do chuid athruithe. <br/> Déan iarracht a bheith i láthair <b>15 "
+"nóiméad</b> sula dtosaíonn do athrú! <br/> Is féidir leat a bhaint féin ó "
+"athrú suas le uair an chloig% d sula dtosaíonn sé."
+
+msgid "Page:"
+msgstr "leathanach"
+
+msgid "Message:"
+msgstr "Teachtaireacht:"
+
+msgid "Wakeup"
+msgstr "Dúisigh"
+
+msgid "Broken date!"
+msgstr "Broken dáta!"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "glaoch neamhiomlán, ar iarraidh tar éis-suas ID."
+
+msgid "Wake-up call deleted."
+msgstr "glao tar éis-suas scriosadh."
+
+msgid "No wake-up found."
+msgstr "aimsíodh aon tar éis-suas."
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"Dia duit%s, anseo is féidir leat clárú le haghaidh glao tar éis-suas. Níl "
+"ort ach a rá cathain agus cén áit ba chóir an t-aingeal a thagann a "
+"osclaíonn tú."
+
+msgid "All ordered wake-up calls, next first."
+msgstr "Gach tar éis-suas glaonna ordú, den chéad uair eile."
+
+msgid "Place"
+msgstr "áit"
+
+msgid "Notes"
+msgstr "nótaí"
+
+msgid "Schedule a new wake-up here:"
+msgstr "Sceideal nua tar éis-suas anseo:"
+
+msgid "User %s confirmed as %s."
+msgstr "Úsáideoir%s Dheimhnigh mar%s."
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr ""
+"Is Friotaíocht futile! Dearbhófar do pharaiméadair bhitheolaíocha agus "
+"fisiciúil a chur lenár collectiv! Assimilating aingeal:"
+
+msgid "Confirmed all."
+msgstr "Confirmed go léir."
+
+msgid "asdf"
+msgstr "ASDF"

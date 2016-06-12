@@ -1,19 +1,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Engelsystem\n"
-"POT-Creation-Date: 2016-05-11 16:32+0530\n"
-"PO-Revision-Date: 2016-06-03 09:05+0530\n"
-"Last-Translator: sreeja kamishetty <sreeja25kamishetty@gmail.com>\n"
-"Language-Team: fossasia <sreeja25kamishetty@gmail.com>\n"
+"POT-Creation-Date: 2016-05-13 12:45+0100\n"
+"PO-Revision-Date: 2016-06-09 12:29+0530\n"
+"Last-Translator: \n"
+"Language-Team: FOSSASIA <dishant.khanna1807@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.2\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
-"Language: sp_EU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: hu_HU\n"
 "X-Poedit-SearchPath-0: /var/www/html/engelsystem\n"
 "X-Poedit-SearchPath-1: .\n"
 
@@ -22,8 +22,8 @@ msgid ""
 "Please enter your planned date of departure on your settings page to give us "
 "a feeling for teardown capacities."
 msgstr ""
-"Por favor, introduzca su fecha prevista de salida en la página de "
-"configuración para darnos una idea de la capacidad de desmontaje ."
+"Kérjük, írja be a tervezett indulás időpontja a beállítások oldalon, hogy "
+"minket egy érzés, a kapacitások teardown."
 
 #: /var/www/html/engelsystem/includes/sys_menu.php:56
 #, php-format
@@ -31,43 +31,42 @@ msgid ""
 "You freeloaded at least %s shifts. Shift signup is locked. Please go to "
 "heavens desk to be unlocked again."
 msgstr ""
-"Usted freeloaded al menos %s turnos. registro de cambios está bloqueada. Por "
-"favor, vaya a cielos escritorio para ser desbloqueado de nuevo."
+"Akkor freeloaded legalább%s műszakban. Shift regisztrációra van zárva. "
+"Kérjük, látogasson el ég íróasztal kell oldani újra."
 
 #: /var/www/html/engelsystem/includes/sys_menu.php:63
 msgid ""
 "You are not marked as arrived. Please go to heaven's desk, get your angel "
 "badge and/or tell them that you arrived already."
 msgstr ""
-"Usted no se ha marcado como llegado. Por favor, vaya al escritorio del "
-"cielo, obtener su insignia de ángel y / o les dicen que ya llegó."
+"Ha nem megjelölt, megérkezett. Kérjük, menjen a mennyország íróasztal,-hoz "
+"kap a angyal jelvény és/vagy mondd el nekik, hogy már megérkezett."
 
 #: /var/www/html/engelsystem/includes/sys_menu.php:69
 msgid "You need to specify a tshirt size in your settings!"
-msgstr ""
-"Es necesario especificar un tamaño de la camiseta en la configuración !"
+msgstr "Meg kell adnia egy póló méret a beállításait!"
 
 #: /var/www/html/engelsystem/includes/sys_menu.php:75
 msgid ""
 "You need to specify a DECT phone number in your settings! If you don't have "
 "a DECT phone, just enter \"-\"."
 msgstr ""
-"Es necesario especificar un número de teléfono DECT en la configuración ! Si "
-"usted no tiene un teléfono DECT , basta con introducir  ."
+"Meg kell adnia egy DECT telefon számát, a beállítások! Ha nem rendelkezik a "
+"DECT telefon, csak írja be \"-\"."
 
 #: /var/www/html/engelsystem/includes/sys_menu.php:136
 msgid "Admin"
-msgstr "Administración"
+msgstr "Admin"
 
 #: /var/www/html/engelsystem/includes/sys_template.php:363
 msgid "No data found."
-msgstr "Datos no encontrados."
+msgstr "Adat nem található"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:7
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:821
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:56
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:73
-#: /var/www/html/engelsystem/includes/view/User_view.php:214
+#: /var/www/html/engelsystem/includes/view/User_view.php:196
 msgid "Angeltypes"
 msgstr "Angeltypes"
 
@@ -76,39 +75,39 @@ msgstr "Angeltypes"
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:213
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:257
 msgid "Teams/Job description"
-msgstr "Equipos / Descripción del puesto"
+msgstr "Csapat/projekt leírása"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:81
 #, php-format
 msgid "Angeltype %s deleted."
-msgstr "Angeltype %s borrado ."
+msgstr "Angeltype (%s) törölve."
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:86
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:44
 #, php-format
 msgid "Delete angeltype %s"
-msgstr "Eliminar angeltype %s"
+msgstr "Angeltype (%s) törlése"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:132
 msgid "Please check the name. Maybe it already exists."
-msgstr "Por favor, compruebe el nombre . Tal vez ya existe ."
+msgstr "Kérjük, ellenőrizze a nevét. Talán már létezik."
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:163
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:54
 #, php-format
 msgid "Edit %s"
-msgstr "Editar %s"
+msgstr "Szerkesztés:%s"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:199
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:200
 #, php-format
 msgid "Team %s"
-msgstr "Equipo %s"
+msgstr "Csapat: %s"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:219
-#: /var/www/html/engelsystem/includes/view/User_view.php:171
+#: /var/www/html/engelsystem/includes/view/User_view.php:153
 msgid "view"
-msgstr "view"
+msgstr "néz"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:223
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:64
@@ -118,16 +117,15 @@ msgstr "view"
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:77
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:52
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:63
-#: /var/www/html/engelsystem/includes/view/User_view.php:174
-#: /var/www/html/engelsystem/includes/view/User_view.php:225
+#: /var/www/html/engelsystem/includes/view/User_view.php:156
+#: /var/www/html/engelsystem/includes/view/User_view.php:207
 msgid "edit"
-msgstr "editar"
+msgstr "szerkesztés"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:224
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:37
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:56
 #: /var/www/html/engelsystem/includes/pages/admin_rooms.php:19
-#: /var/www/html/engelsystem/includes/pages/admin_user.php:117
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:220
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:48
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:93
@@ -138,51 +136,51 @@ msgstr "editar"
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:53
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:64
 msgid "delete"
-msgstr "borrar"
+msgstr "Töröl"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:229
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:87
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:244
 msgid "leave"
-msgstr "salir"
+msgstr "Kiszállás"
 
 #: /var/www/html/engelsystem/includes/controller/angeltypes_controller.php:231
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:80
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:246
 msgid "join"
-msgstr "unirse"
+msgstr "összeköt"
 
 #: /var/www/html/engelsystem/includes/controller/shifts_controller.php:28
 msgid "Shift could not be found."
-msgstr "Cambio no se pudo encontrar."
+msgstr "Shift nem található."
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:25
 #, php-format
 msgid "Shifttype %s deleted."
-msgstr "Shifttype %s borrado ."
+msgstr "Shifttype (%s) törölve."
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:30
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:11
 #, php-format
 msgid "Delete shifttype %s"
-msgstr "Eliminar shifttype %s"
+msgstr "Shifttype (%s) törlése"
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:53
 msgid "Shifttype not found."
-msgstr "Shifttype no encontrado."
+msgstr "Shifttype nem található."
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:69
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:66
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:61
 msgid "Please enter a name."
-msgstr "Por favor, introduzca un nombre ."
+msgstr "Add meg a neved"
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:86
 msgid "Updated shifttype."
-msgstr "shifttype actualizada ."
+msgstr "Frissített shifttype."
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:92
 msgid "Created shifttype."
-msgstr "Creado shifttype ."
+msgstr "Létrehozott shifttype."
 
 #: /var/www/html/engelsystem/includes/controller/shifttypes_controller.php:144
 msgid "Shifttypes"
@@ -192,12 +190,12 @@ msgstr "Shifttypes"
 #, php-format
 msgid "There is %d unconfirmed angeltype."
 msgid_plural "There are %d unconfirmed angeltypes."
-msgstr[0] "Hay %d angeltype sin confirmar ."
-msgstr[1] "Hay %d angeltypes no confirmados ."
+msgstr[0] "%d van meg nem erősített angeltype."
+msgstr[1] "%d van meg nem erősített angeltype.."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:19
 msgid "Angel types which need approvals:"
-msgstr "tipos de ángel que necesitan aprobaciones :"
+msgstr "Angel-típusokat, amelyek a szükséges engedélyek:"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:29
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:37
@@ -209,21 +207,21 @@ msgstr "tipos de ángel que necesitan aprobaciones :"
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:296
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:304
 msgid "Angeltype doesn't exist."
-msgstr "Angeltype no existe."
+msgstr "Angeltype nem létezik."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:42
 msgid "You are not allowed to delete all users for this angeltype."
-msgstr "No se le permite eliminar todos los usuarios de este angeltype ."
+msgstr "Tilos törölni minden használók részére a angeltype."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:52
 #, php-format
 msgid "Denied all users for angeltype %s."
-msgstr "Denegado todos los usuarios de angeltype %s ."
+msgstr "Minden felhasználó a angeltype %s megtagadta."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:57
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:14
 msgid "Deny all users"
-msgstr "Denegar todos los usuarios"
+msgstr "Tagadja az összes felhasználó"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:85
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:117
@@ -233,115 +231,116 @@ msgstr "Denegar todos los usuarios"
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:236
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:251
 msgid "User angeltype doesn't exist."
-msgstr "angeltype usuario no existe ."
+msgstr "Felhasználói angeltype nem létezik."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:90
 msgid "You are not allowed to confirm all users for this angeltype."
-msgstr "No se le permite confirmar todos los usuarios de este angeltype ."
+msgstr ""
+"Megerősítéséhez minden használók részére ez angeltype nem engedélyezettek."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:100
 #, php-format
 msgid "Confirmed all users for angeltype %s."
-msgstr "Confirmado para todos los usuarios angeltype %s ."
+msgstr "Angeltype %s használó összes felhasználóra megerősítette."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:105
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:25
 msgid "Confirm all users"
-msgstr "Confirmar todos los usuarios"
+msgstr "Erősítse meg az összes felhasználó számára"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:138
 msgid "You are not allowed to confirm this users angeltype."
-msgstr "No se le permite confirmar esta angeltype usuarios ."
+msgstr "Nem látogathatja, hogy erősítse meg a felhasználók angeltype."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:146
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:197
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:267
 msgid "User doesn't exist."
-msgstr "El usuario no existe ."
+msgstr "Felhasználó nem létezik."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:156
 #, php-format
 msgid "%s confirmed for angeltype %s."
-msgstr "%s confirmada para angeltype %s ."
+msgstr "%s megerősítette a angeltype: %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:161
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:36
 msgid "Confirm angeltype for user"
-msgstr "Confirmar angeltype para el usuario"
+msgstr "Erősítse meg a felhasználó angeltype"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:202
 msgid "You are not allowed to delete this users angeltype."
-msgstr "No se le permite borrar este angeltype usuarios ."
+msgstr "Tilos törölni a felhasználók angeltype."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:211
 #, php-format
 msgid "User %s removed from %s."
-msgstr "El usuario%s removido de %s ."
+msgstr "%S felhasználót el: %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:219
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:47
 msgid "Remove angeltype"
-msgstr "Retire angeltype"
+msgstr "Távolítsa el a angeltype"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:231
 msgid "You are not allowed to set coordinator rights."
-msgstr "No se le permite establecer los derechos de coordinador ."
+msgstr "Nem látogathatja meg koordinátor jogokat."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:243
 msgid "No coordinator update given."
-msgstr "No se actualiza la coordinadora dado ."
+msgstr "Nincs koordinátor frissítés miatt."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
 #, php-format
 msgid "Added coordinator rights for %s to %s."
-msgstr "coordinador de derechos adicionales para %s %s."
+msgstr "Hozzáadott koordinátor jogok %s %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:276
 #, php-format
 msgid "Removed coordinator rights for %s from %s."
-msgstr "los derechos coordinador eliminado %s de %s ."
+msgstr "Távoli koordinátor jogok: %s: %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:138
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
 msgid "Add coordinator rights"
-msgstr "Añadir derechos coordinador"
+msgstr "Koordinátor jogokat"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:284
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:130
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:3
 msgid "Remove coordinator rights"
-msgstr "Eliminar los derechos de coordinador"
+msgstr "Távolítsa el a koordinátor jogok"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:325
 msgid "Please select a user."
-msgstr "Por favor, seleccione un usuario ."
+msgstr "Kérjük, válassza ki a felhasználó."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:336
 #, php-format
 msgid "User %s added to %s."
-msgstr "El usuario%s añadido a %s ."
+msgstr "%S %s hozzá a felhasználó."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:349
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:62
 msgid "Add user to angeltype"
-msgstr "Añadir usuario a angeltype"
+msgstr "Felhasználó felvétele a angeltype"
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:358
 #, php-format
 msgid "You are already a %s."
-msgstr "Ya es %s ."
+msgstr "Te már egy %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:367
 #, php-format
 msgid "You joined %s."
-msgstr "Que se unió %s ."
+msgstr "%S csatlakozott."
 
 #: /var/www/html/engelsystem/includes/controller/user_angeltypes_controller.php:382
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:76
 #, php-format
 msgid "Become a %s"
-msgstr "Convertirse en un %s"
+msgstr "Lesz egy %s"
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
 #, php-format
@@ -349,255 +348,220 @@ msgid ""
 "You joined an angeltype which requires a driving license. Please edit your "
 "driving license information here: %s."
 msgstr ""
-"Se unió a un angeltype que requiere un permiso de conducir . Por favor, "
-"editar la información de licencia de conducir aquí: %s ."
+"Csatlakozott egy angeltype, amely megköveteli a jogosítvány. Kérjük, "
+"módosítsa a vezetői engedély információ itt: %s."
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:24
 msgid "driving license information"
-msgstr "información de licencia de conducir"
+msgstr "vezetői engedély információ"
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:112
 msgid "Please select at least one driving license."
-msgstr "Por favor, seleccione al menos un permiso de conducir ."
+msgstr "Jelöljön ki legalább egy vezetői engedély."
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:121
 msgid "Your driver license information has been removed."
-msgstr "La información de su licencia de conducir ha sido retirado ."
+msgstr "A vezető engedély információ eltávolításra került."
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:133
 msgid "Your driver license information has been saved."
-msgstr "La información de su licencia de conducir ha sido guardado ."
+msgstr "A vezető engedély információ lett mentve."
 
 #: /var/www/html/engelsystem/includes/controller/user_driver_licenses_controller.php:141
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:15
 #, php-format
 msgid "Edit %s driving license information"
-msgstr "información de licencia de conducir editar %s"
+msgstr "%s vezetői engedély információ szerkesztés"
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:46
-msgid "You cannot delete yourself."
-msgstr "No se puede eliminar a sí mismo ."
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:56
+msgid "Please enter a valid number of vouchers."
+msgstr "Adjon meg egy érvényes számot jegyek."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:55
-#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
-msgid "Your password is incorrect.  Please try it again."
-msgstr "Tu contraseña es incorrecta. Por favor, inténtelo de nuevo ."
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:66
+msgid "Saved the number of vouchers."
+msgstr "Mentett jegyek száma."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:64
-msgid "User deleted."
-msgstr "Usuario eliminado."
-
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:72
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:74
 #: /var/www/html/engelsystem/includes/view/User_view.php:26
 #, php-format
-msgid "Delete %s"
-msgstr "Eliminar %s"
-
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:111
-msgid "Please enter a valid number of vouchers."
-msgstr "Por favor, introduzca un número válido de los vales ."
-
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:121
-msgid "Saved the number of vouchers."
-msgstr "Guardado el número de vales ."
-
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:129
-#: /var/www/html/engelsystem/includes/view/User_view.php:43
-#, php-format
 msgid "%s's vouchers"
-msgstr "vales de %s"
+msgstr "%s utalványok"
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:142
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:87
 msgid "User not found."
-msgstr "Usuario no encontrado."
+msgstr "Felhasználó nem található."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
-#: /var/www/html/engelsystem/includes/view/User_view.php:80
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:137
+#: /var/www/html/engelsystem/includes/view/User_view.php:62
 msgid "All users"
-msgstr "Todos los usuarios"
+msgstr "Minden felhasználó"
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:152
 msgid "Token is not correct."
-msgstr "Token no es correcto ."
+msgstr "Token nem kijavít."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:217
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:162
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:93
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:123
 msgid "Your passwords don't match."
-msgstr "Token no correctYour contraseñas no coinciden es ."
+msgstr "A jelszavak nem egyeznek."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:221
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:166
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:121
 msgid "Your password is to short (please use at least 6 characters)."
-msgstr "Su contraseña es corto ( por favor utilice al menos 6 caracteres ) ."
+msgstr "A jelszó, hogy rövid (kérjük, használjon legalább 6 karakter)."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:227
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:172
 msgid "Password could not be updated."
-msgstr "La contraseña no se ha podido actualizar ."
+msgstr "Jelszó nem frissíthető."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:229
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:174
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:125
 msgid "Password saved."
-msgstr "Contraseña guardada ."
+msgstr "Mentett jelszót."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:247
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:251
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:192
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:196
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:63
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:37
 msgid "E-mail address is not correct."
-msgstr "E - mail no es correcto."
+msgstr "E-mail cím nem helytálló."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:255
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:200
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:67
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:41
 msgid "Please enter your e-mail."
-msgstr "Por favor introduzca su correo electrónico."
+msgstr "E-mail címe"
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:262
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:279
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:224
 msgid "Password recovery"
-msgstr "Recuperación de contraseña"
+msgstr "Jelszó visszaszerzés"
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:262
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:207
 #, php-format
 msgid "Please visit %s to recover your password."
-msgstr "Por favor, visite %s para recuperar su contraseña ."
+msgstr "Kérjük, látogasson el a(z) %s a jelszó visszaállítására."
 
-#: /var/www/html/engelsystem/includes/controller/users_controller.php:266
+#: /var/www/html/engelsystem/includes/controller/users_controller.php:211
 msgid "We sent an email containing your password recovery link."
 msgstr ""
-"Hemos enviado un correo electrónico con el enlace de recuperación de la "
-"contraseña ."
+"Küldtünk egy e-mailt, amely tartalmazza a jelszó-helyreállítási hivatkozás."
 
 #: /var/www/html/engelsystem/includes/helper/email_helper.php:11
 #, php-format
 msgid "Hi %s,"
-msgstr "Hola %s,"
+msgstr "Kedves %s!"
 
 #: /var/www/html/engelsystem/includes/helper/email_helper.php:11
 msgid "here is a message for you from the engelsystem:"
-msgstr "aquí es un mensaje para vosotros desde la engelsystem :"
+msgstr "Itt van az Ön üzenete a engelsystem:"
 
 #: /var/www/html/engelsystem/includes/helper/email_helper.php:11
 msgid ""
 "This email is autogenerated and has not to be signed. You got this email "
 "because you are registered in the engelsystem."
 msgstr ""
-"Este correo electrónico se genera automáticamente y no tiene que ser "
-"firmado . Recibió este correo electrónico porque está registrado en el "
-"engelsystem ."
+"Az e-mail automatikusan, és nem-hoz lenni aláíró. Van e-mailt, mert a "
+"engelsystem bejegyzett."
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:10
 msgid "A Shift you are registered on has changed:"
-msgstr "Un cambio está registrado en ha cambiado :"
+msgstr "A váltás a regisztrált változás következett be:"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:14
 #, php-format
 msgid "* Shift type changed from %s to %s"
-msgstr "* Tipo de cambio cambiado desde %s de %s"
+msgstr "* Shift típusa megváltozott: %s-%s"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:19
 #, php-format
 msgid "* Shift title changed from %s to %s"
-msgstr "* Desplazamiento del título cambió de %s de %s"
+msgstr "* Shift címe megváltozott: %s-%s"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:24
 #, php-format
 msgid "* Shift Start changed from %s to %s"
-msgstr "* Desplazamiento de inicio cambió de %s de %s"
+msgstr "* Shift Start megváltozott: %s-%s"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:29
 #, php-format
 msgid "* Shift End changed from %s to %s"
-msgstr "* Shift Fin cambió de %s de %s"
+msgstr "* Shift végén megváltozott: %s-%s"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:34
 #, php-format
 msgid "* Shift Location changed from %s to %s"
-msgstr "* Desplazamiento Localización cambió de %s de %s"
+msgstr "* Shift helye megváltozik: %s-%s"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:44
 msgid "The updated Shift:"
-msgstr "El cambio de actualización:"
+msgstr "A frissített Shift:"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:53
 msgid "Your Shift has changed"
-msgstr "Su cambio ha cambiado"
+msgstr "A Shift megváltozott"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:60
 msgid "A Shift you are registered on was deleted:"
-msgstr "Un cambio está registrado ha sido eliminada en :"
+msgstr "A váltás a regisztrált törölték:"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:69
 msgid "Your Shift was deleted"
-msgstr "Se ha eliminado tu Shift"
+msgstr "A Shift törölve"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:76
 msgid "You have been assigned to a Shift:"
-msgstr "Se le ha asignado a un cambio :"
+msgstr "Vannak rendelve egy Shift:"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:82
 msgid "Assigned to Shift"
-msgstr "Asignado a Shift"
+msgstr "Rendelt Shift"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:90
 msgid "You have been removed from a Shift:"
-msgstr "Se le ha quitado de un cambio :"
+msgstr "Már eltávolították a Shift:"
 
 #: /var/www/html/engelsystem/includes/mailer/shifts_mailer.php:96
 msgid "Removed from Shift"
-msgstr "Fuera del Shift"
-
-#: /var/www/html/engelsystem/includes/mailer/home_mailer.php:7
-msgid "Your account has been deleted"
-msgstr "Tu cuenta ha sido eliminada"
-
-#: /var/www/html/engelsystem/includes/mailer/home_mailer.php:7
-msgid ""
-"Your angelsystem account has been deleted. If you have any questions "
-"regarding your account deletion, please contact heaven."
-msgstr ""
-"Angelsystem su cuenta ha sido borrada . Si usted tiene alguna pregunta con "
-"respecto a su eliminación de la cuenta , por favor, póngase en contacto con "
-"el cielo ."
+msgstr "Távolítani műszak"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:4
 msgid "Active angels"
-msgstr "ángeles activos"
+msgstr "Aktív angyalok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:28
 #, php-format
 msgid ""
 "At least %s angels are forced to be active. The number has to be greater."
 msgstr ""
-"Al menos %s ángeles se ven obligados a estar activo . El número tiene que "
-"ser mayor ."
+"Legalább %s angyalok arra kényszerülnek, hogy aktív. A szám nem lehet "
+"nagyobb."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:33
 msgid "Please enter a number of angels to be marked as active."
-msgstr "Por favor, introduzca un número de ángeles que se marca como activo"
+msgstr "Adjon meg egy számot az angyalok, jelölhető meg aktívként."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:57
 msgid "Marked angels."
-msgstr "ángeles marcadas."
+msgstr "Megjelölt angyalok."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:59
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:129
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:164
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:124
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:159
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:251
 #: /var/www/html/engelsystem/includes/view/User_view.php:29
-#: /var/www/html/engelsystem/includes/view/User_view.php:46
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:65
 msgid "back"
-msgstr "espalda"
+msgstr "vissza"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:59
 msgid "apply"
-msgstr "aplicar"
+msgstr "használ"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:69
 msgid "Angel has been marked as active."
-msgstr "Ángel se ha marcado como activo."
+msgstr "Angyal aktívként van megjelölve."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:71
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:80
@@ -605,55 +569,55 @@ msgstr "Ángel se ha marcado como activo."
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:22
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:32
 msgid "Angel not found."
-msgstr "Ángel no se encuentra."
+msgstr "Angyal nem található."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:78
 msgid "Angel has been marked as not active."
-msgstr "Ángel se ha marcado como no está activo ."
+msgstr "Angyal jelölése: nem aktív."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:87
 msgid "Angel has got a t-shirt."
-msgstr "Ángel tiene una camiseta ."
+msgstr "Angel van egy pólót."
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:96
 msgid "Angel has got no t-shirt."
-msgstr "Ángel tiene ninguna camiseta ."
+msgstr "Angyal van a t-shirt."
 
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:135
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:136
 msgid "set active"
-msgstr "set active"
-
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:137
-msgid "remove active"
-msgstr "eliminar activa"
+msgstr "készlet aktivál"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:138
+msgid "remove active"
+msgstr "távolítsa el az aktív"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:139
 msgid "got t-shirt"
-msgstr "conseguido camiseta"
+msgstr "van póló"
 
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:141
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:142
 msgid "remove t-shirt"
-msgstr "quite la camiseta"
+msgstr "távolítsa el a póló"
 
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:159
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:160
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:156
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:171
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:186
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:172
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:179
-#: /var/www/html/engelsystem/includes/view/User_view.php:70
+#: /var/www/html/engelsystem/includes/view/User_view.php:52
 msgid "Sum"
-msgstr "Suma"
-
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:166
-msgid "Search angel:"
-msgstr "Buscar angel :"
+msgstr "Összeg"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:167
-msgid "Show all shifts"
-msgstr "Mostrar todos los turnos"
+msgid "Search angel:"
+msgstr "Keresés angyal:"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:168
+msgid "Show all shifts"
+msgstr "A következő szálláshely minden műszakban"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:169
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:132
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:133
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:71
@@ -661,76 +625,76 @@ msgstr "Mostrar todos los turnos"
 #: /var/www/html/engelsystem/includes/pages/admin_log.php:25
 #: /var/www/html/engelsystem/includes/pages/admin_log.php:26
 msgid "Search"
-msgstr "Buscar"
-
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:171
-msgid "How much angels should be active?"
-msgstr "¿Cuánto ángeles deben ser activos ?"
+msgstr "Keresés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:172
+msgid "How much angels should be active?"
+msgstr "Mennyit angyalok aktívnak kell lennie?"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:173
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:239
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:322
 msgid "Preview"
-msgstr "Avance"
-
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:176
-#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
-msgid "Nickname"
-msgstr "Apodo"
+msgstr "Előnézet"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:177
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:187
-#: /var/www/html/engelsystem/includes/view/User_view.php:96
-msgid "Size"
-msgstr "tamaño"
+#: /var/www/html/engelsystem/includes/pages/admin_arrive.php:136
+msgid "Nickname"
+msgstr "Becenév"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:178
-#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
-#: /var/www/html/engelsystem/includes/view/User_view.php:236
-msgid "Shifts"
-msgstr "turnos"
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
+#: /var/www/html/engelsystem/includes/view/User_view.php:78
+msgid "Size"
+msgstr "Méret"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:179
-#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
-msgid "Length"
-msgstr "Longitud"
+#: /var/www/html/engelsystem/includes/pages/user_shifts.php:4
+#: /var/www/html/engelsystem/includes/view/User_view.php:218
+msgid "Shifts"
+msgstr "Többműszakos munka"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:180
-msgid "Active?"
-msgstr "¿Activo?"
+#: /var/www/html/engelsystem/includes/pages/admin_shifts.php:311
+msgid "Length"
+msgstr "Hossz"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:181
-#: /var/www/html/engelsystem/includes/view/User_view.php:94
-msgid "Forced"
-msgstr "Forzado"
+msgid "Active?"
+msgstr "Aktív?"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:182
+#: /var/www/html/engelsystem/includes/view/User_view.php:76
+msgid "Forced"
+msgstr "Kénytelen"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:183
 msgid "T-shirt?"
-msgstr "¿Camiseta?"
+msgstr "Póló?"
 
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:185
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:186
 msgid "Shirt statistics"
-msgstr "estadísticas de la camisa"
-
-#: /var/www/html/engelsystem/includes/pages/admin_active.php:188
-msgid "Needed shirts"
-msgstr "camisas necesarios"
+msgstr "Ing-statisztika"
 
 #: /var/www/html/engelsystem/includes/pages/admin_active.php:189
+msgid "Needed shirts"
+msgstr "Szükséges ingek"
+
+#: /var/www/html/engelsystem/includes/pages/admin_active.php:190
 msgid "Given shirts"
-msgstr "Given shirts"
+msgstr "Adott ingek"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:4
 msgid "Arrived angels"
-msgstr "Arrived angels"
+msgstr "Érkezett angyalok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:19
 msgid "Reset done. Angel has not arrived."
-msgstr "Restablecer hecho. Angel no ha llegado."
+msgstr "Reset tenni. Angyal még nem érkezett."
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:29
 msgid "Angel has been marked as arrived."
-msgstr "Ángel se ha marcado como llegar"
+msgstr "Angyal megjelölte, megérkezett."
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:65
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:8
@@ -739,71 +703,71 @@ msgstr "Ángel se ha marcado como llegar"
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:41
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:52
 msgid "yes"
-msgstr "sí"
+msgstr "igen"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
 msgid "reset"
-msgstr "Reiniciar"
+msgstr "alapérték"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:66
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:147
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:162
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:177
-#: /var/www/html/engelsystem/includes/view/User_view.php:227
+#: /var/www/html/engelsystem/includes/view/User_view.php:209
 msgid "arrived"
-msgstr "llegado"
+msgstr "megérkezett"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:137
 msgid "Planned arrival"
-msgstr "llegada prevista"
+msgstr "Tervezett érkezés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:138
 msgid "Arrived?"
-msgstr "¿Llegado?"
+msgstr "Megérkezett?"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:139
 msgid "Arrival date"
-msgstr "Fecha de llegada"
+msgstr "Érkezési dátum"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:140
 msgid "Planned departure"
-msgstr "salida prevista"
+msgstr "Tervezett indulási"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:145
 msgid "Planned arrival statistics"
-msgstr "Estadísticas de llegada prevista"
+msgstr "Tervezett érkezés statisztika"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:148
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:163
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:178
 msgid "arrived sum"
-msgstr "suma que resulte"
+msgstr "megérkezett összeg"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:154
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:169
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:184
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:27
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:76
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:71
 msgid "Date"
-msgstr "Fecha"
+msgstr "Dátum"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:155
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:170
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:185
 msgid "Count"
-msgstr "Contar"
+msgstr "Számláló"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:160
 msgid "Arrival statistics"
-msgstr "estadísticas de la llegada"
+msgstr "Érkezés Statisztika"
 
 #: /var/www/html/engelsystem/includes/pages/admin_arrive.php:175
 msgid "Planned departure statistics"
-msgstr "estadísticas de salida prevista"
+msgstr "Tervezett indulási statisztika"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:3
 msgid "Free angels"
-msgstr "ángeles gratuitas"
+msgstr "Ingyenes angyalok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:74
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:34
@@ -813,7 +777,7 @@ msgstr "Angeltype"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:77
 msgid "Only confirmed"
-msgstr "Sólo confirmado"
+msgstr "Csak megerősítette"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:85
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:181
@@ -821,16 +785,16 @@ msgstr "Sólo confirmado"
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:168
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:146
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:153
-#: /var/www/html/engelsystem/includes/view/User_view.php:86
+#: /var/www/html/engelsystem/includes/view/User_view.php:68
 msgid "Nick"
-msgstr "Mella"
+msgstr "Becenév"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:87
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:210
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:175
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:147
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:154
-#: /var/www/html/engelsystem/includes/view/User_view.php:89
+#: /var/www/html/engelsystem/includes/view/User_view.php:71
 msgid "DECT"
 msgstr "DECT"
 
@@ -838,14 +802,14 @@ msgstr "DECT"
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:219
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:179
 msgid "Jabber"
-msgstr "Farfullar"
+msgstr "Jabber"
 
 #: /var/www/html/engelsystem/includes/pages/admin_free.php:89
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:184
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:177
-#: /var/www/html/engelsystem/includes/view/User_view.php:258
+#: /var/www/html/engelsystem/includes/view/User_view.php:240
 msgid "E-Mail"
-msgstr "Correo electrónico"
+msgstr "E-mail"
 
 #: /var/www/html/engelsystem/includes/pages/admin_groups.php:3
 msgid "Grouprights"
@@ -854,26 +818,26 @@ msgstr "Grouprights"
 #: /var/www/html/engelsystem/includes/pages/admin_groups.php:29
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:141
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:145
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:135
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:180
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:130
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:175
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:60
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:216
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:33
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:74
-#: /var/www/html/engelsystem/includes/view/User_view.php:88
+#: /var/www/html/engelsystem/includes/view/User_view.php:70
 msgid "Name"
-msgstr "Nombre"
+msgstr "Név"
 
 #: /var/www/html/engelsystem/includes/pages/admin_groups.php:30
 msgid "Privileges"
-msgstr "privilegios"
+msgstr "Jogosultságok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_groups.php:53
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:32
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:35
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:149
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:144
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:257
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:42
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:62
 #: /var/www/html/engelsystem/includes/pages/user_news.php:106
 #: /var/www/html/engelsystem/includes/pages/user_news.php:160
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:183
@@ -883,28 +847,27 @@ msgstr "privilegios"
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:191
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:66
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:32
-#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:33
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:32
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:37
-#: /var/www/html/engelsystem/includes/view/User_view.php:51
-#: /var/www/html/engelsystem/includes/view/User_view.php:274
+#: /var/www/html/engelsystem/includes/view/User_view.php:33
+#: /var/www/html/engelsystem/includes/view/User_view.php:256
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:34
 msgid "Save"
-msgstr "Salvar"
+msgstr "Mentés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_groups.php:54
 msgid "Edit group"
-msgstr "Editar grupo"
+msgstr "Csoport módosítása..."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:4
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:136
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:181
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:131
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
 msgid "Frab import"
-msgstr "importación FRAB"
+msgstr "Frab importálása"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:24
 msgid "Webserver has no write-permission on import directory."
-msgstr ""
-"Servidor web no tiene permiso de escritura en el directorio de importación ."
+msgstr "Webserver behozatali könyvtárban nincs írási van."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:50
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:114
@@ -912,47 +875,43 @@ msgstr ""
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:48
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:53
 msgid "Please select a shift type."
-msgstr "Por favor seleccione un tipo de cambio ."
+msgstr "Válassza ki a shift."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:57
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:121
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:198
 msgid "Please enter an amount of minutes to add to a talk's begin."
-msgstr ""
-"Por favor, introduzca una cantidad de minutos para añadir a una charla a "
-"empezar ."
+msgstr "Kérjük adja meg egy percig, hogy adjunk egy beszélgetés kezdődik meg."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:64
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:128
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:205
 msgid "Please enter an amount of minutes to add to a talk's end."
-msgstr ""
-"Por favor, introduzca una cantidad de minutos para añadir al final de una "
-"charla ."
+msgstr "Kérjük, írja be az összeget perc felvenni a beszélgetés végén."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:72
 msgid "No valid xml/xcal file provided."
-msgstr "Ningún archivo XML xcal / válida siempre "
+msgstr "Nincs érvényes xml/xcal fájl biztosított."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:77
 msgid "File upload went wrong."
-msgstr "La carga de archivos que salió mal ."
+msgstr "File feltöltés volt a baj."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:81
 msgid "Please provide some data."
-msgstr "Por favor proporcionar algunos datos ."
+msgstr "Kérjük, adja meg néhány adatot."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:89
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:136
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:243
 msgid "File Upload"
-msgstr "Subir archivo"
+msgstr "Fájl feltöltés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:89
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:136
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:243
 msgid "Validation"
-msgstr "Validación"
+msgstr "Validálás"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:89
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:98
@@ -960,16 +919,15 @@ msgstr "Validación"
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:175
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:243
 msgid "Import"
-msgstr "Importar"
+msgstr "Import"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:93
 msgid ""
 "This import will create/update/delete rooms and shifts by given FRAB-export "
 "file. The needed file format is xcal."
 msgstr ""
-"Esta importación creará / actualizar / borrar habitaciones y los cambios de "
-"archivo FRAB -exportación dado. El formato de archivo que se necesita es "
-"xcal ."
+"A behozatali akarat teremt/frissítés/törlés szobák és műszak által adott "
+"FRAB-exportfájlt. A szükséges fájl formátuma xcal."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:94
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:301
@@ -979,39 +937,39 @@ msgstr "Shifttype"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:95
 msgid "Add minutes to start"
-msgstr "Añadir minutos para iniciar"
+msgstr "Add hozzá perc kezdeni"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:96
 msgid "Add minutes to end"
-msgstr "Añadir minutos para terminar"
+msgstr "Add hozzá perc a végéig"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:97
 msgid "xcal-File (.xcal)"
-msgstr "xcal -File ( .xcal )"
+msgstr "xcal-fájl (.xcal)"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:107
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:181
 msgid "Missing import file."
-msgstr "Falta el archivo de importación ."
+msgstr "Hiányzó fájl importálása."
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:140
 msgid "Rooms to create"
-msgstr "Habitaciones para crear"
+msgstr "Szobák létrehozása"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:144
 msgid "Rooms to delete"
-msgstr "Habitaciones para borrar"
+msgstr "Szobák törlése"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:148
 msgid "Shifts to create"
-msgstr "Desplaza para crear"
+msgstr "Műszakok létrehozása"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:150
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:159
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:168
-#: /var/www/html/engelsystem/includes/view/User_view.php:238
+#: /var/www/html/engelsystem/includes/view/User_view.php:220
 msgid "Day"
-msgstr "Día"
+msgstr "Nap"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:151
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:160
@@ -1019,7 +977,7 @@ msgstr "Día"
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:306
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:88
 msgid "Start"
-msgstr "comienzo"
+msgstr "Indítás"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:152
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:161
@@ -1027,13 +985,13 @@ msgstr "comienzo"
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:307
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:96
 msgid "End"
-msgstr "Fin"
+msgstr "Vége"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:153
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:162
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:171
 msgid "Shift type"
-msgstr "tipo de cambio de"
+msgstr "Műszak-típus"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:154
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:163
@@ -1042,7 +1000,7 @@ msgstr "tipo de cambio de"
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:185
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:84
 msgid "Title"
-msgstr "Título"
+msgstr "Cím"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:155
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:164
@@ -1050,519 +1008,515 @@ msgstr "Título"
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:303
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
 msgid "Room"
-msgstr "Habitación"
+msgstr "Szoba"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:157
 msgid "Shifts to update"
-msgstr "Desplaza para actualizar"
+msgstr "Műszakban frissítése"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:166
 msgid "Shifts to delete"
-msgstr "Cambios de eliminar"
+msgstr "Műszakban törlése"
 
 #: /var/www/html/engelsystem/includes/pages/admin_import.php:244
 msgid "It's done!"
-msgstr "¡Está hecho!"
+msgstr "Ez történik!"
 
 #: /var/www/html/engelsystem/includes/pages/admin_log.php:3
 msgid "Log"
-msgstr "Iniciar sesión"
+msgstr "Napló"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:8
 msgid "Edit news entry"
-msgstr "Editar entrada de noticias"
+msgstr "Hírek-bejegyzés szerkesztése"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:28
 msgid "Author"
-msgstr "Autor"
+msgstr "Szerző"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:29
 #: /var/www/html/engelsystem/includes/pages/user_news.php:157
 msgid "Subject"
-msgstr "Tema"
+msgstr "Tárgy"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:30
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:79
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:74
 #: /var/www/html/engelsystem/includes/pages/user_news.php:105
 #: /var/www/html/engelsystem/includes/pages/user_news.php:158
 msgid "Message"
-msgstr "Mensaje"
+msgstr "Message"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:31
 #: /var/www/html/engelsystem/includes/pages/user_news.php:159
 msgid "Meeting"
-msgstr "Reunión"
+msgstr "Találkozó"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:35
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:168
-#: /var/www/html/engelsystem/includes/view/User_view.php:34
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:163
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Törlés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:49
 msgid "News entry updated."
-msgstr "Noticias actualiza la entrada ."
+msgstr "Hír bejegyzés frissítése."
 
 #: /var/www/html/engelsystem/includes/pages/admin_news.php:58
 msgid "News entry deleted."
-msgstr "Noticias de entrada eliminado."
+msgstr "Hírek bejegyzést el kell hagyni."
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:3
 msgid "Answer questions"
-msgstr "Responder preguntas"
+msgstr "Kérdések megválaszolására"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:13
 msgid "There are unanswered questions!"
-msgstr "Existen preguntas sin respuesta !"
+msgstr "Vannak megválaszolatlan kérdés!"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:61
 msgid "Unanswered questions"
-msgstr "Preguntas sin respuesta"
+msgstr "Megválaszolatlan kérdések"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:63
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:70
 msgid "From"
-msgstr "De"
+msgstr "Honnan"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:64
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:71
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:19
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:24
 msgid "Question"
-msgstr "Pregunta"
+msgstr "Kérdés"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:65
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:73
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:26
 msgid "Answer"
-msgstr "Responder"
+msgstr "Válasz"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:68
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:22
 msgid "Answered questions"
-msgstr "preguntas con respuesta"
+msgstr "Megválaszolt kérdések"
 
 #: /var/www/html/engelsystem/includes/pages/admin_questions.php:72
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:25
 msgid "Answered by"
-msgstr "contestada por"
+msgstr "Válaszolt"
 
 #: /var/www/html/engelsystem/includes/pages/admin_rooms.php:4
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:816
 msgid "Rooms"
-msgstr "Habitaciones"
+msgstr "Helyiségek"
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:62
-msgid "This name is already in use."
-msgstr "Este nombre ya esta en uso."
-
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:89
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:84
 #, php-format
 msgid "Please enter needed angels for type %s."
-msgstr "Por favor, introduzca ángeles necesarios para el tipo %s ."
+msgstr "Kérjük, írja be a szükséges angyalok típus %s."
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:117
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:112
 msgid "Room saved."
-msgstr "salvó habitación."
+msgstr "Szoba mentett."
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:137
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:182
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:132
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:177
 msgid "Public"
-msgstr "Público"
+msgstr "Nyilvános"
+
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:133
+msgid "Room number"
+msgstr "Szoba száma"
 
 #: /var/www/html/engelsystem/includes/pages/admin_rooms.php:138
-msgid "Room number"
-msgstr "Número de habitación"
-
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:143
 msgid "Needed angels:"
-msgstr "ángeles Necesarios:"
+msgstr "Szükséges angyalok:"
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:158
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:153
 #, php-format
 msgid "Room %s deleted."
-msgstr "Habitación %s borrado ."
+msgstr "Szoba (%s) törölve."
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:166
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:161
 #, php-format
 msgid "Do you want to delete room %s?"
-msgstr "¿Quieres eliminar sala de %s ?"
+msgstr "Törlendő szoba %s?"
 
-#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:176
+#: /var/www/html/engelsystem/includes/pages/admin_rooms.php:171
 msgid "add"
-msgstr "añadir"
+msgstr "hozzáadás"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:4
 msgid "Create shifts"
-msgstr "crear cambios"
+msgstr "Műszakok létrehozása"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:65
 msgid "Please select a location."
-msgstr "Por favor, seleccione una ubicación ."
+msgstr "Kérjük válasszon ki egy tárolóhelyet"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:72
 msgid "Please select a start time."
-msgstr "Por favor, seleccione una hora de inicio ."
+msgstr "Kérjük, válassza ki a kezdő időpont."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:79
 msgid "Please select an end time."
-msgstr "Por favor, seleccione una hora de finalización ."
+msgstr "Kérjük, válasszon egy olyan befejező időpontot."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:84
 msgid "The shifts end has to be after its start."
-msgstr "El extremo turnos tiene que ser después de su inicio ."
+msgstr "A műszak végén, hogy a start után."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:96
 msgid "Please enter a shift duration in minutes."
-msgstr "Por favor, introduzca una duración de cambio en cuestión de minutos ."
+msgstr "Kérjük, írja be a shift időtartama percben."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:104
 msgid "Please split the shift-change hours by colons."
-msgstr "Por favor, dividir las horas del cambio de turno por dos puntos."
+msgstr "A shift-váltás óra kérjük ketté kettőspont."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:109
 msgid "Please select a mode."
-msgstr "Por favor, seleccione un modo."
+msgstr "Kérjük, válassza ki a mód."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:122
 #, php-format
 msgid "Please check the needed angels for team %s."
-msgstr "Por favor, compruebe los ángeles necesarios para equipo de %s ."
+msgstr "Kérjük, ellenőrizze a szükséges angyalok csapat %s."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:127
 msgid "There are 0 angels needed. Please enter the amounts of needed angels."
 msgstr ""
-"Hay 0 ángeles necesarios . Por favor, introduzca las cantidades de ángeles "
-"necesarios ."
+"Vannak 0 angyalok szükséges. Kérjük, írja be az összegeket szükséges "
+"angyalok."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:131
 msgid "Please select a mode for needed angels."
-msgstr "Por favor, seleccione un modo de ángeles necesarios ."
+msgstr "Kérjük, válassza ki a mód szükséges angyalok."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:135
 msgid "Please select needed angels."
-msgstr "Por favor, seleccione ángeles necesarios ."
+msgstr "Kérjük, válassza ki a szükséges angyalok."
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:253
 msgid "Time and location"
-msgstr "El tiempo y la ubicación"
+msgstr "Idő és helyszín"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:254
 msgid "Type and title"
-msgstr "Tipo y título"
+msgstr "Típus és cím"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:255
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:316
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:189
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:110
 msgid "Needed angels"
-msgstr "Tipo y título"
+msgstr "Szükséges angyalok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:308
 msgid "Mode"
-msgstr "Modo"
+msgstr "Mód"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:309
 msgid "Create one shift"
-msgstr "Crear un turno"
+msgstr "Hozzon létre egy műszak"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:310
 msgid "Create multiple shifts"
-msgstr "Crear varios turnos"
+msgstr "Hozzon létre több műszakban"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:312
 msgid "Create multiple shifts with variable length"
-msgstr "Crear varios turnos con longitud variable"
+msgstr "Hozzon létre több műszakban változó hosszúságú"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:313
 msgid "Shift change hours"
-msgstr "hora del cambio de turno"
+msgstr "SHIFT változtatni óra"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:317
 msgid "Take needed angels from room settings"
-msgstr "Tome ángeles necesarios ajustes de las habitaciones"
+msgstr "Hogy szükséges angyalok helyiség-beállítások"
 
 #: /var/www/html/engelsystem/includes/pages/admin_shifts.php:318
 msgid "The following angels are needed"
-msgstr "Se necesitan los siguientes ángeles"
+msgstr "A következő angyalok van szükség"
 
 #: /var/www/html/engelsystem/includes/pages/admin_user.php:4
 msgid "All Angels"
-msgstr "todos los Ángeles"
+msgstr "Összes angyalok"
 
 #: /var/www/html/engelsystem/includes/pages/admin_user.php:21
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:165
 msgid "This user does not exist."
-msgstr "Este usuario no existe."
+msgstr "Ez a felhasználó nem létezik."
 
 #: /var/www/html/engelsystem/includes/pages/admin_user.php:41
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:185
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:178
 msgid "Please send me an email if my shifts change"
-msgstr "Por favor envíeme un correo electrónico si mis turnos cambian"
+msgstr "Legyen szíves küld én egy elektronikus levél ha én műszak módosítása"
 
 #: /var/www/html/engelsystem/includes/pages/admin_user.php:60
 msgid "Force active"
-msgstr "fuerza activa"
+msgstr "Aktív erő"
 
 #: /var/www/html/engelsystem/includes/pages/admin_user.php:79
 msgid ""
 "Please visit the angeltypes page or the users profile to manage users "
 "angeltypes."
 msgstr ""
-"Por favor, visite la página angeltypes o los usuarios de perfil para la "
-"gestión de usuarios angeltypes ."
+"Kérjük, látogasson el a angeltypes vagy a felhasználó profil kezelése a "
+"felhasználók angeltypes."
 
-#: /var/www/html/engelsystem/includes/pages/admin_user.php:200
+#: /var/www/html/engelsystem/includes/pages/admin_user.php:219
 msgid "Edit user"
-msgstr "Editar usuario"
+msgstr "Felhasználó szerkesztése"
 
 #: /var/www/html/engelsystem/includes/pages/guest_credits.php:3
 msgid "Credits"
-msgstr "créditos"
+msgstr "Jóváírások"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:4
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:314
 msgid "Login"
-msgstr "Iniciar sesión"
+msgstr "Belépés"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:8
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:240
 msgid "Register"
-msgstr "Registro"
+msgstr "Regisztráció"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:12
 msgid "Logout"
-msgstr "Cerrar sesión"
+msgstr "Kijelentkezés"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:52
 #, php-format
 msgid "Your nick &quot;%s&quot; already exists."
-msgstr "Su nick & quot ; %s & quot ; ya existe."
+msgstr "A \"%s\" nick már létezik."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:56
 #, php-format
 msgid "Your nick &quot;%s&quot; is too short (min. 2 characters)."
-msgstr ""
-"Su nick & quot ; %s & quot ; es demasiado corto ( min . 2 caracteres ) ."
+msgstr "A nick \"%s\" túl rövid (min. 2 karakter)."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:77
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:50
 msgid "Please check your jabber account information."
-msgstr "Por favor, compruebe la información de su cuenta Jabber ."
+msgstr "Kérjük, ellenőrizze a jabber fiókadatait."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:86
 msgid "Please select your shirt size."
-msgstr "Por favor, seleccione el tamaño de la camisa ."
+msgstr "Kérjük, válassza ki a póló mérete."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:97
 #, php-format
 msgid "Your password is too short (please use at least %s characters)."
-msgstr ""
-"Su contraseña es demasiado corta ( por favor utilice al menos %s "
-"caracteres ) ."
+msgstr "A jelszó túl rövid (használjon legalább %s karakterek)."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:104
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:64
 msgid "Please enter your planned date of arrival."
-msgstr "Por favor, introduzca su fecha prevista de llegada ."
+msgstr "Kérjük, adja meg az érkezés tervezett időpontja."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:166
 msgid "Angel registration successful!"
-msgstr "Ángel registro exitoso!"
+msgstr "Angyal a regisztrßci≤ sikeres!"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:173
 msgid ""
 "By completing this form you're registering as a Chaos-Angel. This script "
 "will create you an account in the angel task sheduler."
 msgstr ""
-"Al completar este formulario, usted está registrando como un caos - Ángel . "
-"Este script se creará una cuenta en el sheduler tarea ángel."
+"Az űrlap kitöltésével vagy regisztráció, mint egy káosz-angyal. Ez a szkript "
+"fogja Ön fiókot létrehozni az angyal feladat sheduler."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:190
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:171
 msgid "Planned date of arrival"
-msgstr "fecha prevista de llegada"
+msgstr "Az érkezés tervezett időpontja"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:193
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:181
 msgid "Shirt size"
-msgstr "Talla de camisa"
+msgstr "Póló méret"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:198
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:313
-#: /var/www/html/engelsystem/includes/view/User_view.php:272
+#: /var/www/html/engelsystem/includes/view/User_view.php:254
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Jelszó"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:201
-#: /var/www/html/engelsystem/includes/view/User_view.php:273
+#: /var/www/html/engelsystem/includes/view/User_view.php:255
 msgid "Confirm password"
-msgstr "Confirmar contraseña"
+msgstr "Kívánt jelszó mégegyszer"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:204
 msgid "What do you want to do?"
-msgstr "¿Qué quieres hacer?"
+msgstr "Mit szeretne?"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:204
 msgid "Description of job types"
-msgstr "Descripción de los tipos de empleo"
+msgstr "Feladattípusok leírása"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:205
 msgid ""
 "Restricted angel types need will be confirmed later by an archangel. You can "
 "change your selection in the options section."
 msgstr ""
-"tipos de ángel restringidas necesitan ser confirmada más tarde por un "
-"arcángel . Puede cambiar su selección en la sección de opciones ."
+"Korlátozott angyal típusú kell fogja megerősíteni később egy arkangyal. "
+"Módosíthatja a kijelölési beállítások szakaszban."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:213
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:176
 msgid "Mobile"
-msgstr "Móvil"
+msgstr "Mobil"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:216
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:174
 msgid "Phone"
-msgstr "Teléfono"
+msgstr "Telefon"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:222
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:170
 msgid "First name"
-msgstr "Nombre de pila"
+msgstr "Keresztnév"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:225
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:169
 msgid "Last name"
-msgstr "Apellido"
+msgstr "Vezetéknév"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:230
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:173
 msgid "Age"
-msgstr "Años"
+msgstr "Életkor"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:233
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:180
 msgid "Hometown"
-msgstr "Procedencia"
+msgstr "Szülőváros"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:236
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:167
 msgid "Entry required!"
-msgstr "Entrada requerida !"
+msgstr "Kötelező adat"
+
+#: /var/www/html/engelsystem/includes/pages/guest_login.php:272
+msgid "Your password is incorrect.  Please try it again."
+msgstr "Érvénytelen jelszó. Próbáld újra!"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:276
 msgid "Please enter a password."
-msgstr "Porfavor ingrese una contraseña."
+msgstr "Adja meg a jelszavát!"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:280
 msgid ""
 "No user was found with that Nickname. Please try again. If you are still "
 "having problems, ask an Dispatcher."
 msgstr ""
-"Ningún usuario fue encontrado con ese apodo . Por favor, inténtelo de "
-"nuevo . Si todavía tiene problemas , pida a un despachador ."
+"Egyetlen felhasználó sem találták, hogy a Felhasználónév. Kérjük, próbálja "
+"meg újra. Ha még mindig problémákat tapasztal, kérjen egy diszpécser."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:284
 msgid "Please enter a nickname."
-msgstr "Por favor escribe un apodo."
+msgstr "Kérjük, írja be a Felhasználónév."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:297
 msgid "Please sign up, if you want to help us!"
-msgstr "Por favor inscribirse, si usted quiere ayudarnos !"
+msgstr "Kérjük, iratkozzon fel, ha azt szeretné, hogy segítsen nekünk!"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:304
 msgid "Registration is disabled."
-msgstr "La inscripción está deshabilitado."
+msgstr "A regisztráció kikapcsolva."
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:316
 msgid "I forgot my password"
-msgstr "Olvidé mi contraseña"
+msgstr "Én felejtett az én-m jelszó"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:318
 msgid "Please note: You have to activate cookies!"
-msgstr "Por favor, tenga en cuenta que tiene que activar las cookies !"
+msgstr "Kérjük, vegye figyelembe: meg kell aktiválni a cookie-kat!"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:324
 msgid "What can I do?"
-msgstr "¿Que puedo hacer?"
+msgstr "Mit tehetek?"
 
 #: /var/www/html/engelsystem/includes/pages/guest_login.php:325
 msgid "Please read about the jobs you can do to help us."
-msgstr ""
-"Por favor, lea acerca de los trabajos que se pueden hacer para ayudarnos."
+msgstr "Kérjük olvassa el a munkahely, amit tehetünk, hogy segítsen nekünk."
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:4
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:3
 msgid "Messages"
-msgstr "mensajes"
+msgstr "Üzenetek"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:25
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:24
 msgid "Select recipient..."
-msgstr "Seleccionar destinatario ..."
+msgstr "Címzett kijelölése"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:49
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:52
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:36
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:39
 #: /var/www/html/engelsystem/includes/pages/user_news.php:62
 #: /var/www/html/engelsystem/includes/pages/user_news.php:92
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:16
 msgid "Unable to load user."
-msgstr "No se puede cargar usuario."
+msgstr "Nem sikerült betölteni a felhasználó."
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:64
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:51
 msgid "mark as read"
-msgstr "Marcar como leído"
+msgstr "Olvasottként jelölés"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:66
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:53
 msgid "delete message"
-msgstr "borrar mensaje"
+msgstr "Törli az üzenetet?"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:67
 #, php-format
 msgid "Hello %s, here can you leave messages for other angels"
-msgstr "Hola %s , aquí se puede dejar mensajes para otros ángeles"
+msgstr "Hello %s, itt is maradnak az üzenetek a többi Angyaltól"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:75
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:70
 msgid "New"
-msgstr "Nuevo"
+msgstr "Új"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:77
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:72
 msgid "Transmitted"
-msgstr "transmitido"
+msgstr "Továbbított"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:78
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:73
 msgid "Recipient"
-msgstr "Recipiente"
+msgstr "Címzett"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:90
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:104
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:85
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:99
 msgid "Incomplete call, missing Message ID."
-msgstr "de llamadas incompletas , falta ID de mensaje ."
+msgstr "Hiányos hívás hiányzó üzenetazonosító"
 
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:97
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:111
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:92
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:106
 msgid "No Message found."
-msgstr "No se encontró mensaje ."
+msgstr "Közlemény nem található."
+
+#: /var/www/html/engelsystem/includes/pages/user_messages.php:113
+msgid "Transmitting was terminated with an Error."
+msgstr "Továbbítására befejeződött egy hiba."
 
 #: /var/www/html/engelsystem/includes/pages/user_messages.php:118
-msgid "Transmitting was terminated with an Error."
-msgstr "Transmitiendo se terminó con un error."
-
-#: /var/www/html/engelsystem/includes/pages/user_messages.php:123
 msgid "Wrong action."
-msgstr "acción incorrecta ."
+msgstr "Helytelen tettet."
 
 #: /var/www/html/engelsystem/includes/pages/user_myshifts.php:4
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
 msgid "My shifts"
-msgstr "Mis turnos"
+msgstr "Én műszak"
 
 #: /var/www/html/engelsystem/includes/pages/user_myshifts.php:24
 msgid "Key changed."
-msgstr "Clave cambiado."
+msgstr "Kulcs változtatott."
 
 #: /var/www/html/engelsystem/includes/pages/user_myshifts.php:27
-#: /var/www/html/engelsystem/includes/view/User_view.php:232
+#: /var/www/html/engelsystem/includes/view/User_view.php:214
 msgid "Reset API key"
-msgstr "Restablecer clave de API"
+msgstr "API-kulcs visszaállítása"
 
 #: /var/www/html/engelsystem/includes/pages/user_myshifts.php:28
 msgid ""
@@ -1570,328 +1524,320 @@ msgid ""
 "feed changes! You have to update it in every application using one of these "
 "exports."
 msgstr ""
-"Si restablece la clave, el URL a su iCal- y JSON -exportación y los cambios "
-"de alimentación átomo ! Tiene que actualizar en cada aplicación que utiliza "
-"una de estas exportaciones ."
+"Ha a kulcs alaphelyzetbe állítja, az URL-címet az iCal - és JSON-exportálás "
+"és az atom feed változások! Akkor frissítenünk kell, hogy minden alkalmazás "
+"segítségével egy, az ilyen exportok."
 
 #: /var/www/html/engelsystem/includes/pages/user_myshifts.php:29
 msgid "Continue"
-msgstr "Continuar"
+msgstr "Folytatás"
 
-#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:61
-msgid "Please enter a freeload comment!"
-msgstr "Por favor, introduzca un comentario freeload !"
-
-#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:79
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:72
 msgid "Shift saved."
-msgstr "Desplazamiento guardada ."
+msgstr "SHIFT mentett."
 
-#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:105
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:97
 msgid "Shift canceled."
-msgstr "Shift cancelada."
+msgstr "SHIFT megszakítva."
 
-#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:107
+#: /var/www/html/engelsystem/includes/pages/user_myshifts.php:99
 msgid ""
 "It's too late to sign yourself off the shift. If neccessary, ask the "
 "dispatcher to do so."
 msgstr ""
-"Es demasiado tarde para inscribirse a sí mismo fuera del turno . En caso de "
-"necesidad , pedir a la operadora para hacerlo."
+"Már túl késő, láttamozása magát a shift. Ha szükséges, kérje a diszpécser, "
+"hogy erre."
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:3
 msgid "News comments"
-msgstr "comentarios de noticias"
+msgstr "Hírek hozzászólásai"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:7
 msgid "News"
-msgstr "Noticias"
+msgstr "Hírek"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:11
 msgid "Meetings"
-msgstr "reuniones"
+msgstr "Ülések"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:66
 msgid "Comments"
-msgstr "comentarios"
+msgstr "Megjegyzések"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:83
 #: /var/www/html/engelsystem/includes/pages/user_news.php:126
 msgid "Entry saved."
-msgstr "El registro se ha ."
+msgstr "Bejegyzés mentve."
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:103
 msgid "New Comment:"
-msgstr "Nuevo comentario:"
+msgstr "Új hozzászólás"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:110
 msgid "Invalid request."
-msgstr "Solicitud no válida."
+msgstr "Érvénytelen kérés"
 
 #: /var/www/html/engelsystem/includes/pages/user_news.php:154
 msgid "Create news:"
-msgstr "Crear noticia:"
+msgstr "Hozzon létre Hírek:"
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:3
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:29
 msgid "Ask an archangel"
-msgstr "Pregunta a un arcángel"
+msgstr "Kérdezze egy arkangyal"
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:28
 msgid "Unable to save question."
-msgstr "No se puede guardar cuestión."
+msgstr "Nem lehet menteni a kérdés."
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:29
 msgid "You question was saved."
-msgstr "Se pregunta fue salvado ."
+msgstr "Kérdés volt mentve."
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:33
 msgid "Please enter a question!"
-msgstr "Por favor, introduzca una pregunta !"
+msgstr "Kérjük, adja meg a kérdés!"
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:40
 msgid "Incomplete call, missing Question ID."
-msgstr "de llamadas incompletas , falta la pregunta de identificación."
+msgstr "Hiányos hívás hiányzik a kérdés alapján."
 
 #: /var/www/html/engelsystem/includes/pages/user_questions.php:48
 msgid "No question found."
-msgstr "No se encontró pregunta ."
+msgstr "Nem kérdés, alapít."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:4
-#: /var/www/html/engelsystem/includes/view/User_view.php:229
+#: /var/www/html/engelsystem/includes/view/User_view.php:211
 msgid "Settings"
-msgstr "ajustes"
+msgstr "Beállítások"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:72
 msgid "Please enter your planned date of departure."
-msgstr "Por favor, introduzca su fecha prevista de salida ."
+msgstr "Kérjük, írja be a tervezett indulás időpontja."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:112
 msgid "Settings saved."
-msgstr "Ajustes guardados."
+msgstr "Változtatások mentve"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:119
 msgid "-> not OK. Please try again."
-msgstr "- > No OK . Por favor, inténtelo de nuevo ."
+msgstr "-> nem OK. Kérjük, próbálja meg újra."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:127
 msgid "Failed setting password."
-msgstr "No se pudo establecer la contraseña ."
+msgstr "A beállítás sikertelen jelszó."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:140
 msgid "Theme changed."
-msgstr "El tema cambió ."
+msgstr "A téma változik."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:166
 msgid "Here you can change your user details."
-msgstr "Aquí puede cambiar sus datos de usuario ."
+msgstr "Itt módosíthatja a felhasználó adatait."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:172
 msgid "Planned date of departure"
-msgstr "la fecha prevista de salida"
+msgstr "Indulás tervezett időpontja"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:182
 msgid "Please visit the angeltypes page to manage your angeltypes."
-msgstr ""
-"Por favor, visite la página angeltypes para administrar sus angeltypes ."
+msgstr "Kérjük, látogasson el a angeltypes lapon kezelheti a angeltypes."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:188
 msgid "Here you can change your password."
-msgstr "Aquí puede cambiar su contraseña ."
+msgstr "Itt módosíthatja a jelszavát."
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:189
 msgid "Old password:"
-msgstr "Contraseña anterior:"
+msgstr "Régi jelszó"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:190
 msgid "New password:"
-msgstr "Nueva contraseña:"
+msgstr "Az új jelszó:"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:191
 msgid "Password confirmation:"
-msgstr "Confirmación de contraseña:"
+msgstr "Jelszó megerősítése:*"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:195
 msgid "Here you can choose your color settings:"
-msgstr "Aquí se puede elegir la configuración de color :"
+msgstr "Itt választhatja ki a Színbeállítások:"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:196
 msgid "Color settings:"
-msgstr "ajustes de color :"
+msgstr "Szín beállítások"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:200
 msgid "Here you can choose your language:"
-msgstr "Aquí se puede elegir el idioma:"
+msgstr "Itt választhatja ki azt a nyelvet:"
 
 #: /var/www/html/engelsystem/includes/pages/user_settings.php:201
 msgid "Language:"
-msgstr "Idioma:"
+msgstr "Nyelv:"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:43
 msgid "Shift entry deleted."
-msgstr "entrada Shift borra ."
+msgstr "SHIFT bejegyzést el kell hagyni."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:45
 msgid "Entry not found."
-msgstr "La entrada no encontrado ."
+msgstr "A bejegyzés nem található."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:110
 msgid "Please select a room."
-msgstr "Por favor seleccione una habitación."
+msgstr "Kérjük válasszon szobát"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:117
 msgid "Please select a shifttype."
-msgstr "Por favor, seleccione una shifttype ."
+msgstr "Kérjük, válasszon egy shifttype."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:124
 msgid "Please enter a valid starting time for the shifts."
-msgstr ""
-"Por favor, introduzca una hora de partida válido para los desplazamientos ."
+msgstr "Adjon meg egy érvényes kezdő időpontját a műszak."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:131
 msgid "Please enter a valid ending time for the shifts."
-msgstr "Por favor, introduzca una hora de finalización válida para los turnos."
+msgstr "Adjon meg egy érvényes befejezési időpont részére a műszak."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:136
 msgid "The ending time has to be after the starting time."
-msgstr "La hora de finalización tiene que ser después de la hora de inicio."
+msgstr "A befejezési időpontot, hogy kezdő időpontját követően."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:144
 #, php-format
 msgid "Please check your input for needed angels of type %s."
-msgstr "Gracias por confirmar su entrada para ángeles necesarios de tipo %s ."
+msgstr "Kérjük, ellenőrizze a szükséges angyalok %s típusú bemenet."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:166
 msgid "Shift updated."
-msgstr "Shift actualiza ."
+msgstr "SHIFT frissítve."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:182
 msgid "This page is much more comfortable with javascript."
-msgstr "Esta página es mucho más cómodo con javascript ."
+msgstr "Ez az oldal sokkal kényelmesebb, a javascript."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:186
 msgid "Room:"
-msgstr "Habitación:"
+msgstr "szoba"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:187
 msgid "Start:"
-msgstr "Comienzo:"
+msgstr "Kezdete:"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:188
 msgid "End:"
-msgstr "Fin:"
+msgstr "Vége:"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:214
 msgid "Shift deleted."
-msgstr "Shift eliminado."
+msgstr "Műszak-töröl."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:219
 #, php-format
 msgid "Do you want to delete the shift %s from %s to %s?"
-msgstr "¿Quieres eliminar el turno %s de %s de %s ?"
+msgstr "Szeretné törölni a shift (%s) a(z) %s %s?"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:251
 msgid ""
 "You are not allowed to sign up for this shift. Maybe shift is full or "
 "already running."
 msgstr ""
-"No se le permite inscribirse para este cambio . Tal cambio es completo o ya "
-"en ejecución ."
+"Jel megjelöl részére ez a váltás nem látogathatja. Talán a shift, teljes, "
+"vagy a már futó."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:298
 msgid "You are subscribed. Thank you!"
-msgstr "Usted está suscrito . ¡Gracias!"
+msgstr "Előfizetett. köszönöm!"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:307
-#: /var/www/html/engelsystem/includes/view/User_view.php:206
+#: /var/www/html/engelsystem/includes/view/User_view.php:188
 msgid "Freeloader"
-msgstr "gorrón"
+msgstr "Freeloader"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:337
 msgid "The administration has not configured any shifts yet."
-msgstr ""
-"La administración no ha configurado como cualquier desplazamiento todavía."
+msgstr "Az adminisztráció nem állított minden műszakban még."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:344
 msgid "The administration has not configured any rooms yet."
-msgstr "La administración no ha configurado ninguna habitación todavía."
+msgstr "Az adminisztráció nem állított minden szoba még."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:357
 msgid "occupied"
-msgstr "ocupado"
+msgstr "elfoglalt"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:361
 msgid "free"
-msgstr "gratis"
+msgstr "mentes"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:366
 msgid ""
 "The administration has not configured any angeltypes yet - or you are not "
 "subscribed to any angeltype."
 msgstr ""
-"La administración no ha configurado ningún angeltypes todavía - o usted no "
-"está suscrito a cualquier angeltype ."
+"Az adminisztráció nem konfigurált bármely angeltypes még -, vagy bármely "
+"angeltype nem előfizetett."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:618
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:755
 #, php-format
 msgid "%d helper needed"
 msgid_plural "%d helpers needed"
-msgstr[0] "%d ayudante necesario"
-msgstr[1] "%d ayudantes necesarios"
+msgstr[0] "%d segítő szükséges"
+msgstr[1] "%d segítő szükséges"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:638
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:22
 msgid "Sign up"
-msgstr "Regístrate"
+msgstr "Regisztráció"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:641
 msgid "ended"
-msgstr "terminado"
+msgstr "vége"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:649
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:782
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:24
 #, php-format
 msgid "Become %s"
-msgstr "Convertido %s"
+msgstr "%s"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:661
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:795
 msgid "Add more angels"
-msgstr "Añadir más ángeles"
+msgstr "Add hozzá több eszkort"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:803
-#: /var/www/html/engelsystem/includes/view/User_view.php:239
+#: /var/www/html/engelsystem/includes/view/User_view.php:221
 msgid "Time"
-msgstr "Hora"
+msgstr "Idő"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:804
 msgid "Entries"
-msgstr "entradas"
+msgstr "Bejegyzések"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:822
 msgid "Occupancy"
-msgstr "Ocupación"
+msgstr "Területhasználat"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
 msgid ""
 "The tasks shown here are influenced by the preferences you defined in your "
 "settings!"
 msgstr ""
-"Las tareas que se muestran aquí son influenciados por las preferencias que "
-"definió en la configuración !"
+"A feladatok itt látható a beállításokban megadott beállítások befolyásolják!"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:823
 msgid "Description of the jobs."
-msgstr "Descripción de los puestos de trabajo."
+msgstr "A feladatok leírása."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:824
 msgid "Use new style if possible"
-msgstr "Utilice el nuevo estilo , si es posible"
+msgstr "Használja új stílust, ha lehetséges"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
 msgid "iCal export"
-msgstr "exportación iCal"
+msgstr "iCal Exportálás"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:826
 #, php-format
@@ -1900,43 +1846,42 @@ msgid ""
 "\">JSON format</a> available (please keep secret, otherwise <a href=\"%s"
 "\">reset the api key</a>)."
 msgstr ""
-"La exportación de los cambios que se muestran . <a href=\"%s\"> iCal formato "
-"</a> o <a href=\"%s\"> JSON formato </a> disponibles (por favor mantener en "
-"secreto , de lo contrario < a href = \"%s\"> restablecer la clave de API </"
-"a> ) ."
+"Kivitele is eltolódik. <a href=\"%s\">iCal formátum</a> vagy <a href=\"%s"
+"\">JSON formátumban</a> elérhető (kérjük titokban tartani, különben <a href="
+"\"%s\">az api-kulcs visszaállítása</a>)."
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:827
 msgid "Filter"
-msgstr "Filtrar"
+msgstr "Szűrő"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:861
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:22
 msgid "All"
-msgstr "Todas"
+msgstr "Összes"
 
 #: /var/www/html/engelsystem/includes/pages/user_shifts.php:862
 msgid "None"
-msgstr "Ninguna"
+msgstr "Semmi"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:28
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:192
 msgid "Unconfirmed"
-msgstr "Inconfirmado"
+msgstr "Nincs megerősítve"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:30
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:34
 msgid "Coordinator"
-msgstr "Coordinador"
+msgstr "koordinátor"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:32
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:36
 msgid "Member"
-msgstr "Miembro"
+msgstr "Tag"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:45
 #, php-format
 msgid "Do you want to delete angeltype %s?"
-msgstr "¿Desea eliminar angeltype %s ?"
+msgstr "Angeltype %s törölni kívánja?"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:47
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:14
@@ -1947,58 +1892,58 @@ msgstr "¿Desea eliminar angeltype %s ?"
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:51
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:80
 msgid "cancel"
-msgstr "cancelar"
+msgstr "Mégse"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:217
 msgid "Restricted"
-msgstr "Restringido"
+msgstr "Korlátozott"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
 msgid "Yes"
-msgstr "Sí"
+msgstr "Igen"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:61
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
 msgid "No"
-msgstr "No"
+msgstr "Nwm"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:62
 msgid "Requires driver license"
-msgstr "Requiere la licencia de conducir"
+msgstr "Jogosítvány szükséges"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:63
 msgid ""
 "Restricted angel types can only be used by an angel if enabled by an "
 "archangel (double opt-in)."
 msgstr ""
-"tipos de ángel restringidos sólo pueden ser utilizados por un ángel si está "
-"activado por un arcángel ( doble opt-in ) ."
+"Korlátozott angyal típus csak akkor használható egy angyal, ha engedélyezte "
+"egy arkangyal (kettős opt-in)."
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:64
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:100
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:114
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:35
 msgid "Description"
-msgstr "Descripción"
+msgstr "Leírás"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:65
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:36
 msgid "Please use markdown for the description."
-msgstr "Por favor, use reducción del precio de la descripción ."
+msgstr "A Leírás markdown használja."
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:77
 msgid "my driving license"
-msgstr "el carnet de conducir"
+msgstr "a vezetői engedély"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:83
 msgid ""
 "This angeltype requires a driver license. Please enter your driver license "
 "information!"
 msgstr ""
-"Este angeltype requiere una licencia de conducir . Por favor, introduzca su "
-"información de licencia de conducir !"
+"A angeltype vezető licenc szükséges. Kérjük, írja be a járművezetői engedély "
+"információ!"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:86
 #, php-format
@@ -2006,468 +1951,586 @@ msgid ""
 "You are unconfirmed for this angeltype. Please go to the introduction for %s "
 "to get confirmed."
 msgstr ""
-"Usted está sin confirmar para esta angeltype . Por favor, vaya a la "
-"introducción de %s para conseguir confirmó ."
+"Te meg nem erősített, az a angeltype. Látogasson el a bevezetés az "
+"megerősítette, hogy %s."
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:123
 msgid "confirm"
-msgstr "confirmar"
+msgstr "Megerősítés"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:124
 msgid "deny"
-msgstr "negar"
+msgstr "Megtagad"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:139
 msgid "remove"
-msgstr "retirar"
+msgstr "eltávolít"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:155
 msgid "Driver"
-msgstr "Conductor"
+msgstr "A gépjárművezető neve:…"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:156
 msgid "Has car"
-msgstr "tiene coche"
+msgstr "Autó"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:157
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:27
 msgid "Car"
-msgstr "Coche"
+msgstr "Autó"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:158
 msgid "3,5t Transporter"
-msgstr "Transportador 3,5t"
+msgstr "3, 5t transzporter"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:159
 msgid "7,5t Truck"
-msgstr "7,5t Camión"
+msgstr "7, 5t teherautó"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:160
 msgid "12,5t Truck"
-msgstr "12,5t Camión"
+msgstr "12, 5t teherautó"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:161
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:31
 msgid "Forklift"
-msgstr "Máquina elevadora"
+msgstr "Targonca"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:166
 msgid "Coordinators"
-msgstr "coordinadores"
+msgstr "Koordinátorok"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:184
 msgid "Members"
-msgstr "miembros"
+msgstr "Tagok"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:187
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:70
 msgid "Add"
-msgstr "Añadir"
+msgstr "Hozzáadás"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:194
 msgid "confirm all"
-msgstr "confirma en su totalidad"
+msgstr "Győződjön meg arról, összes"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:195
 msgid "deny all"
-msgstr "negar todo"
+msgstr "tagad minden"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:212
 msgid "New angeltype"
-msgstr "nueva angeltype"
+msgstr "Új angeltype"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:218
 msgid "Membership"
-msgstr "Afiliación"
+msgstr "Tagság"
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:232
 msgid "FAQ"
-msgstr "Preguntas más frecuentes"
+msgstr "GY.I.K."
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:234
 msgid ""
 "Here is the list of teams and their tasks. If you have questions, read the "
 "FAQ."
 msgstr ""
-"Aquí está la lista de los equipos y sus tareas . Si tiene alguna pregunta , "
-"lea las preguntas frecuentes ."
+"Itt van a lista a csapatok és a feladatok. Ha kérdése van, olvassa el a GYIK."
 
 #: /var/www/html/engelsystem/includes/view/AngelTypes_view.php:251
 msgid ""
 "This angeltype is restricted by double-opt-in by a team coordinator. Please "
 "show up at the according introduction meetings."
 msgstr ""
-"Este angeltype está restringido por doble opt-in por un coordinador del "
-"equipo . Por favor presentarse en las reuniones de presentación de acuerdo "
+"Ezt a angeltype korlátozott double-opt-in a csapat koordinátor. Legyen "
+"szíves mutat szerint bevezetése ülésein."
 
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:17
 msgid "Open questions"
-msgstr "Preguntas abiertas"
+msgstr "Szabad kérdések"
 
 #: /var/www/html/engelsystem/includes/view/Questions_view.php:31
 msgid "Your Question:"
-msgstr "Tu pregunta:"
+msgstr "Az Ön kérdése:"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:17
-#: /var/www/html/engelsystem/includes/view/User_view.php:165
-#: /var/www/html/engelsystem/includes/view/User_view.php:167
+#: /var/www/html/engelsystem/includes/view/User_view.php:147
+#: /var/www/html/engelsystem/includes/view/User_view.php:149
 msgid "Freeloaded"
 msgstr "Freeloaded"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:18
 msgid "Freeload comment (Only for shift coordination):"
-msgstr "Freeload comentario ( Sólo para la coordinación de turno) :"
+msgstr "Freeload megjegyzést (csak a shift koordináció):"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:23
 msgid "Edit shift entry"
-msgstr "Editar entrada turno"
+msgstr "Shift-bejegyzés szerkesztése"
+
+#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:25
+msgid "Angel:"
+msgstr "Angyal"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:26
-msgid "Angel:"
-msgstr "Ángel:"
+msgid "Date, Duration:"
+msgstr "Időpontja, időtartama:"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:27
-msgid "Date, Duration:"
-msgstr "Fecha , Duración :"
+msgid "Location:"
+msgstr "Helyszín:"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:28
-msgid "Location:"
-msgstr "Ubicación:"
+msgid "Title:"
+msgstr "Cím:"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:29
-msgid "Title:"
-msgstr "Título:"
+msgid "Type:"
+msgstr "Típus:"
 
 #: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:30
-msgid "Type:"
-msgstr "Tipo:"
-
-#: /var/www/html/engelsystem/includes/view/ShiftEntry_view.php:31
 msgid "Comment (for your eyes only):"
-msgstr "Comentarios ( Sólo para sus ojos ) :"
+msgstr "(Csak a szemed) Megjegyzés:"
 
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:6
 #, php-format
 msgid "created at %s by %s"
-msgstr "creado en %s por %s"
+msgstr "a(z) %s %s által létrehozott"
 
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:8
 #, php-format
 msgid "edited at %s by %s"
-msgstr "editado en %s por %s"
+msgstr "a(z) %s %s által szerkesztett"
 
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:74
 msgid "This shift collides with one of your shifts."
-msgstr "Este cambio choca con uno de sus turnos."
+msgstr "Ez az elmozdulás egyik a műszakok ütközik."
 
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:75
 msgid "You are signed up for this shift."
-msgstr "Usted está suscrito a este cambio ."
+msgstr "Ön feliratkozott a shift."
 
 #: /var/www/html/engelsystem/includes/view/Shifts_view.php:104
-#: /var/www/html/engelsystem/includes/view/User_view.php:240
+#: /var/www/html/engelsystem/includes/view/User_view.php:222
 msgid "Location"
-msgstr "Ubicación"
+msgstr "Helyzet"
 
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:12
 #, php-format
 msgid "Do you want to delete shifttype %s?"
-msgstr "¿Quieres eliminar shifttype %s ?"
+msgstr "Shifttype %s törölni kívánja?"
 
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
 msgid "Edit shifttype"
-msgstr "Editar shifttype"
+msgstr "Shifttype szerkesztése"
 
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:27
 msgid "Create shifttype"
-msgstr "crear shifttype"
+msgstr "Shifttype létrehozása"
 
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:46
 #, php-format
 msgid "for team %s"
-msgstr "para el equipo %s"
+msgstr "csapat: %s"
 
 #: /var/www/html/engelsystem/includes/view/ShiftTypes_view.php:71
 msgid "New shifttype"
-msgstr "nueva shifttype"
+msgstr "Új shifttype"
 
 #: /var/www/html/engelsystem/includes/view/User_view.php:7
 msgid "Please select..."
-msgstr "Por favor seleccione..."
+msgstr "Kérjük válasszon"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:31
-msgid ""
-"Do you really want to delete the user including all his shifts and every "
-"other piece of his data?"
-msgstr ""
-"¿Realmente desea eliminar el usuario, incluyendo todos sus desplazamientos y "
-"cualquier otra pieza de sus datos?"
+#: /var/www/html/engelsystem/includes/view/User_view.php:32
+msgid "Number of vouchers"
+msgstr "Beolvasandó bizonylatok száma"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:33
-msgid "Your password"
-msgstr "Tu contraseña"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:48
-#, php-format
-msgid "Angel should receive at least  %d vouchers."
-msgstr "Ángel debe recibir al menos % d vales ."
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:50
-msgid "Number of vouchers given out"
-msgstr "Número de vales entregados"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:64
+#: /var/www/html/engelsystem/includes/view/User_view.php:46
 msgid "m/d/Y h:i a"
-msgstr "m / d / Y h: i una"
+msgstr "h/Y h:i a"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:83
+#: /var/www/html/engelsystem/includes/view/User_view.php:65
 msgid "New user"
-msgstr "Nuevo usuario"
+msgstr "Új felhasználó"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:87
+#: /var/www/html/engelsystem/includes/view/User_view.php:69
 msgid "Prename"
 msgstr "Prename"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:90
-#: /var/www/html/engelsystem/includes/view/User_view.php:208
+#: /var/www/html/engelsystem/includes/view/User_view.php:72
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
 msgid "Arrived"
-msgstr "Llegado"
+msgstr "Megérkezett"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:91
+#: /var/www/html/engelsystem/includes/view/User_view.php:73
 msgid "Voucher"
-msgstr "Vale"
+msgstr "Kupon"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:92
+#: /var/www/html/engelsystem/includes/view/User_view.php:74
 msgid "Freeloads"
 msgstr "Freeloads"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:93
-#: /var/www/html/engelsystem/includes/view/User_view.php:210
+#: /var/www/html/engelsystem/includes/view/User_view.php:75
+#: /var/www/html/engelsystem/includes/view/User_view.php:192
 msgid "Active"
-msgstr "Activo"
+msgstr "Bekapcsolva"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:77
+#: /var/www/html/engelsystem/includes/view/User_view.php:193
+msgid "T-Shirt"
+msgstr "T-ing"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:79
+msgid "Last login"
+msgstr "Utolsó bejelentkezés:"
 
 #: /var/www/html/engelsystem/includes/view/User_view.php:95
-#: /var/www/html/engelsystem/includes/view/User_view.php:211
-msgid "T-Shirt"
-msgstr "Camiseta"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:97
-msgid "Last login"
-msgstr "Último acceso"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:113
 msgid "Free"
-msgstr "Gratis"
+msgstr "Ingyenes"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:117
-#: /var/www/html/engelsystem/includes/view/User_view.php:119
+#: /var/www/html/engelsystem/includes/view/User_view.php:99
+#: /var/www/html/engelsystem/includes/view/User_view.php:101
 #, php-format
 msgid "Next shift %c"
-msgstr "%c siguiente turno "
+msgstr "Következő műszak %c"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:124
+#: /var/www/html/engelsystem/includes/view/User_view.php:106
 #, php-format
 msgid "Shift starts %c"
-msgstr "%c turno empieza"
+msgstr "SHIFT kezdődik %c"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:126
+#: /var/www/html/engelsystem/includes/view/User_view.php:108
 #, php-format
 msgid "Shift ends %c"
-msgstr "Turno termina % c"
+msgstr "Műszak vége %c"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:176
+#: /var/www/html/engelsystem/includes/view/User_view.php:158
 msgid "sign off"
-msgstr "cerrar sesión"
+msgstr "kijelentkezés"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:169
+msgid "Sum:"
+msgstr "Összeg"
 
 #: /var/www/html/engelsystem/includes/view/User_view.php:187
-msgid "Sum:"
-msgstr "Suma:"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:205
 msgid "User state"
-msgstr "estado del usuario"
+msgstr "Felhasználói állapot"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:208
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
 #, php-format
 msgid "Arrived at %s"
-msgstr "Llegados a %s"
+msgstr "Érkezett: %s"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:208
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
 #, php-format
 msgid "Not arrived (Planned: %s)"
-msgstr "No ha llegado ( Planificación : %s )"
+msgstr "Nem érkezett (tervezett: %s)"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:208
+#: /var/www/html/engelsystem/includes/view/User_view.php:190
 msgid "Not arrived"
-msgstr "No ha llegado"
+msgstr "Nem érkezett"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:209
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
 #, php-format
 msgid "Got %s voucher"
 msgid_plural "Got %s vouchers"
-msgstr[0] "Tienes bono %s"
-msgstr[1] "Se obtuvo %s vales"
+msgstr[0] "Kapott bizonylat (%s)"
+msgstr[1] "Kapott bizonylat %s "
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:209
+#: /var/www/html/engelsystem/includes/view/User_view.php:191
 msgid "Got no vouchers"
-msgstr "No consiguió no vales"
+msgstr "Van nem utalványok"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:218
+#: /var/www/html/engelsystem/includes/view/User_view.php:200
 msgid "Rights"
-msgstr "Derechos"
+msgstr "Rights"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:226
+#: /var/www/html/engelsystem/includes/view/User_view.php:208
 msgid "driving license"
-msgstr "licencia de conducir"
+msgstr "jogosítvány"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:210
+msgid "Edit vouchers"
+msgstr "Utalványok szerkesztése"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:212
+msgid "iCal Export"
+msgstr "iCal Exportálás"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:213
+msgid "JSON Export"
+msgstr "JSON-Export"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:223
+msgid "Name &amp; workmates"
+msgstr "Név &amp; munkatársak"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:224
+msgid "Comment"
+msgstr "Hozzászólás"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:225
+msgid "Action"
+msgstr "Művelet"
+
+#: /var/www/html/engelsystem/includes/view/User_view.php:227
+msgid "Your night shifts between 2 and 8 am count twice."
+msgstr "Az éjszakai műszak 2 és 8 óra között kétszer számít."
 
 #: /var/www/html/engelsystem/includes/view/User_view.php:228
-msgid "Edit vouchers"
-msgstr "Editar vales"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:230
-msgid "iCal Export"
-msgstr "iCal exportación"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:231
-msgid "JSON Export"
-msgstr "JSON exportación"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:241
-msgid "Name &amp; workmates"
-msgstr "Nombre & amp ; compañeros de trabajo"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:242
-msgid "Comment"
-msgstr "Comentario"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:243
-msgid "Action"
-msgstr "Acción"
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:245
-msgid "Your night shifts between 2 and 8 am count twice."
-msgstr "Sus turnos nocturnos entre 2 y las 8 am cuentan dos veces."
-
-#: /var/www/html/engelsystem/includes/view/User_view.php:246
 #, php-format
 msgid ""
 "Go to the <a href=\"%s\">shifts table</a> to sign yourself up for some "
 "shifts."
 msgstr ""
-"Ir a la <a href=\"%s\"> desplaza </a> mesa para firmar para arriba para "
-"algunos cambios ."
+"A <a href=\"%s\">Műszak tábla</a> magát feliratkozik egy műszakban megy."
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:256
+#: /var/www/html/engelsystem/includes/view/User_view.php:238
 msgid ""
 "We will send you an e-mail with a password recovery link. Please use the "
 "email address you used for registration."
 msgstr ""
-"Le enviaremos un e - mail con un enlace de recuperación de contraseña. Por "
-"favor, utilice la dirección de correo electrónico que utilizó para "
-"registrarse."
+"Küldünk Önnek egy e-mailt a jelszó-helyreállítási hivatkozás. Kérjük, "
+"használja a elektronikus levél cím ön használt részére beírás."
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:259
+#: /var/www/html/engelsystem/includes/view/User_view.php:241
 msgid "Recover"
-msgstr "Recuperar"
+msgstr "visszanyer"
 
-#: /var/www/html/engelsystem/includes/view/User_view.php:270
+#: /var/www/html/engelsystem/includes/view/User_view.php:252
 msgid "Please enter a new password."
-msgstr "Por favor, introduzca una nueva contraseña ."
+msgstr "Adja meg a jelszavát!"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
 #, php-format
 msgid "Do you really want to add coordinator rights for %s to %s?"
-msgstr "¿Realmente desea agregar derechos coordinador para %s en %s ?"
+msgstr "Biztosan hozzá koordinátor jogok %s %s?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:5
 #, php-format
 msgid "Do you really want to remove coordinator rights for %s from %s?"
-msgstr "¿Realmente desea eliminar los derechos de coordinador para %s de %s ?"
+msgstr "Biztosan távolítsa el koordinátor jogokat %s %s?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:16
 #, php-format
 msgid "Do you really want to deny all users for %s?"
-msgstr "¿Realmente desea denegar todos los usuarios de %s ?"
+msgstr "Biztosan minden felhasználó %s tagadja?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:27
 #, php-format
 msgid "Do you really want to confirm all users for %s?"
-msgstr "¿Realmente desea confirmar todos los usuarios de %s ?"
+msgstr "Biztosan minden felhasználó %s ellenőrizze?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:38
 #, php-format
 msgid "Do you really want to confirm %s for %s?"
-msgstr "¿De verdad quiere confirmar %s para %s ?"
+msgstr "Biztosan %s %s igazol?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:49
 #, php-format
 msgid "Do you really want to delete %s from %s?"
-msgstr "¿De verdad quiere eliminar %s de %s ?"
+msgstr "Biztosan törli a(z) %s %s?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:69
 msgid "User"
-msgstr "Usuario"
+msgstr "Felhasználó"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:78
 #, php-format
 msgid "Do you really want to add %s to %s?"
-msgstr "¿De verdad quiere añadir %s de %s ?"
+msgstr "Igazán akar felvenni a(z) %s %s?"
 
 #: /var/www/html/engelsystem/includes/view/UserAngelTypes_view.php:81
 msgid "save"
-msgstr "salvar"
+msgstr "ment"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:17
 msgid "Back to profile"
-msgstr "Volver al perfil"
+msgstr "Vissza a  profilba"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
 msgid "Privacy"
-msgstr "Intimidad"
+msgstr "Adatvédelem"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:21
 msgid ""
 "Your driving license information is only visible for coordinators and admins."
 msgstr ""
-"La información de su licencia de conducir sólo es visible para los "
-"coordinadores y administradores ."
+"A vezetői engedély információ csak koordinátorok és a rendszergazdák számára."
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:22
 msgid "I am willing to operate cars for the PL"
-msgstr "Estoy dispuesto a operar vehículos para el PL"
+msgstr "Nem vagyok hajlandó működni autók a PL"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:25
 msgid ""
 "I have my own car with me and am willing to use it for the PL (You'll get "
 "reimbursed for fuel)"
 msgstr ""
-"Tengo mi propio coche conmigo y estoy dispuesto a utilizarlo para el PL "
-"( Vas a obtener un reembolso por combustible)"
+"Saját autó van velem, és vagyok hajlandó használni, a PL (akkor lesz kap "
+"kártalanít részére-üzemanyag)"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:26
 msgid "Driver license"
-msgstr "Licencia de conducir"
+msgstr "Jogosítvány"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:28
 msgid "Transporter 3,5t"
-msgstr "3,5 t transportador"
+msgstr "Transporter 3, 5t"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:29
 msgid "Truck 7,5t"
-msgstr "7,5t camión"
+msgstr "Teherautó 7, 5t"
 
 #: /var/www/html/engelsystem/includes/view/UserDriverLicenses_view.php:30
 msgid "Truck 12,5t"
-msgstr "12,5t camión"
+msgstr "Teherautó 12, 5t"
 
 #: /var/www/html/engelsystem/public/index.php:147
 msgid "No Access"
-msgstr "Sin acceso"
+msgstr "Nincs hozzáférés"
 
 #: /var/www/html/engelsystem/public/index.php:148
 msgid ""
 "You don't have permission to view this page. You probably have to sign in or "
 "register in order to gain access!"
 msgstr ""
-"Usted no tiene permiso para ver esta página . Es probable que tenga que "
-"firmar o registro con el fin de obtener acceso !"
+"Nincs jogosultságod az oldal megjelenítéséhez. Akkor valószínűleg, hogy "
+"jelentkezzen be, vagy regisztráljon, hogy elnyer belépés!"
+
+msgid "You have been signed off from the shift."
+msgstr "Ön írtak a shift a."
+
+msgid "planned departure"
+msgstr "tervezett indulási"
+
+msgid "Tasks"
+msgstr "Feladatok"
+
+msgid "User didnt got vouchers."
+msgstr "Felhasználó nem kapott utalvány."
+
+msgid "Remove vouchers"
+msgstr "Bizonylatok eltávolítása"
+
+msgid ""
+"This shift is running now or ended already. Please contact a dispatcher to "
+"join the shift."
+msgstr ""
+"Ez az elmozdulás most fut-e, vagy már véget ért. Kérjük, lépjen kapcsolatba "
+"a diszpécser, hogy csatlakozzon a shift."
+
+msgid ""
+"You already subscribed to shift in the same timeslot. Please contact a "
+"dispatcher to join the shift."
+msgstr ""
+"Már előfizetett, váltani a az azonos időrés. Kérjük, lépjen kapcsolatba a "
+"diszpécser, hogy csatlakozzon a shift."
+
+msgid "The shift is already full."
+msgstr "A váltás már tele."
+
+msgid ""
+"Hello %s, here you can change your personal settings i.e. password, color "
+"settings etc."
+msgstr ""
+"Hello %s, itt kicserélheti a személyes beállítások azaz jelszó, "
+"színbeállítások stb."
+
+msgid "Name/Description:"
+msgstr "Név és a Leírás:"
+
+msgid "Timeslot"
+msgstr "Időrés"
+
+msgid "The first wants to join %s."
+msgstr "Az első azt akarja, hogy csatlakozzon %s."
+
+msgid "Groups"
+msgstr "Csoportok"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "You are not confirmed for this angel type."
+msgstr "Nem megerősítik az ilyen angyal."
+
+msgid "Exports"
+msgstr "Kivitel"
+
+msgid "Current ends in %s min"
+msgstr "Jelenlegi végződik %s perc"
+
+msgid "Add new angeltype"
+msgstr "Új angeltype hozzáadása"
+
+msgid "Language"
+msgstr "Nyelv"
+
+msgid "You have %s new message."
+msgid_plural "You have %s new messages."
+msgstr[0] "%s új üzeneted van."
+msgstr[1] "%s új üzeneted van."
+
+msgid ""
+"These are your shifts.<br/>Please try to appear <b>15 minutes</b> before "
+"your shift begins!<br/>You can remove yourself from a shift up to %d hours "
+"before it starts."
+msgstr ""
+"Ezek az elmozdulások.<br>Kérjük, próbálja meg megjeleníteni a <b>15 perc</b> "
+"a műszak megkezdése előtt!<br>Eltávolíthatja magát a váltás %d óra "
+"megkezdése előtt."
+
+msgid "Page:"
+msgstr "Oldal:"
+
+msgid "Message:"
+msgstr "Üzenet:"
+
+msgid "Wakeup"
+msgstr "Wake Up"
+
+msgid "Broken date!"
+msgstr "Hibás dátum!"
+
+msgid "Incomplete call, missing wake-up ID."
+msgstr "Hiányos hívás hiányzó ébresztési ID"
+
+msgid "Wake-up call deleted."
+msgstr "Nyomdokvíz-megjelöl hív el kell hagyni."
+
+msgid "No wake-up found."
+msgstr "Nem a nyomdokvíz-megjelöl található."
+
+msgid ""
+"Hello %s, here you can register for a wake-up call. Simply say when and "
+"where the angel should come to wake you."
+msgstr ""
+"Hello %s, itt regisztrálhat egy nyomdokvíz-megjelöl hív. Egyszerűen mondani, "
+"hol és mikor az angyal kell jönni felébreszteni."
+
+msgid "All ordered wake-up calls, next first."
+msgstr "Összes megrendelt nyomdokvíz-megjelöl hív, következő első."
+
+msgid "Place"
+msgstr "Hely"
+
+msgid "Notes"
+msgstr "Megjegyzések"
+
+msgid "Schedule a new wake-up here:"
+msgstr "Menetrend egy új nyomdokvíz-megjelöl itt:"
+
+msgid "User %s confirmed as %s."
+msgstr "Felhasználó %s %s-ként."
+
+msgid ""
+"Resistance is futile! Your biological and physical parameters will be added "
+"to our collectiv! Assimilating angel:"
+msgstr ""
+"Ellenállás hiábavaló! A biológiai és fizikai paraméterek hozzáadódik a "
+"kollektív alkotás! Asszimilációs angyal:"
+
+msgid "Confirmed all."
+msgstr "Megerősítette az összes."
+
+msgid "asdf"
+msgstr "asdf"
