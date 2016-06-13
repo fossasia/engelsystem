@@ -42,7 +42,7 @@ function user_shifts() {
       if ($result === false)
         engelsystem_error('Unable to delete shift entry.');
 
-      engelsystem_log("Deleted " . User_Nick_render($shift_entry_source) . "'shift: " . $shift_entry_source['name'] . " at " . $shift_entry_source['Name'] . " from " . date("Y-m-d", $shift_entry_source['start']) . " " . date("H:i", $shift_entry_source['start_time']) . " to " . date("Y-m-d", $shift_entry_source['end']) . " " . date("H:i", $shift_entry_source['end_time'])  . " as " . $shift_entry_source['angel_type']);
+      engelsystem_log("Deleted " . User_Nick_render($shift_entry_source) . "'s shift: " . $shift_entry_source['name'] . " at " . $shift_entry_source['Name'] . " from " . date("Y-m-d", $shift_entry_source['start']) . " " . date("H:i", $shift_entry_source['start_time']) . " to " . date("Y-m-d", $shift_entry_source['end']) . " " . date("H:i", $shift_entry_source['end_time'])  . " as " . $shift_entry_source['angel_type']);
       success(_("Shift entry deleted."));
     } else
       error(_("Entry not found."));
