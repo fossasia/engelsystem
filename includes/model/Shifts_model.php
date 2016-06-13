@@ -277,5 +277,4 @@ function Shifts() {
   
   return $shifts_source;
 }
-
 ?>
