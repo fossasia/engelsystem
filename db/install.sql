@@ -355,7 +355,6 @@ CREATE TABLE IF NOT EXISTS `Shifts` (
   KEY `edited_by_user_id` (`edited_by_user_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=133 ;
 
-
 -- --------------------------------------------------------
 
 --
