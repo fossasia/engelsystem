@@ -3,6 +3,7 @@
 function shifts_title() {
   return _("Shifts");
 }
+
 function edit_shifts_title(){
   return _("Edit Shifts");
 }
@@ -42,7 +43,7 @@ function user_shifts() {
       if ($result === false)
         engelsystem_error('Unable to delete shift entry.');
 
-      engelsystem_log("Deleted " . User_Nick_render($shift_entry_source) . "'s shift: " . $shift_entry_source['name'] . " at " . $shift_entry_source['Name'] . " from " . date("Y-m-d", $shift_entry_source['start']) . " " . date("H:i", $shift_entry_source['start_time']) . " to " . date("Y-m-d", $shift_entry_source['end']) . " " . date("H:i", $shift_entry_source['end_time'])  . " as " . $shift_entry_source['angel_type']);
+      engelsystem_log("Deleted " . User_Nick_render($shift_entry_source) . "'s shift: " . $shift_entry_source['name'] . " at " . $shift_entry_source['Name'] . " from " . date("Y-m-d", $shift_entry_source['start']) . " " . date("H:i", $shift_entry_source['start_time']) . " to " . date("Y-m-d H:i", $shift_entry_source['end']) . " as " . $shift_entry_source['angel_type']);
       success(_("Shift entry deleted."));
     } else
       error(_("Entry not found."));
@@ -93,29 +94,22 @@ function user_shifts() {
       if ($type['count'] != "")
         $needed_angel_types[$type['id']] = $type['count'];
     }
-    
+
     $shifttype_id = $shift['shifttype_id'];
     $title = $shift['title'];
     $rid = $shift['RID'];
     $start = $shift['start'];
     $end = $shift['end'];
-    $start_time=$shift['start_time'];
-    $end_time=$shift['end_time'];
-    
+    $start_time = $shift['start_time'];
+    $end_time = $shift['end_time'];    
+
     if (isset($_REQUEST['submit'])) {
       // Name/Bezeichnung der Schicht, darf leer sein
-      
       $title = strip_request_item('title');
-      $start_time = strip_request_item('start_time');
-      $end_time = strip_request_item('end_time');
-      $start=strip_request_item('start');
-      $end=strip_request_item('end');
-      
+
       // Auswahl der sichtbaren Locations für die Schichten
-      
       if (isset($_REQUEST['rid']) && preg_match("/^[0-9]+$/", $_REQUEST['rid']) && isset($room_array[$_REQUEST['rid']]))
         $rid = $_REQUEST['rid'];
-      
       else {
         $ok = false;
         $rid = $rooms[0]['RID'];
@@ -124,7 +118,6 @@ function user_shifts() {
 
       if (isset($_REQUEST['shifttype_id']) && isset($shifttypes[$_REQUEST['shifttype_id']]))
         $shifttype_id = $_REQUEST['shifttype_id'];
-      
       else {
         $ok = false;
         $msg .= error(_('Please select a shifttype.'), true);
@@ -132,93 +125,64 @@ function user_shifts() {
 
       if (isset($_REQUEST['start']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['start'])))
         $start = $tmp->getTimestamp();
-      
       else {
         $ok = false;
-        $msg .= error(_("Please enter a valid starting time for the shifts."), true);
+        $msg .= error(_("Please enter a valid start date for the shifts."), true);
       }
 
       if (isset($_REQUEST['end']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['end'])))
         $end = $tmp->getTimestamp();
-      
       else {
         $ok = false;
-        $msg .= error(_("Please enter a valid ending time for the shifts."), true);
-      }
-      
-      if (isset($_REQUEST['start_time']) && $tmp = DateTime::createFromFormat("H:i", trim($_REQUEST['start_time'])))
-      $start_time =$tmp->getTimestamp();
-      
-      else {
-      $ok = false;
-      error(_('Please select an start time.'));
+        $msg .= error(_("Please enter a valid end date for the shifts."), true);
       }
 
-    
-      if (isset($_REQUEST['end_time']) && $tmp = DateTime::createFromFormat("H:i", trim($_REQUEST['end_time'])))
-        $end_time =$tmp->getTimestamp();
-    
-      else {
-        $ok = false;
-        error(_('Please select an end time.'));
-      }
-
-      if (strtotime($_REQUEST['start']) > strtotime($_REQUEST['end'])) {
+      if (strtotime($_REQUEST['start']) > strtotime($_REQUEST['end'])){
         $ok = false;
         error(_('The shifts end has to be after its start.'));
       }
-      
-      if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
-        if (strtotime($_REQUEST['start_time']) > strtotime($_REQUEST['end_time'])) {
+      if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])){
+        if (strtotime($REQUEST['start_time']) > strtotime($REQUEST['end_time'])){
           $ok = false;
           error(_('The shifts end time  has to be after its start time.'));
         }
       }
-      
-      if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
-        if (strtotime($_REQUEST['start_time']) == strtotime($_REQUEST['end_time'])) {
+      if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])){
+        if (strtotime($REQUEST['start_time']) == strtotime($REQUEST['end_time'])){
           $ok = false;
-          error(_('The shifts start and end at same time.'));
+          error(_('The shifts start and end at the same time.'));
         }
-      }
+      }      
 
       foreach ($needed_angel_types_source as $type) {
-        
         if (isset($_REQUEST['type_' . $type['id']]) && preg_match("/^[0-9]+$/", trim($_REQUEST['type_' . $type['id']]))) {
           $needed_angel_types[$type['id']] = trim($_REQUEST['type_' . $type['id']]);
-        } 
-
-        else {
+        } else {
           $ok = false;
           $msg .= error(sprintf(_("Please check your input for needed angels of type %s."), $type['name']), true);
         }
       }
 
       if ($ok) {
-        
-        echo "sdd";
         $shift['shifttype_id'] = $shifttype_id;
         $shift['title'] = $title;
         $shift['RID'] = $rid;
         $shift['start'] = $start;
         $shift['end'] = $end;
-        $shift['start_time']=$start_time;
-        $shift['end_time']=$end_time;
+        $shift['start_time'] = $start_time;
+        $shift['end_time'] = $end_time;
 
         $result = Shift_update($shift);
-        
         if ($result === false)
           engelsystem_error('Unable to update shift.');
-        
         sql_query("DELETE FROM `NeededAngelTypes` WHERE `shift_id`='" . sql_escape($shift_id) . "'");
         $needed_angel_types_info = array();
-        
         foreach ($needed_angel_types as $type_id => $count) {
           sql_query("INSERT INTO `NeededAngelTypes` SET `shift_id`='" . sql_escape($shift_id) . "', `angel_type_id`='" . sql_escape($type_id) . "', `count`='" . sql_escape($count) . "'");
           $needed_angel_types_info[] = $angel_types[$type_id]['name'] . ": " . $count;
         }
 
-        engelsystem_log("Updated shift '" . $name . "' from " . date("Y-m-d", $start) ." " . date("H:i",$start_time) .  " to " . date("Y-m-d", $end) . " " .  date("H:i",$end_time) ." with angel types " . join(", ", $needed_angel_types_info));
+        engelsystem_log("Updated shift '" . $name . "' from " . date("Y-m-d", $start) . " " . date("H:i",$start_time) . " to " . date("Y-m-d", $end) . " " . date("H:i",$end_time) . " with angel types " . join(", ", $needed_angel_types_info));
         success(_("Shift updated."));
 
         redirect(shift_link([
@@ -230,87 +194,74 @@ function user_shifts() {
     $room_select = html_select_key('rid', 'rid', $room_array, $rid);
 
     $angel_types = "";
-    
     foreach ($types as $type)
       $angel_types .= form_spinner('type_' . $type['id'], $type['name'], $needed_angel_types[$type['id']]);
-      return page_with_title(edit_shifts_title(), array(
+
+    return page_with_title(shifts_title(), array(
         msg(),
         '<noscript>' . info(_("This page is much more comfortable with javascript."), true) . '</noscript>',
         form(array(
             form_select('shifttype_id', _('Shifttype'), $shifttypes, $shifttype_id),
             form_text('title', _("Title"), $title),
             form_select('rid', _("Room:"), $room_array, $rid),
-            form_date('start', _("Start Date"),$start),
-            form_text('start_time', _("Start Time"),date("H:i",$start_time)),
-            form_date('end', _("End Date"), $end),
-             form_text('end_time', _("End Time"),date("H:i",$end_time)),
+            form_date('start', _("Start:"), $start),
+            form_text('start_time', _("Start Time:"), date("H:i", $start_time)),
+            form_date('end', _("End:"), $end),
+            form_text('end_time', _("End Time:"), date("H:i", $end_time)),
             '<h2>' . _("Needed angels") . '</h2>',
             $angel_types,
             form_submit('submit', _("Save"))
         ))
     ));
   }   // Schicht komplett löschen (nur für admins/user mit user_shifts_admin privileg)
- 
   elseif (isset($_REQUEST['delete_shift']) && in_array('user_shifts_admin', $privileges)) {
-    
     if (isset($_REQUEST['delete_shift']) && preg_match("/^[0-9]*$/", $_REQUEST['delete_shift']))
       $shift_id = $_REQUEST['delete_shift'];
-    
     else
       redirect(page_link_to('user_shifts'));
 
     $shift = Shift($shift_id);
-    
     if ($shift === false)
       engelsystem_error('Unable to load shift.');
-    
     if ($shift == null)
       redirect(page_link_to('user_shifts'));
 
       // Schicht löschen bestätigt
     if (isset($_REQUEST['delete'])) {
       $result = Shift_delete($shift_id);
-      
       if ($result === false)
         engelsystem_error('Unable to delete shift.');
 
-      engelsystem_log("Deleted shift " . $shift['name'] . " from " . date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) . " to " . date("Y-m-d", $shift['end']) . " " . date("H:i" , $shift['end_time']) );
+      engelsystem_log("Deleted shift " . $shift['name'] . " from " . date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) . " to " . date("Y-m-d", $shift['end']) . " " . date("H:i",$shift['end_time']));
       success(_("Shift deleted."));
       redirect(page_link_to('user_shifts'));
     }
 
     return page_with_title(shifts_title(), array(
-        error(sprintf(_("Do you want to delete the shift %s from %s %s to %s?"), $shift['name'], date("Y-m-d", $shift['start']), date("H:i",$shift['start_time']) , date("H:i", $shift['end_time'])), true),
+        error(sprintf(_("Do you want to delete the shift %s from %s to %s?"), $shift['name'], date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']), date("H:i", $shift['end_time'])), true),
         '<a class="button" href="?p=user_shifts&delete_shift=' . $shift_id . '&delete">' . _("delete") . '</a>'
     ));
-  }
-  elseif (isset($_REQUEST['shift_id'])) {
-    
+  } elseif (isset($_REQUEST['shift_id'])) {
     if (isset($_REQUEST['shift_id']) && preg_match("/^[0-9]*$/", $_REQUEST['shift_id']))
       $shift_id = $_REQUEST['shift_id'];
-    
     else
       redirect(page_link_to('user_shifts'));
 
     $shift = Shift($shift_id);
     $room;
     $shift['Name'] = $room_array[$shift['RID']];
-    
     if ($shift === false)
       engelsystem_error('Unable to load shift.');
-    
     if ($shift == null)
       redirect(page_link_to('user_shifts'));
 
     if (isset($_REQUEST['type_id']) && preg_match("/^[0-9]*$/", $_REQUEST['type_id']))
       $type_id = $_REQUEST['type_id'];
-    
     else
       redirect(page_link_to('user_shifts'));
 
     if (in_array('user_shifts_admin', $privileges))
       $type = sql_select("SELECT * FROM `AngelTypes` WHERE `id`='" . sql_escape($type_id) . "' LIMIT 1");
-    
     else
       $type = sql_select("SELECT * FROM `UserAngelTypes` JOIN `AngelTypes` ON (`UserAngelTypes`.`angeltype_id` = `AngelTypes`.`id`) WHERE `AngelTypes`.`id` = '" . sql_escape($type_id) . "' AND (`AngelTypes`.`restricted` = 0 OR (`UserAngelTypes`.`user_id` = '" . sql_escape($user['UID']) . "' AND NOT `UserAngelTypes`.`confirm_user_id` IS NULL)) LIMIT 1");
 
@@ -344,7 +295,6 @@ function user_shifts() {
 
       $freeloaded = $shift['freeloaded'];
       $freeload_comment = $shift['freeload_comment'];
-      
       if (in_array("user_shifts_admin", $privileges)) {
         $freeloaded = isset($_REQUEST['freeloaded']);
         $freeload_comment = strip_request_item_nl('freeload_comment');
@@ -359,7 +309,6 @@ function user_shifts() {
           'freeloaded' => $freeloaded,
           'freeload_comment' => $freeload_comment
       ));
-      
       if ($result === false)
         engelsystem_error('Unable to create shift entry.');
 
@@ -367,7 +316,7 @@ function user_shifts() {
         sql_query("INSERT INTO `UserAngelTypes` (`user_id`, `angeltype_id`) VALUES ('" . sql_escape($user_id) . "', '" . sql_escape($selected_type_id) . "')");
 
       $user_source = User($user_id);
-      engelsystem_log("User " . User_Nick_render($user_source) . " signed up for shift " . $shift['name'] . " from " . date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) . " to " . date("Y-m-d", $shift['end'])) . " " . date("H:i",$shift['end_time']);
+      engelsystem_log("User " . User_Nick_render($user_source) . " signed up for shift " . $shift['name'] . " from " . date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) . " to " . date("Y-m-d", $shift['end']) . " " . date("H:i",$end_time));
       success(_("You are subscribed. Thank you!") . ' <a href="' . page_link_to('user_myshifts') . '">' . _("My shifts") . ' &raquo;</a>');
       redirect(shift_link($shift));
     }
@@ -390,10 +339,8 @@ function user_shifts() {
       $angeltyppe_select = $type['name'];
     }
 
-    return ShiftEntry_edit_view($user_text, date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) .  ' &ndash; ' . date('Y-m-d', $shift['end']) ." " . date("H:i",$shift['end_time'])  . ' (' . shift_length($shift) . ')', $shift['Name'], $shift['name'], $angeltyppe_select, "", false, null, in_array('user_shifts_admin', $privileges));
-  } 
-
-  else {
+    return ShiftEntry_edit_view($user_text, date("Y-m-d", $shift['start']) . " " . date("H:i",$shift['start_time']) . ' &ndash; ' . date('Y-m-d', $shift['end']) . " " .date("H:i",$shift['end_time']) . ' (' . shift_length($shift) . ')', $shift['Name'], $shift['name'], $angeltyppe_select, "", false, null, in_array('user_shifts_admin', $privileges));
+  } else {
     return view_user_shifts();
   }
 }
@@ -422,13 +369,10 @@ function view_user_shifts() {
 
   if (in_array('user_shifts_admin', $privileges))
     $types = sql_select("SELECT `id`, `name` FROM `AngelTypes` ORDER BY `AngelTypes`.`name`");
-  
   else
     $types = sql_select("SELECT `AngelTypes`.`id`, `AngelTypes`.`name`, (`AngelTypes`.`restricted`=0 OR (NOT `UserAngelTypes`.`confirm_user_id` IS NULL OR `UserAngelTypes`.`id` IS NULL)) as `enabled` FROM `AngelTypes` LEFT JOIN `UserAngelTypes` ON (`UserAngelTypes`.`angeltype_id`=`AngelTypes`.`id` AND `UserAngelTypes`.`user_id`='" . sql_escape($user['UID']) . "') ORDER BY `AngelTypes`.`name`");
-  
   if (empty($types))
     $types = sql_select("SELECT `id`, `name` FROM `AngelTypes` WHERE `restricted` = 0");
-  
   $filled = array(
       array(
           'id' => '1',
@@ -463,62 +407,49 @@ function view_user_shifts() {
       'types',
       'filled'
   ) as $key) {
-    
     if (isset($_REQUEST[$key])) {
       $filtered = array_filter($_REQUEST[$key], 'is_numeric');
       if (! empty($filtered))
         $_SESSION['user_shifts'][$key] = $filtered;
       unset($filtered);
     }
-    
     if (! isset($_SESSION['user_shifts'][$key]))
-      $_SESSION['user_shifts'][$key] = array_map('get_ids_from_array', $$key);
+      $_SESSION['user_shifts'][$key] = array_map('get_ids_from_array', $key);
   }
 
   if (isset($_REQUEST['rooms'])) {
-    
     if (isset($_REQUEST['new_style']))
       $_SESSION['user_shifts']['new_style'] = true;
-    
     else
       $_SESSION['user_shifts']['new_style'] = false;
   }
   if (! isset($_SESSION['user_shifts']['new_style']))
     $_SESSION['user_shifts']['new_style'] = true;
-  
   foreach (array(
       'start',
       'end'
   ) as $key) {
-
     if (isset($_REQUEST[$key . '_day']) && in_array($_REQUEST[$key . '_day'], $days))
       $_SESSION['user_shifts'][$key . '_day'] = $_REQUEST[$key . '_day'];
-    
     if (isset($_REQUEST[$key . '_time']) && preg_match('#^\d{1,2}:\d\d$#', $_REQUEST[$key . '_time']))
       $_SESSION['user_shifts'][$key . '_time'] = $_REQUEST[$key . '_time'];
-    
     if (! isset($_SESSION['user_shifts'][$key . '_day'])) {
       $time = date('Y-m-d', time() + ($key == 'end' ? 24 * 60 * 60 : 0));
       $_SESSION['user_shifts'][$key . '_day'] = in_array($time, $days) ? $time : ($key == 'end' ? max($days) : min($days));
     }
-
     if (! isset($_SESSION['user_shifts'][$key . '_time']))
       $_SESSION['user_shifts'][$key . '_time'] = date('H:i');
   }
-
   if ($_SESSION['user_shifts']['start_day'] > $_SESSION['user_shifts']['end_day'])
     $_SESSION['user_shifts']['end_day'] = $_SESSION['user_shifts']['start_day'];
-  
   if ($_SESSION['user_shifts']['start_day'] == $_SESSION['user_shifts']['end_day'] && $_SESSION['user_shifts']['start_time'] >= $_SESSION['user_shifts']['end_time'])
     $_SESSION['user_shifts']['end_time'] = '23:59';
 
   if (isset($_SESSION['user_shifts']['start_day'])) {
     $starttime = DateTime::createFromFormat("Y-m-d H:i", $_SESSION['user_shifts']['start_day'] . $_SESSION['user_shifts']['start_time']);
     $starttime = $starttime->getTimestamp();
-  } 
-  else
+  } else
     $starttime = now();
-
   if (isset($_SESSION['user_shifts']['end_day'])) {
     $endtime = DateTime::createFromFormat("Y-m-d H:i", $_SESSION['user_shifts']['end_day'] . $_SESSION['user_shifts']['end_time']);
     $endtime = $endtime->getTimestamp();
@@ -544,7 +475,6 @@ function view_user_shifts() {
     if ($_SESSION['user_shifts']['filled'][0] == 0)
       $SQL .= "
       AND (nat.`count` > entries.`count` OR entries.`count` IS NULL OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($user['UID']) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
-    
     elseif ($_SESSION['user_shifts']['filled'][0] == 1)
       $SQL .= "
     AND (nat.`count` <= entries.`count`  OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($user['UID']) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
@@ -561,14 +491,13 @@ function view_user_shifts() {
       INNER JOIN `ShiftEntry` ON (`Shifts`.`SID` = `ShiftEntry`.`SID` AND `ShiftEntry`.`UID` = '" . sql_escape($user['UID']) . "')
       WHERE `Shifts`.`RID` IN (" . implode(',', $_SESSION['user_shifts']['rooms']) . ")
       AND `start` BETWEEN " . $starttime . " AND " . $endtime);
-  
   $ownshifts = array();
-  
   foreach ($ownshifts_source as $ownshift)
     $ownshifts[$ownshift['SID']] = $ownshift;
   unset($ownshifts_source);
 
   $shifts_table = "";
+  // qqqq
   /*
    * [0] => Array ( [SID] => 1 [start] => 1355958000 [end] => 1355961600 [RID] => 1 [name] => [URL] => [PSID] => [room_name] => test1 [has_special_needs] => 1 [is_full] => 0 )
    */
@@ -590,8 +519,12 @@ function view_user_shifts() {
     // calculate number of parallel shifts in each timeslot for each room
     foreach ($shifts as $k => $shift) {
       $rid = $shift["RID"];
-      $blocks = ($shift["end"] - $shift["start"]) / (15 * 60);
-      $firstblock = floor(($shift["start"] - $first) / (15 * 60));
+      $Start = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$shift['start']) . date("H:i",$shift['start_time']));
+      $Start = $Start->getTimestamp();
+      $End = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$shift['end']) . date("H:i",$shift['end_time']));
+      $End = $End->getTimestamp();
+      $blocks = ($End - $Start) / (15 * 60);
+      $firstblock = floor(($Start - $first) / (15 * 60));
       for ($i = $firstblock; $i < $blocks + $firstblock && $i < $maxshow; $i ++)
         $block[$rid][$i] ++;
       $shifts[$k]['own'] = in_array($shift['SID'], array_keys($ownshifts));
@@ -635,7 +568,7 @@ function view_user_shifts() {
         foreach ($shifts as $shift) {
           if ($shift["RID"] == $rid) {
             if (floor($shift["start"] / (15 * 60)) == $thistime / (15 * 60)) {
-              $blocks = ($shift["end"] - $shift["start"]) / (15 * 60);
+              $blocks = ($End - $Start) / (15 * 60);
               if ($blocks < 1)
                 $blocks = 1;
 
@@ -648,6 +581,7 @@ function view_user_shifts() {
                   }
                 }
 
+                // qqqqqq
               $is_free = false;
               $shifts_row = '';
               if (in_array('admin_shifts', $privileges))
@@ -659,7 +593,7 @@ function view_user_shifts() {
                   'RID' => $room['id'],
                   'Name' => $room['name']
               ]) . '<br />';
-              $shifts_row .= '<a href="' . shift_link($shift) . '">' . date('Y-m-d', $shift['start']) . " " . date('H:i',$shift['start_time']);
+              $shifts_row .= '<a href="' . shift_link($shift) . '">' . date('Y-m-d', $shift['start']) . " " . date("H:i",$shift['start_time']);
               $shifts_row .= " &ndash; ";
               $shifts_row .= date('H:i', $shift['end_time']);
               $shifts_row .= "<br /><b>";
@@ -678,7 +612,6 @@ function view_user_shifts() {
             WHERE
             `count` > 0
             AND ";
-
               if ($shift['has_special_needs'])
                 $query .= "`shift_id` = '" . sql_escape($shift['SID']) . "'";
               else
@@ -754,13 +687,10 @@ function view_user_shifts() {
               }
               if ($shift['own'] && ! in_array('user_shifts_admin', $privileges))
                 $class = 'own';
-              
               elseif ($collides && ! in_array('user_shifts_admin', $privileges))
                 $class = 'collides';
-              
               elseif ($is_free)
                 $class = 'free';
-              
               else
                 $class = 'occupied';
               $shifts_table .= '<td rowspan="' . $blocks . '" class="' . $class . '">';
@@ -779,15 +709,14 @@ function view_user_shifts() {
       $shifts_table .= "</tr>\n";
     }
     $shifts_table .= '</tbody></table></div>';
-
+    // qqq
   } else {
     $shifts_table = array();
     foreach ($shifts as $shift) {
       $info = array();
       if ($_SESSION['user_shifts']['start_day'] != $_SESSION['user_shifts']['end_day'])
         $info[] = date("Y-m-d", $shift['start']);
-      $info[] = date("Y-m-d", $shift['start']);      
-      $info[] = date("H:i", $shift['start_time']) . ' - ' . date("H:i", $shift['end_time']) . " " ;
+      $info[] = date("H:i", $shift['start_time']) . ' - ' . date("H:i", $shift['end_time']);
       if (count($_SESSION['user_shifts']['rooms']) > 1)
         $info[] = Room_name_render([
             'Name' => $shift['room_name'],

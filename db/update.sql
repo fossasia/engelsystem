@@ -29,7 +29,7 @@ ALTER TABLE `User`
 -- -----------------------------------------------------------------------------  
 
 ALTER TABLE `Shifts` 
-ADD `start_time` int(11) NOT NULL,
-ADD `end_time` int(11) NOT NULL;
+  ADD `start_time` int(11) NOT NULL,
+  ADD `end_time`   int(11) NOT NULL;
 
 ----------------------------------------------------------------------------------
