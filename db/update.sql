@@ -27,3 +27,9 @@ ALTER TABLE `User`
   ADD `organization_web` varchar(255) DEFAULT NULL;
 
 -- -----------------------------------------------------------------------------  
+
+ALTER TABLE `Shifts` 
+ADD `start_time` int(11) NOT NULL,
+ADD `end_time` int(11) NOT NULL;
+
+----------------------------------------------------------------------------------
