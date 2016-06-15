@@ -27,3 +27,7 @@ ALTER TABLE `User`
   ADD `organization_web` varchar(255) DEFAULT NULL;
 
 -- -----------------------------------------------------------------------------  
+-- Alter table sturcture for Rooms, converting char(1) type to boolean
+ALTER TABLE `Room`
+    ALTER COLUMN `FromPentabarf` bit NOT NULL DEFAULT 0,
+    ALTER COLUMN `show` bit NOT NULL DEFAULT 1;
