@@ -9,7 +9,6 @@ function admin_shifts() {
   $start = DateTime::createFromFormat("Y-m-d", date("Y-m-d") )->getTimestamp();
   $end = $start;
   $start_time=DateTime::createFromFormat("H:i", date("H:i") )->getTimestamp();
- //echo date("Y-m-d",$start_time);
   $end_time=$start_time;
   $mode = 'single';
   $angelmode = 'manually';
@@ -237,7 +236,7 @@ function admin_shifts() {
               'start' => $shift_start,
               'end' => $shift_end,
               'start_time' => DateTime::createFromFormat("H:i", date("H:i",$shift_start))->getTimestamp(),
-              'end_time'  =>DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
+              'end_time'  => DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
               'RID' => $rid,
               'title' => $title,
               'shifttype_id' => $shifttype_id 
