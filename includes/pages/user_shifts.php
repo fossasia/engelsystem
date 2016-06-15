@@ -95,6 +95,8 @@ function user_shifts() {
     $title = $shift['title'];
     $rid = $shift['RID'];
     $start = $shift['start'];
+    $start_time=DateTime::createFromFormat("H:i",date("H:i",$shift['start']))->getTimestamp();
+    $start_time=DateTime::createFromFormat("H:i",date("H:i",$shift['end']))->getTimestamp();
     $end = $shift['end'];
 
     if (isset($_REQUEST['submit'])) {
@@ -117,24 +119,50 @@ function user_shifts() {
         $msg .= error(_('Please select a shifttype.'), true);
       }
 
-      if (isset($_REQUEST['start']) && $tmp = DateTime::createFromFormat("Y-m-d H:i", trim($_REQUEST['start'])))
-        $start = $tmp->getTimestamp();
-      else {
-        $ok = false;
-        $msg .= error(_("Please enter a valid starting time for the shifts."), true);
-      }
+        if (isset($_REQUEST['start']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['start'])))
+      $start = $tmp->getTimestamp();
+    else {
+      $ok = false;
+      error(_('Please select a start date.'));
+    }
+    
+    if (isset($_REQUEST['end']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['end'])))
+      $end = $tmp->getTimestamp();
+    else {
+      $ok = false;
+      error(_('Please select an end date.'));
+    }
 
-      if (isset($_REQUEST['end']) && $tmp = DateTime::createFromFormat("Y-m-d H:i", trim($_REQUEST['end'])))
-        $end = $tmp->getTimestamp();
-      else {
-        $ok = false;
-        $msg .= error(_("Please enter a valid ending time for the shifts."), true);
-      }
+    if (isset($_REQUEST['start_time']) && $tmp = DateTime::createFromFormat("H:i", trim($_REQUEST['start_time'])))
+      $start_time =$tmp->getTimestamp();
+    else {
+      $ok = false;
+      error(_('Please select an start time.'));
+    }
 
-      if ($start >= $end) {
+    if (isset($_REQUEST['end_time']) && $tmp = DateTime::createFromFormat("H:i", trim($_REQUEST['end_time'])))
+      $end_time =$tmp->getTimestamp();
+    else {
+      $ok = false;
+      error(_('Please select an end time.'));
+    }
+    
+    if (strtotime($_REQUEST['start']) > strtotime($_REQUEST['end'])) {
+      $ok = false;
+      error(_('The shifts end has to be after its start.'));
+    }
+    if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
+      if (strtotime($_REQUEST['start_time']) > strtotime($_REQUEST['end_time'])) {
         $ok = false;
-        $msg .= error(_("The ending time has to be after the starting time."), true);
+        error(_('The shifts end time  has to be after its start time.'));
       }
+    }
+    if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
+      if (strtotime($_REQUEST['start_time']) == strtotime($_REQUEST['end_time'])) {
+        $ok = false;
+        error(_('The shifts start and end at same time.'));
+      }
+    }
 
       foreach ($needed_angel_types_source as $type) {
         if (isset($_REQUEST['type_' . $type['id']]) && preg_match("/^[0-9]+$/", trim($_REQUEST['type_' . $type['id']]))) {
@@ -144,6 +172,10 @@ function user_shifts() {
           $msg .= error(sprintf(_("Please check your input for needed angels of type %s."), $type['name']), true);
         }
       }
+      $start = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$start) . date("H:i",$start_time));
+      $start = $start->getTimestamp();
+      $end = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$end) . date("H:i",$end_time));
+      $end = $end->getTimestamp();  
 
       if ($ok) {
         $shift['shifttype_id'] = $shifttype_id;
@@ -184,8 +216,10 @@ function user_shifts() {
             form_select('shifttype_id', _('Shifttype'), $shifttypes, $shifttype_id),
             form_text('title', _("Title"), $title),
             form_select('rid', _("Room:"), $room_array, $rid),
-            form_text('start', _("Start:"), date("Y-m-d H:i", $start)),
-            form_text('end', _("End:"), date("Y-m-d H:i", $end)),
+            form_date('start', _("Start:"), $start),
+            form_text('start_time', _("Start Time:"), date("H:i", $start_time)),
+            form_date('end', _("End:"), $end),
+            form_text('end_time', _("End Time:"), date("H:i", $end_time)),
             '<h2>' . _("Needed angels") . '</h2>',
             $angel_types,
             form_submit('submit', _("Save"))

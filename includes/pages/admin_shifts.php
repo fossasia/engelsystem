@@ -1,9 +1,7 @@
 <?php
-
 function admin_shifts_title() {
   return _("Create shifts");
 }
-
 // Assistent zum Anlegen mehrerer neuer Schichten
 function admin_shifts() {
   $ok = true;
@@ -38,13 +36,6 @@ function admin_shifts() {
   $shifttypes = [];
   foreach ($shifttypes_source as $shifttype)
     $shifttypes[$shifttype['id']] = $shifttype['name'];
-  
-  $timeintervals = [];
-  for ($x = 0; $x <= 24; $x++) {
-       $timeintervals[$x] =  $x . ":00";
-      
- } 
-
   if (isset($_REQUEST['preview']) || isset($_REQUEST['back'])) {
     if (isset($_REQUEST['shifttype_id'])) {
       $shifttype = ShiftType($_REQUEST['shifttype_id']);
@@ -85,6 +76,7 @@ function admin_shifts() {
       $ok = false;
       error(_('Please select an end date.'));
     }
+
     if (isset($_REQUEST['start_time']) && $tmp = DateTime::createFromFormat("H:i", trim($_REQUEST['start_time'])))
       $start_time =$tmp->getTimestamp();
     else {
@@ -103,19 +95,18 @@ function admin_shifts() {
       $ok = false;
       error(_('The shifts end has to be after its start.'));
     }
-    
     if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
       if (strtotime($_REQUEST['start_time']) > strtotime($_REQUEST['end_time'])) {
         $ok = false;
         error(_('The shifts end time  has to be after its start time.'));
+      }
     }
-  }
-   if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
-    if (strtotime($_REQUEST['start_time']) == strtotime($_REQUEST['end_time'])) {
-      $ok = false;
-      error(_('The shifts start and end at same time.'));
+    if (strtotime($_REQUEST['start']) == strtotime($_REQUEST['end'])) {
+      if (strtotime($_REQUEST['start_time']) == strtotime($_REQUEST['end_time'])) {
+        $ok = false;
+        error(_('The shifts start and end at same time.'));
+      }
     }
-  }
     if (isset($_REQUEST['mode'])) {
       if ($_REQUEST['mode'] == 'single') {
         $mode = 'single';
@@ -180,12 +171,16 @@ function admin_shifts() {
           $needed_angel_types[$type['angel_type_id']] = $type['count'];
       }
       $shifts = array();
+      $start = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$start) . date("H:i",$start_time));
+      $start = $start->getTimestamp();
+      $end = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d",$end) . date("H:i",$end_time));
+      $end = $end->getTimestamp();  
       if ($mode == 'single') {
         $shifts[] = array(
             'start' => $start ,
             'start_time' => $start_time,
-            'end_time'  => $end_time,
             'end' => $end ,
+            'end_time'  => $end_time,
             'RID' => $rid,
             'title' => $title,
             'shifttype_id' => $shifttype_id 
@@ -195,15 +190,15 @@ function admin_shifts() {
         do {
           $shift_end = $shift_start + $length * 60;
           
-          if ($shift_end > $end )
+          if ($shift_end > $end)
             $shift_end = $end ;
           if ($shift_start >= $shift_end)
             break;
           $shifts[] = array(
               'start' => $shift_start,
               'end' => $shift_end,
-              'start_time' => $start_time,
-              'end_time'  => $end_time,
+              'start_time' => DateTime::createFromFormat("H:i", date("H:i",$shift_start))->getTimestamp(),
+              'end_time'  => DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
               'RID' => $rid,
               'title' => $title,
               'shifttype_id' => $shifttype_id 
@@ -227,7 +222,7 @@ function admin_shifts() {
             break;
         }
         
-        $shift_start = $start ;
+        $shift_start = $start;
         do {
           $day = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $shift_start) . " 00:00")->getTimestamp();
           $shift_end = $day + $change_hours[$change_index] * 60 * 60;
@@ -240,8 +235,8 @@ function admin_shifts() {
           $shifts[] = array(
               'start' => $shift_start,
               'end' => $shift_end,
-              'start_time' => $start_time,
-              'end_time'  => $end_time,
+              'start_time' => DateTime::createFromFormat("H:i", date("H:i",$shift_start))->getTimestamp(),
+              'end_time'  => DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
               'RID' => $rid,
               'title' => $title,
               'shifttype_id' => $shifttype_id 
@@ -345,8 +340,7 @@ function admin_shifts() {
           '<div class="col-md-6">',
           form_date('start', _("Start Date"),$start),
           form_text('start_time', _("Start Time"),date("H:i",$start_time)),
-          form_date('end', _("End Date"),$end),
-          
+          form_date('end', _("End Date"),$end), 
           form_text('end_time', _("End Time"),date("H:i",$end_time)),
           form_info(_("Mode"), ''),
           form_radio('mode', _("Create one shift"), $mode == 'single', 'single'),

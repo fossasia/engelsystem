@@ -5,7 +5,7 @@ function settings_title() {
 }
 
 function user_settings() {
-  global $enable_tshirt_size, $tshirt_sizes, $themes, $locales ;
+  global $enable_tshirt_size, $tshirt_sizes, $themes, $locales;
   global $user;
   
   $msg = "";
@@ -213,7 +213,7 @@ if( $_SESSION['uid'] == 1){
 }
 
 // User settings page
-if( $_SESSION['uid'] > 1){  
+if($_SESSION['uid'] > 1){  
   return page_with_title("User Settings", array(
       $msg,
       msg(),
