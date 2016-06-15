@@ -11,7 +11,7 @@ function user_shifts() {
     redirect(page_link_to('user_myshifts'));
 
     // Locations laden
-  $rooms = sql_select("SELECT * FROM `Room` WHERE `show`='Y' ORDER BY `Name`");
+  $rooms = sql_select("SELECT * FROM `Room` WHERE `show`='1' ORDER BY `Name`");
   $room_array = array();
   foreach ($rooms as $room)
     $room_array[$room['RID']] = $room['Name'];
@@ -338,7 +338,7 @@ function view_user_shifts() {
     redirect('?');
   }
 
-  $rooms = sql_select("SELECT `RID` AS `id`, `Name` AS `name` FROM `Room` WHERE `show`='Y' ORDER BY `Name`");
+  $rooms = sql_select("SELECT `RID` AS `id`, `Name` AS `name` FROM `Room` WHERE `show`='1' ORDER BY `Name`");
 
   if (count($rooms) == 0) {
     error(_("The administration has not configured any rooms yet."));
