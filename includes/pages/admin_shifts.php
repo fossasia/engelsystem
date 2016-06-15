@@ -199,14 +199,14 @@ function admin_shifts() {
               'start' => $shift_start,
               'end' => $shift_end,
               'start_time' => DateTime::createFromFormat("H:i", date("H:i",$shift_start))->getTimestamp(),
-              'end_time'  =>DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
+              'end_time'  => DateTime::createFromFormat("H:i", date("H:i",$shift_end))->getTimestamp(),
               'RID' => $rid,
               'title' => $title,
               'shifttype_id' => $shifttype_id 
           );
           
           $shift_start = $shift_end;
-        } while ($shift_end < $end );
+        } while ($shift_end < $end);
       } elseif ($mode == 'variable') {
         rsort($change_hours);
         $day = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $start) . " 00:00")->getTimestamp();
