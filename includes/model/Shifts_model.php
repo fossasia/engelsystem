@@ -110,7 +110,7 @@ function Shift_update($shift) {
       `start`='" . sql_escape($shift['start']) . "',
       `end`='" . sql_escape($shift['end']) . "',
       `start_time`='" . sql_escape($shift['start_time']) . "',
-      `end_time`='" . sql_escape($shift['end_time']) . "',
+      `end_time`='" . sql_escape($shift['end_time']) . "',      
       `RID`='" . sql_escape($shift['RID']) . "',
       `title`=" . sql_null($shift['title']) . ",
       `URL`=" . sql_null($shift['URL']) . ",
@@ -144,8 +144,6 @@ function Shift_create($shift) {
       `shifttype_id`='" . sql_escape($shift['shifttype_id']) . "',
       `start`='" . sql_escape($shift['start']) . "',
       `end`='" . sql_escape($shift['end']) . "',
-      `start_time`='" . sql_escape($shift['start_time']) . "',
-      `end_time`='" . sql_escape($shift['end_time']) . "',
       `RID`='" . sql_escape($shift['RID']) . "',
       `title`=" . sql_null($shift['title']) . ",
       `URL`=" . sql_null($shift['URL']) . ",
@@ -277,4 +275,5 @@ function Shifts() {
   
   return $shifts_source;
 }
+
 ?>
