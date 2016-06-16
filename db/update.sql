@@ -25,7 +25,9 @@ ALTER TABLE `User`
   ADD `facebook` varchar(255) DEFAULT NULL,
   ADD `github` varchar(255) DEFAULT NULL,
   ADD `organization` varchar(255) DEFAULT NULL,
-  ADD `organization_web` varchar(255) DEFAULT NULL;
+  ADD `organization_web` varchar(255) DEFAULT NULL,
+  ADD `native_lanuage` varchar(255) DEFAULT NULL,
+  ADD `other_languages` varchar(255) DEFAULT NULL;
 
 -- -----------------------------------------------------------------------------  
 -- Events information table
