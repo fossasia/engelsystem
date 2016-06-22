@@ -1,7 +1,6 @@
 <?php
-
 /**
- * Liste der verfügbaren Themes
+ * List of available themes
  */
 $themes = array(
     '3' => "Engelsystem 32c3",
@@ -11,104 +10,91 @@ $themes = array(
     "4" => "Engelsystem color scheme-1",
     "5" => "Engelsystem color scheme-2"
 );
-
 /**
  * Display muted (grey) text.
  *
- * @param string $text          
+ * @param string $text
  */
 function mute($text) {
   return '<span class="text-muted">' . $text . '</span>';
 }
-
 function progress_bar($valuemin, $valuemax, $valuenow, $class = '', $content = '') {
   return '<div class="progress"><div class="progress-bar ' . $class . '" role="progressbar" aria-valuenow="' . $valuenow . '" aria-valuemin="' . $valuemin . '" aria-valuemax="' . $valuemax . '" style="width: ' . (($valuenow - $valuemin) * 100 / ($valuemax - $valuemin)) . '%">' . $content . '</div></div>';
 }
-
 /**
  * Render glyphicon
  *
- * @param string $glyph_name          
+ * @param string $glyph_name
  */
 function glyph($glyph_name) {
   return ' <span class="glyphicon glyphicon-' . $glyph_name . '"></span> ';
 }
-
 /**
  * Renders a tick or a cross by given boolean
  *
- * @param boolean $boolean          
+ * @param boolean $boolean
  */
 function glyph_bool($boolean) {
   return '<span class="text-' . ($boolean ? 'success' : 'danger') . '">' . glyph($boolean ? 'ok' : 'remove') . '</span>';
 }
-
 function div($class, $content = array(), $id = "") {
   $id = $id != '' ? ' id="' . $id . '"' : '';
   return '<div' . $id . ' class="' . $class . '">' . join("\n", $content) . '</div>';
 }
-
 function heading($content, $number = 1) {
   return "<h" . $number . ">" . $content . "</h" . $number . ">";
 }
-
 /**
  * Render a toolbar.
  *
- * @param array $items          
+ * @param array $items
  * @return string
  */
 function toolbar($items = array(), $right = false) {
   return '<ul class="nav navbar-nav' . ($right ? ' navbar-right' : '') . '">' . join("\n", $items) . '</ul>';
 }
-
 /**
  * Render a link for a toolbar.
  *
- * @param string $href          
- * @param string $glyphicon          
- * @param string $label          
- * @param bool $selected          
+ * @param string $href
+ * @param string $glyphicon
+ * @param string $label
+ * @param bool $selected
  * @return string
  */
 function toolbar_item_link($href, $glyphicon, $label, $selected = false) {
   return '<li class="' . ($selected ? 'active' : '') . '"><a href="' . $href . '">' . ($glyphicon != '' ? '<span class="glyphicon glyphicon-' . $glyphicon . '"></span> ' : '') . $label . '</a></li>';
 }
-
 function toolbar_item_divider() {
   return '<li class="divider"></li>';
 }
-
 function toolbar_dropdown($glyphicon, $label, $submenu, $class = '') {
   return '<li class="dropdown ' . $class . '">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">' . ($glyphicon != '' ? '<span class="glyphicon glyphicon-' . $glyphicon . '"></span> ' : '') . $label . ' <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">' . join("\n", $submenu) . '</ul></li>';
 }
-
 function toolbar_popover($glyphicon, $label, $content, $class = '') {
   $id = md5(microtime() . $glyphicon . $label);
   return '<li class="dropdown messages ' . $class . '">
-          <a id="' . $id . '" href="#" tabindex="0">' . ($glyphicon != '' ? '<span class="glyphicon glyphicon-' . $glyphicon . '"></span> ' : '') 
+          <a id="' . $id . '" href="#" tabindex="0">' . ($glyphicon != '' ? '<span class="glyphicon glyphicon-' . $glyphicon . '"></span> ' : '')
           . $label . ' <span class="caret"></span></a>
           <script type="text/javascript">
           $(function(){
               $("#' . $id . '").popover({
-                  trigger: "focus", 
-                  html: true, 
-                  content: "' . addslashes(join('', $content)) . '", 
-                  placement: "bottom", 
+                  trigger: "focus",
+                  html: true,
+                  content: "' . addslashes(join('', $content)) . '",
+                  placement: "bottom",
                   container: "#navbar-collapse-1"
               })
           });
           </script></li>';
 }
-
 function form_hidden($name, $value) {
   return '<input type="hidden" name="' . $name . '" value="' . $value . '" />';
 }
-
 /**
- * Rendert ein Zahlenfeld mit Buttons zum verstellen
+ * Renders a number pad with buttons to adjust
  */
 function form_spinner($name, $label, $value) {
   return form_element($label, '
@@ -133,7 +119,6 @@ function form_spinner($name, $label, $value) {
       </script>
       ');
 }
-
 /**
  * Render a bootstrap datepicker
  *
@@ -163,30 +148,27 @@ function form_date($name, $label, $value, $start_date = '') {
           format: "yyyy-mm-dd",
           startDate: "' . $start_date . '"
 			  });
-      });  
+      });
     </script>
     ', $id);
 }
-
 /**
- * Rendert eine Liste von Checkboxen für ein Formular
+ * Renders a list of check boxes on a form
  *
  * @param
- *          name Die Namen der Checkboxen werden aus name_key gebildet
+ *          name The name of the check boxes are formed from name_key
  * @param
- *          label Die Beschriftung der Liste
+ *          label The label of the list
  * @param
- *          items Array mit den einzelnen Checkboxen
+ *          items array of the individual checkboxes
  * @param
- *          selected Array mit den Keys, die ausgewählt sind
+ *          selected array containing the keys that are selected
  */
 function form_checkboxes($name, $label, $items, $selected) {
   $html = form_element($label, '');
   foreach ($items as $key => $item)
     $html .= form_checkbox($name . '_' . $key, $item, array_search($key, $selected) !== false);
-  
   return $html;
-  
   $html = "<ul>";
   foreach ($items as $key => $item) {
     $id = $name . '_' . $key;
@@ -196,20 +178,19 @@ function form_checkboxes($name, $label, $items, $selected) {
   $html .= "</ul>";
   return form_element($label, $html);
 }
-
 /**
- * Rendert eine Tabelle von Checkboxen für ein Formular
+ * Renders a table of check boxes on a form
  *
  * @param
- *          names Assoziatives Array mit Namen der Checkboxen als Keys und Überschriften als Values
+ *         names associative array with the name of the checkboxes as Keys and headings as Values
  * @param
- *          label Die Beschriftung der gesamten Tabelle
+ *          label The label of the entire table
  * @param
- *          items Array mit den Beschriftungen der Zeilen
+ *          items Array with the labels of rows
  * @param
- *          selected Mehrdimensionales Array, wobei $selected[foo] ein Array der in der Datenreihe foo markierten Checkboxen ist
+ *          selected Multidimensional array, $selected[ foo ] is an array of foo marked in the data series checkboxes
  * @param
- *          disabled Wie selected, nur dass die entsprechenden Checkboxen deaktiviert statt markiert sind
+ *         disabled How selected , only that the corresponding checkboxes disabled are instead marked
  */
 function form_multi_checkboxes($names, $label, $items, $selected, $disabled = array()) {
   $html = "<table><thead><tr>";
@@ -230,23 +211,28 @@ function form_multi_checkboxes($names, $label, $items, $selected, $disabled = ar
   $html .= "</tbody></table>";
   return form_element($label, $html);
 }
-
 /**
- * Rendert eine Checkbox
+ * Renders a checkbox
  */
-function form_checkbox($name, $label, $selected, $value = 'checked') {
-  return '<div class="checkbox"><label><input type="checkbox" id="' . $name . '" name="' . $name . '" value="' . $value . '"' . ($selected ? ' checked="checked"' : '') . ' /> ' . $label . '</label></div>';
+ /*
+ * Updated : Added an option to exclude using a div block
+ */
+function form_checkbox($name, $label, $selected, $value = 'checked', $div = true) {
+  if ($div === true) {
+  	return '<div class="checkbox"><label><input type="checkbox" id="' . $name . '" name="' . $name . '" value="' . $value . '"' . ($selected ? ' checked="checked"' : '') . ' /> ' . $label . '</label></div>';
+  }
+  else {
+   	return '<label><input type="checkbox" id="' . $name . '" name="' . $name . '" value="' . $value . '"' . ($selected ? ' checked="checked"' : '') . ' /> ' . $label . '</label>';
+  }
 }
-
 /**
- * Rendert einen Radio
+ * Renders a radio
  */
 function form_radio($name, $label, $selected, $value) {
   return '<div class="radio"><label><input type="radio" id="' . $name . '" name="' . $name . '" value="' . $value . '"' . ($selected ? ' checked="checked"' : '') . ' /> ' . $label . '</label></div>';
 }
-
 /**
- * Rendert einen Infotext in das Formular
+ * Renders a text information in the form
  */
 function form_info($label, $text = "") {
   if ($label == "")
@@ -255,62 +241,54 @@ function form_info($label, $text = "") {
     return '<h4>' . $label . '</h4>';
   return form_element($label, '<p class="form-control-static">' . $text . '</p>', '');
 }
-
 /**
- * Rendert den Absenden-Button eines Formulars
+ * Renders the submit button of a form
  */
 function form_submit($name, $label) {
   return form_element('<input class="btn btn-primary" type="submit" name="' . $name . '" value="' . $label . '" />', "");
 }
-
 /**
- * Rendert ein Formular-Textfeld
+ * Renders a form text box
  */
 function form_text($name, $label, $value, $disabled = false) {
   $disabled = $disabled ? ' disabled="disabled"' : '';
   return form_element($label, '<input class="form-control" id="form_' . $name . '" type="text" name="' . $name . '" value="' . htmlspecialchars($value) . '" ' . $disabled . '/>', 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Emailfeld
+ * Renders a form email field
  */
 function form_email($name, $label, $value, $disabled = false) {
   $disabled = $disabled ? ' disabled="disabled"' : '';
   return form_element($label, '<input class="form-control" id="form_' . $name . '" type="email" name="' . $name . '" value="' . htmlspecialchars($value) . '" ' . $disabled . '/>', 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Dateifeld
+ * Renders a form file box
  */
 function form_file($name, $label) {
   return form_element($label, '<input id="form_' . $name . '" type="file" name="' . $name . '" />', 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Passwortfeld
+ * Renders a form - password field
  */
 function form_password($name, $label, $disabled = false) {
   $disabled = $disabled ? ' disabled="disabled"' : '';
   return form_element($label, '<input class="form-control" id="form_' . $name . '" type="password" name="' . $name . '" value="" ' . $disabled . '/>', 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Textfeld
+ * Renders a form text box
  */
 function form_textarea($name, $label, $value, $disabled = false) {
   $disabled = $disabled ? ' disabled="disabled"' : '';
   return form_element($label, '<textarea rows="5" class="form-control" id="form_' . $name . '" type="text" name="' . $name . '" ' . $disabled . '>' . $value . '</textarea>', 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Auswahlfeld
+ * Renders a form selection box
  */
 function form_select($name, $label, $values, $selected) {
   return form_element($label, html_select_key('form_' . $name, $name, $values, $selected), 'form_' . $name);
 }
-
 /**
- * Rendert ein Formular-Element
+ * Renders a form element
  */
 function form_element($label, $input, $for = "") {
   if ($label == '') {
@@ -319,48 +297,42 @@ function form_element($label, $input, $for = "") {
     return '<div class="form-group">' . '<label for="' . $for . '">' . $label . '</label>' . $input . '</div>';
   }
 }
-
 /**
- * Rendert ein Formular
+ * Renders a form
  */
 function form($elements, $action = "") {
   return '<form role="form" action="' . $action . '" enctype="multipart/form-data" method="post">' . join($elements) . '</form>';
 }
-
 /**
- * Generiert HTML Code für eine "Seite".
- * Fügt dazu die übergebenen Elemente zusammen.
+ * Generates HTML code for a "page".
+ * Adds to the passed elements together.
  */
 function page($elements) {
   return join($elements);
 }
-
 /**
- * Generiert HTML Code für eine "Seite" mit zentraler Überschrift
- * Fügt dazu die übergebenen Elemente zusammen.
+ * Generates HTML code for a " page " with central heading
+ * Adds to the passed elements together.
  */
 function page_with_title($title, $elements) {
   return '<div class="col-md-12"><h1>' . $title . '</h1>' . join($elements) . '</div>';
 }
-
 /**
- * Rendert eine Datentabelle
+ * Renders a data table
  */
 function table($columns, $rows_raw, $data = true) {
   // If only one column is given
   if (! is_array($columns)) {
     $columns = array(
-        'col' => $columns 
+        'col' => $columns
     );
-    
     $rows = array();
     foreach ($rows_raw as $row)
       $rows[] = array(
-          'col' => $row 
+          'col' => $row
       );
   } else
     $rows = $rows_raw;
-  
   if (count($rows) == 0)
     return info(_("No data found."), true);
   $html = "";
@@ -383,32 +355,27 @@ function table($columns, $rows_raw, $data = true) {
   $html .= '</table>';
   return $html;
 }
-
 /**
- * Rendert einen Knopf
+ * Renders a button
  */
 function button($href, $label, $class = "") {
   return '<a href="' . $href . '" class="btn btn-default ' . $class . '">' . $label . '</a>';
 }
-
 /**
- * Rendert einen Knopf mit Glyph
+ * Renders a button with Glyph
  */
 function button_glyph($href, $glyph, $class = "") {
   return button($href, glyph($glyph), $class);
 }
-
 /**
- * Rendert eine Toolbar mit Knöpfen
+ * Renders a toolbar with buttons
  */
 function buttons($buttons = array ()) {
   return '<div class="form-group">' . table_buttons($buttons) . '</div>';
 }
-
 function table_buttons($buttons = array()) {
   return '<div class="btn-group">' . join(' ', $buttons) . '</div>';
 }
-
 // Load and render template
 function template_render($file, $data) {
   if (file_exists($file)) {
@@ -422,13 +389,11 @@ function template_render($file, $data) {
     die('Cannot find template file &laquo;' . $file . '&raquo;.');
   }
 }
-
 function shorten($str) {
   if (strlen($str) < 50)
     return $str;
   return '<span title="' . htmlentities($str, ENT_COMPAT, 'UTF-8') . '">' . substr($str, 0, 47) . '...</span>';
 }
-
 function table_body($array) {
   $html = "";
   foreach ($array as $line) {
@@ -443,15 +408,12 @@ function table_body($array) {
   }
   return $html;
 }
-
 function html_options($name, $options, $selected = "") {
   $html = "";
   foreach ($options as $value => $label)
     $html .= '<input type="radio"' . ($value == $selected ? ' checked="checked"' : '') . ' name="' . $name . '" value="' . $value . '"> ' . $label;
-  
   return $html;
 }
-
 function html_select_key($id, $name, $rows, $selected) {
   $html = '<select class="form-control" id="' . $id . '" name="' . $name . '">';
   foreach ($rows as $key => $row) {
@@ -464,7 +426,6 @@ function html_select_key($id, $name, $rows, $selected) {
   $html .= '</select>';
   return $html;
 }
-
 function ReplaceSmilies($neueckig) {
   $neueckig = str_replace(";o))", "<img src=\"pic/smiles/icon_redface.gif\">", $neueckig);
   $neueckig = str_replace(":-))", "<img src=\"pic/smiles/icon_redface.gif\">", $neueckig);
@@ -486,7 +447,26 @@ function ReplaceSmilies($neueckig) {
   $neueckig = str_replace(";P", "<img src=\"pic/smiles/icon_mad.gif\">", $neueckig);
   $neueckig = str_replace(";oP", "<img src=\"pic/smiles/icon_mad.gif\">", $neueckig);
   $neueckig = str_replace("?)", "<img src=\"pic/smiles/icon_question.gif\">", $neueckig);
-  
   return $neueckig;
+}
+
+/**
+ * Function to add Date-picker
+ */
+function calender($name, $value = '', $id) {
+  return '<div class="input-group date" id="' . $id .'">
+      		<input name="' . $name . '" class="form-control" value="' . $value .'" type="text">
+      		<span class="input-group-addon"> <span class="glyphicon glyphicon-th"></span> </span>
+    	  </div>
+		  <script type="text/javascript">
+			$(function(){
+			  $("#' . $id .'").datepicker({
+				language: "de",
+				todayBtn: "linked",
+				format: "yyyy-mm-dd",
+				startDate: ""
+			  });
+			});  
+		  </script>';
 }
 ?>
