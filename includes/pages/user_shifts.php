@@ -10,13 +10,29 @@ function user_shifts() {
   if (User_is_freeloader($user))
     redirect(page_link_to('user_myshifts'));
 
-    // Locations laden
+    // Load Locations
   $rooms = sql_select("SELECT * FROM `Room` WHERE `show`='1' ORDER BY `Name`");
   $room_array = array();
   foreach ($rooms as $room)
     $room_array[$room['RID']] = $room['Name'];
 
-    // Löschen einzelner Schicht-Einträge (Also Belegung einer Schicht von Engeln) durch Admins
+  // Delete Shifts
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  	if (isset($_POST["del_shifts"])) {
+  		$del_shifts = $_POST["del_shifts"];
+
+  		foreach ($del_shifts as $del_shift) {
+			$sid = sql_escape($del_shift);
+			$result = sql_query("DELETE FROM `Shifts` WHERE `SID` = '$sid'");
+  		}
+  		redirect(page_link_to('user_shifts'));
+	}
+  	else {
+  		redirect(page_link_to('user_shifts'));
+  	}
+  }
+
+    // Deleting single layer messages ( So availability of a layer of angels ) by Admins
   if (isset($_REQUEST['entry_id']) && in_array('user_shifts_admin', $privileges)) {
     if (isset($_REQUEST['entry_id']) && test_request_int('entry_id'))
       $entry_id = $_REQUEST['entry_id'];
@@ -44,7 +60,7 @@ function user_shifts() {
     } else
       error(_("Entry not found."));
     redirect(page_link_to('user_shifts'));
-  }   // Schicht bearbeiten
+  }   // edit layer
   elseif (isset($_REQUEST['edit_shift']) && in_array('admin_shifts', $privileges)) {
     $msg = "";
     $ok = true;
@@ -63,7 +79,7 @@ function user_shifts() {
       redirect(page_link_to('user_shifts'));
     $shift = $shift[0];
 
-    // Engeltypen laden
+    // Load Angeltype
     $types = sql_select("SELECT * FROM `AngelTypes` ORDER BY `name`");
     $angel_types = array();
     $needed_angel_types = array();
@@ -77,14 +93,14 @@ function user_shifts() {
     foreach ($shifttypes_source as $shifttype)
       $shifttypes[$shifttype['id']] = $shifttype['name'];
 
-      // Benötigte Engeltypen vom Raum
+      // Required Angeltypes from space
     $needed_angel_types_source = sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`room_id`='" . sql_escape($shift['RID']) . "') ORDER BY `AngelTypes`.`name`");
     foreach ($needed_angel_types_source as $type) {
       if ($type['count'] != "")
         $needed_angel_types[$type['id']] = $type['count'];
     }
 
-    // Benötigte Engeltypen von der Schicht
+    // Required Engel types of the layer
     $needed_angel_types_source = sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`shift_id`='" . sql_escape($shift_id) . "') ORDER BY `AngelTypes`.`name`");
     foreach ($needed_angel_types_source as $type) {
       if ($type['count'] != "")
@@ -96,14 +112,14 @@ function user_shifts() {
     $rid = $shift['RID'];
     $start = $shift['start'];
     $start_time = DateTime::createFromFormat("H:i", date("H:i", $shift['start']))->getTimestamp();
-    $end_time = DateTime::createFromFormat("H:i", date("H:i", $shift['end']))->getTimestamp();    
+    $end_time = DateTime::createFromFormat("H:i", date("H:i", $shift['end']))->getTimestamp();
     $end = $shift['end'];
 
     if (isset($_REQUEST['submit'])) {
-      // Name/Bezeichnung der Schicht, darf leer sein
+      // Name/designation of the layer may be empty
       $title = strip_request_item('title');
 
-      // Auswahl der sichtbaren Locations für die Schichten
+      // Selection of visible venues for layers
       if (isset($_REQUEST['rid']) && preg_match("/^[0-9]+$/", $_REQUEST['rid']) && isset($room_array[$_REQUEST['rid']]))
         $rid = $_REQUEST['rid'];
       else {
@@ -175,7 +191,7 @@ function user_shifts() {
       $start = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $start) . date("H:i", $start_time));
       $start = $start->getTimestamp();
       $end = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $end) . date("H:i", $end_time));
-      $end = $end->getTimestamp();  
+      $end = $end->getTimestamp();
 
       if ($ok) {
         $shift['shifttype_id'] = $shifttype_id;
@@ -202,7 +218,7 @@ function user_shifts() {
         ]));
       }
     }elseif (isset($_REQUEST['create'])) {
-    
+
     if (isset($_REQUEST['shifttype_id'])) {
       $shifttype = ShiftType($_REQUEST['shifttype_id']);
       if ($shifttype === false)
@@ -216,9 +232,9 @@ function user_shifts() {
       $ok = false;
       error(_('Please select a shift type.'));
     }
-    
+
     $title = strip_request_item('title');
-    
+
     if (isset($_REQUEST['rid']) && preg_match("/^[0-9]+$/", $_REQUEST['rid']) && isset($room_array[$_REQUEST['rid']]))
       $rid = $_REQUEST['rid'];
     else {
@@ -226,14 +242,14 @@ function user_shifts() {
       $rid = $rooms[0]['RID'];
       error(_('Please select a location.'));
     }
-    
+
     if (isset($_REQUEST['start']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['start'])))
       $start = $tmp->getTimestamp();
     else {
       $ok = false;
       error(_('Please select a start date.'));
     }
-    
+
     if (isset($_REQUEST['end']) && $tmp = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['end'])))
       $end = $tmp->getTimestamp();
     else {
@@ -254,7 +270,7 @@ function user_shifts() {
       $ok = false;
       error(_('Please select an end time.'));
     }
-    
+
     if (strtotime($_REQUEST['start']) > strtotime($_REQUEST['end'])) {
       $ok = false;
       error(_('The shifts end has to be after its start.'));
@@ -292,32 +308,32 @@ function user_shifts() {
       $start = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $start) . date("H:i", $start_time));
       $start = $start->getTimestamp();
       $end = DateTime::createFromFormat("Y-m-d H:i", date("Y-m-d", $end) . date("H:i", $end_time));
-      $end = $end->getTimestamp();  
+      $end = $end->getTimestamp();
       $shifts[] = array(
           'start' => $start,
           'end' => $end,
           'RID' => $rid,
           'title' => $title,
-          'shifttype_id' => $shifttype_id   
+          'shifttype_id' => $shifttype_id
         );
       $shifts_table = array();
       foreach ($shifts as $shift) {
       $shifts_table_entry = [
           'timeslot' => '<span class="glyphicon glyphicon-time"></span> ' . date("Y-m-d H:i", $shift['start']) . ' - ' . date("H:i", $shift['end']) . '<br />' . Room_name_render(Room($shift['RID'])),
           'title' => ShiftType_name_render(ShiftType($shifttype_id)) . ($shift['title'] ? '<br />' . $shift['title'] : ''),
-            'needed_angels' => '' 
+            'needed_angels' => ''
         ];
         foreach ($types as $type)
           if (isset($needed_angel_types[$type['id']]) && $needed_angel_types[$type['id']] > 0)
             $shifts_table_entry['needed_angels'] .= '<b>' . AngelType_name_render($type) . ':</b> ' . $needed_angel_types[$type['id']] . '<br />';
-        
+
         $shifts_table[] = $shifts_table_entry;
       }
-      
-      // Fürs Anlegen zwischenspeichern:
+
+      // For application caching :
       $_SESSION['admin_shifts_shifts'] = $shifts;
       $_SESSION['admin_shifts_types'] = $needed_angel_types;
-      
+
       $hidden_types = "";
       foreach ($needed_angel_types as $type_id => $count)
         $hidden_types .= form_hidden('type_' . $type_id, $count);
@@ -330,7 +346,7 @@ function user_shifts() {
               form_hidden('start', date("Y-m-d ", $start)),
               form_hidden('start_time', date("H:i", $start_time)),
               form_hidden('end', date("Y-m-d", $end)),
-              form_hidden('end_time', date("H:i", $end_time)),   
+              form_hidden('end_time', date("H:i", $end_time)),
               form_hidden('mode', $mode),
               form_hidden('length', $length),
               form_hidden('change_hours', implode(', ', $change_hours)),
@@ -339,24 +355,24 @@ function user_shifts() {
               table(array(
                   'timeslot' => _('Time and location'),
                   'title' => _('Type and title'),
-                  'needed_angels' => _('Needed angels') 
+                  'needed_angels' => _('Needed angels')
               ), $shifts_table),
-              form_submit('save', _("Save")) 
-          )) 
+              form_submit('save', _("Save"))
+          ))
       ));
     }
-  } 
+  }
  elseif (isset($_REQUEST['save'])) {
     if (! is_array($_SESSION['admin_shifts_shifts']) || ! is_array($_SESSION['admin_shifts_types']))
       redirect(page_link_to('admin_shifts'));
-    
+
     foreach ($_SESSION['admin_shifts_shifts'] as $shift) {
       $shift['URL'] = null;
       $shift['PSID'] = null;
       $shift_id = Shift_create($shift);
       if ($shift_id === false)
         engelsystem_error('Unable to create shift.');
-      
+
       engelsystem_log("Shift created: " . $shifttypes[$shift['shifttype_id']] . " with title " . $shift['title'] . " from " . date("Y-m-d H:i", $shift['start']) . " to " . date("Y-m-d H:i", $shift['end']));
       $needed_angel_types_info = array();
       foreach ($_SESSION['admin_shifts_types'] as $type_id => $count) {
@@ -367,7 +383,7 @@ function user_shifts() {
         }
       }
     }
-    
+
     engelsystem_log("Shift needs following angel types: " . join(", ", $needed_angel_types_info));
     success("Shift created successfully.");
     redirect(page_link_to('user_shifts'));
@@ -411,7 +427,7 @@ function user_shifts() {
     if ($shift == null)
       redirect(page_link_to('user_shifts'));
 
-      // Schicht löschen bestätigt
+      // confirmed clear coating
     if (isset($_REQUEST['delete'])) {
       $result = Shift_delete($shift_id);
       if ($result === false)
@@ -769,8 +785,9 @@ function view_user_shifts() {
               if (in_array('admin_shifts', $privileges))
                 $shifts_row .= '<div class="pull-right">' . table_buttons(array(
                     button(page_link_to('user_shifts') . '&edit_shift=' . $shift['SID'], glyph('edit'), 'btn-xs'),
-                    button(page_link_to('user_shifts') . '&delete_shift=' . $shift['SID'], glyph('trash'), 'btn-xs')
-                )) . '</div>';
+                    button(page_link_to('user_shifts') . '&delete_shift=' . $shift['SID'], glyph('trash'), 'btn-xs'),
+                    form_checkbox('del_shifts[] btn-xs', '', '', $value = $shift['SID'], false)
+                )). '</div>';
               $shifts_row .= Room_name_render([
                   'RID' => $room['id'],
                   'Name' => $room['name']
@@ -913,7 +930,8 @@ function view_user_shifts() {
       if (in_array('admin_shifts', $privileges))
         $shift_row['info'] .= ' ' . table_buttons(array(
             button(page_link_to('user_shifts') . '&edit_shift=' . $shift['SID'], glyph('edit'), 'btn-xs'),
-            button(page_link_to('user_shifts') . '&delete_shift=' . $shift['SID'], glyph('trash'), 'btn-xs')
+            button(page_link_to('user_shifts') . '&delete_shift=' . $shift['SID'], glyph('trash'), 'btn-xs'),
+            form_checkbox('del_shifts[] btn-xs', '', '', $value = $shift['SID'], false)
         ));
       $shift_row['entries'] .= '<br />';
       $is_free = false;
@@ -1021,9 +1039,9 @@ function view_user_shifts() {
       template_render('../templates/user_shifts.html', array(
           'title' => shifts_title(),
           'room_select' => make_select($rooms, $_SESSION['user_shifts']['rooms'], "rooms", _("Rooms")),
-          'start_select' => html_select_key("start_day", "start_day", array_combine($days, $days), $_SESSION['user_shifts']['start_day']),
+          'start_select' => calender('start_day', date("Y/m/d"), 'start_day'),
           'start_time' => $_SESSION['user_shifts']['start_time'],
-          'end_select' => html_select_key("end_day", "end_day", array_combine($days, $days), $_SESSION['user_shifts']['end_day']),
+          'end_select' => calender('end_day', date("Y/m/d"), 'end_day'),
           'end_time' => $_SESSION['user_shifts']['end_time'],
           'type_select' => make_select($types, $_SESSION['user_shifts']['types'], "types", _("Angeltypes") . '<sup>1</sup>'),
           'filled_select' => make_select($filled, $_SESSION['user_shifts']['filled'], "filled", _("Occupancy")),
@@ -1031,7 +1049,8 @@ function view_user_shifts() {
           'new_style_checkbox' => '<label><input type="checkbox" name="new_style" value="1" ' . ($_SESSION['user_shifts']['new_style'] ? ' checked' : '') . '> ' . _("Use new style if possible") . '</label>',
           'shifts_table' => msg() . $shifts_table,
           'ical_text' => '<h2>' . _("iCal export") . '</h2><p>' . sprintf(_("Export of shown shifts. <a href=\"%s\">iCal format</a> or <a href=\"%s\">JSON format</a> available (please keep secret, otherwise <a href=\"%s\">reset the api key</a>)."), page_link_to_absolute('ical') . '&key=' . $user['api_key'], page_link_to_absolute('shifts_json_export') . '&key=' . $user['api_key'], page_link_to('user_myshifts') . '&reset') . '</p>',
-          'filter' => _("Filter")
+          'filter' => _("Filter"),
+          'delete_shifts' => ("DELETE")
       )),
       '</div>'
   ));
