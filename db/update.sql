@@ -26,7 +26,7 @@ ALTER TABLE `User`
   ADD `github` varchar(255) DEFAULT NULL,
   ADD `organization` varchar(255) DEFAULT NULL,
   ADD `organization_web` varchar(255) DEFAULT NULL,
-  ADD `display_msg` varchar(255) DEFAULT "By completing this form you're registering as a Chaos-Angel. This script will create you an account in the angel task sheduler.";
+  ADD `display_msg` varchar(255) DEFAULT "By completing this form you're registering as a Chaos-Angel. This script will create you an account in the angel task sheduler.",
   ADD `native_lanuage` varchar(5) DEFAULT NULL,
   ADD `other_languages` varchar(150) DEFAULT NULL;
 
