@@ -41,9 +41,9 @@ function guest_register() {
   $planned_arrival_date = null;
   $timezone = "";
   $timezone_identifiers = DateTimeZone::listIdentifiers();
-  
-  $admin_source = sql_select("SELECT `display_msg` FROM `User` WHERE `UID`='" . sql_escape(1) . "' LIMIT 1");
-  $display_message = $admin_source[0]['display_msg'];
+
+  $welcome_message = sql_select("SELECT * FROM `Welcome_Message`");
+  $display_message = $welcome_message[0]['display_msg'];
   $angel_types_source = sql_select("SELECT * FROM `AngelTypes` ORDER BY `name`");
   $angel_types = array();
   foreach ($angel_types_source as $angel_type) {
@@ -131,7 +131,7 @@ function guest_register() {
       $ok = false;
       $msg .= error(_("Please enter your Last Name."), true);
     }
-      
+
     if (isset($_REQUEST['prename']) && strlen(strip_request_item('prename')) > 0){
       $prename = strip_request_item('prename');
       }
@@ -145,6 +145,13 @@ function guest_register() {
     else {
       $ok = false;
       $msg .= error(_("Please enter your Current City."), true);
+    }
+    if (isset($_REQUEST['native_lang']) && strlen(strip_request_item('native_lang')) > 0){
+      $native_lang = strip_request_item('native_lang');
+      }
+    else {
+      $ok = false;
+      $msg .= error(_("Please enter your Native Language."), true);
     }
     /**
      * Google reCaptcha Server-Side Handling
@@ -160,14 +167,14 @@ function guest_register() {
           'response' => $_REQUEST['g-recaptcha-response'],
         ]
       ]);
-      
+
       $response = json_decode(curl_exec($curl));
       $msg .= error(sprintf(_(print_r($response)), $nick), true);
     }
     else {
       $ok = false;
       $msg .= error(_("You are a Robot."), true);
-    } 
+    }
     if (isset($_REQUEST['timezone'])) {
       $timezone = strip_request_item('timezone');
     } else {
@@ -180,6 +187,15 @@ function guest_register() {
       $tel = strip_request_item('tel');
     if (isset($_REQUEST['dect']))
       $dect = strip_request_item('dect');
+    if (isset($_REQUEST['native_lang']))
+      $native_lang = strip_request_item('native_lang');
+    if (isset($_REQUEST['other_lang'])) {
+      $other_langs = "";
+      $langs = $_REQUEST['other_lang'];
+      foreach($langs as $lang) {
+        $other_langs .= $lang . ',';
+      }
+    }
     if (isset($_REQUEST['mobile']))
       $mobile = strip_request_item('mobile');
     if (isset($_REQUEST['hometown']))
@@ -207,6 +223,8 @@ function guest_register() {
           `Alter`='" . sql_escape($age) . "',
           `Telefon`='" . sql_escape($tel) . "',
           `DECT`='" . sql_escape($dect) . "',
+          `native_lang`='" . sql_escape($native_lang) . "',
+          `other_langs`='" . sql_escape($other_langs) . "',
           `Handy`='" . sql_escape($mobile) . "',
           `email`='" . sql_escape($mail) . "',
           `email_shiftinfo`=" . sql_bool($email_shiftinfo) . ",
@@ -278,17 +296,17 @@ function guest_register() {
                       div('col-sm-8', array(
                           form_password('password', _("Password") . ' ' . entry_required())
                       )),
-                  )),      
+                  )),
                   div('row', array(
                       div('col-sm-8', array(
                           form_password('password2', _("Confirm password") . ' ' . entry_required())
                       ))
                   )),
-                 div('row', array(                      
+                 div('row', array(
                       div('col-sm-8', array(
                           form_text('dect', _("DECT"), $dect)
                       ))
-                  )),                
+                  )),
                   div('row', array(
                       div('col-sm-4', array(
                           form_text('twitter', _("Twitter"), $twitter )
@@ -297,14 +315,14 @@ function guest_register() {
                           form_text('facebook', _("Facebook"), $facebook )
                       )),
                   )),
-                      
+
                   div('row', array(
                       div('col-sm-8', array(
                           form_text('github', _("Github"), $github )
                       ))
                   )),
-                  
-                  
+
+
                   form_checkboxes('angel_types', _("What do you want to do?") . sprintf(" (<a href=\"%s\">%s</a>)", page_link_to('angeltypes') . '&action=about', _("Description of job types")), $angel_types, $selected_angel_types),
                   form_info("", _("Restricted angel types need will be confirmed later by an archangel. You can change your selection in the options section."))
               )),
@@ -316,13 +334,23 @@ function guest_register() {
                   )),
                   div('row', array(
                       div('col-sm-8', array(
-                          form_text('lastname', _("Last name") . ' ' . entry_required(), $lastname) 
+                          form_text('lastname', _("Last name") . ' ' . entry_required(), $lastname)
                       ))
                   )),
                   div('row', array(
                   div('col-sm-8', array(
                           form_text('current_city', _("Current City"). ' ' . entry_required(), $current_city)
                       )),
+                  )),
+                  div('row', array(
+                  div('col-sm-8', array(
+                  	form_select('native_lang', _("Native Language").' '. entry_required(), languages(), $native_lang, 'English')
+                      ))
+                  )),
+		              div('row', array(
+                  div('col-sm-8', array(
+                          form_multiselect('other_langs', _("Other Languages"), languages(), $other_langs, 'English')
+                      ))
                   )),
                   div('row', array(
                     div('col-sm-8', array(
@@ -338,11 +366,11 @@ function guest_register() {
                       ))
                   )),
                   div('row', array(
-                  div('col-sm-8', array(    
+                  div('col-sm-8', array(
                   form_text('jabber', _("Jabber"), $jabber),
                   )),
                   )),
-                  
+
                   div('row', array(
                       div('col-sm-4', array(
                           form_text('age', _("Age"), $age)
@@ -461,5 +489,17 @@ function guest_login() {
       )),
       '</div></div>'
   ));
+}
+/**
+ * Generates a list of Languages with their ISO Codes
+ */
+function languages() {
+  $xml = simplexml_load_file("https://www.facebook.com/translations/FacebookLocales.xml");
+  foreach($xml->xpath("/locales/locale") as $item) {
+    $representation = $item->codes->code->standard->representation;
+    if ($representation != "en_PI" || $representation != "en_UD")
+      $locale["$representation"] = $item->englishName;
+  }
+  return $locale;
 }
 ?>

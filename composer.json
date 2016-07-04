@@ -1,0 +1,15 @@
+{
+   "name": "fossasia/engelsystem",
+   "license": "fossasia",
+   "support": {
+      "issues": "https://github.com/fossasia/engelsystem/issues",
+      "source": "https://github.com/fossasia/engelsystem"
+   },
+   "require": {
+      "ext-mysql": "*",
+      "ext-gettext": "*"
+    },
+   "require-dev": {
+      "heroku/heroku-buildpack-php": "*"
+   }
+} 
