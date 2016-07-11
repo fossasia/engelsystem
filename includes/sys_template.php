@@ -452,39 +452,7 @@ function ReplaceSmilies($neueckig) {
 /**
  * Rendert Google reCaptcha
  */
-function reCaptcha($flg) {
-  if($flg)
-    return '<div class="g-recaptcha" data-sitekey="' . CAPTCHA_KEY_PUBLIC . '"></div>';
-}
-/**
- * Function to add Date-picker
- */
-function calender($name, $value = '', $id) {
-  return '<div class="input-group date" id="' . $id .'">
-      		<input name="' . $name . '" class="form-control" value="' . $value .'" type="text">
-      		<span class="input-group-addon"> <span class="glyphicon glyphicon-th"></span> </span>
-    	  </div>
-		  <script type="text/javascript">
-			$(function(){
-			  $("#' . $id .'").datepicker({
-				language: "de",
-				todayBtn: "linked",
-				format: "yyyy-mm-dd",
-				startDate: ""
-			  });
-			});  
-		  </script>';
-}
-/**
- * Renders a form multi-select box
- */
-function form_multiselect($name, $label, $values, $tag = "") {
-  $list = '<div class="form-group"><label>' . $label . '</label>';
-  $list .= '<select class="form-control selectpicker" multiple title="' . $tag . '" name="' . $name .'[]"> ';
-  foreach($values as $key => $value) {
-    $list .= '<option value="' . $key . '">' . $value . '</option>';
-  }  
-  $list .= '</select></div>';
-  return $list;
+function reCaptcha() {
+  return '<div class="g-recaptcha" data-sitekey="6LeGiyITAAAAAGG2-A9yM47fnB0IRwET_cOunvgf"></div>';
 }
 ?>

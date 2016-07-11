@@ -249,16 +249,6 @@ function User_view($user_source, $admin_user_privilege, $freeloader, $user_angel
               User_groups_render($user_groups) 
           )) 
       )),
-      div('row', array(
-          div('col-md-6', array(
-              '<h4>' . _("Native Language") . '</h4>',
-              Native_language_render($user_source)
-          )),
-          div('col-md-6', array(
-              '<h4>' . _("Other Languages") . '</h4>',
-              Other_languages_render($user_source)
-          ))
-      )),
       div('row space-top', array(
           div('col-md-12', array(
               buttons(array(
@@ -348,41 +338,6 @@ function User_groups_render($user_groups) {
  */
 function User_Nick_render($user_source) {
   return '<a class="' . ($user_source['Gekommen'] ? '' : 'text-muted') . '" href="' . page_link_to('users') . '&amp;action=view&amp;user_id=' . $user_source['UID'] . '"><span class="icon-icon_angel"></span> ' . htmlspecialchars($user_source['Nick']) . '</a>';
-}
-/**
- * Render the Native Language
- */
-function Native_language_render($user_source) {
-  $xml = simplexml_load_file("https://www.facebook.com/translations/FacebookLocales.xml");
-  foreach($xml->xpath("/locales/locale") as $item)
-  {
-    $representation = $item->codes->code->standard->representation;
-    if ($representation == $user_source['native_language']) {
-      return htmlspecialchars($item->englishName);
-    } 
-  }	
-}
-/**
- * Render Other Languages
- */
-function Other_languages_render($user_source) {
-  $other_langs = explode(",", $user_source['other_languages']);
-  $xml = simplexml_load_file("https://www.facebook.com/translations/FacebookLocales.xml");
-  $list = "";
-  foreach($xml->xpath("/locales/locale") as $item)
-  {
-    $representation = $item->codes->code->standard->representation;
-    foreach($other_langs as $other_lang) {
-      if ($other_lang == $representation) {
-        $list .= $item->englishName . ', ';
-      }
-    }
-  }
-  $pos = strrpos($list, ',');
-  if($pos !== false){
-    $list = substr_replace($list, '', $pos, strlen(','));
-  }
-  return htmlspecialchars($list); 	
 }
 
 ?>

@@ -133,12 +133,6 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
   } elseif ($p == "admin_log") {
     $title = admin_log_title();
     $content = admin_log();
-  } elseif ($p == "admin_settings") {
-    $title = admin_settings_title();
-    $content = admin_settings();
-  } elseif ($p == "admin_export") {
-    $title = admin_export_title();
-    $content = admin_export();
   } elseif ($p == "credits") {
     require_once realpath(__DIR__ . '/../includes/pages/guest_credits.php');
     $title = credits_title();

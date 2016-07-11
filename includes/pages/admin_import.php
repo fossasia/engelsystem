@@ -1,7 +1,7 @@
 <?php
 
 function admin_import_title() {
-  return _("Frab import");
+  return _("Frab import and export");
 }
 
 function admin_import() {
@@ -81,6 +81,10 @@ function admin_import() {
           error(_('Please provide some data.'));
         }
       }
+      if(isset($_REQUEST['download'])){
+        export_xls();
+      }
+
       if ($ok) {
         redirect(page_link_to('admin_import') . "&step=check&shifttype_id=" . $shifttype_id . "&add_minutes_end=" . $add_minutes_end . "&add_minutes_start=" . $add_minutes_start);
       } else {
@@ -97,6 +101,15 @@ function admin_import() {
                     form_spinner('add_minutes_end', _("Add minutes to end"), $add_minutes_end),
                     form_file('xcal_file', _("xcal-File (.xcal)")),
                     form_submit('submit', _("Import"))
+                ))
+            ])
+        ]).div('well well-sm text-center', [
+            _('Export User Database')
+        ]).div('row', [
+            div('col-md-6', [
+                form(array(
+                    form_info('', _("This will export user data.Press export button to download the user data ")),
+                    form_submit('download', _("export"))
                 ))
             ])
         ]);
@@ -366,5 +379,41 @@ function shifts_printable($shifts, $shifttypes) {
 
 function shift_sort($a, $b) {
   return ($a['start'] < $b['start']) ? - 1 : 1;
+}
+
+function export_xls() {
+	$filename = tempnam('/tmp', '.csv');//  Temporary File Name
+	$headings = sql_select("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'User' ");
+	$head = "";
+	foreach($headings as $heading) {
+		$head .= $heading["COLUMN_NAME"] . " ";
+	}
+	$final = explode(" ", $head);
+	$results = sql_select("SELECT * FROM `User`");
+	$fp = fopen("$filename", "w+") or die("Error Occurred");
+	fputcsv($fp, $final, "\t");
+	foreach($results as $result) {
+		fputcsv($fp, $result, "\t");
+	}
+	$fp = @fopen($filename, 'rb+');
+  if (strstr($_SERVER['HTTP_USER_AGENT'], "MSIE")) {
+		header('Content-Type: application/csv');
+		header('Content-Disposition: attachment; filename=export_users_data.csv');
+		header('Expires: 0');
+		header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		header("Content-Transfer-Encoding: binary");
+		header('Pragma: public');
+		header("Content-Length: ".filesize($filename));
+	}
+	else {
+		header('Content-Type: application/csv');
+		header('Content-Disposition: attachment; filename=export_users_data.csv');
+		header("Content-Transfer-Encoding: binary");
+		header('Expires: 0');
+		header('Pragma: no-cache');
+		header("Content-Length: ".filesize($filename));
+	}
+	fpassthru($fp);
+	fclose($fp);
 }
 ?>

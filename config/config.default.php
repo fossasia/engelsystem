@@ -9,19 +9,19 @@ $faq_url = "https://events.ccc.de/congress/2013/wiki/Static:Volunteers";
 // contact email address, linked on every page
 $contact_email = "mailto:erzengel@lists.ccc.de";
 
-// Default Theme on the home page 1 = style1.css etc.
+// Default-Theme auf der Startseite, 1=style1.css usw.
 $default_theme = 0;
 
-// Number of news that can be spend on one side ...
+// Anzahl der News, die auf einer Seite ausgeben werden koennen...
 $DISPLAY_NEWS = 6;
 
-// Number hours to discharge its own layers
+// Anzahl Stunden bis zum Austragen eigener Schichten
 $LETZTES_AUSTRAGEN = 3;
 
-// Sets to use crypt-Algorithm ( according to the documentation of crypt ( ) ) .
-// If a user password is stored in a different format ,
-// is it in the first use of the plaintext password in the new format
-// converted.
+// Setzt den zu verwendenden Crypto-Algorismus (entsprechend der Dokumentation von crypt()).
+// Falls ein Benutzerpasswort in einem anderen Format gespeichert ist,
+// wird es bei der ersten Benutzung des Klartext-Passworts in das neue Format
+// konvertiert.
 // define('CRYPT_ALG', '$1'); // MD5
 // define('CRYPT_ALG', '$2y$13'); // Blowfish
 // define('CRYPT_ALG', '$5$rounds=5000'); // SHA-256
@@ -29,7 +29,7 @@ define('CRYPT_ALG', '$6$rounds=5000'); // SHA-512
 
 define('MIN_PASSWORD_LENGTH', 8);
 
-// When angels should specify a T - shirt size when registering or in their profile , set to true :
+// Wenn Engel beim Registrieren oder in ihrem Profil eine T-Shirt Größe angeben sollen, auf true setzen:
 $enable_tshirt_size = true;
 
 // Number of shifts to freeload until angel is locked for shift signup.
@@ -66,11 +66,4 @@ $config = array(
     'pw' => "",
     'db' => "engelsystem" 
 );
-
-/** reCaptcha Settings 
- * Visit http://www.google.com/recaptcha/admin#whyrecaptcha for generating reCaptcha keys for your website.
-*/
-define('capflg', '');  // Set reCaptch enalble or disable. true = enable , false = disable.
-define('CAPTCHA_KEY_PUBLIC', '');  // Public/Data-site key
-define('CAPTCHA_KEY_PRIVATE', '');  // Private/Secret Key
 ?>
