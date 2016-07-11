@@ -26,10 +26,9 @@ function user_settings() {
   $selected_language = $user['Sprache'];
   $planned_arrival_date = $user['planned_arrival_date'];
   $planned_departure_date = $user['planned_departure_date'];
+  $display_message = $user['display_msg'];
   $timezone = $user['timezone'];
   $timezone_identifiers = DateTimeZone::listIdentifiers();
-  $message_source = sql_select("SELECT * FROM `Welcome_Message`");
-  $display_message = $message_source[0]['display_msg'];
   
   if (isset($_REQUEST['submit'])) {
     $ok = true;
@@ -170,7 +169,7 @@ function user_settings() {
         $ok = false;
       
       if($ok){
-        sql_query("UPDATE `Welcome_Message` SET `display_msg`='" . sql_escape($display_message) . "'");
+        sql_query("UPDATE `User` SET `display_msg`='" . sql_escape($display_message) . "' WHERE  `UID`='" . sql_escape($user['UID']) . "'");
         
         success("Message Changed");
         redirect(page_link_to('user_settings'));

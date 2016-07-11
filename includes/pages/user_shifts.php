@@ -1041,13 +1041,13 @@ function view_user_shifts() {
       msg(),
       template_render('../templates/user_shifts.html', array(
           'title' => shifts_title(),
-          'room_select' => multiple_select($rooms, $_SESSION['user_shifts']['rooms'], "rooms", _("Rooms")),
-          'start_select' => calender('start_day', date("Y/m/d"), 'start_day'),
+          'room_select' => make_select($rooms, $_SESSION['user_shifts']['rooms'], "rooms", _("Rooms")),
+          'start_select' => html_select_key("start_day", "start_day", array_combine($days, $days), $_SESSION['user_shifts']['start_day']),
           'start_time' => $_SESSION['user_shifts']['start_time'],
-          'end_select' => calender('end_day', date("Y/m/d"), 'end_day'),
+          'end_select' => html_select_key("end_day", "end_day", array_combine($days, $days), $_SESSION['user_shifts']['end_day']),
           'end_time' => $_SESSION['user_shifts']['end_time'],
-          'type_select' => multiple_select($types, $_SESSION['user_shifts']['types'], "types", _("Angeltypes") . '<sup>1</sup>'),
-          'filled_select' => multiple_select($filled, $_SESSION['user_shifts']['filled'], "filled", _("Occupancy")),
+          'type_select' => make_select($types, $_SESSION['user_shifts']['types'], "types", _("Angeltypes") . '<sup>1</sup>'),
+          'filled_select' => make_select($filled, $_SESSION['user_shifts']['filled'], "filled", _("Occupancy")),
           'task_notice' => '<sup>1</sup>' . _("The tasks shown here are influenced by the preferences you defined in your settings!") . " <a href=\"" . page_link_to('angeltypes') . '&action=about' . "\">" . _("Description of the jobs.") . "</a>",
           'new_style_checkbox' => '<label><input type="checkbox" name="new_style" value="1" ' . ($_SESSION['user_shifts']['new_style'] ? ' checked' : '') . '> ' . _("Use new style if possible") . '</label>',
           'shifts_table' => msg() . $shifts_table,
@@ -1091,43 +1091,6 @@ function make_select($items, $selected, $name, $title = null) {
       button("javascript: uncheck_all('selection_" . $name . "')", _("None"), "")
   ));
   $html .= '</div>' . "\n";
-  return $html;
-}
-
-function multiple_select($items, $selected, $name, $title = null){ 
-$html_items = array();
-if (isset($title))
-    $html .= '<h4>' . $title . '</h4>' . "\n";
-$html .= '<select multiple id="selection_' . $name . '"  class="selection ' . $name . '" style="width:200px">';
-
-foreach ($items as $i)
-  $html_items[] = '<option  value="' . $i['id'] . '"' . '>' . $i['name'] . '</option>';
-$html .= implode("\n", $html_items);
-$html .= '</select>';
-$html .= '<input type="checkbox" id="checkboxall_' . $name . '"  >All' . '<br>';
-$html .= '<input type="checkbox" id="checkboxnone_' . $name . '"  >None';
-$html .= '<script>$("#' . "selection_" . $name . '").select2({
-placeholder: "Select",
-  });
-$("#' . "checkboxall_" . $name . '").click(function(){
-  if($("#' . "checkboxall_" . $name . '").is(":checked")){
-    $("#' . "checkboxnone_" . $name . '").prop("checked", false);
-    $("#' . "selection_" . $name . ' > option").prop("selected","selected");
-    $("#' . "selection_" . $name . '").trigger("change");
-  }else{
-    $("#' . "checkboxnone_" . $name . '").prop("checked", true);
-    $("#' . "selection_" . $name . ' > option").removeAttr("selected");
-    $("#' . "selection_" . $name . '").trigger("change");
-  }
-});
-$("#' . "checkboxnone_" . $name . '").click(function(){
-  if($("#' . "checkboxnone_" . $name . '").is(":checked") ){
-    $("#' . "checkboxall_" . $name . '").prop("checked", false);
-    $("#' . "selection_" . $name . ' > option").removeAttr("selected");
-    $("#' . "selection_" . $name . '").trigger("change");
-}
-});
-</script>';
   return $html;
 }
 ?>

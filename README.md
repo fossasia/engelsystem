@@ -1,10 +1,9 @@
 # Installation eines frischen Engelsystems
+[![Build Status](https://travis-ci.org/fossasia/engelsystem.svg?branch=Travis_config)](https://travis-ci.org/fossasia/engelsystem)
+
 [![Code Climate](https://codeclimate.com/github/fossasia/engelsystem/badges/gpa.svg)](https://codeclimate.com/github/fossasia/engelsystem)
 [![Build Status](https://travis-ci.org/fossasia/engelsystem.svg?branch=documentation)](https://travis-ci.org/fossasia/engelsystem)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d56c5bb224f24946965770230e7253c2)](https://www.codacy.com/app/dishant-khanna1807/engelsystem_2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/engelsystem&amp;utm_campaign=Badge_Grade)
-[![CircleCI](https://circleci.com/gh/fossasia/engelsystem/tree/development.svg?style=svg)](https://circleci.com/gh/fossasia/engelsystem/tree/development)
-[![Dependency Status](https://www.versioneye.com/user/projects/577c9495b50608003eee0161/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/577c9495b50608003eee0161)
-[![Dependency Status](https://gemnasium.com/badges/github.com/fossasia/engelsystem.svg)](https://gemnasium.com/github.com/fossasia/engelsystem)
+
 ## Mindestvorrausetzungen (bzw. getestet unter):
  * PHP 5.4.x (cgi-fcgi)
  * MySQL-Server 5.5.x
@@ -34,10 +33,6 @@ Fehler bitte auf Github melden: https://github.com/fossasia/engelsystem/issues
 # Installation of Engelsystem
 [![Code Climate](https://codeclimate.com/github/fossasia/engelsystem/badges/gpa.svg)](https://codeclimate.com/github/fossasia/engelsystem)
 [![Build Status](https://travis-ci.org/fossasia/engelsystem.svg?branch=documentation)](https://travis-ci.org/fossasia/engelsystem)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d56c5bb224f24946965770230e7253c2)](https://www.codacy.com/app/dishant-khanna1807/engelsystem_2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fossasia/engelsystem&amp;utm_campaign=Badge_Grade)
-[![CircleCI](https://circleci.com/gh/fossasia/engelsystem/tree/development.svg?style=svg)](https://circleci.com/gh/fossasia/engelsystem/tree/development)
-[![Dependency Status](https://www.versioneye.com/user/projects/577c9495b50608003eee0161/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/577c9495b50608003eee0161)
-[![Dependency Status](https://gemnasium.com/badges/github.com/fossasia/engelsystem.svg)](https://gemnasium.com/github.com/fossasia/engelsystem)
 ## Requirements:
  * PHP 5.4.x (cgi-fcgi)
  * MySQL-Server 5.5.x
