@@ -22,6 +22,7 @@ require_once realpath(__DIR__ . '/../includes/model/UserAngelTypes_model.php');
 require_once realpath(__DIR__ . '/../includes/model/UserDriverLicenses_model.php');
 require_once realpath(__DIR__ . '/../includes/model/UserGroups_model.php');
 require_once realpath(__DIR__ . '/../includes/model/User_model.php');
+require_once realpath(__DIR__ . '/../includes/model/Settings_model.php');
 
 require_once realpath(__DIR__ . '/../includes/view/AngelTypes_view.php');
 require_once realpath(__DIR__ . '/../includes/view/Questions_view.php');
@@ -76,6 +77,7 @@ require_once realpath(__DIR__ . '/../includes/pages/user_news.php');
 require_once realpath(__DIR__ . '/../includes/pages/user_questions.php');
 require_once realpath(__DIR__ . '/../includes/pages/user_settings.php');
 require_once realpath(__DIR__ . '/../includes/pages/user_shifts.php');
+require_once realpath(__DIR__ . '/../includes/pages/admin_settings.php');
 
 require_once realpath(__DIR__ . '/../vendor/parsedown/Parsedown.php');
 

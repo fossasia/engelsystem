@@ -13,3 +13,20 @@ ALTER TABLE `UserDriverLicenses`
   ADD CONSTRAINT `userdriverlicenses_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `User` (`UID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE `AngelTypes` ADD `requires_driver_license` BOOLEAN NOT NULL;
+
+-- ---------------------------------------------------------------------------------
+-- Settings table
+DROP TABLE IF EXISTS `Settings`;
+CREATE TABLE IF NOT EXISTS `Settings` (
+  `event_name` varchar(255) DEFAULT NULL,
+  `buildup_start_date` int(11) DEFAULT NULL, 
+  `event_start_date` int(11) DEFAULT NULL,
+  `event_end_date` int(11) DEFAULT NULL,
+  `teardown_end_date` int(11) DEFAULT NULL,
+  `event_welcome_msg` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
+
+-- Added privilege for Admin Settings
+INSERT INTO `Privileges` (`id`, `name`, `desc`) VALUES (39, 'admin_settings', 'Settings Page for Admin');
+
+INSERT INTO `GroupPrivileges` (`id`, `group_id`, `privilege_id`) VALUES (218, -4, 39);
