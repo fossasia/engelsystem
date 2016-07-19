@@ -9,7 +9,7 @@ function admin_active() {
 
   $msg = "";
   $search = "";
-  $forced_count = sql_num_query("SELECT * FROM `User` WHERE `force_active`=1");
+  $forced_count = User_force_active_count();
   $count = $forced_count;
   $limit = "";
   $set_active = "";
@@ -26,7 +26,7 @@ function admin_active() {
       $count = strip_request_item('count');
       if ($count < $forced_count) {
         error(sprintf(_("At least %s angels are forced to be active. The number has to be greater."), $forced_count));
-        redirect(page_link_to('admin_active'));
+        redirect(page_link_to('admin_active_controller'));
       }
     } else {
       $ok = false;
@@ -36,27 +36,20 @@ function admin_active() {
     if ($ok)
       $limit = " LIMIT " . $count;
     if (isset($_REQUEST['ack'])) {
-      sql_query("UPDATE `User` SET `Aktiv` = 0 WHERE `Tshirt` = 0");
-      $users = sql_select("
-          SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, ${shift_sum_formula} as `shift_length`
-          FROM `User`
-          LEFT JOIN `ShiftEntry` ON `User`.`UID` = `ShiftEntry`.`UID`
-          LEFT JOIN `Shifts` ON `ShiftEntry`.`SID` = `Shifts`.`SID`
-          WHERE `User`.`Gekommen` = 1 AND `User`.`force_active`=0
-          GROUP BY `User`.`UID`
-          ORDER BY `force_active` DESC, `shift_length` DESC" . $limit);
+      User_update_activ_tshirt();
+      $users = User_select_set_active($shift_sum_formula, $limit);
       $user_nicks = array();
       foreach ($users as $usr) {
-        sql_query("UPDATE `User` SET `Aktiv` = 1 WHERE `UID`='" . sql_escape($usr['UID']) . "'");
+        User_set_active($usr['UID']);
         $user_nicks[] = User_Nick_render($usr);
       }
-      sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `force_active`=TRUE");
+      User_actice_force_active();
       engelsystem_log("These angels are active now: " . join(", ", $user_nicks));
 
       $limit = "";
       $msg = success(_("Marked angels."), true);
     } else {
-      $set_active = '<a href="' . page_link_to('admin_active') . '&amp;serach=' . $search . '">&laquo; ' . _("back") . '</a> | <a href="' . page_link_to('admin_active') . '&amp;search=' . $search . '&amp;count=' . $count . '&amp;set_active&amp;ack">' . _("apply") . '</a>';
+      $set_active = '<a href="' . page_link_to('admin_active_controller') . '&amp;serach=' . $search . '">&laquo; ' . _("back") . '</a> | <a href="' . page_link_to('admin_active_controller') . '&amp;search=' . $search . '&amp;count=' . $count . '&amp;set_active&amp;ack">' . _("apply") . '</a>';
     }
   }
 
@@ -64,7 +57,7 @@ function admin_active() {
     $id = $_REQUEST['active'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_active($id);
       engelsystem_log("User " . User_Nick_render($user_source) . " is active now.");
       $msg = success(_("Angel has been marked as active."), true);
     } else
@@ -73,7 +66,7 @@ function admin_active() {
     $id = $_REQUEST['not_active'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Aktiv`=0 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_inactive($id);
       engelsystem_log("User " . User_Nick_render($user_source) . " is NOT active now.");
       $msg = success(_("Angel has been marked as not active."), true);
     } else
@@ -82,7 +75,7 @@ function admin_active() {
     $id = $_REQUEST['tshirt'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Tshirt`=1 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_tshirt($id);
       engelsystem_log("User " . User_Nick_render($user_source) . " has tshirt now.");
       $msg = success(_("Angel has got a t-shirt."), true);
     } else
@@ -91,22 +84,13 @@ function admin_active() {
     $id = $_REQUEST['not_tshirt'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Tshirt`=0 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_not_tshirt($id);
       engelsystem_log("User " . User_Nick_render($user_source) . " has NO tshirt.");
       $msg = success(_("Angel has got no t-shirt."), true);
     } else
       $msg = error(_("Angel not found."), true);
   }
-
-  $users = sql_select("
-      SELECT `User`.*, COUNT(`ShiftEntry`.`id`) as `shift_count`, ${shift_sum_formula} as `shift_length`
-      FROM `User` LEFT JOIN `ShiftEntry` ON `User`.`UID` = `ShiftEntry`.`UID`
-      LEFT JOIN `Shifts` ON `ShiftEntry`.`SID` = `Shifts`.`SID`
-      WHERE `User`.`Gekommen` = 1
-      " . ($show_all_shifts ? "" : "AND (`Shifts`.`end` < " . time() . " OR `Shifts`.`end` IS NULL)") . "
-      GROUP BY `User`.`UID`
-      ORDER BY `force_active` DESC, `shift_length` DESC" . $limit);
-
+  $users = User_select_not_tshirt($shift_sum_formula, $show_all_shifts, $limit);
   $matched_users = array();
   if ($search == "")
     $tokens = array();
@@ -132,33 +116,31 @@ function admin_active() {
 
     $actions = array();
     if ($usr['Aktiv'] == 0)
-      $actions[] = '<a href="' . page_link_to('admin_active') . '&amp;active=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("set active") . '</a>';
+      $actions[] = '<a href="' . page_link_to('admin_active_controller') . '&amp;active=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("set active") . '</a>';
     if ($usr['Aktiv'] == 1 && $usr['Tshirt'] == 0) {
-      $actions[] = '<a href="' . page_link_to('admin_active') . '&amp;not_active=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("remove active") . '</a>';
-      $actions[] = '<a href="' . page_link_to('admin_active') . '&amp;tshirt=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("got t-shirt") . '</a>';
+      $actions[] = '<a href="' . page_link_to('admin_active_controller') . '&amp;not_active=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("remove active") . '</a>';
+      $actions[] = '<a href="' . page_link_to('admin_active_controller') . '&amp;tshirt=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("got t-shirt") . '</a>';
     }
     if ($usr['Tshirt'] == 1)
-      $actions[] = '<a href="' . page_link_to('admin_active') . '&amp;not_tshirt=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("remove t-shirt") . '</a>';
+      $actions[] = '<a href="' . page_link_to('admin_active_controller') . '&amp;not_tshirt=' . $usr['UID'] . ($show_all_shifts ? '&amp;show_all_shifts=' : '') . '&amp;search=' . $search . '">' . _("remove t-shirt") . '</a>';
 
     $usr['actions'] = join(' ', $actions);
-
     $matched_users[] = $usr;
   }
-
   $shirt_statistics = [];
   foreach ($tshirt_sizes as $size => $_) {
     if ($size != '') {
       $shirt_statistics[] = [
           'size' => $size,
-          'needed' => sql_select_single_cell("SELECT count(*) FROM `User` WHERE `Size`='" . sql_escape($size) . "' AND `Gekommen`=1"),
-          'given' => sql_select_single_cell("SELECT count(*) FROM `User` WHERE `Size`='" . sql_escape($size) . "' AND `Tshirt`=1")
+          'needed' => Shirt_statistics_needed($size),
+          'given' => Shirt_statistics_given($size)
       ];
     }
   }
   $shirt_statistics[] = [
       'size' => '<b>' . _("Sum") . '</b>',
       'needed' => '<b>' . User_arrived_count() . '</b>',
-      'given' => '<b>' . sql_select_single_cell("SELECT count(*) FROM `User` WHERE `Tshirt`=1") . '</b>'
+      'given' => '<b>' . User_tshirts_count() . '</b>'
   ];
 
   return page_with_title(admin_active_title(), array(
@@ -166,7 +148,7 @@ function admin_active() {
           form_text('search', _("Search angel:"), $search),
           form_checkbox('show_all_shifts', _("Show all shifts"), $show_all_shifts),
           form_submit('submit', _("Search"))
-      ), page_link_to('admin_active')),
+      ), page_link_to('admin_active_controller')),
       $set_active == "" ? form(array(
           form_text('count', _("How much angels should be active?"), $count),
           form_submit('set_active', _("Preview"))

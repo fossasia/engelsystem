@@ -6,17 +6,17 @@ function admin_export_title() {
 function admin_export() {
   if(isset($_REQUEST['download'])){
     $filename = tempnam('/tmp', '.csv'); //  Temporary File Name
-    sql_query("CREATE TEMPORARY TABLE `temp_tb` SELECT * FROM `User`");
-	  sql_query("ALTER TABLE `temp_tb` DROP `Passwort`");
-	  sql_query("ALTER TABLE `temp_tb` DROP `password_recovery_token`");
-	  $headings = sql_select("SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = 'User' ");
+    create_temporary_table();
+	  alter_table("Passwort");
+    alter_table("password_recovery_token");
+	  $headings = select_column();
 	  $head = "";
 	  foreach($headings as $heading) {
 	    if ((strcmp($heading["COLUMN_NAME"],'Passwort') && strcmp($heading["COLUMN_NAME"],'password_recovery_token')) !=0 )
 	      $head .= $heading["COLUMN_NAME"] . " ";
 	  }
   	$final = explode(" ", $head);
-  	$results = sql_select("SELECT * FROM `temp_tb`");
+  	$results = select_temp_tb();
 	  $filep = fopen("$filename", "w+");
 	  fputcsv($filep, $final, "\t");
 	  foreach($results as $result) {
@@ -50,7 +50,7 @@ function admin_export() {
     $handle = fopen($file, "r");
     if ($file == NULL) {
       error(_('Please select a file to import'));
-      redirect(page_link_to('admin_export'));
+      redirect(page_link_to('admin_export_controller'));
     }
     else{
       while(($filesop = fgetcsv($handle, 1000, ",")) !== false)
@@ -81,7 +81,7 @@ function admin_export() {
 
         if (strlen(User_validate_Nick($nick)) > 1) {
           $nick = User_validate_Nick($nick);
-          if (sql_num_query("SELECT * FROM `User` WHERE `Nick`='" . sql_escape($nick) . "' LIMIT 1") > 0) {
+          if (User_select_nick($nick) > 0) {
             $ok = false;
             $msg .= error(sprintf(_("Your nick &quot;%s&quot; already exists."), $nick), true);
           }
@@ -97,7 +97,7 @@ function admin_export() {
           }
         }
 
-        if (sql_num_query("SELECT * FROM `User` WHERE `email`='" . sql_escape($mail) . "' LIMIT 1")  > 0) {
+        if (User_select_mail($mail) > 0) {
           $ok = false;
           $msg .= error(sprintf(_("Your E-mail &quot;%s&quot; already exists.<a href=%s>Forgot password?</a>"), $mail,page_link_to_absolute('user_password_recovery')), true);
         } else {
@@ -112,36 +112,9 @@ function admin_export() {
             $msg .= error(sprintf(_("Your password is too short (please use at least %s characters)."), MIN_PASSWORD_LENGTH), true);
         }
         if ($ok) {
-          $sql = sql_query("
-            INSERT INTO `User` SET
-            `Nick`='" . sql_escape($nick) . "',
-            `Vorname`='" . sql_escape($prename) . "',
-            `Name`='" . sql_escape($lastname) . "',
-            `Alter`='" . sql_escape($age) . "',
-            `Telefon`='" . sql_escape($tel) . "',
-            `DECT`='" . sql_escape($dect) . "',
-            `Handy`='" . sql_escape($mobile) . "',
-            `email`='" . sql_escape($mail) . "',
-            `email_shiftinfo`=" . sql_bool($email_shiftinfo) . ",
-            `jabber`='" . sql_escape($jabber) . "',
-            `Size`='" . sql_escape($tshirt_size) . "',
-            `Passwort`='" . sql_escape($password_hash) . "',
-            `kommentar`='" . sql_escape($comment) . "',
-            `Hometown`='" . sql_escape($hometown) . "',
-            `CreateDate`= NOW(),
-            `Sprache`='" . sql_escape($_SESSION["locale"]) . "',
-            `arrival_date`= NULL,
-            `twitter`='" . sql_escape($twitter) . "',
-            `facebook`='" . sql_escape($facebook) . "',
-            `github`='" . sql_escape($github) . "',
-            `organization`='" . sql_escape($organization) . "',
-            `current_city`='" . sql_escape($current_city) . "',
-            `organization_web`='" . sql_escape($organization_web) . "',
-            `timezone`='" . sql_escape($timezone) . "',
-            `planned_arrival_date`='" . sql_escape($planned_arrival_date) . "'");
-
+          $sql = User_insert($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $mail, $email_shiftinfo, $jabber, $tshirt_size, $password_hash, $comment, $hometown, $twitter, $facebook, $github, $organization, $organization_web, $timezone, $planned_arrival_date);
           $user_id = sql_id();
-          sql_query("INSERT INTO `UserGroups` SET `uid`='" . sql_escape($user_id) . "', `group_id`=-2");
+          Set_user_group($user_id);
           set_password($user_id, $_REQUEST['password']);
           engelsystem_log("User " . User_Nick_render(User($user_id)) . " signed up as: " . join(", ", $user_angel_types_info));
         }
@@ -149,10 +122,10 @@ function admin_export() {
 
       if ($sql) {
         success(_("You database has imported successfully!"));
-        redirect(page_link_to('admin_export'));
+        redirect(page_link_to('admin_export_controller'));
       } else {
         error(_('Sorry! There is some problem in the import file.'));
-        redirect(page_link_to('admin_export'));
+        redirect(page_link_to('admin_export_controller'));
         }
     }
   }

@@ -14,7 +14,7 @@ function admin_arrive() {
     $id = $_REQUEST['reset'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Gekommen`=0, `arrival_date` = NULL WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_unset_Gokemon($id);
       engelsystem_log("User set to not arrived: " . User_Nick_render($user_source));
       success(_("Reset done. Angel has not arrived."));
       redirect(user_link($user_source));
@@ -24,7 +24,7 @@ function admin_arrive() {
     $id = $_REQUEST['arrived'];
     $user_source = User($id);
     if ($user_source != null) {
-      sql_query("UPDATE `User` SET `Gekommen`=1, `arrival_date`='" . time() . "' WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
+      User_update_set_Gokemon($id);
       engelsystem_log("User set has arrived: " . User_Nick_render($user_source));
       success(_("Angel has been marked as arrived."));
       redirect(user_link($user_source));
@@ -32,7 +32,7 @@ function admin_arrive() {
       $msg = error(_("Angel not found."), true);
   }
 
-  $users = sql_select("SELECT * FROM `User` ORDER BY `Nick`");
+  $users = Users();
   $arrival_count_at_day = [];
   $planned_arrival_count_at_day = [];
   $planned_departure_count_at_day = [];
@@ -63,7 +63,7 @@ function admin_arrive() {
     $usr['rendered_planned_arrival_date'] = date('Y-m-d', $usr['planned_arrival_date']);
     $usr['rendered_arrival_date'] = $usr['arrival_date'] > 0 ? date('Y-m-d', $usr['arrival_date']) : "-";
     $usr['arrived'] = $usr['Gekommen'] == 1 ? _("yes") : "";
-    $usr['actions'] = $usr['Gekommen'] == 1 ? '<a href="' . page_link_to('admin_arrive') . '&reset=' . $usr['UID'] . '&search=' . $search . '">' . _("reset") . '</a>' : '<a href="' . page_link_to('admin_arrive') . '&arrived=' . $usr['UID'] . '&search=' . $search . '">' . _("arrived") . '</a>';
+    $usr['actions'] = $usr['Gekommen'] == 1 ? '<a href="' . page_link_to('admin_arrive_controller') . '&reset=' . $usr['UID'] . '&search=' . $search . '">' . _("reset") . '</a>' : '<a href="' . page_link_to('admin_arrive_controller') . '&arrived=' . $usr['UID'] . '&search=' . $search . '">' . _("arrived") . '</a>';
 
     if ($usr['arrival_date'] > 0) {
       $day = date('Y-m-d', $usr['arrival_date']);
