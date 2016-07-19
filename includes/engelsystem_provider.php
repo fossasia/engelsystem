@@ -53,6 +53,12 @@ require_once realpath(__DIR__ . '/../includes/controller/admin_rooms_controller.
 require_once realpath(__DIR__ . '/../includes/controller/admin_shifts_controller.php');
 require_once realpath(__DIR__ . '/../includes/controller/admin_user_controller.php');
 require_once realpath(__DIR__ . '/../includes/controller/admin_settings_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_messages_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_myshifts_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_news_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_questions_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_settings_controller.php');
+require_once realpath(__DIR__ . '/../includes/controller/user_shifts_controller.php');
 
 require_once realpath(__DIR__ . '/../includes/helper/graph_helper.php');
 require_once realpath(__DIR__ . '/../includes/helper/internationalization_helper.php');
@@ -73,12 +79,6 @@ if ($maintenance_mode) {
 }
 
 require_once realpath(__DIR__ . '/../includes/pages/guest_login.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_messages.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_myshifts.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_news.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_questions.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_settings.php');
-require_once realpath(__DIR__ . '/../includes/pages/user_shifts.php');
 
 require_once realpath(__DIR__ . '/../vendor/parsedown/Parsedown.php');
 
