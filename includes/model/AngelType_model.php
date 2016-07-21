@@ -140,5 +140,4 @@ function AngelType($id) {
     return $angelType_source[0];
   return null;
 }
-
 ?>

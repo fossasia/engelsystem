@@ -20,23 +20,14 @@ function admin_free() {
     $angeltypesearch .= ") ";
   }
 
-  $angel_types_source = sql_select("SELECT `id`, `name` FROM `AngelTypes` ORDER BY `name`");
+  $angel_types_source = select_id_name_Angeltypes();
   $angel_types = array(
       '' => 'alle Typen'
   );
   foreach ($angel_types_source as $angel_type)
     $angel_types[$angel_type['id']] = $angel_type['name'];
 
-  $users = sql_select("
-      SELECT `User`.*
-      FROM `User`
-      ${angeltypesearch}
-      LEFT JOIN `ShiftEntry` ON `User`.`UID` = `ShiftEntry`.`UID`
-      LEFT JOIN `Shifts` ON (`ShiftEntry`.`SID` = `Shifts`.`SID` AND `Shifts`.`start` < '" . sql_escape(time()) . "' AND `Shifts`.`end` > '" . sql_escape(time()) . "')
-      WHERE `User`.`Gekommen` = 1 AND `Shifts`.`SID` IS NULL
-      GROUP BY `User`.`UID`
-      ORDER BY `Nick`");
-
+  $users = User_select_free($angeltypesearch);
   $free_users_table = array();
   if ($search == "")
     $tokens = array();
@@ -61,7 +52,7 @@ function admin_free() {
         'dect' => $usr['DECT'],
         'jabber' => $usr['jabber'],
         'email' => $usr['email'],
-        'actions' => in_array('admin_user', $privileges) ? button(page_link_to('admin_user') . '&amp;id=' . $usr['UID'], _("edit"), 'btn-xs') : ''
+        'actions' => in_array('admin_user_controller', $privileges) ? button(page_link_to('admin_user_controller') . '&amp;id=' . $usr['UID'], _("edit"), 'btn-xs') : ''
     );
   }
   return page_with_title(admin_free_title(), array(

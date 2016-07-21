@@ -45,4 +45,14 @@ function NeededAngelTypes_by_shift($shiftId) {
   return $needed_angeltypes;
 }
 
+function NeededAngelTypes_by_room($id) {
+  return sql_select("SELECT * FROM `NeededAngelTypes` WHERE `room_id`='" . sql_escape($id) . "'");
+}
+
+function delete_NeededAngelTypes_by_id($id) {
+  return sql_query("DELETE FROM `NeededAngelTypes` WHERE `room_id`='" . sql_escape($id) . "'");
+}
+function insert_by_room($id, $angeltype_id, $angeltype_count) {
+ return sql_query("INSERT INTO `NeededAngelTypes` SET `room_id`='" . sql_escape($id) . "', `angel_type_id`='" . sql_escape($angeltype_id) . "', `count`='" . sql_escape($angeltype_count) . "'");
+}
 ?>

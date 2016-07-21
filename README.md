@@ -8,7 +8,7 @@
 
 # What is Engelsystem
 
-Engelsystem is a volunteer management application for events written in PHP.
+Engelsystem is a volunteer management application for events written in PHP. An automatic test deployment from the development branch is here http://volunteersys.herokuapp.com
 
 # Installation of Engelsystem
 

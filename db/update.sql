@@ -30,7 +30,7 @@ ALTER TABLE `User`
   ADD `native_lang` varchar(5) DEFAULT NULL,
   ADD `other_langs` varchar(150) DEFAULT NULL;
 
--- -----------------------------------------------------------------------------  
+-- -----------------------------------------------------------------------------
 -- Events information table
 CREATE TABLE IF NOT EXISTS `Events` (
   `event_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -43,12 +43,12 @@ CREATE TABLE IF NOT EXISTS `Events` (
   PRIMARY KEY (`event_id`),
   UNIQUE KEY `Name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
--- -----------------------------------------------------------------------------  
+-- -----------------------------------------------------------------------------
 -- Alter table sturcture for Rooms, converting char(1) type to boolean
 ALTER TABLE `Room`
     MODIFY COLUMN `FromPentabarf` bit(1) NOT NULL DEFAULT b'0',
     MODIFY COLUMN `show` bit(1) NOT NULL DEFAULT b'1';
--- -----------------------------------------------------------------------------  
+-- -----------------------------------------------------------------------------
 -- Welcome Message table
 DROP TABLE IF EXISTS `Welcome_Message`;
 CREATE TABLE IF NOT EXISTS `Welcome_Message` (
@@ -62,7 +62,7 @@ INSERT INTO `Welcome_Message` (`display_msg`) VALUES ("By completing this form y
 DROP TABLE IF EXISTS `Settings`;
 CREATE TABLE IF NOT EXISTS `Settings` (
   `event_name` varchar(255) DEFAULT NULL,
-  `buildup_start_date` int(11) DEFAULT NULL, 
+  `buildup_start_date` int(11) DEFAULT NULL,
   `event_start_date` int(11) DEFAULT NULL,
   `event_end_date` int(11) DEFAULT NULL,
   `teardown_end_date` int(11) DEFAULT NULL,

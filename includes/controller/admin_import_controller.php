@@ -215,7 +215,7 @@ function admin_import() {
         $rooms_import[trim($room)] = sql_id();
       }
       foreach ($rooms_deleted as $room)
-        sql_query("DELETE FROM `Room` WHERE `Name`='" . sql_escape($room) . "' LIMIT 1");
+        delete_room_by_name ($room);
 
       list($events_new, $events_updated, $events_deleted) = prepare_events($import_file, $shifttype_id, $add_minutes_start, $add_minutes_end);
       foreach ($events_new as $event) {
@@ -258,7 +258,7 @@ function prepare_rooms($file) {
   $data = read_xml($file);
 
   // Load rooms from db for compare with input
-  $rooms = sql_select("SELECT * FROM `Room` WHERE `FromPentabarf`='1'");
+  $rooms = Room_by_FromPentabarf();
   $rooms_db = array();
   $rooms_import = array();
   foreach ($rooms as $room) {
@@ -287,7 +287,7 @@ function prepare_events($file, $shifttype_id, $add_minutes_start, $add_minutes_e
   global $rooms_import;
   $data = read_xml($file);
 
-  $rooms = sql_select("SELECT * FROM `Room`");
+  $rooms = Room_all();
   $rooms_db = array();
   foreach ($rooms as $room)
     $rooms_db[$room['Name']] = $room['RID'];
@@ -309,7 +309,7 @@ function prepare_events($file, $shifttype_id, $add_minutes_start, $add_minutes_e
     );
   }
 
-  $shifts = sql_select("SELECT * FROM `Shifts` WHERE `PSID` IS NOT NULL ORDER BY `start`");
+  $shifts = Shifts_by_start();
   $shifts_db = array();
   foreach ($shifts as $shift)
     $shifts_db[$shift['PSID']] = $shift;

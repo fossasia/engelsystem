@@ -4,25 +4,9 @@
  * PHP 5.4.x (cgi-fcgi)
  * MySQL-Server 5.5.x
  * Webserver, i.e. lighttpd, nginx, or Apache
+ * Session Settings: Make sure the config allows for sessions. Both Apache and Nginx allow for different VirtualHost configurations.
 
-## Directions:
- * Clone the master branch with the submodules: `git clone --recursive https://github.com/fossasia/engelsystem.git`
- * Webserver must have write access to the 'import' directory and read access for all other directories
- * Webserver must be public.
-
- * Recommended: Directory Listing should be disabled.
- * There must a be MySQL database created with a user who has full rights to that database.
- * It must be created by the db/install.sql and db/update.sql files.
- * If necessary, create a config/config.php to override values from config/config.default.php.
- * In the browser, login with credentials admin:asdfasdf and change the password.
-
-Engelsystem can now be used.
-
-## Session Settings:
- * Make sure the config allows for sessions.
- * Both Apache and Nginx allow for different VirtualHost configurations.
-
-##Steps:
+##Installation Steps:
 
 *  clone the repository (the recursive parameter allows us to clone the submodules):                           git clone --recursive [*https://github.com/fossasia/engelsystem.git*](https://github.com/fossasia/engelsystem.git)
 
@@ -64,6 +48,7 @@ Engelsystem can now be used.
     The changes will be permanently updated. Check your site for reflecting changes. For more help on changing the documentroot in CPanel, please visit [here](http://tecadmin.net/how-to-change-document-root-of-primary-domain-in-cpanel/) .
 
 ## Setting up Captcha  
+
 *  For setting up captcha for the online server, we need to signup for reCaptcha API keys. The keys are unique to the domain or domains you specify, and their respective sub-domains. Specifying more than one domain could come in handy in the case that you serve your website from multiple top level domains (for example: yoursite.com, yoursite.net).
 *  Visit the link,http://www.google.com/recaptcha/admin#whyrecaptcha , and sign up for the reCaptcha API keys.
 *  After we sign-up for the reCaptcha for the domain, we'll be provided with 2 keys, Public Key(DataSite Key) and a Private Key (Secret key).
@@ -72,10 +57,8 @@ Engelsystem can now be used.
 
 If you made it this far without any issues, **congratulations!** You have successfully set up Engelsystem on your domain and can use it to manage your event.
 
-##Session Settings:
+##Session Settings
 
 -   Make sure the config allows for sessions.
-
 -   Both Apache and Nginx allow for different VirtualHost configurations.
 
-For more information on deploying the system please visit, https://codefungsoc2k16.wordpress.com/2016/05/20/deploy-engelsystem-on-your-localserver/

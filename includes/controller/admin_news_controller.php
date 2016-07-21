@@ -11,7 +11,7 @@ function admin_news() {
     else
       return error("Incomplete call, missing News ID.", true);
 
-    $news = sql_select("SELECT * FROM `News` WHERE `ID`='" . sql_escape($id) . "' LIMIT 1");
+    $news = News_by_id($id);
     if (count($news) > 0) {
       switch ($_REQUEST["action"]) {
         default:
@@ -30,21 +30,14 @@ function admin_news() {
               form_textarea('eText', _("Message"), $news['Text']),
               form_checkbox('eTreffen', _("Meeting"), $news['Treffen'] == 1, 1),
               form_submit('submit', _("Save"))
-          ), page_link_to('admin_news&action=save&id=' . $id));
+          ), page_link_to('admin_news_controller&action=save&id=' . $id));
 
-          $html .= '<a class="btn btn-danger" href="' . page_link_to('admin_news&action=delete&id=' . $id) . '"><span class="glyphicon glyphicon-trash"></span> ' . _("Delete") . '</a>';
+          $html .= '<a class="btn btn-danger" href="' . page_link_to('admin_news_controller&action=delete&id=' . $id) . '"><span class="glyphicon glyphicon-trash"></span> ' . _("Delete") . '</a>';
           break;
 
         case 'save':
           list($news) = $news;
-
-          sql_query("UPDATE `News` SET
-              `Datum`='" . sql_escape(time()) . "',
-              `Betreff`='" . sql_escape($_POST["eBetreff"]) . "',
-              `Text`='" . sql_escape($_POST["eText"]) . "',
-              `UID`='" . sql_escape($user['UID']) . "',
-              `Treffen`='" . sql_escape($_POST["eTreffen"]) . "'
-              WHERE `ID`='" . sql_escape($id) . "'");
+          News_update($_POST["eBetreff"], $_POST["eText"], $_POST["eTreffen"], $id, $user);
           engelsystem_log("News updated: " . $_POST["eBetreff"]);
           success(_("News entry updated."));
           redirect(page_link_to("news"));
@@ -52,8 +45,7 @@ function admin_news() {
 
         case 'delete':
           list($news) = $news;
-
-          sql_query("DELETE FROM `News` WHERE `ID`='" . sql_escape($id) . "' LIMIT 1");
+          delete_by_id($id);
           engelsystem_log("News deleted: " . $news['Betreff']);
           success(_("News entry deleted."));
           redirect(page_link_to("news"));
