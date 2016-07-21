@@ -1,7 +1,7 @@
 <?php
 
 function count_users_by_id($id) {
-  return sql_num_query("SELECT * FROM `User` WHERE `UID`='" . sql_escape($id) . "'")
+  return sql_num_query("SELECT * FROM `User` WHERE `UID`='" . sql_escape($id) . "'");
 }
 
 function user_by_id($id) {
