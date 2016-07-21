@@ -121,7 +121,7 @@ function user_news() {
   if (isset($_POST["text"]) && isset($_POST["betreff"]) && in_array("admin_news", $privileges)) {
     if (! isset($_POST["treffen"]) || ! in_array("admin_news", $privileges))
       $_POST["treffen"] = 0;
-    insert_news_val($_POST["betreff"]), $_POST["text"], $user['UID'], $_POST["treffen"]);
+    insert_news_val($_POST["betreff"], $_POST["text"], $user['UID'], $_POST["treffen"]);
     engelsystem_log("Created news: " . $_POST["betreff"] . ", treffen: " . $_POST["treffen"]);
     success(_("Entry saved."));
     redirect(page_link_to('news'));
