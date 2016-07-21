@@ -17,7 +17,7 @@ function user_ical() {
     die("No privilege for ical.");
 
   if (isset ($_REQUEST['export']) && $_REQUEST['export'] == 'user_shifts') {
-    require_once realpath(__DIR__ . '/user_shifts.php');
+    require_once realpath(__DIR__ . '/../includes/controller/user_shifts_controller.php');
     view_user_shifts();
   } else {
     $ical_shifts = shifts_ical($user['UID']);
