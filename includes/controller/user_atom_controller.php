@@ -17,7 +17,7 @@ function user_atom() {
   if(!in_array('atom', privileges_for_user($user['UID'])))
     die("No privilege for atom.");
 
-  $news = sql_select("SELECT * FROM `News` " . (empty($_REQUEST['meetings'])? '' : 'WHERE `Treffen` = 1 ') . "ORDER BY `ID` DESC LIMIT " . sql_escape($DISPLAY_NEWS));
+  $news = news_select($DISPLAY_NEWS);
 
   header('Content-Type: application/atom+xml; charset=utf-8');
   $html = '<?xml version="1.0" encoding="utf-8"?>

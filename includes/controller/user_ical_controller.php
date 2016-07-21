@@ -17,17 +17,10 @@ function user_ical() {
     die("No privilege for ical.");
 
   if (isset ($_REQUEST['export']) && $_REQUEST['export'] == 'user_shifts') {
-    require_once realpath(__DIR__ . '/user_shifts.php');
+    require_once realpath(__DIR__ . '/../includes/controller/user_shifts_controller.php');
     view_user_shifts();
   } else {
-    $ical_shifts = sql_select("
-        SELECT `ShiftTypes`.`name`, `Shifts`.*, `Room`.`Name` as `room_name`
-        FROM `ShiftEntry`
-        INNER JOIN `Shifts` ON (`ShiftEntry`.`SID` = `Shifts`.`SID`)
-        JOIN `ShiftTypes` ON (`ShiftTypes`.`id` = `Shifts`.`shifttype_id`)
-        INNER JOIN `Room` ON (`Shifts`.`RID` = `Room`.`RID`)
-        WHERE `UID`='" . sql_escape($user['UID']) . "'
-        ORDER BY `start`");
+    $ical_shifts = shifts_ical($user['UID']);
   }
 
   header("Content-Type: text/calendar; charset=utf-8");
