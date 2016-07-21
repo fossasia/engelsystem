@@ -26,6 +26,7 @@ require_once realpath(__DIR__ . '/../includes/model/UserGroups_model.php');
 require_once realpath(__DIR__ . '/../includes/model/user_ical_model.php');
 require_once realpath(__DIR__ . '/../includes/model/user_messages_model.php');
 require_once realpath(__DIR__ . '/../includes/model/User_model.php');
+require_once realpath(__DIR__ . '/../includes/model/user_myshifts_model.php');
 require_once realpath(__DIR__ . '/../includes/model/Settings_model.php');
 
 require_once realpath(__DIR__ . '/../includes/view/AngelTypes_view.php');
