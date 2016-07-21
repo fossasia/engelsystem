@@ -9,7 +9,7 @@ function select_news() {
 }
 
 function count_news_by_id($nid) {
-  return sql_num_query("SELECT * FROM `News` WHERE `ID`='" . sql_escape($nid) . "' LIMIT 1")
+  return sql_num_query("SELECT * FROM `News` WHERE `ID`='" . sql_escape($nid) . "' LIMIT 1");
 }
 
 function select_news_by_id($nid) {
