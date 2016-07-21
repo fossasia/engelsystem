@@ -8,7 +8,7 @@ function user_unread_messages() {
   global $user;
 
   if (isset($user)) {
-    $new_messages = sql_num_query("SELECT * FROM `Messages` WHERE isRead='N' AND `RUID`='" . sql_escape($user['UID']) . "'");
+    $new_messages = message_unread($user['UID']);
     if ($new_messages > 0)
       return ' <span class="badge danger">' . $new_messages . '</span>';
   }
@@ -19,9 +19,9 @@ function user_messages() {
   global $user;
 
   if (! isset($_REQUEST['action'])) {
-    $users = sql_select("SELECT * FROM `User` WHERE NOT `UID`='" . sql_escape($user['UID']) . "' ORDER BY `Nick`");
-    $groups = sql_select("SELECT * FROM `Groups` ORDER BY `Name`");
-    $angeltype = sql_select("SELECT * FROM `AngelTypes` ORDER BY  `name`");
+    $users = user_by_nick($user['UID']);
+    $groups = select_group();
+    $angeltype = select_angeltypes();
     // no of users and +1 for admin
     $no = count($users) + 1;
 
@@ -40,7 +40,7 @@ function user_messages() {
 
     $to_select = html_select_key('to', 'to', $to_select_data, '');
 
-    $messages = sql_select("SELECT * FROM `Messages` WHERE `SUID`='" . sql_escape($user['UID']) . "' OR `RUID`='" . sql_escape($user['UID']) . "' ORDER BY `isRead`,`Datum` DESC");
+    $messages = select_messages($user['UID']);
 
     $messages_table = [
         [
@@ -99,9 +99,9 @@ function user_messages() {
         else
           return error(_("Incomplete call, missing Message ID."), true);
 
-        $message = sql_select("SELECT * FROM `Messages` WHERE `id`='" . sql_escape($id) . "' LIMIT 1");
+        $message = messages_by_id($id);
         if (count($message) > 0 && $message[0]['RUID'] == $user['UID']) {
-          sql_query("UPDATE `Messages` SET `isRead`='Y' WHERE `id`='" . sql_escape($id) . "' LIMIT 1");
+          messages_read_by_id($id);
           redirect(page_link_to("user_messages"));
         } else
           return error(_("No Message found."), true);
@@ -113,19 +113,19 @@ function user_messages() {
         else
           return error(_("Incomplete call, missing Message ID."), true);
 
-        $message = sql_select("SELECT * FROM `Messages` WHERE `id`='" . sql_escape($id) . "' LIMIT 1");
+        $message = messages_by_id($id);
         if (count($message) > 0 && $message[0]['SUID'] == $user['UID']) {
-          sql_query("DELETE FROM `Messages` WHERE `id`='" . sql_escape($id) . "' LIMIT 1");
+          messages_delete($id);
           redirect(page_link_to("user_messages"));
         } else
           return error(_("No Message found."), true);
         break;
 
       case "send":
-        $no_users = sql_num_query("SELECT * FROM `User`");
+        $no_users = user_count();
         $temp = 0;
         if ($_REQUEST['to'] < 0) {
-          $group_users = sql_select("SELECT * FROM `UserGroups` WHERE `group_id`='" . sql_escape($_REQUEST['to']) . "'");
+          $group_users = select_usergroups($_REQUEST['to']);
 
           foreach ($group_users as $u_id) {
             Message_send($u_id[uid],  $_REQUEST['text']);
@@ -142,7 +142,7 @@ function user_messages() {
           }
         } elseif ($_REQUEST['to'] > $no_users) {
           $id = $_REQUEST['to'] - $no_users;
-          $users_source = sql_select("SELECT * FROM `UserAngelTypes` WHERE `angeltype_id`='" . sql_escape($id) . "'");
+          $users_source = select_userangeltypes($id);
 
           foreach ($users_source as $userid) {
             Message_send($userid['user_id'],  $_REQUEST['text']);
