@@ -38,4 +38,8 @@ function Settings_create($event_name, $buildup_start_date, $event_start_date, $e
       `teardown_end_date`='" . sql_escape($teardown_end_date) . "',
       `event_welcome_msg`='" . sql_escape($event_welcome_msg) . "'");
 }
+
+function Settings() {
+  return sql_select("SELECT * FROM `Settings`");
+}
 ?>

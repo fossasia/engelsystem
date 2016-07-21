@@ -5,7 +5,7 @@ function admin_settings_title() {
 }
 
 function admin_settings() {
-  $settings_source = sql_select("SELECT * FROM `Settings`");
+  $settings_source = Settings();
   if (count($settings_source) == 1) {
     $event_name = $settings_source[0]['event_name'];
     $buildup_start_date = $settings_source[0]['buildup_start_date'];
@@ -82,10 +82,10 @@ if ($ok) {
                 form_date('teardown_end_date', _("Teardown end date"), $teardown_end_date, time()),
                 form_info('', _("Here you can write your display message for registration:")),
                 form_text('event_welcome_msg', _("Event Welcome Message"), $event_welcome_msg),
-                form_submit('submit', _("Save")) 
-              )) 
+                form_submit('submit', _("Save"))
+              ))
           ))
-      )) 
+      ))
   ));
 }
 ?>
