@@ -25,7 +25,7 @@ function select_newscomments_by_id($nid) {
 }
 
 function insert_news_val($betreff, $text, $uid, $treffen) {
-  return sql_query("INSERT INTO `News` (`Datum`, `Betreff`, `Text`, `UID`, `Treffen`) " . "VALUES ('" . sql_escape(time()) . "', '" . sql_escape($_POST["betreff"]) . "', '" . sql_escape($_POST["text"]) . "', '" . sql_escape($user['UID']) . "', '" . sql_escape($_POST["treffen"]) . "');");
+  return sql_query("INSERT INTO `News` (`Datum`, `Betreff`, `Text`, `UID`, `Treffen`) " . "VALUES ('" . sql_escape(time()) . "', '" . sql_escape($betreff) . "', '" . sql_escape($text) . "', '" . sql_escape($uid) . "', '" . sql_escape($treffen) . "');");
 }
 
 function select_news_by_date($page, $disp_news) {
