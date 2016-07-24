@@ -21,11 +21,11 @@ function user_meetings() {
   else
     $page = 0;
 
-  $news = sql_select("SELECT * FROM `News` WHERE `Treffen`=1 ORDER BY `Datum` DESC LIMIT " . sql_escape($page * $DISPLAY_NEWS) . ", " . sql_escape($DISPLAY_NEWS));
+  $news = select_news_treffen($page, $DISPLAY_NEWS);
   foreach ($news as $entry)
     $html .= display_news($entry);
 
-  $dis_rows = ceil(sql_num_query("SELECT * FROM `News`") / $DISPLAY_NEWS);
+  $dis_rows = ceil(select_news() / $DISPLAY_NEWS);
   $html .= '<div class="text-center">' . '<ul class="pagination">';
   for ($i = 0; $i < $dis_rows; $i ++) {
     if (isset($_REQUEST['page']) && $i == $_REQUEST['page'])
@@ -73,19 +73,19 @@ function user_news_comments() {
   global $user;
 
   $html = '<div class="col-md-12"><h1>' . user_news_comments_title() . '</h1>';
-  if (isset($_REQUEST["nid"]) && preg_match("/^[0-9]{1,}$/", $_REQUEST['nid']) && sql_num_query("SELECT * FROM `News` WHERE `ID`='" . sql_escape($_REQUEST['nid']) . "' LIMIT 1") > 0) {
+  if (isset($_REQUEST["nid"]) && preg_match("/^[0-9]{1,}$/", $_REQUEST['nid']) && count_news_by_id($_REQUEST['nid']) > 0) {
     $nid = $_REQUEST["nid"];
-    list($news) = sql_select("SELECT * FROM `News` WHERE `ID`='" . sql_escape($nid) . "' LIMIT 1");
+    list($news) = select_news_by_id($nid);
     if (isset($_REQUEST["text"])) {
       $text = preg_replace("/([^\p{L}\p{P}\p{Z}\p{N}\n]{1,})/ui", '', strip_tags($_REQUEST['text']));
-      sql_query("INSERT INTO `NewsComments` (`Refid`, `Datum`, `Text`, `UID`) VALUES ('" . sql_escape($nid) . "', '" . date("Y-m-d H:i:s") . "', '" . sql_escape($text) . "', '" . sql_escape($user["UID"]) . "')");
+      insert_news($nid, $text, $user["UID"]);
       engelsystem_log("Created news_comment: " . $text);
       $html .= success(_("Entry saved."), true);
     }
 
     $html .= display_news($news);
 
-    $comments = sql_select("SELECT * FROM `NewsComments` WHERE `Refid`='" . sql_escape($nid) . "' ORDER BY 'ID'");
+    $comments = select_newscomments_by_id($nid);
     foreach ($comments as $comment) {
       $user_source = User($comment['UID']);
       if ($user_source === false)
@@ -121,7 +121,7 @@ function user_news() {
   if (isset($_POST["text"]) && isset($_POST["betreff"]) && in_array("admin_news", $privileges)) {
     if (! isset($_POST["treffen"]) || ! in_array("admin_news", $privileges))
       $_POST["treffen"] = 0;
-    sql_query("INSERT INTO `News` (`Datum`, `Betreff`, `Text`, `UID`, `Treffen`) " . "VALUES ('" . sql_escape(time()) . "', '" . sql_escape($_POST["betreff"]) . "', '" . sql_escape($_POST["text"]) . "', '" . sql_escape($user['UID']) . "', '" . sql_escape($_POST["treffen"]) . "');");
+    insert_news_val($_POST["betreff"], $_POST["text"], $user['UID'], $_POST["treffen"]);
     engelsystem_log("Created news: " . $_POST["betreff"] . ", treffen: " . $_POST["treffen"]);
     success(_("Entry saved."));
     redirect(page_link_to('news'));
@@ -132,11 +132,11 @@ function user_news() {
   else
     $page = 0;
 
-  $news = sql_select("SELECT * FROM `News` ORDER BY `Datum` DESC LIMIT " . sql_escape($page * $DISPLAY_NEWS) . ", " . sql_escape($DISPLAY_NEWS));
+  $news = select_news_by_date($page, $DISPLAY_NEWS);
   foreach ($news as $entry)
     $html .= display_news($entry);
 
-  $dis_rows = ceil(sql_num_query("SELECT * FROM `News`") / $DISPLAY_NEWS);
+  $dis_rows = ceil(select_news() / $DISPLAY_NEWS);
   $html .= '<div class="text-center">' . '<ul class="pagination">';
   for ($i = 0; $i < $dis_rows; $i ++) {
     if (isset($_REQUEST['page']) && $i == $_REQUEST['page'])

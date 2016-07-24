@@ -7,16 +7,16 @@ function guest_stats() {
     if($_REQUEST['api_key'] == $api_key) {
       $stats = array();
 
-      list($user_count) = sql_select("SELECT count(*) as `user_count` FROM `User`");
+      list($user_count) = user_count();
       $stats['user_count'] = $user_count['user_count'];
 
-      list($arrived_user_count) = sql_select("SELECT count(*) as `user_count` FROM `User` WHERE `Gekommen`=1");
+      list($arrived_user_count) = user_count_arrived();
       $stats['arrived_user_count'] = $arrived_user_count['user_count'];
 
-      $done_shifts_seconds = sql_select_single_cell("SELECT SUM(`Shifts`.`end` - `Shifts`.`start`) FROM `ShiftEntry` JOIN `Shifts` USING (`SID`) WHERE `Shifts`.`end` < UNIX_TIMESTAMP()");
+      $done_shifts_seconds = user_done_shifts();
       $stats['done_work_hours'] = round($done_shifts_seconds / (60*60), 0);
 
-      $users_in_action_source = sql_select("SELECT `Shifts`.`start`, `Shifts`.`end` FROM `ShiftEntry` JOIN `Shifts` ON `Shifts`.`SID`=`ShiftEntry`.`SID` WHERE UNIX_TIMESTAMP() BETWEEN `Shifts`.`start` AND `Shifts`.`end`");
+      $users_in_action_source = user_action_source();
       $stats['users_in_action'] = count($users_in_action_source);
 
       header("Content-Type: application/json");
