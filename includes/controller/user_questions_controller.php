@@ -7,9 +7,9 @@ function user_questions() {
   global $user;
 
   if (! isset($_REQUEST['action'])) {
-    $open_questions = select_open_questions($user['UID']);
+    $open_questions = sql_select("SELECT * FROM `Questions` WHERE `AID` IS NULL AND `UID`='" . sql_escape($user['UID']) . "'");
 
-    $answered_questions = select_ansd_questions($user['UID']);
+    $answered_questions = sql_select("SELECT * FROM `Questions` WHERE NOT `AID` IS NULL AND `UID`='" . sql_escape($user['UID']) . "'");
     foreach ($answered_questions as &$question) {
       $answer_user_source = User($question['AID']);
       if ($answer_user_source === false)
@@ -23,7 +23,7 @@ function user_questions() {
       case 'ask':
         $question = strip_request_item_nl('question');
         if ($question != "") {
-          $result = insert_new_question($user['UID'], $question);
+          $result = sql_query("INSERT INTO `Questions` SET `UID`='" . sql_escape($user['UID']) . "', `Question`='" . sql_escape($question) . "'");
           if ($result === false)
             engelsystem_error(_("Unable to save question."));
           success(_("You question was saved."));
@@ -39,9 +39,9 @@ function user_questions() {
         else
           return error(_("Incomplete call, missing Question ID."), true);
 
-        $question = select_ques_by_id($id);
+        $question = sql_select("SELECT * FROM `Questions` WHERE `QID`='" . sql_escape($id) . "' LIMIT 1");
         if (count($question) > 0 && $question[0]['UID'] == $user['UID']) {
-          delete_ques_by_id($id);
+          sql_query("DELETE FROM `Questions` WHERE `QID`='" . sql_escape($id) . "' LIMIT 1");
           redirect(page_link_to("user_questions"));
         } else
           return page_with_title(questions_title(), array(

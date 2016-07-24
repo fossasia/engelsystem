@@ -37,7 +37,6 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
     user_ical();
   } elseif ($p == "atom") {
     require_once realpath(__DIR__ . '/../includes/controller/user_atom_controller.php');
-    require_once realpath(__DIR__ . '/../includes/model/user_atom_model.php');
     user_atom();
   } elseif ($p == "shifts_json_export") {
     require_once realpath(__DIR__ . '/../includes/controller/shifts_controller.php');
@@ -47,7 +46,6 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
     shifts_json_export_all_controller();
   } elseif ($p == "stats") {
     require_once realpath(__DIR__ . '/../includes/controller/guest_stats_controller.php');
-    require_once realpath(__DIR__ . '/../includes/model/guest_stats_model.php');
     guest_stats();
   } elseif ($p == "user_password_recovery") {
     require_once realpath(__DIR__ . '/../includes/controller/users_controller.php');
@@ -70,7 +68,6 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
     $content = user_news();
   } elseif ($p == "news_comments") {
     require_once realpath(__DIR__ . '/../includes/controller/user_news_controller.php');
-    require_once realpath(__DIR__ . '/../includes/model/user_news_model.php');
     $title = user_news_comments_title();
     $content = user_news_comments();
   } elseif ($p == "user_meetings") {
