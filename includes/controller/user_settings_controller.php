@@ -104,7 +104,24 @@ function user_settings() {
       $timezone = strip_request_item('timezone');
 
     if ($ok) {
-      update_user_details($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $mail, $email_shiftinfo, $jabber, $tshirt_size, $hometown, $planned_arrival_date, $planned_departure_date, $timezone, $user['UID']);
+      sql_query("
+          UPDATE `User` SET
+          `Nick`='" . sql_escape($nick) . "',
+          `Vorname`='" . sql_escape($prename) . "',
+          `Name`='" . sql_escape($lastname) . "',
+          `Alter`='" . sql_escape($age) . "',
+          `Telefon`='" . sql_escape($tel) . "',
+          `DECT`='" . sql_escape($dect) . "',
+          `Handy`='" . sql_escape($mobile) . "',
+          `email`='" . sql_escape($mail) . "',
+          `email_shiftinfo`=" . sql_bool($email_shiftinfo) . ",
+          `jabber`='" . sql_escape($jabber) . "',
+          `Size`='" . sql_escape($tshirt_size) . "',
+          `Hometown`='" . sql_escape($hometown) . "',
+          `planned_arrival_date`='" . sql_escape($planned_arrival_date) . "',
+          `planned_departure_date`=" . sql_null($planned_departure_date) . "
+          `timezone`='" . sql_escape($timezone) . "',
+          WHERE `UID`='" . sql_escape($user['UID']) . "'");
 
       success(_("Settings saved."));
       redirect(page_link_to('user_settings'));
@@ -120,7 +137,12 @@ function user_settings() {
         $dect = strip_request_item('github');
 
       if ($ok) {
-      update_user_sn($twitter, $facebook, $github, $user['UID']);
+        sql_query("
+          UPDATE `User` SET
+          `twitter`='" . sql_escape($twitter) . "',
+          `facebook`='" . sql_escape($facebook) . "',
+          `github`='" . sql_escape($github) . "',
+          WHERE `UID`='" . sql_escape($user['UID']) . "'");
 
          success(_("Social Network Updates saved."));
      redirect(page_link_to('user_settings'));
@@ -135,7 +157,11 @@ function user_settings() {
         $dect = strip_request_item('organization_web');
 
        if ($ok) {
-        update_user_org($organization, $organization_web, $user['UID']);
+        sql_query("
+          UPDATE `User` SET
+          `organization`='" . sql_escape($organization) . "',
+          `organization_web`='" . sql_escape($organization_web) . "',
+           WHERE `UID`='" . sql_escape($user['UID']) . "'");
 
          success(_("Organization Updates saved."));
       redirect(page_link_to('user_settings'));
@@ -160,7 +186,11 @@ function user_settings() {
     }
 
     if ($ok) {
-      update_user_langs($native_lang, $other_langs, $user['UID']);
+      sql_query("
+        UPDATE `User` SET
+        `native_lang`='" . sql_escape($native_lang) . "',
+        `other_langs`='" . sql_escape($other_langs) . "',
+         WHERE `UID`='" . sql_escape($user['UID']) . "'");
 
         success(_("Languages Updates saved."));
       redirect(page_link_to('user_settings'));
@@ -189,7 +219,7 @@ function user_settings() {
       $ok = false;
 
     if ($ok) {
-      update_theme($selected_theme, $user['UID']);
+      sql_query("UPDATE `User` SET `color`='" . sql_escape($selected_theme) . "' WHERE `UID`='" . sql_escape($user['UID']) . "'");
 
       success(_("Theme changed."));
       redirect(page_link_to('user_settings'));
@@ -203,7 +233,7 @@ function user_settings() {
       $ok = false;
 
     if ($ok) {
-      supdate_sys_lang($selected_language, $user['UID']);
+      sql_query("UPDATE `User` SET `Sprache`='" . sql_escape($selected_language) . "' WHERE `UID`='" . sql_escape($user['UID']) . "'");
       $_SESSION['locale'] = $selected_language;
 
       success("Language changed.");
@@ -218,7 +248,7 @@ function user_settings() {
         $ok = false;
 
       if($ok){
-        update_display_msg($display_message);
+        sql_query("UPDATE `Welcome_Message` SET `display_msg`='" . sql_escape($display_message) . "'");
 
         success("Message Changed");
         redirect(page_link_to('user_settings'));
