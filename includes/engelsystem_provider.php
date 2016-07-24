@@ -31,6 +31,8 @@ require_once realpath(__DIR__ . '/../includes/model/admin_groups_model.php');
 require_once realpath(__DIR__ . '/../includes/model/admin_import_model.php');
 require_once realpath(__DIR__ . '/../includes/model/admin_news_model.php');
 require_once realpath(__DIR__ . '/../includes/model/admin_questions_model.php');
+require_once realpath(__DIR__ . '/../includes/model/admin_user_model.php');
+require_once realpath(__DIR__ . '/../includes/model/guest_login_model.php');
 
 require_once realpath(__DIR__ . '/../includes/view/AngelTypes_view.php');
 require_once realpath(__DIR__ . '/../includes/view/Questions_view.php');
@@ -86,7 +88,7 @@ if ($maintenance_mode) {
   die();
 }
 
-require_once realpath(__DIR__ . '/../includes/pages/guest_login.php');
+require_once realpath(__DIR__ . '/../includes/controller/guest_login_controller.php');
 
 require_once realpath(__DIR__ . '/../vendor/parsedown/Parsedown.php');
 

@@ -344,10 +344,10 @@ function guest_register() {
                   )),
                   div('row', array(
                   div('col-sm-8', array(
-                  	form_select('native_lang', _("Native Language").' '. entry_required(), languages(), $native_lang, 'English')
+                    form_select('native_lang', _("Native Language").' '. entry_required(), languages(), $native_lang, 'English')
                       ))
                   )),
-		              div('row', array(
+                  div('row', array(
                   div('col-sm-8', array(
                           form_multiselect('other_langs', _("Other Languages"), languages(), $other_langs, 'English')
                       ))
