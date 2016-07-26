@@ -1,13 +1,10 @@
 <?php
-
 function settings_title() {
   return _("Settings");
 }
-
 function user_settings() {
   global $enable_tshirt_size, $tshirt_sizes, $themes, $locales;
   global $user;
-
   $msg = "";
   $nick = $user['Nick'];
   $lastname = $user['Name'];
@@ -38,10 +35,8 @@ function user_settings() {
   $current_city = $user['current_city'];
   $native_lang = $user['native_lang'];
   $other_langs = $user['other_langs'];
-
   if (isset($_REQUEST['submit'])) {
     $ok = true;
-
     if (isset($_REQUEST['mail']) && strlen(strip_request_item('mail')) > 0) {
       $mail = strip_request_item('mail');
       if (! check_email($mail)) {
@@ -52,9 +47,7 @@ function user_settings() {
       $ok = false;
       $msg .= error(_("Please enter your e-mail."), true);
     }
-
     $email_shiftinfo = isset($_REQUEST['email_shiftinfo']);
-
     if (isset($_REQUEST['jabber']) && strlen(strip_request_item('jabber')) > 0) {
       $jabber = strip_request_item('jabber');
       if (! check_email($jabber)) {
@@ -62,20 +55,17 @@ function user_settings() {
         $msg .= error(_("Please check your jabber account information."), true);
       }
     }
-
     if (isset($_REQUEST['tshirt_size']) && isset($tshirt_sizes[$_REQUEST['tshirt_size']]))
       $tshirt_size = $_REQUEST['tshirt_size'];
     elseif ($enable_tshirt_size) {
       $ok = false;
     }
-
     if (isset($_REQUEST['planned_arrival_date']) && DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))) {
       $planned_arrival_date = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_arrival_date']))->getTimestamp();
     } else {
       $ok = false;
       $msg .= error(_("Please enter your planned date of arrival."), true);
     }
-
     if (isset($_REQUEST['planned_departure_date']) && $_REQUEST['planned_departure_date'] != '') {
       if (DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_departure_date']))) {
         $planned_departure_date = DateTime::createFromFormat("Y-m-d", trim($_REQUEST['planned_departure_date']))->getTimestamp();
@@ -102,74 +92,39 @@ function user_settings() {
       $hometown = strip_request_item('hometown');
     if (isset($_REQUEST['timezone']))
       $timezone = strip_request_item('timezone');
-
     if ($ok) {
-      sql_query("
-          UPDATE `User` SET
-          `Nick`='" . sql_escape($nick) . "',
-          `Vorname`='" . sql_escape($prename) . "',
-          `Name`='" . sql_escape($lastname) . "',
-          `Alter`='" . sql_escape($age) . "',
-          `Telefon`='" . sql_escape($tel) . "',
-          `DECT`='" . sql_escape($dect) . "',
-          `Handy`='" . sql_escape($mobile) . "',
-          `email`='" . sql_escape($mail) . "',
-          `email_shiftinfo`=" . sql_bool($email_shiftinfo) . ",
-          `jabber`='" . sql_escape($jabber) . "',
-          `Size`='" . sql_escape($tshirt_size) . "',
-          `Hometown`='" . sql_escape($hometown) . "',
-          `planned_arrival_date`='" . sql_escape($planned_arrival_date) . "',
-          `planned_departure_date`=" . sql_null($planned_departure_date) . "
-          `timezone`='" . sql_escape($timezone) . "',
-          WHERE `UID`='" . sql_escape($user['UID']) . "'");
-
+      update_user_details($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $mail, $email_shiftinfo, $jabber, $tshirt_size, $hometown, $planned_arrival_date, $planned_departure_date, $timezone, $user['UID']);
       success(_("Settings saved."));
       redirect(page_link_to('user_settings'));
     }
   } elseif (isset($_REQUEST['submit_sn'])) {
       $ok = true;
-
       if (isset($_REQUEST['twitter']))
         $dect = strip_request_item('twitter');
       if (isset($_REQUEST['facebook']))
         $dect = strip_request_item('facebook');
       if (isset($_REQUEST['github']))
         $dect = strip_request_item('github');
-
       if ($ok) {
-        sql_query("
-          UPDATE `User` SET
-          `twitter`='" . sql_escape($twitter) . "',
-          `facebook`='" . sql_escape($facebook) . "',
-          `github`='" . sql_escape($github) . "',
-          WHERE `UID`='" . sql_escape($user['UID']) . "'");
-
+      update_user_sn($twitter, $facebook, $github, $user['UID']);
          success(_("Social Network Updates saved."));
      redirect(page_link_to('user_settings'));
     }
   }
   elseif (isset($_REQUEST['submit_org'])) {
       $ok = true;
-
       if (isset($_REQUEST['organization']))
         $dect = strip_request_item('organization');
       if (isset($_REQUEST['organization_web']))
         $dect = strip_request_item('organization_web');
-
        if ($ok) {
-        sql_query("
-          UPDATE `User` SET
-          `organization`='" . sql_escape($organization) . "',
-          `organization_web`='" . sql_escape($organization_web) . "',
-           WHERE `UID`='" . sql_escape($user['UID']) . "'");
-
+        update_user_org($organization, $organization_web, $user['UID']);
          success(_("Organization Updates saved."));
       redirect(page_link_to('user_settings'));
     }
   }
   elseif (isset($_REQUEST['submit_lang'])) {
     $ok = true;
-
     if (isset($_REQUEST['native_lang']) && strlen(strip_request_item('native_lang')) > 0) {
       $lastname = strip_request_item('native_lang');
     }
@@ -184,21 +139,14 @@ function user_settings() {
         $other_langs .= $lang . ',';
       }
     }
-
     if ($ok) {
-      sql_query("
-        UPDATE `User` SET
-        `native_lang`='" . sql_escape($native_lang) . "',
-        `other_langs`='" . sql_escape($other_langs) . "',
-         WHERE `UID`='" . sql_escape($user['UID']) . "'");
-
+      update_user_langs($native_lang, $other_langs, $user['UID']);
         success(_("Languages Updates saved."));
       redirect(page_link_to('user_settings'));
     }
   }
   elseif (isset($_REQUEST['submit_password'])) {
     $ok = true;
-
     if (! isset($_REQUEST['password']) || ! verify_password($_REQUEST['password'], $user['Passwort'], $user['UID']))
       $msg .= error(_("-> not OK. Please try again."), true);
     elseif (strlen($_REQUEST['new_password']) < MIN_PASSWORD_LENGTH)
@@ -212,54 +160,43 @@ function user_settings() {
     redirect(page_link_to('user_settings'));
   } elseif (isset($_REQUEST['submit_theme'])) {
     $ok = true;
-
     if (isset($_REQUEST['theme']) && isset($themes[$_REQUEST['theme']]))
       $selected_theme = $_REQUEST['theme'];
     else
       $ok = false;
-
     if ($ok) {
-      sql_query("UPDATE `User` SET `color`='" . sql_escape($selected_theme) . "' WHERE `UID`='" . sql_escape($user['UID']) . "'");
-
+      update_theme($selected_theme, $user['UID']);
       success(_("Theme changed."));
       redirect(page_link_to('user_settings'));
     }
   } elseif (isset($_REQUEST['submit_language'])) {
     $ok = true;
-
     if (isset($_REQUEST['language']) && isset($locales[$_REQUEST['language']]))
       $selected_language = $_REQUEST['language'];
     else
       $ok = false;
-
     if ($ok) {
-      sql_query("UPDATE `User` SET `Sprache`='" . sql_escape($selected_language) . "' WHERE `UID`='" . sql_escape($user['UID']) . "'");
+      supdate_sys_lang($selected_language, $user['UID']);
       $_SESSION['locale'] = $selected_language;
-
       success("Language changed.");
       redirect(page_link_to('user_settings'));
     }
   }elseif (isset($_REQUEST['submit_message'])){
       $ok=true;
-
       if(isset($_REQUEST['display_message']))
         $display_message=strip_request_item('display_message');
       else
         $ok = false;
-
       if($ok){
-        sql_query("UPDATE `Welcome_Message` SET `display_msg`='" . sql_escape($display_message) . "'");
-
+        update_display_msg($display_message);
         success("Message Changed");
         redirect(page_link_to('user_settings'));
       }
   }
-
   if ($ok) {
       $_SESSION['uid'] = $login_user['UID'];
       $_SESSION['locale'] = $login_user['Sprache'];
   }
-
  // Admin settings page
 if( $_SESSION['uid'] == 1){
   return page_with_title("Admin Settings", array(
@@ -316,7 +253,6 @@ if( $_SESSION['uid'] == 1){
       ))
   ));
 }
-
 // User settings page
 if( $_SESSION['uid'] > 1){
   return page_with_title("User Settings", array(
