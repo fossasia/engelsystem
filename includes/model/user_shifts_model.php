@@ -32,7 +32,7 @@ function select_angeltypes_by_name() {
   return sql_select("SELECT * FROM `AngelTypes` ORDER BY `name`");
 }
 
-function select_needed_angeltypes_by_roomid($sid) {
+function select_needed_angeltypes_by_roomid($rid) {
   return sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`room_id`='" . sql_escape($sid) . "') ORDER BY `AngelTypes`.`name`");
 }
 
@@ -119,68 +119,6 @@ function count_needed_angeltypes($sid) {
 
 function count_user_shifts($sid, $uid) {
   return sql_num_query("SELECT * FROM `ShiftEntry` WHERE `SID`='" . sql_escape($sid) . "' AND `UID`='" . sql_escape($uid) . "' LIMIT 1");
-}
-
-function get_shifts($starttime, $endtime, $uid) {
-  $SQL = "SELECT DISTINCT `Shifts`.*, `ShiftTypes`.`name`, `Room`.`Name` as `room_name`, nat2.`special_needs` > 0 AS 'has_special_needs'
-  FROM `Shifts`
-  INNER JOIN `Room` USING (`RID`)
-  INNER JOIN `ShiftTypes` ON (`ShiftTypes`.`id` = `Shifts`.`shifttype_id`)
-  LEFT JOIN (SELECT COUNT(*) AS special_needs , nat3.`shift_id` FROM `NeededAngelTypes` AS nat3 WHERE `shift_id` IS NOT NULL GROUP BY nat3.`shift_id`) AS nat2 ON nat2.`shift_id` = `Shifts`.`SID`
-  INNER JOIN `NeededAngelTypes` AS nat ON nat.`count` != 0 AND nat.`angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") AND ((nat2.`special_needs` > 0 AND nat.`shift_id` = `Shifts`.`SID`) OR ((nat2.`special_needs` = 0 OR nat2.`special_needs` IS NULL) AND nat.`room_id` = `RID`))
-  LEFT JOIN (SELECT se.`SID`, se.`TID`, COUNT(*) as count FROM `ShiftEntry` AS se GROUP BY se.`SID`, se.`TID`) AS entries ON entries.`SID` = `Shifts`.`SID` AND entries.`TID` = nat.`angel_type_id`
-  WHERE `Shifts`.`RID` IN (" . implode(',', $_SESSION['user_shifts']['rooms']) . ")
-  AND `start` BETWEEN " . $starttime . " AND " . $endtime;
-
-  if (count($_SESSION['user_shifts']['filled']) == 1) {
-    if ($_SESSION['user_shifts']['filled'][0] == 0)
-      $SQL .= "
-      AND (nat.`count` > entries.`count` OR entries.`count` IS NULL OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($uid) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
-    elseif ($_SESSION['user_shifts']['filled'][0] == 1)
-      $SQL .= "
-    AND (nat.`count` <= entries.`count`  OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($uid) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
-  }
-  $SQL .= "
-  ORDER BY `start`";
-
-  return sql_select($SQL);
-}
-
-function get_angeltypes($uid, $sid, $rid, $shift_special_needs) {
-  $query = "SELECT `NeededAngelTypes`.`count`, `AngelTypes`.`id`, `AngelTypes`.`restricted`, `UserAngelTypes`.`confirm_user_id`, `AngelTypes`.`name`, `UserAngelTypes`.`user_id`
-  FROM `NeededAngelTypes`
-  JOIN `AngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id`)
-  LEFT JOIN `UserAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `UserAngelTypes`.`angeltype_id`AND `UserAngelTypes`.`user_id`='" . sql_escape($uid) . "')
-  WHERE `count` > 0 AND ";
-
-  if ($shift_special_needs)
-    $query .= "`shift_id` = '" . sql_escape($sid) . "'";
-  else
-    $query .= "`room_id` = '" . sql_escape($rid) . "'";
-  if (! empty($_SESSION['user_shifts']['types']))
-    $query .= " AND `angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") ";
-  $query .= " ORDER BY `AngelTypes`.`name`";
-
-  return sql_select($query);
-}
-
-function get_special_angeltypes($uid, $special_needs, $sid, $rid) {
-  $query = "SELECT `NeededAngelTypes`.`count`, `AngelTypes`.`id`, `AngelTypes`.`restricted`, `UserAngelTypes`.`confirm_user_id`, `AngelTypes`.`name`, `UserAngelTypes`.`user_id`
-  FROM `NeededAngelTypes`
-  JOIN `AngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id`)
-  LEFT JOIN `UserAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `UserAngelTypes`.`angeltype_id`AND `UserAngelTypes`.`user_id`='" . sql_escape($uid) . "')
-  WHERE ";
-
-  if ($special_needs)
-    $query .= "`shift_id` = '" . sql_escape($sid) . "'";
-  else
-    $query .= "`room_id` = '" . sql_escape($rid) . "'";
-  $query .= "               AND `count` > 0 ";
-  if (! empty($_SESSION['user_shifts']['types']))
-    $query .= "AND `angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") ";
-  $query .= "ORDER BY `AngelTypes`.`name`";
-
-  return sql_select($query);
 }
 
 ?>
