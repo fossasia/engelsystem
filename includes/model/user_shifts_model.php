@@ -32,7 +32,7 @@ function select_angeltypes_by_name() {
   return sql_select("SELECT * FROM `AngelTypes` ORDER BY `name`");
 }
 
-function select_needed_angeltypes_by_roomid($rid) {
+function select_needed_angeltypes_by_roomid($sid) {
   return sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`room_id`='" . sql_escape($sid) . "') ORDER BY `AngelTypes`.`name`");
 }
 
