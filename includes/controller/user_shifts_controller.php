@@ -194,7 +194,7 @@ function user_shifts() {
         $result = Shift_update($shift);
         if ($result === false)
           engelsystem_error('Unable to update shift.');
-        delete_needed_angeltypes_by_id($shift_id);
+        delete_needed_angeltypes_by_id($shift_id)
         $needed_angel_types_info = array();
         foreach ($needed_angel_types as $type_id => $count) {
           insert_needed_angeltypes($shift_id, $type_id, $count);
@@ -651,7 +651,28 @@ function view_user_shifts() {
         0
     );
 
-  $shifts = get_shifts($starttime, $endtime, $user['UID']);
+  $SQL = "SELECT DISTINCT `Shifts`.*, `ShiftTypes`.`name`, `Room`.`Name` as `room_name`, nat2.`special_needs` > 0 AS 'has_special_needs'
+  FROM `Shifts`
+  INNER JOIN `Room` USING (`RID`)
+  INNER JOIN `ShiftTypes` ON (`ShiftTypes`.`id` = `Shifts`.`shifttype_id`)
+  LEFT JOIN (SELECT COUNT(*) AS special_needs , nat3.`shift_id` FROM `NeededAngelTypes` AS nat3 WHERE `shift_id` IS NOT NULL GROUP BY nat3.`shift_id`) AS nat2 ON nat2.`shift_id` = `Shifts`.`SID`
+  INNER JOIN `NeededAngelTypes` AS nat ON nat.`count` != 0 AND nat.`angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") AND ((nat2.`special_needs` > 0 AND nat.`shift_id` = `Shifts`.`SID`) OR ((nat2.`special_needs` = 0 OR nat2.`special_needs` IS NULL) AND nat.`room_id` = `RID`))
+  LEFT JOIN (SELECT se.`SID`, se.`TID`, COUNT(*) as count FROM `ShiftEntry` AS se GROUP BY se.`SID`, se.`TID`) AS entries ON entries.`SID` = `Shifts`.`SID` AND entries.`TID` = nat.`angel_type_id`
+  WHERE `Shifts`.`RID` IN (" . implode(',', $_SESSION['user_shifts']['rooms']) . ")
+  AND `start` BETWEEN " . $starttime . " AND " . $endtime;
+
+  if (count($_SESSION['user_shifts']['filled']) == 1) {
+    if ($_SESSION['user_shifts']['filled'][0] == 0)
+      $SQL .= "
+      AND (nat.`count` > entries.`count` OR entries.`count` IS NULL OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($user['UID']) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
+    elseif ($_SESSION['user_shifts']['filled'][0] == 1)
+      $SQL .= "
+    AND (nat.`count` <= entries.`count`  OR EXISTS (SELECT `SID` FROM `ShiftEntry` WHERE `UID` = '" . sql_escape($user['UID']) . "' AND `ShiftEntry`.`SID` = `Shifts`.`SID`))";
+  }
+  $SQL .= "
+  ORDER BY `start`";
+
+  $shifts = sql_select($SQL);
 
   $ownshifts_source = select_session_shifttypes($_SESSION['user_shifts']['rooms'], $starttime, $endtime);
   $ownshifts = array();
@@ -765,8 +786,21 @@ function view_user_shifts() {
               }
               $shifts_row .= '</a>';
               $shifts_row .= '<br />';
-
-              $angeltypes = get_angeltypes($user['UID'], $shift['SID'], $shift['RID'], $shift['has_special_needs']);
+              $query = "SELECT `NeededAngelTypes`.`count`, `AngelTypes`.`id`, `AngelTypes`.`restricted`, `UserAngelTypes`.`confirm_user_id`, `AngelTypes`.`name`, `UserAngelTypes`.`user_id`
+            FROM `NeededAngelTypes`
+            JOIN `AngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id`)
+            LEFT JOIN `UserAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `UserAngelTypes`.`angeltype_id`AND `UserAngelTypes`.`user_id`='" . sql_escape($user['UID']) . "')
+            WHERE
+            `count` > 0
+            AND ";
+              if ($shift['has_special_needs'])
+                $query .= "`shift_id` = '" . sql_escape($shift['SID']) . "'";
+              else
+                $query .= "`room_id` = '" . sql_escape($shift['RID']) . "'";
+              if (! empty($_SESSION['user_shifts']['types']))
+                $query .= " AND `angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") ";
+              $query .= " ORDER BY `AngelTypes`.`name`";
+              $angeltypes = sql_select($query);
 
               if (count($angeltypes) > 0) {
                 foreach ($angeltypes as $angeltype) {
@@ -884,7 +918,20 @@ function view_user_shifts() {
       $shift_row['entries'] .= '<br />';
       $is_free = false;
       $shift_has_special_needs = 0 < count_needed_angeltypes($shift['SID']);
-      $angeltypes = get_special_angeltypes($user['UID'], $shift_has_special_needs, $shift['SID'], $shift['RID']);
+      $query = "SELECT `NeededAngelTypes`.`count`, `AngelTypes`.`id`, `AngelTypes`.`restricted`, `UserAngelTypes`.`confirm_user_id`, `AngelTypes`.`name`, `UserAngelTypes`.`user_id`
+    FROM `NeededAngelTypes`
+    JOIN `AngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id`)
+    LEFT JOIN `UserAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `UserAngelTypes`.`angeltype_id`AND `UserAngelTypes`.`user_id`='" . sql_escape($user['UID']) . "')
+    WHERE ";
+      if ($shift_has_special_needs)
+        $query .= "`shift_id` = '" . sql_escape($shift['SID']) . "'";
+      else
+        $query .= "`room_id` = '" . sql_escape($shift['RID']) . "'";
+      $query .= "               AND `count` > 0 ";
+      if (! empty($_SESSION['user_shifts']['types']))
+        $query .= "AND `angel_type_id` IN (" . implode(',', $_SESSION['user_shifts']['types']) . ") ";
+      $query .= "ORDER BY `AngelTypes`.`name`";
+      $angeltypes = sql_select($query);
       if (count($angeltypes) > 0) {
         $my_shift = count_user_shifts($shift['SID'], $user['UID']) > 0;
 
