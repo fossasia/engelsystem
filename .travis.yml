@@ -9,7 +9,7 @@ services:
   - mysql
 
 before_script:
-  - mysql - u root -e 'create database myapp_test;'
+  - mysql -e "create database myapp_test;" -uroot;
   - mysql -u root -p engelsystem < db/install.sql
   - mysql -u root -p engelsystem < db/update.sql
 
