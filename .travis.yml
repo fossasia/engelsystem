@@ -11,8 +11,8 @@ services:
 before_script:
   - mysql -e "create database engelsystem;" -uroot;  
   - mysql -e "use engelsystem;" -uroot;
-  - mysql -e "source ./db/install.sql;" -uroot;
-  - mysql -e "source ./db/update.sql;" -uroot;
+  - mysql engelsystem -e "source ./db/install.sql;" -uroot;
+  - mysql engelsystem -e "source ./db/update.sql;" -uroot;
 
 script: cd test && phpunit
 
