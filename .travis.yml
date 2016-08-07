@@ -10,8 +10,8 @@ services:
 
 before_script:
   - mysql -e "create database myapp_test;" -uroot;  
-  - mysql -u root -p engelsystem < db/install.sql
-  - mysql -u root -p engelsystem < db/update.sql
+  - mysql -u root engelsystem < db/install.sql
+  - mysql -u root engelsystem < db/update.sql
 
 script: cd test && phpunit
 
