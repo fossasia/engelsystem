@@ -11,8 +11,10 @@ sudo: required
 services:
   - mysql
 
-before_script:
+before_install:
   - mysql -u root -e "create database engelsystem;" 
+
+before_script:
   - mysql -u root -e "use engelsystem;"
   - mysql -u root -e "engelsystem < db/install.sql;"
   - mysql -u root -e "engelsystem < db/install.sql;" 
