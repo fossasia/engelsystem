@@ -14,7 +14,8 @@ addons:
     - mysql-client-5.6
 
 before_install:
-  - mysql -uroot -e "create database engelsystem;" 
+  - mysql -uroot -e "SET @@global.sql_mode = NO_ENGINE_SUBSTITUTION"
+  - mysql -uroot -e "create database engelsystem" 
 
 before_script:
   - mysql -u root -e "use engelsystem;"
