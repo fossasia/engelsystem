@@ -14,8 +14,8 @@ addons:
     - mysql-client-5.6
 
 before_install:
-  - sudo servide mysql.server start
-  - sudo servide mysql.client start
+  - sudo service mysql.server start
+  - sudo service mysql.client start
   - mysql -uroot -e "create database engelsystem;"
 
 before_script:
