@@ -13,12 +13,10 @@ addons:
     - mysql-client-core-5.6
     - mysql-client-5.6
 
-before_install:
+before_script:
   - sudo service mysql.server start
   - sudo service mysql.client start
   - mysql -uroot -e "create database engelsystem;"
-
-before_script:
   - mysql -u root -e "use engelsystem;"
   - mysql -u root -e "engelsystem < db/install.sql;"
   - mysql -u root -e "engelsystem < db/install.sql;" 
