@@ -14,8 +14,6 @@ addons:
     - mysql-client
 
 before_install:
-  - sudo service mysql-server start
-  - sudo servide mysql-client start
   - mysql -uroot -e "SET @@global.sql_mode = NO_ENGINE_SUBSTITUTION"
   - mysql -uroot -e "create database engelsystem" 
 
