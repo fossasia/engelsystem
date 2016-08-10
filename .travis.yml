@@ -13,6 +13,12 @@ addons:
     - mysql-client-core-5.6
     - mysql-client-5.6
 
+test:
+  adapter: mysql2
+  database: engelsystem
+  username: root
+  encoding: utf8
+
 before_script:
   - mysql -u root -e "create database engelsystem;"
   - mysql -u root -e "use engelsystem;"
