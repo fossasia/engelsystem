@@ -43,4 +43,12 @@ function Settings() {
   return sql_select("SELECT * FROM `Settings`");
 }
 
+function autoupdater($auto_update) {
+  return sql_select("INSERT INTO `Settings` SET
+    `autoupdate`='" . sql_bool($auto_update) . "' ");
+}
+
+function check_AutoUpdate() {
+  return sql_select("SELECT `autoupdate` FROM `Settings`");
+}
 ?>
