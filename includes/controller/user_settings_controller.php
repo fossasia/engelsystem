@@ -207,7 +207,7 @@ function user_settings() {
       $msg .= error(_("The system is already Up-to date with the version on GitHub."), true);
     }
     if($ok) {
-      success(_("System Updated"));
+      success(_("System Updated to the latest Version!"));
       redirect(page_link_to('user_settings'));
     }
   }
@@ -219,11 +219,12 @@ function user_settings() {
     else {
       $ok = false;
       $auto_update = false;
+      $msg .= error(_("Disabled the Automatic Updates."), true);
     }
 
     if($ok) {
       autoupdater($auto_update);
-      success("System Updated to the latest Version!");
+      success("Enabled Automatic Updates!");
       redirect(page_link_to('user_settings'));
     }
   }
