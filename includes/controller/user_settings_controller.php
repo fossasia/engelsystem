@@ -35,6 +35,7 @@ function user_settings() {
   $current_city = $user['current_city'];
   $native_lang = $user['native_lang'];
   $other_langs = $user['other_langs'];
+  $auto_update = false;
   if (isset($_REQUEST['submit'])) {
     $ok = true;
     if (isset($_REQUEST['mail']) && strlen(strip_request_item('mail')) > 0) {
@@ -193,6 +194,40 @@ function user_settings() {
         redirect(page_link_to('user_settings'));
       }
   }
+  elseif (isset($_REQUEST['update'])) {
+    $ok = true;
+
+    $online_ver = file_get_contents("https://raw.githubusercontent.com/DishantK1807/engelsystem/auto-update/Version.txt");
+    $current_ver = file_get_contents(" ./Version.txt");
+    if (strcmp($current_ver, $online_ver) != 0) {
+      echo shell_exec("sudo sh ./update.sh");
+    }
+    else {
+      $ok = false;
+      $msg .= error(_("The system is already Up-to date with the version on GitHub."), true);
+    }
+    if($ok) {
+      success(_("System Updated"));
+      redirect(page_link_to('user_settings'));
+    }
+  }
+  elseif (isset($_REQUEST['autoupdate_check'])) {
+    $ok = true;
+
+    if (isset($_REQUEST['auto_update']))
+      $auto_update = true;
+    else {
+      $ok = false;
+      $auto_update = false;
+    }
+
+    if($ok) {
+      autoupdater($auto_update);
+      success("System Updated to the latest Version!");
+      redirect(page_link_to('user_settings'));
+    }
+  }
+
   if ($ok) {
       $_SESSION['uid'] = $login_user['UID'];
       $_SESSION['locale'] = $login_user['Sprache'];
@@ -248,7 +283,14 @@ if( $_SESSION['uid'] == 1){
                   form_info(_("Here you can write your display message for registration:")),
                   form_text('display_message', _("Message"), $display_message),
                   form_submit('submit_message', _("Save"))
-              ))
+              )),
+              form(array(
+                  form_info(_("Here you can set for Auto updates and check for updates:")),
+                  form_checkbox('auto_update', _("Do you want to enable AutoUpdate for the system"), $auto_update),
+                  form_info('', _("Checking the box will enable the autoupdate for the system")),
+                  form_submit('autoupdate_check', _("Save")),
+                  form_submit('update', _("Update System Now!"))
+              )),
           ))
       ))
   ));
