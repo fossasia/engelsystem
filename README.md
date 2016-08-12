@@ -28,6 +28,10 @@ To install loklak with Docker please refer to the loklak [Docker installation re
 
 Please read how to deploy to [Heroku here](/docs/HEROKU.md)
 
+## Updates?
+
+Automatic Updates are enabled in the system and a notification will appear in the alert box. If you'd like to check for the updates manually, you can go to settings and click on "Update System Now!" to check for available updates.
+
 ## Report Bugs
 
 Please report bugs and feature requests here https://github.com/engelsystem/engelsystem/issues
