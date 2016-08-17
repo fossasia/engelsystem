@@ -198,7 +198,7 @@ function user_settings() {
   elseif (isset($_REQUEST['update'])) {
     $ok = true;
 
-    $online_ver = file_get_contents("https://raw.githubusercontent.com/DishantK1807/engelsystem/auto-update/Version.txt");
+    $online_ver = file_get_contents("https://raw.githubusercontent.com/fossasia/engelsystem/master/Version.txt");
     $current_ver = file_get_contents(" ./Version.txt");
     if (strcmp($current_ver, $online_ver) != 0) {
       echo shell_exec("sudo sh ./update.sh");
