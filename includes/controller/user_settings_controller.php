@@ -188,7 +188,8 @@ function user_settings() {
         $display_message=strip_request_item('display_message');
       else
         $ok = false;
-      if($ok){
+
+      if ($ok){
         update_display_msg($display_message);
         success("Message Changed");
         redirect(page_link_to('user_settings'));
@@ -206,7 +207,7 @@ function user_settings() {
       $ok = false;
       $msg .= error(_("The system is already Up-to date with the version on GitHub."), true);
     }
-    if($ok) {
+    if ($ok) {
       success(_("System Updated to the latest Version!"));
       redirect(page_link_to('user_settings'));
     }
@@ -222,7 +223,7 @@ function user_settings() {
       $msg .= error(_("Disabled the Automatic Updates."), true);
     }
 
-    if($ok) {
+    if ($ok) {
       autoupdater($auto_update);
       success("Enabled Automatic Updates!");
       redirect(page_link_to('user_settings'));
