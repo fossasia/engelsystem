@@ -30,7 +30,7 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
   $check_autoupdate_enable = check_AutoUpdate();
 
   if ($check_autoupdate_enable == true) {
-  $online_ver = file_get_contents("https://raw.githubusercontent.com/DishantK1807/engelsystem/auto-update/Version.txt");
+  $online_ver = file_get_contents("https://raw.githubusercontent.com/fossasia/engelsystem/master/Version.txt");
   $current_ver = file_get_contents(" ./Version.txt");
   if (strcmp($current_ver, $online_ver) != 0) {
     return info('<a href="' . page_link_to("user_settings") . '">' . _('There is an Update available on GitHub! Go to settings and update') . '</a>', true);

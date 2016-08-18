@@ -6,8 +6,5 @@
 # Description:
 #   An update bash script for engelsystem
 
-# Add upstream
-git remote add upstream http://www.github.com/fossasia/engelsystem.git
-
 # Pull the updates
-git pull upstream master
+git pull origin master
