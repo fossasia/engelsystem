@@ -199,9 +199,14 @@ function user_settings() {
     $ok = true;
 
     $online_ver = file_get_contents("https://raw.githubusercontent.com/fossasia/engelsystem/master/Version.txt");
-    $current_ver = file_get_contents(" ./Version.txt");
+    $current_ver = file_get_contents(" ../Version.txt");
     if (strcmp($current_ver, $online_ver) != 0) {
-      echo shell_exec("sudo sh ./update.sh");
+      shell_exec("../update.sh");
+
+      if(strcmp($current_ver, "Version: 1.0") == 0){
+        $upgrade_table = '../db/upgrade_01.sql';
+        upgrade_tables($upgrade_table);
+      }
     }
     else {
       $ok = false;
