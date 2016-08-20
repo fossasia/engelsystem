@@ -552,4 +552,11 @@ function user_by_id($id) {
   return sql_select("SELECT * FROM `User` WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+function update_nick($username, $uid) {
+  return sql_query("UPDATE `User` SET `Nick`='" . sql_escape($username) . "' WHERE `UID`='" . sql_escape($uid) . "'");
+}
+
+function update_mail($email, $uid) {
+  return sql_query("UPDATE `User` SET `email`='" . sql_escape($email) . "' WHERE `UID`='" . sql_escape($uid) . "'");
+}
 ?>

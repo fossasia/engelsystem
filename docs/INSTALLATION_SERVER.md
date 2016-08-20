@@ -18,8 +18,6 @@
 
 *  Next, configure your Engelsystem database:
 
-
-
 1.  Create a database for the Engelsystem (give any name to it)
 
 2.  Open phpMyAdmin on the server to create tables in the database
@@ -27,7 +25,6 @@
 3.  In phpMyAdmin select the database created and click on the import tab to import the tables and schema for the Engelsystem
 
 4.  Import the “install.sql” and “update.sql” to finish configuring the database for the Engelsystem
-
 
 
 *  We must make sure to point our Apache document root to the Engelsystem directory to prevent any user from accessing anything other than the public/ directory for security reasons. Do this by modifying the Apache configuration file using the SSH access and edit the following file:
@@ -47,7 +44,7 @@
     \# service httpd restart
     The changes will be permanently updated. Check your site for reflecting changes. For more help on changing the documentroot in CPanel, please visit [here](http://tecadmin.net/how-to-change-document-root-of-primary-domain-in-cpanel/) .
 
-## Setting up Captcha  
+## Setting up Captcha
 
 *  For setting up captcha for the online server, we need to signup for reCaptcha API keys. The keys are unique to the domain or domains you specify, and their respective sub-domains. Specifying more than one domain could come in handy in the case that you serve your website from multiple top level domains (for example: yoursite.com, yoursite.net).
 *  Visit the link,http://www.google.com/recaptcha/admin#whyrecaptcha , and sign up for the reCaptcha API keys.

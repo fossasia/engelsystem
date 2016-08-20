@@ -25,9 +25,11 @@ $LETZTES_AUSTRAGEN = 3;
 // define('CRYPT_ALG', '$1'); // MD5
 // define('CRYPT_ALG', '$2y$13'); // Blowfish
 // define('CRYPT_ALG', '$5$rounds=5000'); // SHA-256
-define('CRYPT_ALG', '$6$rounds=5000'); // SHA-512
+if (!defined('CRYPT_ALG'))
+  define('CRYPT_ALG', '$6$rounds=5000'); // SHA-512
 
-define('MIN_PASSWORD_LENGTH', 8);
+if (!defined('MIN_PASSWORD_LENGTH'))
+  define('MIN_PASSWORD_LENGTH', 8);
 
 // When angels should specify a T - shirt size when registering or in their profile , set to true :
 $enable_tshirt_size = true;
@@ -49,8 +51,8 @@ $shift_sum_formula = "SUM(
 
 // voucher calculation
 $voucher_settings = array(
-	"initial_vouchers" => 2,
-	"shifts_per_voucher" => 1
+  "initial_vouchers" => 2,
+  "shifts_per_voucher" => 1
 );
 
 // weigh every shift the same
@@ -60,17 +62,17 @@ $voucher_settings = array(
 $api_key = "";
 
 // MySQL-Connection Settings
-$config = array(
-    'host' => "localhost",
-    'user' => "username_here",
-    'pw' => "password_here",
-    'db' => "database_name_here"
-);
-
+$DB_HOST = "localhost";
+$DB_USER = "username_here";
+$DB_PASSWORD = "password_here";
+$DB_NAME = "database_name_here";
 /** reCaptcha Settings
  * Visit http://www.google.com/recaptcha/admin#whyrecaptcha for generating reCaptcha keys for your website.
 */
-define('capflg', '');  // Set reCaptch enalble or disable. true = enable , false = disable.
-define('CAPTCHA_KEY_PUBLIC', '');  // Public/Data-site key
-define('CAPTCHA_KEY_PRIVATE', '');  // Private/Secret Key
+if (!defined('capflg'))
+  define('capflg', '');  // Set reCaptch enalble or disable. true = enable , false = disable.
+if (!defined('CAPTCHA_KEY_PUBLIC'))
+  define('CAPTCHA_KEY_PUBLIC', '');  // Public/Data-site key
+if (!defined('CAPTCHA_KEY_PRIVATE'))
+  define('CAPTCHA_KEY_PRIVATE', '');  // Private/Secret Key
 ?>

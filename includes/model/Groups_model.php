@@ -12,6 +12,15 @@ function Groups_by_id($id) {
   return sql_select("SELECT * FROM `Groups` WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+function selects_groups_by_id() {
+  $Groups_source = sql_select("SELECT * FROM `Groups` ");
+  if ($Groups_source === false)
+    return false;
+  if (count($Groups_source) > 0)
+    return $Groups_source;
+  return null;
+}
+
 function create_new_group($name, $uid) {
   return sql_query("
     INSERT INTO `Groups` SET
@@ -23,4 +32,10 @@ function inserts_into_group_privileges($uid, $priv) {
  return sql_query("INSERT INTO `GroupPrivileges` SET `group_id`='" . sql_escape($uid) . "', `privilege_id`='" . sql_escape($priv) . "'");
 }
 
+function delete_group($uid) {
+  return sql_query("
+      DELETE FROM `Groups`
+      WHERE `id`='" . sql_escape($uid) . "'
+      LIMIT 1");;
+}
 ?>

@@ -75,5 +75,4 @@ function make_langselect() {
     $items[] = toolbar_item_link(htmlspecialchars($URL) . $locale, '', '<img src="pic/flag/' . $locale . '.png" alt="' . $name . '" title="' . $name . '"> ' . $name);
   return $items;
 }
-
 ?>

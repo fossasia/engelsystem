@@ -14,13 +14,14 @@ $free_pages = array(
     'shifts_json_export',
     'shifts',
     'atom',
-    'login'
+    'login',
+    'install'
 );
 
 // Desired page/function
 $p = "";
 if (! isset($_REQUEST['p']))
-  $_REQUEST['p'] = isset($user) ? "news" : "login";
+  $_REQUEST['p'] = isset($user) ? "news" : "install";
 if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (in_array($_REQUEST['p'], $free_pages) || in_array($_REQUEST['p'], $privileges))) {
   $p = $_REQUEST['p'];
 
@@ -153,6 +154,10 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
     require_once realpath(__DIR__ . '/../includes/controller/guest_credits_controller.php');
     $title = credits_title();
     $content = guest_credits();
+  } elseif ($p == "install") {
+    require_once realpath(__DIR__ . '/../install.php');
+    $title = install_title();
+    $content = install_admin();
   } else {
     require_once realpath(__DIR__ . '/../includes/controller/guest_start_controller.php');
     $content = guest_start();
@@ -163,8 +168,8 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
     $title = _("No Access");
     $content = _("You don't have permission to view this page. You probably have to sign in or register in order to gain access!");
   } else {
-    // Otherwise lead to the login page
-    redirect(page_link_to("login"));
+    // Otherwise lead to the install page
+    redirect(page_link_to("install"));
   }
 }
 

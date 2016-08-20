@@ -79,5 +79,15 @@ function delete_room_by_name ($room) {
   return sql_query("DELETE FROM `Room` WHERE `Name`='" . sql_escape($room) . "' LIMIT 1");
 }
 
+function Rooms() {
+  $room_source = sql_select("SELECT * FROM `Room` WHERE `show` = 'Y'");
+
+  if ($room_source === false)
+    return false;
+  if (count($room_source) > 0)
+    return $room_source[0];
+  return null;
+}
+
 ?>
 

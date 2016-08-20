@@ -51,4 +51,13 @@ function autoupdater($auto_update) {
 function check_AutoUpdate() {
   return sql_select("SELECT `autoupdate` FROM `Settings`");
 }
+
+function update_table_migrated($value) {
+  return sql_query("UPDATE `Settings` SET `table_migrated`='" . sql_escape($value) . "'");
+}
+
+function insert_table_migrated($value) {
+  return sql_query("INSERT INTO `Settings` SET `table_migrated`='" . sql_escape($value) . "'");
+}
+
 ?>
