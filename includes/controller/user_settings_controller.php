@@ -182,14 +182,14 @@ function user_settings() {
       success("Language changed.");
       redirect(page_link_to('user_settings'));
     }
-  }elseif (isset($_REQUEST['submit_message'])){
+  } elseif (isset($_REQUEST['submit_message'])) {
       $ok=true;
       if(isset($_REQUEST['display_message']))
         $display_message=strip_request_item('display_message');
       else
         $ok = false;
 
-      if ($ok){
+      if ($ok) {
         update_display_msg($display_message);
         success("Message Changed");
         redirect(page_link_to('user_settings'));
