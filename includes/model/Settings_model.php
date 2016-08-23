@@ -39,6 +39,10 @@ function Settings_create($event_name, $buildup_start_date, $event_start_date, $e
       `event_welcome_msg`='" . sql_escape($event_welcome_msg) . "'");
 }
 
+/**
+ * Return Settings.
+ *
+ */
 function Settings() {
   return sql_select("SELECT * FROM `Settings`");
 }
@@ -52,10 +56,18 @@ function check_AutoUpdate() {
   return sql_select("SELECT `autoupdate` FROM `Settings`");
 }
 
+/**
+ * Migrate Update tables.
+ *
+ */
 function update_table_migrated($value) {
   return sql_query("UPDATE `Settings` SET `table_migrated`='" . sql_escape($value) . "'");
 }
 
+/**
+ * Migrate Install tables.
+ *
+ */
 function insert_table_migrated($value) {
   return sql_query("INSERT INTO `Settings` SET `table_migrated`='" . sql_escape($value) . "'");
 }

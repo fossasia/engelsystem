@@ -37,12 +37,14 @@ CREATE TABLE IF NOT EXISTS `Events` (
   `name` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `organizer` varchar(255) NOT NULL,
-  `start_date` datetime NOT NULL DEFAULT '2000-01-01 00:00:00',
-  `end_date` datetime NOT NULL DEFAULT '2000-01-01 00:00:00',
+  `start_date` int(11) DEFAULT NULL,
+  `start_time` int(10) NOT NULL,
+  `end_time` int(10) NOT NULL,
+  `end_date` int(11) DEFAULT NULL,
   `venue` varchar(255) NOT NULL,
   PRIMARY KEY (`event_id`),
   UNIQUE KEY `Name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 -- -----------------------------------------------------------------------------
 -- Alter table sturcture for Rooms, converting char(1) type to boolean
 ALTER TABLE `Room`
@@ -85,9 +87,16 @@ INSERT INTO `GroupPrivileges` (`id`, `group_id`, `privilege_id`) VALUES (337, -4
 INSERT INTO `Privileges` (`id`, `name`, `desc`) VALUES (41, 'admin_cgroups', 'Create new groups');
 INSERT INTO `GroupPrivileges` (`id`, `group_id`, `privilege_id`) VALUES (339, -4, 41);
 
+-- -----------------------------------------------------------------------------------
+-- Added privelege for the Create Events page
+INSERT INTO `Privileges` (`id`, `name`, `desc`) VALUES (43, 'admin_events', 'Create new Events');
+INSERT INTO `GroupPrivileges` (`id`, `group_id`, `privilege_id`) VALUES (347, -4, 43);
+
 -- ------------------------------------------------------------------------------------
 -- Added Privilege for install page.
 INSERT INTO `Privileges` (`id`, `name`, `desc`) VALUES (42, 'install', 'Install Engelsystem');
 
-
-
+-- ------------------------------------------------------------------------------------
+-- Updated Table Room
+ALTER TABLE `Room`
+  ADD `e_id` int(11) NOT NULL;

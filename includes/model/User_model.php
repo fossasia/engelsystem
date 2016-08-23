@@ -53,23 +53,40 @@ function User_update($user) {
 
 /**
  * Counts all forced active users.
+ *
  */
 function User_force_active_count() {
   return sql_select_single_cell("SELECT COUNT(*) FROM `User` WHERE `force_active` = 1");
 }
 
+/**
+ * Counts all active users.
+ *
+ */
 function User_active_count() {
   return sql_select_single_cell("SELECT COUNT(*) FROM `User` WHERE `Aktiv` = 1");
 }
 
+/**
+ * Return Counts of Vouche of user.
+ *
+ */
 function User_got_voucher_count() {
   return sql_select_single_cell("SELECT SUM(`got_voucher`) FROM `User`");
 }
 
+/**
+ * Counts all arrived users.
+ *
+ */
 function User_arrived_count() {
   return sql_select_single_cell("SELECT COUNT(*) FROM `User` WHERE `Gekommen` = 1");
 }
 
+/**
+ * Return Counts of T-Shirts
+ *
+ */
 function User_tshirts_count() {
   return sql_select_single_cell("SELECT COUNT(*) FROM `User` WHERE `Tshirt` = 1");
 }
@@ -267,7 +284,11 @@ function User_generate_password_recovery_token(&$user) {
   return $user['password_recovery_token'];
 }
 
-
+/**
+ * Returns Users elegible for Vouchers.
+ *
+ * @param $user Users
+ */
 function User_get_eligable_voucher_count(&$user) {
   global $voucher_settings;
 
@@ -282,10 +303,21 @@ function User_get_eligable_voucher_count(&$user) {
 	return $elegible_vouchers;
 }
 
+/**
+ * Return AngelType of Shifts.
+ *
+ * @param $sid ID of Shifts
+ */
 function shift_needed_angeltypes($sid) {
   return sql_select("SELECT DISTINCT `AngelTypes`.* FROM `ShiftEntry` JOIN `AngelTypes` ON `ShiftEntry`.`TID`=`AngelTypes`.`id` WHERE `ShiftEntry`.`SID`='" . sql_escape($sid) . "'  ORDER BY `AngelTypes`.`name`");
 }
 
+/**
+ * Return Needed AngelType of Shifts.
+ *
+ * @param $sid ID of Shifts
+ * @param $needed_angeltype_id of Shifts
+ */
 function needed_angeltype_by_shift($sid, $needed_angeltype_id) {
   return sql_select("
       SELECT `ShiftEntry`.`freeloaded`, `User`.*
@@ -295,14 +327,28 @@ function needed_angeltype_by_shift($sid, $needed_angeltype_id) {
       AND `ShiftEntry`.`TID`='" . sql_escape($needed_angeltype_id) . "'");
 }
 
+/**
+ * Update User Gekommen = 0
+ *
+ * @param $id ID of Users
+ */
 function User_update_unset_Gokemon($id) {
   return sql_query("UPDATE `User` SET `Gekommen`=0, `arrival_date` = NULL WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update User Gekommen = 1
+ *
+ * @param $id ID of Users
+ */
 function User_update_set_Gokemon($id) {
 return sql_query("UPDATE `User` SET `Gekommen`=1, `arrival_date`='" . time() . "' WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update active user Tshirt
+ *
+ */
 function User_update_activ_tshirt() {
   return sql_query("UPDATE `User` SET `Aktiv` = 0 WHERE `Tshirt` = 0");
 }
@@ -318,26 +364,55 @@ function User_select_set_active() {
           ORDER BY `force_active` DESC, `shift_length` DESC" . $limit);
 }
 
+/**
+ * Return Active User by ID
+ *
+ * @param $uid ID of Users
+ */
 function User_set_active($uid) {
   return sql_query("UPDATE `User` SET `Aktiv` = 1 WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Return force active User
+ *
+ */
 function User_actice_force_active() {
   return sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `force_active`=TRUE");
 }
 
+/**
+ * Update User to active
+ *
+ * @param $id ID of Users
+ */
 function User_update_active($id) {
   return sql_query("UPDATE `User` SET `Aktiv`=1 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update User to inactive
+ *
+ * @param $id ID of Users
+ */
 function User_update_inactive($id) {
   return sql_query("UPDATE `User` SET `Aktiv`=0 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update User Tshirts
+ *
+ * @param $id ID of Users
+ */
 function User_update_tshirt($id) {
   return sql_query("UPDATE `User` SET `Tshirt`=1 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update User for no Tshirt
+ *
+ * @param $id ID of Users
+ */
 function User_update_not_tshirt($id) {
   return sql_query("UPDATE `User` SET `Tshirt`=0 WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
@@ -353,14 +428,28 @@ function User_select_not_tshirt($shift_sum_formula, $show_all_shifts, $limit) {
       ORDER BY `force_active` DESC, `shift_length` DESC" . $limit);
 }
 
+/**
+ * Return T-Shirt size of Users with Gekommen = 1
+ *
+ * @param $size Size of Users
+ */
 function Shirt_statistics_needed($size) {
   return sql_select_single_cell("SELECT count(*) FROM `User` WHERE `Size`='" . sql_escape($size) . "' AND `Gekommen`=1");
 }
 
+/**
+ * Return T-Shirt size of Users with Gekommen = 0
+ *
+ * @param $size Size of Users
+ */
 function Shirt_statistics_given($size) {
   return sql_select_single_cell("SELECT count(*) FROM `User` WHERE `Size`='" . sql_escape($size) . "' AND `Tshirt`=1");
 }
 
+/**
+ * Select Free Users
+ *
+ */
 function User_select_free($angeltypesearch) {
   return sql_select("
       SELECT `User`.*
@@ -373,14 +462,49 @@ function User_select_free($angeltypesearch) {
       ORDER BY `Nick`");
 }
 
+/**
+ * Return User by Nick
+ *
+ * @param $nick Nick of User
+ */
 function User_select_nick($nick) {
   return sql_num_query("SELECT * FROM `User` WHERE `Nick`='" . sql_escape($nick) . "' LIMIT 1");
 }
 
+/**
+ * Return User by email
+ *
+ * @param $mail email of User
+ */
 function User_select_mail($mail) {
   return sql_num_query("SELECT * FROM `User` WHERE `email`='" . sql_escape($mail) . "' LIMIT 1");
 }
 
+/**
+ * Insert into User
+ *
+ * @param $nick Nick of User
+ * @param $prename Vorname of User
+ * @param $lastname Name of User
+ * @param $age Alter of User
+ * @param $tel Telefon of User
+ * @param $dect DECT of User
+ * @param $mobile Handy of User
+ * @param $mail email of User
+ * @param $email_shiftinfo email_shiftinfo of User
+ * @param $jabber jabber of User
+ * @param $tshirt_size Size of User
+ * @param $password_hash Passwort of User
+ * @param $comment kommentar of User
+ * @param $hometown Hometown of User
+ * @param $twitter twitter of User
+ * @param $facebook facebook of User
+ * @param $github githb of User
+ * @param $organization organization of User
+ * @param $organization_web organization_web of User
+ * @param $timezone timezone of User
+ * @param $planned_arrival_date planned_arrival_date of User
+ */
 function User_insert($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $mail, $email_shiftinfo, $jabber, $tshirt_size, $password_hash, $comment, $hometown, $twitter, $facebook, $github, $organization, $organization_web, $timezone, $planned_arrival_date) {
   return  sql_query("
             INSERT INTO `User` SET
@@ -411,6 +535,25 @@ function User_insert($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $ma
             `planned_arrival_date`='" . sql_escape($planned_arrival_date) . "'");
 }
 
+/**
+ * Update User
+ *
+ * @param $enick Nick of User
+ * @param $eprename Vorname of User
+ * @param $elastname Name of User
+ * @param $eage Alter of User
+ * @param $etel Telefon of User
+ * @param $edect DECT of User
+ * @param $emobile Handy of User
+ * @param $email email of User
+ * @param $eemail_shiftinfo email_shiftinfo of User
+ * @param $ejabber jabber of User
+ * @param $etshirt_size Size of User
+ * @param $epassword_hash Passwort of User
+ * @param $ecomment kommentar of User
+ * @param $ehometown Hometown of User
+ * @param $id ID of User
+ */
 function update_user($eNick, $eName, $eVorname, $eTelefon, $eHandy, $eAlter, $eDECT, $eemail, $email_shiftinfo, $ejabber, $eSize, $eGekommen, $eAktiv, $force_active, $eTshirt, $Hometown, $id) {
   return "UPDATE `User` SET
               `Nick` = '" . sql_escape($eNick) . "',
@@ -433,6 +576,11 @@ function update_user($eNick, $eName, $eVorname, $eTelefon, $eHandy, $eAlter, $eD
               LIMIT 1";
 }
 
+/**
+ * Return User by Nick
+ *
+ * @param $nick Nick of User
+ */
 function select_user_by_nick($nick) {
   return sql_select("SELECT * FROM `User` WHERE `Nick`='" . sql_escape($nick) . "'");
 }
@@ -470,6 +618,11 @@ function insert_user($default_theme, $nick, $prename, $lastname, $age, $tel, $de
           `planned_arrival_date`='" . sql_escape($planned_arrival_date) . "'");
 }
 
+/**
+ * Return User by Nick
+ *
+ * @param $nick Nick of User
+ */
 function count_user_by_nick($nick) {
 return sql_num_query("SELECT * FROM `User` WHERE `Nick`='" . sql_escape($nick) . "' LIMIT 1");
 }
@@ -478,10 +631,18 @@ function count_user_by_email($mail) {
 return sql_num_query("SELECT * FROM `User` WHERE `email`='" . sql_escape($mail) . "' LIMIT 1");
 }
 
+/**
+ * Return count of Users
+ *
+ */
 function usercount() {
   return sql_select("SELECT count(*) as `user_count` FROM `User`");
 }
 
+/**
+ * Return count of arrived Users
+ *
+ */
 function user_count_arrived() {
   return sql_select("SELECT count(*) as `user_count` FROM `User` WHERE `Gekommen`=1");
 }
@@ -490,6 +651,25 @@ function counts_user_by_ids($user_id) {
   return sql_num_query("SELECT * FROM `User` WHERE `UID`='" . sql_escape($user_id) . "' LIMIT 1");
 }
 
+/**
+ * Update User details
+ *
+ * @param $nick Nick of User
+ * @param $prename Vorname of User
+ * @param $lastname Name of User
+ * @param $age Alter of User
+ * @param $tel Telefon of User
+ * @param $dect DECT of User
+ * @param $mobile Handy of User
+ * @param $mail email of User
+ * @param $email_shiftinfo email_shiftinfo of User
+ * @param $jabber jabber of User
+ * @param $tshirt_size Size of User
+ * @param $hometown Hometown of User
+ * @param $timezone timezone of User
+ * @param $planned_arrival_date planned_arrival_date of User
+ * @param $uid ID of Users
+ */
 function update_user_details($nick, $prename, $lastname, $age, $tel, $dect, $mobile, $mail, $email_shiftinfo, $jabber, $tshirt_size, $hometown, $planned_arrival_date, $planned_departure_date, $timezone, $uid) {
   return sql_query("
       UPDATE `User` SET
@@ -511,6 +691,14 @@ function update_user_details($nick, $prename, $lastname, $age, $tel, $dect, $mob
       WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User Social network
+ *
+ * @param $twitter twitter of User
+ * @param $facebook facebook of User
+ * @param $github githb of User
+ * @param $uid ID of User
+ */
 function update_user_sn($twitter, $facebook, $github, $uid) {
   return   sql_query("
       UPDATE `User` SET
@@ -520,6 +708,13 @@ function update_user_sn($twitter, $facebook, $github, $uid) {
       WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User Organization
+ *
+ * @param $organization organization of User
+ * @param $organization_web organization_web of User
+ * @param $uid ID of User
+ */
 function update_user_org($organization, $organization_web, $uid) {
   return sql_query("
     UPDATE `User` SET
@@ -528,6 +723,13 @@ function update_user_org($organization, $organization_web, $uid) {
      WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User Native and other language
+ *
+ * @param $native_lang native_lang of User
+ * @param $other_langs other_langs of User
+ * @param $uid ID of User
+ */
 function update_user_langs($native_lang, $other_langs, $uid) {
   return sql_query("
     UPDATE `User` SET
@@ -536,14 +738,31 @@ function update_user_langs($native_lang, $other_langs, $uid) {
      WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User Theme
+ *
+ * @param $selected_theme Color of User
+ * @param $uid ID of User
+ */
 function update_theme($selected_theme, $uid) {
   return sql_query("UPDATE `User` SET `color`='" . sql_escape($selected_theme) . "' WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User System language
+ *
+ * @param $selected_language Sprache of User
+ * @param $uid ID of User
+ */
 function update_sys_lang($selected_language, $uid) {
   return sql_query("UPDATE `User` SET `Sprache`='" . sql_escape($selected_language) . "' WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Return User by ID
+ *
+ * @param $uid ID of User
+ */
 function count_users_by_id($id) {
   return sql_num_query("SELECT * FROM `User` WHERE `UID`='" . sql_escape($id) . "'");
 }
@@ -552,10 +771,22 @@ function user_by_id($id) {
   return sql_select("SELECT * FROM `User` WHERE `UID`='" . sql_escape($id) . "' LIMIT 1");
 }
 
+/**
+ * Update User Nick
+ *
+ * @param $username Nick of User
+ * @param $uid ID of User
+ */
 function update_nick($username, $uid) {
   return sql_query("UPDATE `User` SET `Nick`='" . sql_escape($username) . "' WHERE `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Update User Email
+ *
+ * @param $email email of User
+ * @param $uid ID of User
+ */
 function update_mail($email, $uid) {
   return sql_query("UPDATE `User` SET `email`='" . sql_escape($email) . "' WHERE `UID`='" . sql_escape($uid) . "'");
 }

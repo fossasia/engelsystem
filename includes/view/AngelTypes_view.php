@@ -40,6 +40,11 @@ function AngelType_render_membership($user_angeltype) {
   return $membership;
 }
 
+/**
+ * Render angeltype Delete View
+ *
+ * @param AngelType $angeltype
+ */
 function AngelType_delete_view($angeltype) {
   return page_with_title(sprintf(_("Delete angeltype %s"), $angeltype['name']), array(
       info(sprintf(_("Do you want to delete angeltype %s?"), $angeltype['name']), true),
@@ -50,6 +55,15 @@ function AngelType_delete_view($angeltype) {
   ));
 }
 
+/**
+ * Render angeltype Edit View
+ *
+ * @param AngelType $name
+ * @param AngelType $restricted
+ * @param AngelType $description
+ * @param AngelType $coordinator_mode
+ * @param AngelType $requires_driver_license
+ */
 function AngelType_edit_view($name, $restricted, $description, $coordinator_mode, $requires_driver_license) {
   return page_with_title(sprintf(_("Edit %s"), $name), array(
       buttons(array(
@@ -68,6 +82,17 @@ function AngelType_edit_view($name, $restricted, $description, $coordinator_mode
   ));
 }
 
+/**
+ * Render angeltype View
+ *
+ * @param AngelType $angeltype
+ * @param UserAngelType $members
+ * @param UserAngelType $user_angeltype
+ * @param UserAngelType $admin_user_angeltypes
+ * @param AngelType $coordinator
+ * @param AngelType $user_driver_license
+ * @param User $user
+ */
 function AngelType_view($angeltype, $members, $user_angeltype, $admin_user_angeltypes, $admin_angeltypes, $coordinator, $user_driver_license, $user) {
   $buttons = [
       button(page_link_to('angeltypes'), _("Angeltypes"), 'back')
@@ -221,6 +246,12 @@ function AngelTypes_list_view($angeltypes, $admin_angeltypes) {
   ));
 }
 
+/**
+ * Display Angeltypes about View.
+ *
+ * @param array $angeltypes
+ * @param User $user_logged_in
+ */
 function AngelTypes_about_view($angeltypes, $user_logged_in) {
   global $faq_url;
 

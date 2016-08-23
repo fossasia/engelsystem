@@ -450,7 +450,9 @@ function ReplaceSmilies($neueckig) {
   return $neueckig;
 }
 /**
- * Rendert Google reCaptcha
+ * Renders Google reCaptcha
+ * @param $flg Flag to enable/diable capthca
+ *         set in config.php
  */
 function reCaptcha($flg) {
   if($flg)
@@ -458,6 +460,7 @@ function reCaptcha($flg) {
 }
 /**
  * Function to add Date-picker
+ * @param $name  name of the Date picker
  */
 function calender($name, $value = '', $id) {
   return '<div class="input-group date" id="' . $id .'">
@@ -477,6 +480,9 @@ function calender($name, $value = '', $id) {
 }
 /**
  * Renders a form multi-select box
+ * @param $name names associative array with the name of the checkboxes as Keys and headings as Values
+ * @param $label label The label of the entire table
+ * @param $values items Array with the labels of rows
  */
 function form_multiselect($name, $label, $values, $tag = "") {
   $list = '<div class="form-group"><label>' . $label . '</label>';

@@ -148,6 +148,9 @@ if (isset($_REQUEST['p']) && preg_match("/^[a-z0-9_]*$/i", $_REQUEST['p']) && (i
   } elseif ($p == "admin_export") {
     $title = admin_export_title();
     $content = admin_export();
+  } elseif ($p == "admin_events") {
+    $title = admin_events_title();
+    $content = admin_events();
   } elseif ($p == "admin_cgroups") {
     $title = admin_cgroups_title();
     $content = admin_create_groups();

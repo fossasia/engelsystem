@@ -4,13 +4,15 @@ function admin_export_title() {
 }
 
 function admin_export() {
+  // Export User data
   if(isset($_REQUEST['download'])){
     $filename = tempnam('/tmp', '.csv'); //  Temporary File Name
-    create_temporary_table();
-	  alter_table("Passwort");
+    create_temporary_table(); // Create temporary table
+	  alter_table("Passwort"); // Drop column with passwords
     alter_table("password_recovery_token");
 	  $headings = select_column();
 	  $head = "";
+    // Return heading of the columns on Table `Users`
 	  foreach($headings as $heading) {
 	    if ((strcmp($heading["COLUMN_NAME"],'Passwort') && strcmp($heading["COLUMN_NAME"],'password_recovery_token')) !=0 )
 	      $head .= $heading["COLUMN_NAME"] . " ";
@@ -44,6 +46,7 @@ function admin_export() {
 	  fclose($filep);
  }
 
+ // Import User data
   if (isset($_REQUEST['upload'])) {
     $ok = true;
     $file = $_FILES['csv_file']['tmp_name'];

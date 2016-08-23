@@ -133,7 +133,8 @@ function make_navigation() {
       "admin_log" => admin_log_title(),
       "admin_export" => admin_export_title(),
       "admin_settings" => admin_settings_title(),
-      "admin_cgroups" => admin_cgroups_title()
+      "admin_cgroups" => admin_cgroups_title(),
+      "admin_events" => admin_events_title()
   );
 
   foreach ($admin_pages as $page => $title)

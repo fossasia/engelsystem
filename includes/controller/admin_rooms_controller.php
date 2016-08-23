@@ -7,6 +7,13 @@ function admin_rooms_title() {
 function admin_rooms() {
   global $user;
 
+  $event_source = sql_select("SELECT * FROM `Events` ORDER BY `name`");
+  $events = array();
+  foreach($event_source as $event) {
+    $events[$event['event_id']] = $event['name'];
+  }
+  $event_id = null;
+
   $rooms_source = Room_by_name();
   $rooms = array();
   foreach ($rooms_source as $room)
@@ -14,6 +21,7 @@ function admin_rooms() {
         'name' => $room['Name'],
         'from_pentabarf' => $room['FromPentabarf'] == '1' ? '&#10003;' : '',
         'public' => $room['show'] == '1' ? '&#10003;' : '',
+        'e_id' => $events[$room['e_id']],
         'actions' => buttons(array(
             button(page_link_to('admin_rooms') . '&show=edit&id=' . $room['RID'], _("edit"), 'btn-xs'),
             button(page_link_to('admin_rooms') . '&show=delete&id=' . $room['RID'], _("delete"), 'btn-xs')
@@ -81,6 +89,21 @@ function admin_rooms() {
         else
           $ok = false;
 
+        if (isset($_REQUEST['event_id'])) {
+          $event_id = event($_REQUEST['event_id']);
+
+          if ($event_id === false)
+            engelsystem_error('Unable to load event type.');
+          if ($event_id == null) {
+            $ok = false;
+            error(_('Please select an Event type.'));
+          } else
+              $event_id = $_REQUEST['event_id'];
+        } else {
+            $ok = false;
+            error(_('Please select an Event type.'));
+        }
+
         foreach ($angeltypes as $angeltype_id => $angeltype) {
           if (isset($_REQUEST['angeltype_count_' . $angeltype_id]) && preg_match("/^[0-9]{1,4}$/", $_REQUEST['angeltype_count_' . $angeltype_id]))
             $angeltypes_count[$angeltype_id] = $_REQUEST['angeltype_count_' . $angeltype_id];
@@ -92,13 +115,13 @@ function admin_rooms() {
 
         if ($ok) {
           if (isset($id)) {
-            update_rooms($name, $from_pentabarf, $public, $number, $id);
-            engelsystem_log("Room updated: " . $name . ", pentabarf import: " . $from_pentabarf . ", public: " . $public . ", number: " . $number);
+            update_rooms($name, $from_pentabarf, $public, $number, $id, $event_id);
+            engelsystem_log("Room updated: " . $name . ", pentabarf import: " . $from_pentabarf . ", public: " . $public . ", number: " . $number . ", event: " . $event_id);
           } else {
-            $id = Room_create($name, $from_pentabarf, $public, $number);
+            $id = Room_create($name, $from_pentabarf, $public, $number, $event_id);
             if ($id === false)
               engelsystem_error("Unable to create room.");
-            engelsystem_log("Room created: " . $name . ", pentabarf import: " . $from_pentabarf . ", public: " . $public . ", number: " . $number);
+            engelsystem_log("Room created: " . $name . ", pentabarf import: " . $from_pentabarf . ", public: " . $public . ", number: " . $number . ", event: " . $event_id);
           }
 
           delete_NeededAngelTypes_by_id($id);
@@ -135,7 +158,8 @@ function admin_rooms() {
                       form_text('name', _("Name"), $name),
                       form_checkbox('from_pentabarf', _("Frab import"), $from_pentabarf),
                       form_checkbox('public', _("Public"), $public),
-                      form_text('number', _("Room number"), $number)
+                      form_text('number', _("Room number"), $number),
+                      form_select('event_id', _("Event Name"), $events, $event_id)
                   )),
                   div('col-md-6', array(
                       div('row', array(
@@ -180,6 +204,7 @@ function admin_rooms() {
           'name' => _("Name"),
           'from_pentabarf' => _("Frab import"),
           'public' => _("Public"),
+          'e_id' => _("Event"),
           'actions' => ""
       ), $rooms)
   ));

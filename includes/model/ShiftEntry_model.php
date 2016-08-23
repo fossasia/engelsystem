@@ -118,6 +118,7 @@ function ShiftEntries_by_shift_and_angeltype($shift_id, $angeltype_id) {
 
 /**
  * Returns all freeloaded shifts for given user.
+ *
  */
 function ShiftEntries_freeloaded_by_user($user) {
   return sql_select("SELECT *
@@ -126,14 +127,28 @@ function ShiftEntries_freeloaded_by_user($user) {
       AND `UID`=" . sql_escape($user['UID']));
 }
 
+/**
+ * Returns sum of Shifts for given user.
+ *
+ */
 function user_done_shifts() {
   return sql_select_single_cell("SELECT SUM(`Shifts`.`end` - `Shifts`.`start`) FROM `ShiftEntry` JOIN `Shifts` USING (`SID`) WHERE `Shifts`.`end` < UNIX_TIMESTAMP()");
 }
 
+/**
+ * Returns actions source for given user.
+ *
+ */
 function user_action_source() {
   return sql_select("SELECT `Shifts`.`start`, `Shifts`.`end` FROM `ShiftEntry` JOIN `Shifts` ON `Shifts`.`SID`=`ShiftEntry`.`SID` WHERE UNIX_TIMESTAMP() BETWEEN `Shifts`.`start` AND `Shifts`.`end`");
 }
 
+/**
+ * Returns Shifts for given user.
+ *
+ * @param $sid ID of Shifts
+ * @param $uid ID of Users
+ */
 function select_shifts($sid, $uid) {
   return sql_select("SELECT
       `ShiftEntry`.`freeloaded`,
@@ -153,6 +168,13 @@ function select_shifts($sid, $uid) {
       AND `UID`='" . sql_escape($uid) . "' LIMIT 1");
 }
 
+/**
+ * Returns shifts for given user.
+ *
+ * @param $starttime Start time of Shifts
+ * @param $endtime End Time of Shifts
+ * @param $uid ID of Users
+ */
 function gets_shifts($starttime, $endtime, $uid) {
   $SQL = "SELECT DISTINCT `Shifts`.*, `ShiftTypes`.`name`, `Room`.`Name` as `room_name`, nat2.`special_needs` > 0 AS 'has_special_needs'
   FROM `Shifts`
@@ -178,23 +200,49 @@ function gets_shifts($starttime, $endtime, $uid) {
   return sql_select($SQL);
 }
 
+/**
+ * Returns count of shifts for given user.
+ *
+ * @param $sid ID of Shifts
+ * @param $uid ID of Users
+ */
 function counts_user_shiftss($sid, $uid) {
   return sql_num_query("SELECT * FROM `ShiftEntry` WHERE `SID`='" . sql_escape($sid) . "' AND `UID`='" . sql_escape($uid) . "' LIMIT 1");
 }
 
+/**
+ * Returns all shifts for given Angeltype.
+ *
+ * @param $uid ID of Users
+ * @param $angeltype_id ID of AngelType
+ */
 function selects_entries($sid, $angeltype_id) {
   return sql_select("SELECT * FROM `ShiftEntry` JOIN `User` ON (`ShiftEntry`.`UID` = `User`.`UID`) WHERE `SID`='" . sql_escape($sid) . "' AND `TID`='" . sql_escape($angeltype_id) . "' ORDER BY `Nick`");
 }
 
+/**
+ * Returns count of freeloaded shifts
+ *
+ */
 function counts_freeloaded_shifts() {
   return sql_select("SELECT *, (SELECT count(*) FROM `ShiftEntry` WHERE `freeloaded`=1 AND `ShiftEntry`.`UID`=`User`.`UID`) AS `freeloaded` FROM `User` ORDER BY `Nick`");
 }
 
-
+/**
+ * Returns count of shifts for given user.
+ *
+ * @param $sid ID of Shifts
+ * @param $uid ID of Users
+ */
 function counts_shift_entry_by_ids($sid, $user_id) {
   return sql_num_query("SELECT * FROM `ShiftEntry` WHERE `SID`='" . sql_escape($sid) . "' AND `UID` = '" . sql_escape($user_id) . "'");
 }
 
+/**
+ * Returns shifts by Entry Source
+ *
+ * @param $entry_id ID of ShiftsEntry
+ */
 function selects_shift_entry_source($entry_id) {
   return sql_select("
       SELECT `User`.`Nick`, `ShiftEntry`.`Comment`, `ShiftEntry`.`UID`, `ShiftTypes`.`name`, `Shifts`.*, `Room`.`Name`, `AngelTypes`.`name` as `angel_type`

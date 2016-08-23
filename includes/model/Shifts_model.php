@@ -252,6 +252,7 @@ function Shift($id) {
 
 /**
  * Returns all shifts with needed angeltypes and count of subscribed jobs.
+ *
  */
 function Shifts() {
   $shifts_source = sql_select("
@@ -274,6 +275,11 @@ function Shifts() {
   return $shifts_source;
 }
 
+/**
+ * Returns shifts ical for given Users.
+ *
+ * @param $uid ID of User
+ */
 function shifts_ical($uid) {
   return sql_select("
       SELECT `ShiftTypes`.`name`, `Shifts`.*, `Room`.`Name` as `room_name`
@@ -285,6 +291,12 @@ function shifts_ical($uid) {
       ORDER BY `start`");
 }
 
+/**
+ * Returns all shifts for given User.
+ *
+ * @param $sid ID of Shifts
+ * @param $uid ID of Users
+ */
 function shiftentry_select($sid, $uid) {
   return sql_select("
       SELECT *
@@ -293,6 +305,13 @@ function shiftentry_select($sid, $uid) {
       WHERE `ShiftEntry`.`id`='" . sql_escape($sid) . "' AND `UID`='" . sql_escape($uid) . "'");
 }
 
+/**
+ * Returns all shifts for the session.
+ *
+ * @param $session_var of Rooms
+ * @param $starttime Start time of Shifts
+ * @param $endtime End Time of Shifts
+ */
 function selects_session_shifttypes($session_var, $starttime, $endtime) {
   return sql_select("
       SELECT `ShiftTypes`.`name`, `Shifts`.*
@@ -303,6 +322,10 @@ function selects_session_shifttypes($session_var, $starttime, $endtime) {
       AND `start` BETWEEN " . $starttime . " AND " . $endtime);
 }
 
+/**
+ * Returns Days from Shifts .
+ *
+ */
 function gets_days() {
   return sql_select_single_col("
       SELECT DISTINCT DATE(FROM_UNIXTIME(`start`)) AS `id`, DATE(FROM_UNIXTIME(`start`)) AS `name`
@@ -310,10 +333,20 @@ function gets_days() {
       ORDER BY `start`");
 }
 
+/**
+ * Delete Shifts.
+ *
+ * @param $sid ID of Shifts
+ */
 function dele_shifts($sid) {
   return sql_query("DELETE FROM `Shifts` WHERE `SID` = '" . sql_escape($sid) . "'");
 }
 
+/**
+ * Return Shifts by ID
+ *
+ * @param $shift_id ID of Shifts
+ */
 function selects_shift_by_shift_ids($shift_id) {
   return sql_select("
       SELECT `ShiftTypes`.`name`, `Shifts`.*, `Room`.* FROM `Shifts`
@@ -322,6 +355,10 @@ function selects_shift_by_shift_ids($shift_id) {
       WHERE `SID`='" . sql_escape($shift_id) . "'");
 }
 
+/**
+ * Return Shifts by Start time
+ *
+ */
 function Shifts_by_start() {
   return sql_select("SELECT * FROM `Shifts` WHERE `PSID` IS NOT NULL ORDER BY `start`");
 }

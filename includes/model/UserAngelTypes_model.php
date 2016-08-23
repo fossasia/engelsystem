@@ -175,18 +175,42 @@ function UserAngelType_by_User_and_AngelType($user, $angeltype) {
   return $angeltype[0];
 }
 
+/**
+ * Create an UserAngelType.
+ *
+ * @param User $user_id
+ * @param Angeltype $selected_angel_type_id
+ */
 function insert_UserAngelTypes($user_id, $selected_angel_type_id) {
   return sql_query("INSERT INTO `UserAngelTypes` SET `user_id`='" . sql_escape($user_id) . "', `angeltype_id`='" . sql_escape($selected_angel_type_id) . "'");
 }
 
+/**
+ * Insert an UserAngelType.
+ *
+ * @param User $user_id
+ * @param Angeltype $selected_type_id
+ */
 function inserts_user_angeltype($user_id, $selected_type_id) {
   return sql_query("INSERT INTO `UserAngelTypes` (`user_id`, `angeltype_id`) VALUES ('" . sql_escape($user_id) . "', '" . sql_escape($selected_type_id) . "')");
 }
 
+/**
+ * Return Count of UserAngelType.
+ *
+ * @param Angeltype $selected_type_id
+ * @param User $user_id
+ */
 function counts_user_angeltype($selected_type_id, $user_id) {
   return sql_num_query("SELECT * FROM `UserAngelTypes` INNER JOIN `AngelTypes` ON `AngelTypes`.`id` = `UserAngelTypes`.`angeltype_id` WHERE `angeltype_id` = '" . sql_escape($selected_type_id) . "' AND `user_id` = '" . sql_escape($user_id) . "' ");
 }
 
+/**
+ * Return UserAngelType.
+ *
+ * @param Angeltype $type_id
+ * @param User $uid
+ */
 function selects_user_angeltype($type_id, $uid) {
   return sql_select("SELECT * FROM `UserAngelTypes` JOIN `AngelTypes` ON (`UserAngelTypes`.`angeltype_id` = `AngelTypes`.`id`) WHERE `AngelTypes`.`id` = '" . sql_escape($type_id) . "' AND (`AngelTypes`.`restricted` = 0 OR (`UserAngelTypes`.`user_id` = '" . sql_escape($uid) . "' AND NOT `UserAngelTypes`.`confirm_user_id` IS NULL)) LIMIT 1");
 }

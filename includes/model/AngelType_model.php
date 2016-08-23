@@ -105,7 +105,9 @@ function AngelTypes_with_user($user) {
 }
 
 /**
+ *
  * Returns all angeltypes.
+ *
  */
 function AngelTypes() {
   return sql_select("
@@ -115,7 +117,9 @@ function AngelTypes() {
 }
 
 /**
+ *
  * Returns AngelType id array
+ *
  */
 function AngelType_ids() {
   $angelType_source = sql_select("SELECT `id` FROM `AngelTypes`");
@@ -141,34 +145,77 @@ function AngelType($id) {
   return null;
 }
 
+/**
+ *
+ * Returns angelType id, name array.
+ *
+ */
 function select_id_name_Angeltypes() {
   return sql_select("SELECT `id`, `name` FROM `AngelTypes` ORDER BY `name`");
 }
 
+/**
+ *
+ * Returns restricted angelType id, name.
+ *
+ */
 function selects_restricted_angeltypes_by_ids() {
   return sql_select("SELECT `AngelTypes`.`id`, `AngelTypes`.`name`, (`AngelTypes`.`restricted`=0 OR (NOT `UserAngelTypes`.`confirm_user_id` IS NULL OR `UserAngelTypes`.`id` IS NULL)) as `enabled` FROM `AngelTypes` LEFT JOIN `UserAngelTypes` ON (`UserAngelTypes`.`angeltype_id`=`AngelTypes`.`id` AND `UserAngelTypes`.`user_id`='" . sql_escape($user['UID']) . "') ORDER BY `AngelTypes`.`name`");
 }
 
+/**
+ *
+ * Returns unrestricted angelType id, name.
+ *
+ */
 function selects_unrestricted_angeltype() {
   sql_select("SELECT `id`, `name` FROM `AngelTypes` WHERE `restricted` = 0");
 }
 
+/**
+ *
+ * Returns angelType id, name array order by name.
+ *
+ */
 function selects_angeltype_ids() {
   return sql_select("SELECT `id`, `name` FROM `AngelTypes` ORDER BY `AngelTypes`.`name`");
 }
 
+/**
+ * Returns angelType by id.
+ *
+ * @param $type_id angelType
+ *          ID
+ */
 function selects_angeltype_by_types($type_id) {
   return sql_select("SELECT * FROM `AngelTypes` WHERE `id`='" . sql_escape($type_id) . "' LIMIT 1");
 }
 
+/**
+ * Returns AngelTypes, NeedAngelTypes
+ *
+ * @param $rid NeededAngelType Roomid
+ *          ID
+ */
 function selects_needed_angeltypes_by_roomid($rid) {
   return sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`room_id`='" . sql_escape($rid) . "') ORDER BY `AngelTypes`.`name`");
 }
 
+/**
+ * Returns AngelTypes, NeedAngelTypes
+ *
+ * @param $sid NeededAngelType Roomid
+ *          ID
+ */
 function selects_needed_angeltypes_by_shiftid($sid) {
   return sql_select("SELECT `AngelTypes`.*, `NeededAngelTypes`.`count` FROM `AngelTypes` LEFT JOIN `NeededAngelTypes` ON (`NeededAngelTypes`.`angel_type_id` = `AngelTypes`.`id` AND `NeededAngelTypes`.`shift_id`='" . sql_escape($sid) . "') ORDER BY `AngelTypes`.`name`");
 }
 
+/**
+ *
+ * Returns AngelTypes order by name
+ *
+ */
 function selects_angeltype_by_names() {
   return sql_select("SELECT * FROM `AngelTypes` ORDER BY `name`");
 }

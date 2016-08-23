@@ -10,6 +10,7 @@ function admin_create_groups() {
 
   $name = "";
   $uid = "";
+  // Load Privileges
   $selected_privileges = array();
   $privilege_source = sql_select("SELECT * FROM `Privileges`");
   $selected_privilege_source = sql_select("SELECT * FROM `GroupPrivileges` WHERE `group_id` = -2");
@@ -17,6 +18,7 @@ function admin_create_groups() {
   foreach ($privilege_source as $privilege_type) {
     $privilege_types[$privilege_type['id']] = $privilege_type['desc'] . ' (' . $privilege_type['name'] .') ';
   }
+  // select default Privileges
   foreach ($selected_privilege_source as $selected_privilege) {
     $selected_privileges[] = $selected_privilege['privilege_id'];
   }
@@ -39,6 +41,7 @@ function admin_create_groups() {
       $msg .= error(_("Please enter your Group UID."), true);
     }
 
+    // set privileges
     foreach ($privilege_source as $selected_privileges_id)
        if (isset($_REQUEST['privilege_types_' . $selected_privilege_id['id'] ]))
         $selected_privileges[] = $selected_privileges_id['id'];
