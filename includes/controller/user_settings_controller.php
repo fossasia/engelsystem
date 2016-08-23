@@ -201,7 +201,7 @@ function user_settings() {
     $online_ver = file_get_contents("https://raw.githubusercontent.com/fossasia/engelsystem/master/Version.txt");
     $current_ver = file_get_contents(" ../Version.txt");
     if (strcmp($current_ver, $online_ver) != 0) {
-      shell_exec("../update.sh");
+      shell_exec("git pull origin master");
 
       if(strcmp($current_ver, "Version: 1.0") == 0){
         $upgrade_table = '../db/upgrade_01.sql';
