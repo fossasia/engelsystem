@@ -356,7 +356,7 @@ function Native_language_render($user_source) {
   foreach($xml->xpath("/locales/locale") as $item)
   {
     $representation = $item->codes->code->standard->representation;
-    if ($representation == $user_source['native_language']) {
+    if ($representation == $user_source['native_lang']) {
       return htmlspecialchars($item->englishName);
     }
   }
@@ -365,7 +365,7 @@ function Native_language_render($user_source) {
  * Render Other Languages
  */
 function Other_languages_render($user_source) {
-  $other_langs = explode(",", $user_source['other_languages']);
+  $other_langs = explode(",", $user_source['other_langs']);
   $xml = simplexml_load_file("https://www.facebook.com/translations/FacebookLocales.xml");
   $list = "";
   foreach($xml->xpath("/locales/locale") as $item)

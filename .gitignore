@@ -6,3 +6,4 @@ _vimrc_local.vim
 .sass-cache
 config/config.php
 test/coverage
+.idea/

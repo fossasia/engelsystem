@@ -284,7 +284,7 @@ function form_textarea($name, $label, $value, $disabled = false) {
 /**
  * Renders a form selection box
  */
-function form_select($name, $label, $values, $selected) {
+function form_select($name, $label, $values, $selected='') {
   return form_element($label, html_select_key('form_' . $name, $name, $values, $selected), 'form_' . $name);
 }
 /**
