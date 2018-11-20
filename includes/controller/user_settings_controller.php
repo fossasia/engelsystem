@@ -35,6 +35,7 @@ function user_settings() {
   $current_city = $user['current_city'];
   $native_lang = $user['native_lang'];
   $other_langs = $user['other_langs'];
+  $auto_update = false;
   if (isset($_REQUEST['submit'])) {
     $ok = true;
     if (isset($_REQUEST['mail']) && strlen(strip_request_item('mail')) > 0) {
@@ -181,18 +182,59 @@ function user_settings() {
       success("Language changed.");
       redirect(page_link_to('user_settings'));
     }
-  }elseif (isset($_REQUEST['submit_message'])){
+  } elseif (isset($_REQUEST['submit_message'])) {
       $ok=true;
       if(isset($_REQUEST['display_message']))
         $display_message=strip_request_item('display_message');
       else
         $ok = false;
-      if($ok){
+
+      if ($ok) {
         update_display_msg($display_message);
         success("Message Changed");
         redirect(page_link_to('user_settings'));
       }
   }
+  elseif (isset($_REQUEST['update'])) {
+    $ok = true;
+
+    $online_ver = file_get_contents("https://raw.githubusercontent.com/fossasia/engelsystem/master/Version.txt");
+    $current_ver = file_get_contents(" ../Version.txt");
+    if (strcmp($current_ver, $online_ver) != 0) {
+      shell_exec("git pull origin master");
+
+      if(strcmp($current_ver, "Version: 1.0") == 0){
+        $upgrade_table = '../db/upgrade_01.sql';
+        upgrade_tables($upgrade_table);
+      }
+    }
+    else {
+      $ok = false;
+      $msg .= error(_("The system is already Up-to date with the version on GitHub."), true);
+    }
+    if ($ok) {
+      success(_("System Updated to the latest Version!"));
+      redirect(page_link_to('user_settings'));
+    }
+  }
+  elseif (isset($_REQUEST['autoupdate_check'])) {
+    $ok = true;
+
+    if (isset($_REQUEST['auto_update']))
+      $auto_update = true;
+    else {
+      $ok = false;
+      $auto_update = false;
+      $msg .= error(_("Disabled the Automatic Updates."), true);
+    }
+
+    if ($ok) {
+      autoupdater($auto_update);
+      success("Enabled Automatic Updates!");
+      redirect(page_link_to('user_settings'));
+    }
+  }
+
   if ($ok) {
       $_SESSION['uid'] = $login_user['UID'];
       $_SESSION['locale'] = $login_user['Sprache'];
@@ -248,7 +290,14 @@ if( $_SESSION['uid'] == 1){
                   form_info(_("Here you can write your display message for registration:")),
                   form_text('display_message', _("Message"), $display_message),
                   form_submit('submit_message', _("Save"))
-              ))
+              )),
+              form(array(
+                  form_info(_("Here you can set for Auto updates and check for updates:")),
+                  form_checkbox('auto_update', _("Do you want to enable AutoUpdate for the system"), $auto_update),
+                  form_info('', _("Checking the box will enable the autoupdate for the system")),
+                  form_submit('autoupdate_check', _("Save")),
+                  form_submit('update', _("Update System Now!"))
+              )),
           ))
       ))
   ));

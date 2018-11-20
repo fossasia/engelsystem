@@ -47,6 +47,15 @@ function Settings() {
   return sql_select("SELECT * FROM `Settings`");
 }
 
+function autoupdater($auto_update) {
+  return sql_select("INSERT INTO `Settings` SET
+    `autoupdate`='" . sql_bool($auto_update) . "' ");
+}
+
+function check_AutoUpdate() {
+  return sql_select("SELECT `autoupdate` FROM `Settings`");
+}
+
 /**
  * Migrate Update tables.
  *
@@ -61,6 +70,13 @@ function update_table_migrated($value) {
  */
 function insert_table_migrated($value) {
   return sql_query("INSERT INTO `Settings` SET `table_migrated`='" . sql_escape($value) . "'");
+}
+
+function upgrade_tables($upgrade_table) {
+  global $DB_HOST, $DB_PASSWORD, $DB_NAME, $DB_USER;
+  $command_upgrade = 'mysql -h' . $DB_HOST . ' -u' . $DB_USER . ' -p' . $DB_PASSWORD . ' ' . $DB_NAME . ' < ' . $upgrade_table;
+  $output = array();
+  exec($command_upgrade, $output, $worked_upgrade);
 }
 
 ?>

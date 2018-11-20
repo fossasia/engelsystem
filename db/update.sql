@@ -68,6 +68,7 @@ CREATE TABLE IF NOT EXISTS `Settings` (
   `event_start_date` int(11) DEFAULT NULL,
   `event_end_date` int(11) DEFAULT NULL,
   `teardown_end_date` int(11) DEFAULT NULL,
+  `autoupdate` tinyint(1) NOT NULL DEFAULT '0',
   `event_welcome_msg` varchar(255) DEFAULT NULL,
   `table_migrated` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
