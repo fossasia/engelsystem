@@ -119,6 +119,10 @@ function user_news() {
   $html = '<div class="col-md-12"><h1>' . news_title() . '</h1>' . msg();
 
   if (isset($_POST["text"]) && isset($_POST["betreff"]) && in_array("admin_news", $privileges)) {
+    if (empty($_POST["text"]) || empty($_POST["betreff"])) {
+      error(_("Empty input."));
+      redirect(page_link_to('news'));
+    }
     if (! isset($_POST["treffen"]) || ! in_array("admin_news", $privileges))
       $_POST["treffen"] = 0;
     insert_news_val($_POST["betreff"], $_POST["text"], $user['UID'], $_POST["treffen"]);
