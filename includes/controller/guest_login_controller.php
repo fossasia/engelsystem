@@ -20,7 +20,7 @@ function guest_register() {
   $nick = "";
   $lastname = "";
   $prename = "";
-  $age = "";
+  $age = 0;
   $tel = "";
   $dect = "";
   $mobile = "";
@@ -29,6 +29,8 @@ function guest_register() {
   $jabber = "";
   $hometown = "";
   $comment = "";
+  $native_lang = "";
+  $other_langs = "";
   $twitter = "";
   $facebook = "";
   $github = "";
@@ -44,7 +46,7 @@ function guest_register() {
 
   $welcome_message = WelcomeMessage();
   $display_message = $welcome_message[0]['display_msg'];
-  $angel_types_source = select_angeltype();
+  $angel_types_source = select_angeltypes();
   $angel_types = array();
   foreach ($angel_types_source as $angel_type) {
     $angel_types[$angel_type['id']] = $angel_type['name'] . ($angel_type['restricted'] ? " (restricted)" : "");
@@ -182,7 +184,7 @@ function guest_register() {
       $ok = false;
       $msg .= error(_("Please select a timezone"), true);
     }
-    if (isset($_REQUEST['age']) && preg_match("/^[0-9]{0,4}$/", $_REQUEST['age']))
+    if (isset($_REQUEST['age']) && $_REQUEST['age'] != '' && preg_match("/^[0-9]{0,4}$/", $_REQUEST['age']))
       $age = strip_request_item('age');
     if (isset($_REQUEST['tel']))
       $tel = strip_request_item('tel');
@@ -190,9 +192,9 @@ function guest_register() {
       $dect = strip_request_item('dect');
     if (isset($_REQUEST['native_lang']))
       $native_lang = strip_request_item('native_lang');
-    if (isset($_REQUEST['other_lang'])) {
+    if (isset($_REQUEST['other_langs'])) {
       $other_langs = "";
-      $langs = $_REQUEST['other_lang'];
+      $langs = $_REQUEST['other_langs'];
       foreach($langs as $lang) {
         $other_langs .= $lang . ',';
       }
